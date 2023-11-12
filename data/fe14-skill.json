@@ -1,0 +1,1818 @@
+[
+  {
+    "ID": 1,
+    "icon": "<img class = \"skill\" src = \"image/1.png\">",
+    "JID": "MSEID_最大HP+5",
+    "skillname": "【최대HP+5】",
+    "JID_H": "MSEID_H_最大HP+5",
+    "description": "자신의 HP +5"
+  },
+  {
+    "ID": 2,
+    "icon": "<img class = \"skill\" src = \"image/2.png\">",
+    "JID": "MSEID_力+2",
+    "skillname": "【힘+2】",
+    "JID_H": "MSEID_H_力+2",
+    "description": "자신의 힘 +2"
+  },
+  {
+    "ID": 3,
+    "icon": "<img class = \"skill\" src = \"image/3.png\">",
+    "JID": "MSEID_魔力+2",
+    "skillname": "【마력+2】",
+    "JID_H": "MSEID_H_魔力+2",
+    "description": "자신의 마력+2"
+  },
+  {
+    "ID": 4,
+    "icon": "<img class = \"skill\" src = \"image/4.png\">",
+    "JID": "MSEID_技+2",
+    "skillname": "【기술+2】",
+    "JID_H": "MSEID_H_技+2",
+    "description": "자신의 기술 +2"
+  },
+  {
+    "ID": 5,
+    "icon": "<img class = \"skill\" src = \"image/5.png\">",
+    "JID": "MSEID_速さ+2",
+    "skillname": "【속도+2】",
+    "JID_H": "MSEID_H_速さ+2",
+    "description": "자신의 속도 +2"
+  },
+  {
+    "ID": 6,
+    "icon": "<img class = \"skill\" src = \"image/6.png\">",
+    "JID": "MSEID_幸運+4",
+    "skillname": "【행운+4】",
+    "JID_H": "MSEID_H_幸運+4",
+    "description": "자신의 행운 +4"
+  },
+  {
+    "ID": 7,
+    "icon": "<img class = \"skill\" src = \"image/7.png\">",
+    "JID": "MSEID_守備+2",
+    "skillname": "【수비+2】",
+    "JID_H": "MSEID_H_守備+2",
+    "description": "자신의 수비 +2"
+  },
+  {
+    "ID": 8,
+    "icon": "<img class = \"skill\" src = \"image/8.png\">",
+    "JID": "MSEID_魔防+2",
+    "skillname": "【마방+2】",
+    "JID_H": "MSEID_H_魔防+2",
+    "description": "자신의 마방 +2"
+  },
+  {
+    "ID": 9,
+    "icon": "<img class = \"skill\" src = \"image/9.png\">",
+    "JID": "MSEID_移動+1",
+    "skillname": "【이동+1】",
+    "JID_H": "MSEID_H_移動+1",
+    "description": "자신의 이동 +1"
+  },
+  {
+    "ID": 10,
+    "icon": "<img class = \"skill\" src = \"image/10.png\">",
+    "JID": "MSEID_竜呪",
+    "skillname": "【용의 저주】",
+    "JID_H": "MSEID_H_竜呪",
+    "description": "전투 후, 적의 모든 능력 -4<br>효과는 턴 회복"
+  },
+  {
+    "ID": 11,
+    "icon": "<img class = \"skill\" src = \"image/11.png\">",
+    "JID": "MSEID_力封じ",
+    "skillname": "【힘 봉인】",
+    "JID_H": "MSEID_H_力封じ",
+    "description": "전투 후, 적의 힘 -6<br>효과는 턴 회복"
+  },
+  {
+    "ID": 12,
+    "icon": "<img class = \"skill\" src = \"image/12.png\">",
+    "JID": "MSEID_魔力封じ",
+    "skillname": "【마력 봉인】",
+    "JID_H": "MSEID_H_魔力封じ",
+    "description": "전투 후, 적의 마력 -6<br>효과는 턴 회복"
+  },
+  {
+    "ID": 13,
+    "icon": "<img class = \"skill\" src = \"image/13.png\">",
+    "JID": "MSEID_速さ封じ",
+    "skillname": "【속도 봉인】",
+    "JID_H": "MSEID_H_速さ封じ",
+    "description": "전투 후, 적의 속도 -6<br>효과는 턴 회복"
+  },
+  {
+    "ID": 14,
+    "icon": "<img class = \"skill\" src = \"image/14.png\">",
+    "JID": "MSEID_守備封じ",
+    "skillname": "【수비 봉인】",
+    "JID_H": "MSEID_H_守備封じ",
+    "description": "전투 후, 적의 수비 -6<br>효과는 턴 회복"
+  },
+  {
+    "ID": 15,
+    "icon": "<img class = \"skill\" src = \"image/15.png\">",
+    "JID": "MSEID_魔防封じ",
+    "skillname": "【마방 봉인】",
+    "JID_H": "MSEID_H_魔防封じ",
+    "description": "전투 후, 적의 마방 -6<br>효과는 턴 회복"
+  },
+  {
+    "ID": 16,
+    "icon": "<img class = \"skill\" src = \"image/16.png\">",
+    "JID": "MSEID_力の叫び",
+    "skillname": "【힘의 외침】",
+    "JID_H": "MSEID_H_力の叫び",
+    "description": "「응원」 커맨드 선택 시,<br>주위 2칸 이내 아군이 힘 +4(1턴)"
+  },
+  {
+    "ID": 17,
+    "icon": "<img class = \"skill\" src = \"image/17.png\">",
+    "JID": "MSEID_魔力の叫び",
+    "skillname": "【마력의 외침】",
+    "JID_H": "MSEID_H_魔力の叫び",
+    "description": "「응원」 커맨드 선택 시,<br>주위 2칸 이내 아군이 마력 +4(1턴)"
+  },
+  {
+    "ID": 18,
+    "icon": "<img class = \"skill\" src = \"image/18.png\">",
+    "JID": "MSEID_技の叫び",
+    "skillname": "【기술의 외침】",
+    "JID_H": "MSEID_H_技の叫び",
+    "description": "「응원」 커맨드 선택 시,<br>주위 2칸 이내 아군이 기술 +4(1턴)"
+  },
+  {
+    "ID": 19,
+    "icon": "<img class = \"skill\" src = \"image/19.png\">",
+    "JID": "MSEID_速さの叫び",
+    "skillname": "【속도의 외침】",
+    "JID_H": "MSEID_H_速さの叫び",
+    "description": "「응원」 커맨드 선택 시,<br>주위 2칸 이내 아군이 속도 +4(1턴)"
+  },
+  {
+    "ID": 20,
+    "icon": "<img class = \"skill\" src = \"image/20.png\">",
+    "JID": "MSEID_幸運の叫び",
+    "skillname": "【행운의 외침】",
+    "JID_H": "MSEID_H_幸運の叫び",
+    "description": "「응원」 커맨드 선택 시,<br>주위 2칸 이내 아군이 행운 +8(1턴)"
+  },
+  {
+    "ID": 21,
+    "icon": "<img class = \"skill\" src = \"image/21.png\">",
+    "JID": "MSEID_守備の叫び",
+    "skillname": "【수비의 외침】",
+    "JID_H": "MSEID_H_守備の叫び",
+    "description": "「응원」 커맨드 선택 시,<br>주위 2칸 이내 아군이 수비 +4(1턴)"
+  },
+  {
+    "ID": 22,
+    "icon": "<img class = \"skill\" src = \"image/22.png\">",
+    "JID": "MSEID_魔防の叫び",
+    "skillname": "【마방의 외침】",
+    "JID_H": "MSEID_H_魔防の叫び",
+    "description": "「응원」 커맨드 선택 시,<br>주위 2칸 이내 아군이 마방 +4(1턴)"
+  },
+  {
+    "ID": 23,
+    "icon": "<img class = \"skill\" src = \"image/23.png\">",
+    "JID": "MSEID_移動の叫び",
+    "skillname": "【이동의 외침】",
+    "JID_H": "MSEID_H_移動の叫び",
+    "description": "「응원」 커맨드 선택 시,<br>주위 2칸 이내 아군이 이동 +1(1턴)"
+  },
+  {
+    "ID": 24,
+    "icon": "<img class = \"skill\" src = \"image/24.png\">",
+    "JID": "MSEID_特別な歌",
+    "skillname": "【특별한 노래】",
+    "JID_H": "MSEID_H_特別な歌",
+    "description": "「노래」를 사용한 대상 아군을<br>기술·속도·행운 +3(1턴)"
+  },
+  {
+    "ID": 25,
+    "icon": "<img class = \"skill\" src = \"image/25.png\">",
+    "JID": "MSEID_滅殺",
+    "skillname": "【멸살】",
+    "JID_H": "MSEID_H_滅殺",
+    "description": "공격 시, 기술×0.25%와 적에게 1 이상<br>대미지를 입힐 때 발동. 적을 반드시 격파"
+  },
+  {
+    "ID": 26,
+    "icon": "<img class = \"skill\" src = \"image/26.png\">",
+    "JID": "MSEID_流星",
+    "skillname": "【유성】",
+    "JID_H": "MSEID_H_流星",
+    "description": "공격 시, 기술×0.5%로 발동<br>절반의 대미지로 5회 연속 공격"
+  },
+  {
+    "ID": 27,
+    "icon": "<img class = \"skill\" src = \"image/27.png\">",
+    "JID": "MSEID_竜穿",
+    "skillname": "【용의 창】",
+    "JID_H": "MSEID_H_竜穿",
+    "description": "공격 시, 기술×0.75%로 발동<br>공격력의 절반을 입히는 대미지에 추가"
+  },
+  {
+    "ID": 28,
+    "icon": "<img class = \"skill\" src = \"image/28.png\">",
+    "JID": "MSEID_太陽",
+    "skillname": "【태양】",
+    "JID_H": "MSEID_H_太陽",
+    "description": "공격 시, 기술%로 발동<br>적에게 입힌 대미지의 절반만큼 HP 회복"
+  },
+  {
+    "ID": 29,
+    "icon": "<img class = \"skill\" src = \"image/29.png\">",
+    "JID": "MSEID_月光",
+    "skillname": "【월광】",
+    "JID_H": "MSEID_H_月光",
+    "description": "공격 시, 기술%로 발동<br>적 수비·마방의 절반을 무시하고 공격"
+  },
+  {
+    "ID": 30,
+    "icon": "<img class = \"skill\" src = \"image/30.png\">",
+    "JID": "MSEID_破天",
+    "skillname": "【파천】",
+    "JID_H": "MSEID_H_破天",
+    "description": "공격 시, 기술×1.5%로 발동. 공격에 따라<br>적의 힘이나 마력의 절반을 대미지에 추가"
+  },
+  {
+    "ID": 31,
+    "icon": "<img class = \"skill\" src = \"image/31.png\">",
+    "JID": "MSEID_復讐",
+    "skillname": "【복수】",
+    "JID_H": "MSEID_H_復讐",
+    "description": "공격 시, 기술×1.5%로 발동<br>자신의 HP 감소량의 절반을 대미지에 추가"
+  },
+  {
+    "ID": 32,
+    "icon": "<img class = \"skill\" src = \"image/32.png\">",
+    "JID": "MSEID_大盾",
+    "skillname": "【거대한 방패】",
+    "JID_H": "MSEID_H_大盾",
+    "description": "기술%로 발동. 검·창·도끼·야수석·몬스터<br>·꼭두각시의 공격을 받았을 때 대미지 절반"
+  },
+  {
+    "ID": 33,
+    "icon": "<img class = \"skill\" src = \"image/33.png\">",
+    "JID": "MSEID_聖盾",
+    "skillname": "【성스러운 방패】",
+    "JID_H": "MSEID_H_聖盾",
+    "description": "기술%로 발동. 활·마도서·암기·용석·브레스<br>·투석의 공격을 받았을 때 대미지 절반"
+  },
+  {
+    "ID": 34,
+    "icon": "<img class = \"skill\" src = \"image/34.png\">",
+    "JID": "MSEID_竜盾",
+    "skillname": "【용의 방패】",
+    "JID_H": "MSEID_H_竜盾",
+    "description": "공격을 받는 아군의 행운×0.5%로 발동<br>인접한 아군이 공격당했을 때 대미지 절반"
+  },
+  {
+    "ID": 35,
+    "icon": "<img class = \"skill\" src = \"image/35.png\">",
+    "JID": "MSEID_祈り",
+    "skillname": "【기도】",
+    "JID_H": "MSEID_H_祈り",
+    "description": "행운%로 발동. 자신의 HP가 2 이상일 때<br>HP가 0이 되는 공격을 받아도 1 남는다"
+  },
+  {
+    "ID": 36,
+    "icon": "<img class = \"skill\" src = \"image/36.png\">",
+    "JID": "MSEID_カウンター",
+    "skillname": "【카운터】",
+    "JID_H": "MSEID_H_カウンター",
+    "description": "인접한 적에게 공격당했을 때<br>받은 대미지만큼 적에게 대미지를 준다"
+  },
+  {
+    "ID": 37,
+    "icon": "<img class = \"skill\" src = \"image/37.png\">",
+    "JID": "MSEID_魔法カウンター",
+    "skillname": "【마법 카운터】",
+    "JID_H": "MSEID_H_魔法カウンター",
+    "description": "마법으로 공격당했을 때<br>받은 대미지만큼 적에게 대미지를 준다"
+  },
+  {
+    "ID": 38,
+    "icon": "<img class = \"skill\" src = \"image/38.png\">",
+    "JID": "MSEID_待ち伏せ",
+    "skillname": "【매복】",
+    "JID_H": "MSEID_H_待ち伏せ",
+    "description": "전투 개시 시, 자신의 HP가 절반 이하일 때<br>적에게 공격당해도 자신이 먼저 공격한다"
+  },
+  {
+    "ID": 39,
+    "icon": "<img class = \"skill\" src = \"image/39.png\">",
+    "JID": "MSEID_獣特効",
+    "skillname": "【야수 특효】",
+    "JID_H": "MSEID_H_獣特効",
+    "description": "자신이 늑대 인간, 여우족일 때<br>야수 특효 공격을 가한다"
+  },
+  {
+    "ID": 40,
+    "icon": "<img class = \"skill\" src = \"image/40.png\">",
+    "JID": "MSEID_人形崩し",
+    "skillname": "【인형 부수기】",
+    "JID_H": "MSEID_H_人形崩し",
+    "description": "인간형 특효 공격을 가한다<br>인형사, 꼭두각시, 골렘에게 유효"
+  },
+  {
+    "ID": 41,
+    "icon": "<img class = \"skill\" src = \"image/41.png\">",
+    "JID": "MSEID_暗夜",
+    "skillname": "【암야】",
+    "JID_H": "MSEID_H_暗夜",
+    "description": "전투 시, 공진·방진 상대가 지닌<br>전투 스킬을 자신도 공유한다"
+  },
+  {
+    "ID": 42,
+    "icon": "<img class = \"skill\" src = \"image/42.png\">",
+    "JID": "MSEID_白夜",
+    "skillname": "【백야】",
+    "JID_H": "MSEID_H_白夜",
+    "description": "스킬 발동 확률 +10%"
+  },
+  {
+    "ID": 43,
+    "icon": "<img class = \"skill\" src = \"image/43.png\">",
+    "JID": "MSEID_救出",
+    "skillname": "【구출】",
+    "JID_H": "MSEID_H_救出",
+    "description": "「구출」 커맨드 선택 가능<br>인접한 아군을 자신의 후위로 옮긴다"
+  },
+  {
+    "ID": 44,
+    "icon": "<img class = \"skill\" src = \"image/44.png\">",
+    "JID": "MSEID_体当たり",
+    "skillname": "【박치기】",
+    "JID_H": "MSEID_H_体当たり",
+    "description": "「박치기」 커맨드 선택 가능<br>인접한 아군을 1칸 밀어낸다"
+  },
+  {
+    "ID": 45,
+    "icon": "<img class = \"skill\" src = \"image/45.png\">",
+    "JID": "MSEID_切り込み",
+    "skillname": "【파고들기】",
+    "JID_H": "MSEID_H_切り込み",
+    "description": "「파고들기」 커맨드 선택 가능<br>공격 후, 자신과 적의 위치를 바꾼다"
+  },
+  {
+    "ID": 46,
+    "icon": "<img class = \"skill\" src = \"image/46.png\">",
+    "JID": "MSEID_入れ替え",
+    "skillname": "【바꾸기】",
+    "JID_H": "MSEID_H_入れ替え",
+    "description": "「바꾸기」 커맨드 선택 가능<br>인접한 아군과 자신의 위치를 바꾼다"
+  },
+  {
+    "ID": 47,
+    "icon": "<img class = \"skill\" src = \"image/47.png\">",
+    "JID": "MSEID_写し身人形",
+    "skillname": "【분신 인형】",
+    "JID_H": "MSEID_H_写し身人形",
+    "description": "「분신」 커맨드를 1 맵당 1회 선택 가능<br>자신과 능력, 생명을 공유하는 인형을 만든다"
+  },
+  {
+    "ID": 48,
+    "icon": "<img class = \"skill\" src = \"image/48.png\">",
+    "JID": "MSEID_先手必勝",
+    "skillname": "【선수 필승】",
+    "JID_H": "MSEID_H_先手必勝",
+    "description": "자신이 공격을 걸었을 때<br>입히는 대미지 +4"
+  },
+  {
+    "ID": 49,
+    "icon": "<img class = \"skill\" src = \"image/49.png\">",
+    "JID": "MSEID_後手不敗",
+    "skillname": "【후수 불패】",
+    "JID_H": "MSEID_H_後手不敗",
+    "description": "자신이 공격을 당했을 때<br>입히는 대미지 +3"
+  },
+  {
+    "ID": 50,
+    "icon": "<img class = \"skill\" src = \"image/50.png\">",
+    "JID": "MSEID_広所突撃",
+    "skillname": "【평지 돌격】",
+    "JID_H": "MSEID_H_広所突撃",
+    "description": "자신이 지형 효과 0인 장소에서<br>전투 시, 입히는 대미지 +3"
+  },
+  {
+    "ID": 51,
+    "icon": "<img class = \"skill\" src = \"image/51.png\">",
+    "JID": "MSEID_閉所防御",
+    "skillname": "【협소 방어】",
+    "JID_H": "MSEID_H_閉所防御",
+    "description": "자신이 지형 효과 0 이외의 장소에서<br>전투 시, 입는 대미지 -3"
+  },
+  {
+    "ID": 52,
+    "icon": "<img class = \"skill\" src = \"image/52.png\">",
+    "JID": "MSEID_偶像の幻",
+    "skillname": "【짝의 환영】",
+    "JID_H": "MSEID_H_偶像の幻",
+    "description": "짝수 턴,<br>적에게 입히는 대미지 +4"
+  },
+  {
+    "ID": 53,
+    "icon": "<img class = \"skill\" src = \"image/53.png\">",
+    "JID": "MSEID_奇襲の牙",
+    "skillname": "【홀로 솟은 이빨】",
+    "JID_H": "MSEID_H_奇襲の牙",
+    "description": "홀수 턴,<br>적에게 입히는 대미지 +4"
+  },
+  {
+    "ID": 54,
+    "icon": "<img class = \"skill\" src = \"image/54.png\">",
+    "JID": "MSEID_死線",
+    "skillname": "【사선】",
+    "JID_H": "MSEID_H_死線",
+    "description": "전투 중, 적에게 입히는 대미지 +10,<br>적에게 입는 대미지 +10"
+  },
+  {
+    "ID": 55,
+    "icon": "<img class = \"skill\" src = \"image/55.png\">",
+    "JID": "MSEID_お大尽",
+    "skillname": "【갑부】",
+    "JID_H": "MSEID_H_お大尽",
+    "description": "금화 소지 중 공격을 걸었을 때, 금화를<br>쓰며 입히는 대미지 +10, 입는 대미지 -10"
+  },
+  {
+    "ID": 56,
+    "icon": "<img class = \"skill\" src = \"image/56.png\">",
+    "JID": "MSEID_清流の一撃",
+    "skillname": "【청류의 일격】",
+    "JID_H": "MSEID_H_清流の一撃",
+    "description": "자신이 공격을 걸었을 때,<br>그 전투 중, 회피 +30"
+  },
+  {
+    "ID": 57,
+    "icon": "<img class = \"skill\" src = \"image/57.png\">",
+    "JID": "MSEID_飛燕の一撃",
+    "skillname": "【비연의 일격】",
+    "JID_H": "MSEID_H_飛燕の一撃",
+    "description": "자신이 공격을 걸었을 때,<br>그 전투 중의 추가 공격이 쉬워진다(+5)"
+  },
+  {
+    "ID": 58,
+    "icon": "<img class = \"skill\" src = \"image/58.png\">",
+    "JID": "MSEID_鬼神の一撃",
+    "skillname": "【귀신의 일격】",
+    "JID_H": "MSEID_H_鬼神の一撃",
+    "description": "자신이 공격을 걸었을 때,<br>그 전투 중, 필살 +20"
+  },
+  {
+    "ID": 59,
+    "icon": "<img class = \"skill\" src = \"image/59.png\">",
+    "JID": "MSEID_凶鳥の一撃",
+    "skillname": "【흉조의 일격】",
+    "JID_H": "MSEID_H_凶鳥の一撃",
+    "description": "자신이 공격을 걸었을 때,<br>그 전투 중, 명중 +40"
+  },
+  {
+    "ID": 60,
+    "icon": "<img class = \"skill\" src = \"image/60.png\">",
+    "JID": "MSEID_金剛の一撃",
+    "skillname": "【금강의 일격】",
+    "JID_H": "MSEID_H_金剛の一撃",
+    "description": "자신이 공격을 걸었을 때,<br>그 전투에서 입는 물리 대미지 -10"
+  },
+  {
+    "ID": 61,
+    "icon": "<img class = \"skill\" src = \"image/61.png\">",
+    "JID": "MSEID_明鏡の一撃",
+    "skillname": "【명경의 일격】",
+    "JID_H": "MSEID_H_明鏡の一撃",
+    "description": "자신이 공격을 걸었을 때,<br>그 전투에서 입는 마법 대미지 -20"
+  },
+  {
+    "ID": 62,
+    "icon": "<img class = \"skill\" src = \"image/62.png\">",
+    "JID": "MSEID_見下す者",
+    "skillname": "【내려다보는 자】",
+    "JID_H": "MSEID_H_見下す者",
+    "description": "적이 기마 유닛 이외일 때,<br>입히는 대미지 +5"
+  },
+  {
+    "ID": 63,
+    "icon": "<img class = \"skill\" src = \"image/63.png\">",
+    "JID": "MSEID_守備隊形",
+    "skillname": "【수비 대형】",
+    "JID_H": "MSEID_H_守備隊形",
+    "description": "전투 중, 자신도 적도<br>추가 공격이 발생하지 않는다"
+  },
+  {
+    "ID": 64,
+    "icon": "<img class = \"skill\" src = \"image/64.png\">",
+    "JID": "MSEID_剣の達人",
+    "skillname": "【검의 달인】",
+    "JID_H": "MSEID_H_剣の達人",
+    "description": "검을 장비하고 공격했을 때,<br>입히는 대미지 +5"
+  },
+  {
+    "ID": 65,
+    "icon": "<img class = \"skill\" src = \"image/65.png\">",
+    "JID": "MSEID_槍の達人",
+    "skillname": "【창의 달인】",
+    "JID_H": "MSEID_H_槍の達人",
+    "description": "창을 장비하고 공격했을 때,<br>입히는 대미지 +5"
+  },
+  {
+    "ID": 66,
+    "icon": "<img class = \"skill\" src = \"image/66.png\">",
+    "JID": "MSEID_斧の達人",
+    "skillname": "【도끼의 달인】",
+    "JID_H": "MSEID_H_斧の達人",
+    "description": "도끼를 장비하고 공격했을 때,<br>입히는 대미지 +5"
+  },
+  {
+    "ID": 67,
+    "icon": "<img class = \"skill\" src = \"image/67.png\">",
+    "JID": "MSEID_暗器の達人",
+    "skillname": "【암기의 달인】",
+    "JID_H": "MSEID_H_暗器の達人",
+    "description": "암기를 장비하고 공격했을 때,<br>입히는 대미지 +5"
+  },
+  {
+    "ID": 68,
+    "icon": "<img class = \"skill\" src = \"image/68.png\">",
+    "JID": "MSEID_弓の達人",
+    "skillname": "【활의 달인】",
+    "JID_H": "MSEID_H_弓の達人",
+    "description": "활을 장비하고 공격했을 때,<br>입히는 대미지 +5"
+  },
+  {
+    "ID": 69,
+    "icon": "<img class = \"skill\" src = \"image/69.png\">",
+    "JID": "MSEID_魔の達人",
+    "skillname": "【마법의 달인】",
+    "JID_H": "MSEID_H_魔の達人",
+    "description": "마도서를 장비하고 공격했을 때,<br>입히는 대미지 +5"
+  },
+  {
+    "ID": 70,
+    "icon": "<img class = \"skill\" src = \"image/70.png\">",
+    "JID": "MSEID_守り手",
+    "skillname": "【수비수】",
+    "JID_H": "MSEID_H_守り手",
+    "description": "방진 상태에서 전위일 때,<br>자신의 모든 능력 +1"
+  },
+  {
+    "ID": 71,
+    "icon": "<img class = \"skill\" src = \"image/71.png\">",
+    "JID": "MSEID_名家の令息",
+    "skillname": "【명가의 아들】",
+    "JID_H": "MSEID_H_名家の令息",
+    "description": "주위 2칸 이내의 여성 아군이<br>전투 시, 입는 대미지 -2"
+  },
+  {
+    "ID": 72,
+    "icon": "<img class = \"skill\" src = \"image/72.png\">",
+    "JID": "MSEID_深窓の令嬢",
+    "skillname": "【귀족의 딸】",
+    "JID_H": "MSEID_H_深窓の令嬢",
+    "description": "주위 2칸 이내의 남성 아군이<br>전투 시, 입는 대미지 -2"
+  },
+  {
+    "ID": 73,
+    "icon": "<img class = \"skill\" src = \"image/73.png\">",
+    "JID": "MSEID_戦闘指揮",
+    "skillname": "【전투 지휘】",
+    "JID_H": "MSEID_H_戦闘指揮",
+    "description": "주위 2칸 이내의 아군이 전투 시,<br>입히는 대미지 +2, 입는 대미지 -2"
+  },
+  {
+    "ID": 74,
+    "icon": "<img class = \"skill\" src = \"image/74.png\">",
+    "JID": "MSEID_魔の風",
+    "skillname": "【마의 바람】",
+    "JID_H": "MSEID_H_魔の風",
+    "description": "주위 2칸 이내의 적이 전투 시,<br>적이 입는 마법 대미지 +2"
+  },
+  {
+    "ID": 75,
+    "icon": "<img class = \"skill\" src = \"image/75.png\">",
+    "JID": "MSEID_平和の声",
+    "skillname": "【평화의 소리】",
+    "JID_H": "MSEID_H_平和の声",
+    "description": "주위 2칸 이내의 적이 전투 시,<br>적이 입히는 물리 대미지 -2"
+  },
+  {
+    "ID": 76,
+    "icon": "<img class = \"skill\" src = \"image/76.png\">",
+    "JID": "MSEID_異邦の王女",
+    "skillname": "【이방의 왕녀】",
+    "JID_H": "MSEID_H_異邦の王女",
+    "description": "주위 2칸 이내 「이방의 군」이 전투 시,<br>적이 입히는 대미지 -2, 입는 대미지 +2"
+  },
+  {
+    "ID": 77,
+    "icon": "<img class = \"skill\" src = \"image/77.png\">",
+    "JID": "MSEID_剣殺し",
+    "skillname": "【검 킬러】",
+    "JID_H": "MSEID_H_剣殺し",
+    "description": "적이 검을 장비하고 있을 경우,<br>자신의 명중·회피 +50"
+  },
+  {
+    "ID": 78,
+    "icon": "<img class = \"skill\" src = \"image/78.png\">",
+    "JID": "MSEID_槍殺し",
+    "skillname": "【창 킬러】",
+    "JID_H": "MSEID_H_槍殺し",
+    "description": "적이 창을 장비하고 있을 경우,<br>자신의 명중·회피 +50"
+  },
+  {
+    "ID": 79,
+    "icon": "<img class = \"skill\" src = \"image/79.png\">",
+    "JID": "MSEID_斧殺し",
+    "skillname": "【도끼 킬러】",
+    "JID_H": "MSEID_H_斧殺し",
+    "description": "적이 도끼를 장비하고 있을 경우,<br>자신의 명중·회피 +50"
+  },
+  {
+    "ID": 80,
+    "icon": "<img class = \"skill\" src = \"image/80.png\">",
+    "JID": "MSEID_暗器殺し",
+    "skillname": "【암기 킬러】",
+    "JID_H": "MSEID_H_暗器殺し",
+    "description": "적이 암기를 장비하고 있을 경우,<br>자신의 명중·회피 +50"
+  },
+  {
+    "ID": 81,
+    "icon": "<img class = \"skill\" src = \"image/81.png\">",
+    "JID": "MSEID_弓殺し",
+    "skillname": "【활 킬러】",
+    "JID_H": "MSEID_H_弓殺し",
+    "description": "적이 활을 장비하고 있을 경우,<br>자신의 명중·회피 +50"
+  },
+  {
+    "ID": 82,
+    "icon": "<img class = \"skill\" src = \"image/82.png\">",
+    "JID": "MSEID_魔殺し",
+    "skillname": "【마법 킬러】",
+    "JID_H": "MSEID_H_魔殺し",
+    "description": "적이 마도서를 장비하고 있을 경우,<br>자신의 명중·회피 +50"
+  },
+  {
+    "ID": 83,
+    "icon": "<img class = \"skill\" src = \"image/83.png\">",
+    "JID": "MSEID_大振り",
+    "skillname": "【마구 휘두르기】",
+    "JID_H": "MSEID_H_大振り",
+    "description": "자신의 명중 -10, 필살 +10"
+  },
+  {
+    "ID": 84,
+    "icon": "<img class = \"skill\" src = \"image/84.png\">",
+    "JID": "MSEID_下剋上",
+    "skillname": "【하극상】",
+    "JID_H": "MSEID_H_下剋上",
+    "description": "자신보다 적의 레벨이 높을 때,<br>명중, 회피 +15(상급직은 레벨 +20)"
+  },
+  {
+    "ID": 85,
+    "icon": "<img class = \"skill\" src = \"image/85.png\">",
+    "JID": "MSEID_ラッキー7",
+    "skillname": "【럭키 7】",
+    "JID_H": "MSEID_H_ラッキー7",
+    "description": "7턴째 종료까지<br>자신의 명중·회피 +20"
+  },
+  {
+    "ID": 86,
+    "icon": "<img class = \"skill\" src = \"image/86.png\">",
+    "JID": "MSEID_天翔ける",
+    "skillname": "【천공 날기】",
+    "JID_H": "MSEID_H_天翔ける",
+    "description": "적이 비행 유닛일 때,<br>명중·회피 +30"
+  },
+  {
+    "ID": 87,
+    "icon": "<img class = \"skill\" src = \"image/87.png\">",
+    "JID": "MSEID_呪縛",
+    "skillname": "【주박】",
+    "JID_H": "MSEID_H_呪縛",
+    "description": "인접한 적이 전투 시,<br>적의 회피 -20"
+  },
+  {
+    "ID": 88,
+    "icon": "<img class = \"skill\" src = \"image/88.png\">",
+    "JID": "MSEID_傾奇者",
+    "skillname": "【괴짜】",
+    "JID_H": "MSEID_H_傾奇者",
+    "description": "전투 시, 자신과 적의 명중 +30,<br>확률 발동 스킬의 발생률 +15"
+  },
+  {
+    "ID": 89,
+    "icon": "<img class = \"skill\" src = \"image/89.png\">",
+    "JID": "MSEID_しぶとい心",
+    "skillname": "【완고한 마음】",
+    "JID_H": "MSEID_H_しぶとい心",
+    "description": "행운%로 발동. 턴 개시 시,<br>최대 HP의 20% HP 회복"
+  },
+  {
+    "ID": 90,
+    "icon": "<img class = \"skill\" src = \"image/90.png\">",
+    "JID": "MSEID_リフレッシュ",
+    "skillname": "【리프레시】",
+    "JID_H": "MSEID_H_リフレッシュ",
+    "description": "턴 개시 시, 주위 2칸 이내에 아무도<br>없을 때, 최대 HP의 20% HP 회복"
+  },
+  {
+    "ID": 91,
+    "icon": "<img class = \"skill\" src = \"image/91.png\">",
+    "JID": "MSEID_和の心",
+    "skillname": "【화합의 마음】",
+    "JID_H": "MSEID_H_和の心",
+    "description": "턴 개시 시, 주위 2칸 이내에 아군이<br>있을 때, 최대 HP의 10% HP 회복"
+  },
+  {
+    "ID": 92,
+    "icon": "<img class = \"skill\" src = \"image/92.png\">",
+    "JID": "MSEID_回復",
+    "skillname": "【회복】",
+    "JID_H": "MSEID_H_回復",
+    "description": "턴 개시 시,<br>최대 HP의 30% HP 회복"
+  },
+  {
+    "ID": 93,
+    "icon": "<img class = \"skill\" src = \"image/93.png\">",
+    "JID": "MSEID_偶然のまどろみ",
+    "skillname": "【짝의 휴식】",
+    "JID_H": "MSEID_H_偶然のまどろみ",
+    "description": "짝수 턴 개시 시,<br>최대 HP의 40% HP 회복"
+  },
+  {
+    "ID": 94,
+    "icon": "<img class = \"skill\" src = \"image/94.png\">",
+    "JID": "MSEID_奇妙な鳴き声",
+    "skillname": "【홀의 울음소리】",
+    "JID_H": "MSEID_H_奇妙な鳴き声",
+    "description": "홀수 턴 개시 시,<br>최대 HP의 40% HP 회복"
+  },
+  {
+    "ID": 95,
+    "icon": "<img class = \"skill\" src = \"image/95.png\">",
+    "JID": "MSEID_天照らす",
+    "skillname": "【천공의 빛】",
+    "JID_H": "MSEID_H_天照らす",
+    "description": "턴 개시 시, 주위 2칸 이내의 아군은<br>최대 HP의 20% HP 회복"
+  },
+  {
+    "ID": 96,
+    "icon": "<img class = \"skill\" src = \"image/96.png\">",
+    "JID": "MSEID_生命吸収",
+    "skillname": "【생명 흡수】",
+    "JID_H": "MSEID_H_生命吸収",
+    "description": "자신이 공격을 걸어 적을 쓰러뜨렸을 때,<br>최대 HP의 50% HP 회복"
+  },
+  {
+    "ID": 97,
+    "icon": "<img class = \"skill\" src = \"image/97.png\">",
+    "JID": "MSEID_よく効く薬",
+    "skillname": "【잘 듣는 약】",
+    "JID_H": "MSEID_H_よく効く薬",
+    "description": "HP 회복약, 능력 상승약의<br>효과 1.5배"
+  },
+  {
+    "ID": 98,
+    "icon": "<img class = \"skill\" src = \"image/98.png\">",
+    "JID": "MSEID_ご奉仕の喜び",
+    "skillname": "【봉사의 기쁨】",
+    "JID_H": "MSEID_H_ご奉仕の喜び",
+    "description": "자신이 지팡이로 아군을 회복시킬 때,<br>자신도 같은 양만큼 회복한다"
+  },
+  {
+    "ID": 99,
+    "icon": "<img class = \"skill\" src = \"image/99.png\">",
+    "JID": "MSEID_蛇毒",
+    "skillname": "【뱀독】",
+    "JID_H": "MSEID_H_蛇毒",
+    "description": "자신이 공격을 걸었을 때, 전투 후,<br>적의 HP를 최대 HP의 20% 감소시킨다"
+  },
+  {
+    "ID": 100,
+    "icon": "<img class = \"skill\" src = \"image/100.png\">",
+    "JID": "MSEID_死の吐息",
+    "skillname": "【죽음의 한숨】",
+    "JID_H": "MSEID_H_死の吐息",
+    "description": "자신이 공격을 걸었을 때, 전투 후, 주위<br>2칸의 적 HP를 최대 HP의 20% 감소시킨다"
+  },
+  {
+    "ID": 101,
+    "icon": "<img class = \"skill\" src = \"image/101.png\">",
+    "JID": "MSEID_四牙",
+    "skillname": "【추격하는 이빨】",
+    "JID_H": "MSEID_H_四牙",
+    "description": "전투 후, 적 HP를<br>최대 HP의 20% 감소시킨다"
+  },
+  {
+    "ID": 102,
+    "icon": "<img class = \"skill\" src = \"image/102.png\">",
+    "JID": "MSEID_匠の技",
+    "skillname": "【장인의 기술】",
+    "JID_H": "MSEID_H_匠の技",
+    "description": "행운%로 발동. 공격을 걸어 적을<br>쓰러뜨렸을 때, 철의 무기 중 하나를 획득"
+  },
+  {
+    "ID": 103,
+    "icon": "<img class = \"skill\" src = \"image/103.png\">",
+    "JID": "MSEID_左うちわ",
+    "skillname": "【불로 소득】",
+    "JID_H": "MSEID_H_左うちわ",
+    "description": "행운%로 발동. 7턴째 종료까지<br>행동 종료 시에 금화를 획득"
+  },
+  {
+    "ID": 104,
+    "icon": "<img class = \"skill\" src = \"image/104.png\">",
+    "JID": "MSEID_高貴なる血統",
+    "skillname": "【고귀한 혈통】",
+    "JID_H": "MSEID_H_高貴なる血統",
+    "description": "획득 경험치 1.2배"
+  },
+  {
+    "ID": 105,
+    "icon": "<img class = \"skill\" src = \"image/105.png\">",
+    "JID": "MSEID_おみくじ",
+    "skillname": "【복권】",
+    "JID_H": "MSEID_H_おみくじ",
+    "description": "행운%로 발동. 자신이 공격을 걸어 적을<br>쓰러뜨렸을 때, 획득 경험치 2배"
+  },
+  {
+    "ID": 106,
+    "icon": "<img class = \"skill\" src = \"image/106.png\">",
+    "JID": "MSEID_良成長",
+    "skillname": "【좋은 성장】",
+    "JID_H": "MSEID_H_良成長",
+    "description": "레벨 업 시, 모든 능력의<br>성장 판정에 +10"
+  },
+  {
+    "ID": 107,
+    "icon": "<img class = \"skill\" src = \"image/107.png\">",
+    "JID": "MSEID_常備薬",
+    "skillname": "【상비약】",
+    "JID_H": "MSEID_H_常備薬",
+    "description": "HP 회복약, 능력 상승약을 사용했을 때,<br>행동이 완료되지 않고 추가 행동 가능"
+  },
+  {
+    "ID": 108,
+    "icon": "<img class = \"skill\" src = \"image/108.png\">",
+    "JID": "MSEID_疾風迅雷",
+    "skillname": "【질풍신뢰】",
+    "JID_H": "MSEID_H_疾風迅雷",
+    "description": "자신이 공격을 걸어 적을 쓰러뜨린 후,<br>한 번 더 행동 가능(공진·방진 시 제외)"
+  },
+  {
+    "ID": 109,
+    "icon": "<img class = \"skill\" src = \"image/109.png\">",
+    "JID": "MSEID_すり抜け",
+    "skillname": "【통과하기】",
+    "JID_H": "MSEID_H_すり抜け",
+    "description": "적을 통과하여 이동할 수 있다"
+  },
+  {
+    "ID": 110,
+    "icon": "<img class = \"skill\" src = \"image/110.png\">",
+    "JID": "MSEID_鍵開け",
+    "skillname": "【자물쇠 열기】",
+    "JID_H": "MSEID_H_鍵開け",
+    "description": "열쇠가 없어도<br>문이나 보물 상자를 열 수 있다"
+  },
+  {
+    "ID": 111,
+    "icon": "<img class = \"skill\" src = \"image/111.png\">",
+    "JID": "MSEID_命中回避+10",
+    "skillname": "【명중회피 +10】",
+    "JID_H": "MSEID_H_命中回避+10",
+    "description": "명중·회피 +10"
+  },
+  {
+    "ID": 112,
+    "icon": "<img class = \"skill\" src = \"image/112.png\">",
+    "JID": "MSEID_命中回避+20",
+    "skillname": "【명중회피 +20】",
+    "JID_H": "MSEID_H_命中回避+20",
+    "description": "명중·회피 +20"
+  },
+  {
+    "ID": 113,
+    "icon": "<img class = \"skill\" src = \"image/113.png\">",
+    "JID": "MSEID_竜鱗",
+    "skillname": "【용의 비늘】",
+    "JID_H": "MSEID_H_竜鱗",
+    "description": "입는 대미지 절반. 필살의 효과 감소<br>멸살, 독, 카운터 계열 스킬을 무효화"
+  },
+  {
+    "ID": 114,
+    "icon": "<img class = \"skill\" src = \"image/114.png\">",
+    "JID": "MSEID_神盾",
+    "skillname": "【신의 방패】",
+    "JID_H": "MSEID_H_神盾",
+    "description": "입는 대미지 절반<br>멸살, 독, 카운터 계열 스킬을 무효화"
+  },
+  {
+    "ID": 115,
+    "icon": "<img class = \"skill\" src = \"image/115.png\">",
+    "JID": "MSEID_状態異常耐性",
+    "skillname": "【상태 이상 내성】",
+    "JID_H": "MSEID_H_状態異常耐性",
+    "description": "능력 감소 효과, 독 대미지,<br>방해 지팡이의 명중률을 반감시킨다"
+  },
+  {
+    "ID": 116,
+    "icon": "<img class = \"skill\" src = \"image/116.png\">",
+    "JID": "MSEID_状態異常無効",
+    "skillname": "【상태 이상 무효】",
+    "JID_H": "MSEID_H_状態異常無効",
+    "description": "능력 감소 효과, 독 대미지,<br>방해 지팡이를 모두 무효화한다"
+  },
+  {
+    "ID": 117,
+    "icon": "<img class = \"skill\" src = \"image/117.png\">",
+    "JID": "MSEID_攻防一体の陣",
+    "skillname": "【공방일체진】",
+    "JID_H": "MSEID_H_攻防一体の陣",
+    "description": "전위 시, 방진일 때도 공진처럼 전투한다<br>적의 듀얼 어택에 대한 완전 방어는 사라진다"
+  },
+  {
+    "ID": 118,
+    "icon": "<img class = \"skill\" src = \"image/118.png\">",
+    "JID": "MSEID_近接射撃",
+    "skillname": "【근접 사격】",
+    "JID_H": "MSEID_H_近接射撃",
+    "description": "활의 사정거리를 변화시켜<br>사정거리보다 가까운 적도 공격 가능해진다"
+  },
+  {
+    "ID": 119,
+    "icon": "<img class = \"skill\" src = \"image/119.png\">",
+    "JID": "MSEID_翼盾",
+    "skillname": "【날개 방패】",
+    "JID_H": "MSEID_H_翼盾",
+    "description": "자신이 비행계일 때, 비행 특효를 무시하며,<br>지형 효과를 받을 수 있다."
+  },
+  {
+    "ID": 120,
+    "icon": "<img class = \"skill\" src = \"image/120.png\">",
+    "JID": "MSEID_虚無の呪い",
+    "skillname": "【허무의 저주】",
+    "JID_H": "MSEID_H_虚無の呪い",
+    "description": "이 적과 싸웠을 때,<br>획득하는 경험치는 0이 된다"
+  },
+  {
+    "ID": 121,
+    "icon": "<img class = \"skill\" src = \"image/121.png\">",
+    "JID": "MSEID_自壊",
+    "skillname": "【자폭】",
+    "JID_H": "MSEID_H_自壊",
+    "description": "HP가 절반 이하가 되면 주위 2칸 이내의<br>적과 방벽에 대미지를 주고 소멸한다"
+  },
+  {
+    "ID": 122,
+    "icon": "<img class = \"skill\" src = \"image/122.png\">",
+    "JID": "MSEID_無限の杖",
+    "skillname": "【무한의 지팡이】",
+    "JID_H": "MSEID_H_無限の杖",
+    "description": "지팡이를 소비하지 않고 사용 가능해지며,<br>사정거리가 10 미만일 경우, 10이 된다"
+  },
+  {
+    "ID": 123,
+    "icon": "<img class = \"skill\" src = \"image/123.png\">",
+    "JID": "MSEID_凍結",
+    "skillname": "【동결】",
+    "JID_H": "MSEID_H_凍結",
+    "description": "공격이 명중했을 때,<br>적의 이동력 0, 회피 -20(1턴)"
+  },
+  {
+    "ID": 124,
+    "icon": "<img class = \"skill\" src = \"image/124.png\">",
+    "JID": "MSEID_負の連鎖",
+    "skillname": "【부정의 연쇄】",
+    "JID_H": "MSEID_H_負の連鎖",
+    "description": "적에 대한 능력 감소 효과를 누적시킨다"
+  },
+  {
+    "ID": 125,
+    "icon": "<img class = \"skill\" src = \"image/125.png\">",
+    "JID": "MSEID_偶人の空蝉",
+    "skillname": "【짝의 위장술】",
+    "JID_H": "MSEID_H_偶人の空蝉",
+    "description": "짝수 턴,<br>입는 마법 대미지 -4"
+  },
+  {
+    "ID": 126,
+    "icon": "<img class = \"skill\" src = \"image/126.png\">",
+    "JID": "MSEID_精神統一",
+    "skillname": "【정신 통일】",
+    "JID_H": "MSEID_H_精神統一",
+    "description": "적에게 공격당했을 때,<br>입는 마법 대미지 -4"
+  },
+  {
+    "ID": 127,
+    "icon": "<img class = \"skill\" src = \"image/127.png\">",
+    "JID": "MSEID_心頭滅却",
+    "skillname": "【무념무상】",
+    "JID_H": "MSEID_H_心頭滅却",
+    "description": "자신이 당한 능력 감소의<br>회복 속도가 2배가 된다"
+  },
+  {
+    "ID": 128,
+    "icon": "<img class = \"skill\" src = \"image/128.png\">",
+    "JID": "MSEID_居合一閃",
+    "skillname": "【발도 일섬】",
+    "JID_H": "MSEID_H_居合一閃",
+    "description": "자신이 공격을 걸었을 때,<br>입히는 대미지 +7"
+  },
+  {
+    "ID": 129,
+    "icon": "<img class = \"skill\" src = \"image/129.png\">",
+    "JID": "MSEID_測量術",
+    "skillname": "【측량술】",
+    "JID_H": "MSEID_H_測量術",
+    "description": "「포대」 커맨드 사용 시,<br>포대의 명중 +10"
+  },
+  {
+    "ID": 130,
+    "icon": "<img class = \"skill\" src = \"image/130.png\">",
+    "JID": "MSEID_自動砲台",
+    "skillname": "【자동 포대】",
+    "JID_H": "MSEID_H_自動砲台",
+    "description": "기술%로 발동. 자신이 슈터일 때,<br>턴 개시 시, 자동으로 범위 내 적 하나를 공격"
+  },
+  {
+    "ID": 131,
+    "icon": "<img class = \"skill\" src = \"image/131.png\">",
+    "JID": "MSEID_砲身改造",
+    "skillname": "【포신 개조】",
+    "JID_H": "MSEID_H_砲身改造",
+    "description": "「포대」 커맨드 사용 시,<br>포대의 범위 +1, 내사정·외사정 -1"
+  },
+  {
+    "ID": 132,
+    "icon": "<img class = \"skill\" src = \"image/132.png\">",
+    "JID": "MSEID_水陸両用",
+    "skillname": "【험로 답파】",
+    "JID_H": "MSEID_H_水陸両用",
+    "description": "자신이 슈터일 때, 이동 +1 및<br>진입 가능한 지형의 이동 코스트를 1로 취급"
+  },
+  {
+    "ID": 133,
+    "icon": "<img class = \"skill\" src = \"image/133.png\">",
+    "JID": "MSEID_暗闇の加護",
+    "skillname": "【어둠의 가호】",
+    "JID_H": "MSEID_H_暗闇の加護",
+    "description": "다크 메이지 계열 전용 마법을 장비 가능"
+  },
+  {
+    "ID": 134,
+    "icon": "<img class = \"skill\" src = \"image/134.png\">",
+    "JID": "MSEID_魔女の大釜",
+    "skillname": "【마녀의 가마】",
+    "JID_H": "MSEID_H_魔女の大釜",
+    "description": "행운%로 발동. 7턴째까지<br>행동 종료 시에 약을 획득"
+  },
+  {
+    "ID": 135,
+    "icon": "<img class = \"skill\" src = \"image/135.png\">",
+    "JID": "MSEID_ワープ",
+    "skillname": "【워프】",
+    "JID_H": "MSEID_H_ワープ",
+    "description": "「워프」 커맨드 사용 시, 자신을 아군의<br>인접 칸으로 이동시키고, 이어서 행동 가능"
+  },
+  {
+    "ID": 136,
+    "icon": "<img class = \"skill\" src = \"image/136.png\">",
+    "JID": "MSEID_魔女の毒薬",
+    "skillname": "【마녀의 독약】",
+    "JID_H": "MSEID_H_魔女の毒薬",
+    "description": "기술×1.5%로 발동. 공격을 걸었을 때,<br>전투 후, 적의 이동력 0, 회피 -20(1턴)"
+  },
+  {
+    "ID": 137,
+    "icon": "<img class = \"skill\" src = \"image/137.png\">",
+    "JID": "MSEID_エリート",
+    "skillname": "【엘리트】",
+    "JID_H": "MSEID_H_エリート",
+    "description": "획득 경험치 2배"
+  },
+  {
+    "ID": 138,
+    "icon": "<img class = \"skill\" src = \"image/138.png\">",
+    "JID": "MSEID_獣盾",
+    "skillname": "【야수 방패】",
+    "JID_H": "MSEID_H_獣盾",
+    "description": "적에게 야수, 말 특효 공격을<br>당하지 않게 된다"
+  },
+  {
+    "ID": 139,
+    "icon": "<img class = \"skill\" src = \"image/139.png\">",
+    "JID": "MSEID_鎧盾",
+    "skillname": "【갑옷 방패】",
+    "JID_H": "MSEID_H_鎧盾",
+    "description": "적에게 아머 특효 공격을<br>당하지 않게 된다"
+  },
+  {
+    "ID": 140,
+    "icon": "<img class = \"skill\" src = \"image/140.png\">",
+    "JID": "MSEID_力の吸収",
+    "skillname": "【힘 흡수】",
+    "JID_H": "MSEID_H_力の吸収",
+    "description": "자신이 적을 쓰러뜨리면 힘 +2(최대 +10)<br>(장 종료까지. 다른 흡수 스킬과 중복 불가)"
+  },
+  {
+    "ID": 141,
+    "icon": "<img class = \"skill\" src = \"image/141.png\">",
+    "JID": "MSEID_魔力の吸収",
+    "skillname": "【마력 흡수】",
+    "JID_H": "MSEID_H_魔力の吸収",
+    "description": "자신이 적을 쓰러뜨리면 마력 +2(최대 +10)<br>(장 종료까지. 다른 흡수 스킬과 중복 불가)"
+  },
+  {
+    "ID": 142,
+    "icon": "<img class = \"skill\" src = \"image/142.png\">",
+    "JID": "MSEID_技の吸収",
+    "skillname": "【기술 흡수】",
+    "JID_H": "MSEID_H_技の吸収",
+    "description": "자신이 적을 쓰러뜨리면 기술 +2(최대 +10)<br>(장 종료까지. 다른 흡수 스킬과 중복 불가)"
+  },
+  {
+    "ID": 143,
+    "icon": "<img class = \"skill\" src = \"image/143.png\">",
+    "JID": "MSEID_速さの吸収",
+    "skillname": "【속도 흡수】",
+    "JID_H": "MSEID_H_速さの吸収",
+    "description": "자신이 적을 쓰러뜨리면 속도 +2(최대 +10)<br>(장 종료까지. 다른 흡수 스킬과 중복 불가)"
+  },
+  {
+    "ID": 144,
+    "icon": "<img class = \"skill\" src = \"image/144.png\">",
+    "JID": "MSEID_幸運の吸収",
+    "skillname": "【행운 흡수】",
+    "JID_H": "MSEID_H_幸運の吸収",
+    "description": "자신이 적을 쓰러뜨리면 행운 +2(최대 +10)<br>(장 종료까지. 다른 흡수 스킬과 중복 불가)"
+  },
+  {
+    "ID": 145,
+    "icon": "<img class = \"skill\" src = \"image/145.png\">",
+    "JID": "MSEID_守備の吸収",
+    "skillname": "【수비 흡수】",
+    "JID_H": "MSEID_H_守備の吸収",
+    "description": "자신이 적을 쓰러뜨리면 수비 +2(최대 +10)<br>(장 종료까지. 다른 흡수 스킬과 중복 불가)"
+  },
+  {
+    "ID": 146,
+    "icon": "<img class = \"skill\" src = \"image/146.png\">",
+    "JID": "MSEID_魔防の吸収",
+    "skillname": "【마방 흡수】",
+    "JID_H": "MSEID_H_魔防の吸収",
+    "description": "자신이 적을 쓰러뜨리면 마방 +2(최대 +10)<br>(장 종료까지. 다른 흡수 스킬과 중복 불가)"
+  },
+  {
+    "ID": 147,
+    "icon": "<img class = \"skill\" src = \"image/147.png\">",
+    "JID": "MSEID_柔剣",
+    "skillname": "【유검】",
+    "JID_H": "MSEID_H_柔剣",
+    "description": "속도 +3, 수비 -1"
+  },
+  {
+    "ID": 148,
+    "icon": "<img class = \"skill\" src = \"image/148.png\">",
+    "JID": "MSEID_カリスマ",
+    "skillname": "【카리스마】",
+    "JID_H": "MSEID_H_カリスマ",
+    "description": "주위 2칸 이내의 아군이 전투 시,<br>적에게 입히는 대미지 +2"
+  },
+  {
+    "ID": 149,
+    "icon": "<img class = \"skill\" src = \"image/149.png\">",
+    "JID": "MSEID_防陣＋",
+    "skillname": "【방진+】",
+    "JID_H": "MSEID_H_防陣＋",
+    "description": "방진에서 후위일 때, 자신이 얻는<br>듀얼 가드 포인트 +1"
+  },
+  {
+    "ID": 150,
+    "icon": "<img class = \"skill\" src = \"image/150.png\">",
+    "JID": "MSEID_剛剣",
+    "skillname": "【강검】",
+    "JID_H": "MSEID_H_剛剣",
+    "description": "힘 +3, 속도 -1"
+  },
+  {
+    "ID": 151,
+    "icon": "<img class = \"skill\" src = \"image/151.png\">",
+    "JID": "MSEID_歴戦の勘",
+    "skillname": "【베테랑의 감】",
+    "JID_H": "MSEID_H_歴戦の勘",
+    "description": "전투 시, 필살회피 +15"
+  },
+  {
+    "ID": 152,
+    "icon": "<img class = \"skill\" src = \"image/152.png\">",
+    "JID": "MSEID_天空",
+    "skillname": "【천공】",
+    "JID_H": "MSEID_H_天空",
+    "description": "공격 시, 기술×0.5%로 발동<br>태양과 월광의 2회 연속 공격"
+  },
+  {
+    "ID": 153,
+    "icon": "<img class = \"skill\" src = \"image/153.png\">",
+    "JID": "MSEID_攻陣＋",
+    "skillname": "【공진+】",
+    "JID_H": "MSEID_H_攻陣＋",
+    "description": "공진에서 후위일 때,<br>적에게 입히는 대미지 +3"
+  },
+  {
+    "ID": 154,
+    "icon": "<img class = \"skill\" src = \"image/154.png\">",
+    "JID": "MSEID_覚醒",
+    "skillname": "【각성】",
+    "JID_H": "MSEID_H_覚醒",
+    "description": "HP가 절반 이하일 때,<br>명중·회피·필살·필살회피 +30"
+  },
+  {
+    "ID": 155,
+    "icon": "<img class = \"skill\" src = \"image/155.png\">",
+    "JID": "MSEID_戦術指南",
+    "skillname": "【전술 지침】",
+    "JID_H": "MSEID_H_戦術指南",
+    "description": "방진에서 후위일 때,<br>전위의 명중 +10"
+  },
+  {
+    "ID": 156,
+    "icon": "<img class = \"skill\" src = \"image/156.png\">",
+    "JID": "MSEID_方陣",
+    "skillname": "【진법】",
+    "JID_H": "MSEID_H_方陣",
+    "description": "인접한 아군이 전투 시,<br>필살 +10, 필살회피 +10"
+  },
+  {
+    "ID": 157,
+    "icon": "<img class = \"skill\" src = \"image/157.png\">",
+    "JID": "MSEID_華炎",
+    "skillname": "【화려한 불꽃】",
+    "JID_H": "MSEID_H_華炎",
+    "description": "기술%로 발동. 물리 공격이라면 마력÷2<br>마법이라면 힘÷2를 공격 시 대미지에 추가"
+  },
+  {
+    "ID": 158,
+    "icon": "<img class = \"skill\" src = \"image/158.png\">",
+    "JID": "MSEID_七色の叫び",
+    "skillname": "【무지개색 외침】",
+    "JID_H": "MSEID_H_七色の叫び",
+    "description": "「응원」 커맨드 선택 시, 주위 4칸<br>이내의 아군이 모든 능력 +2(1턴)"
+  },
+  {
+    "ID": 159,
+    "icon": "<img class = \"skill\" src = \"image/159.png\">",
+    "JID": "MSEID_不思議な魅力",
+    "skillname": "【신비한 매력】",
+    "JID_H": "MSEID_H_不思議な魅力",
+    "description": "후위 시, 전위와 지원C 이상이라면 전위가<br>명중 +10, 입히는 대미지 +2, 입는 대미지 -2"
+  },
+  {
+    "ID": 160,
+    "icon": "<img class = \"skill\" src = \"image/160.png\">",
+    "JID": "MSEID_絶対進攻",
+    "skillname": "【절대 진격】",
+    "JID_H": "MSEID_H_絶対進攻",
+    "description": "후위 시, 전위가 주인공이라면<br>주인공의 명중 +15, 입히는 대미지 +3"
+  },
+  {
+    "ID": 161,
+    "icon": "<img class = \"skill\" src = \"image/161.png\">",
+    "JID": "MSEID_絶対援護",
+    "skillname": "【절대 원호】",
+    "JID_H": "MSEID_H_絶対援護",
+    "description": "후위 시, 전위가 주인공이라면<br>주인공이 입히는 대미지 +2, 입는 대미지 -2"
+  },
+  {
+    "ID": 162,
+    "icon": "<img class = \"skill\" src = \"image/162.png\">",
+    "JID": "MSEID_絶対死守",
+    "skillname": "【절대 사수】",
+    "JID_H": "MSEID_H_絶対死守",
+    "description": "후위 시, 전위가 주인공이라면<br>주인공의 회피 +15, 입는 대미지 -3"
+  },
+  {
+    "ID": 163,
+    "icon": "<img class = \"skill\" src = \"image/163.png\">",
+    "JID": "MSEID_炎の血",
+    "skillname": "【불꽃의 피】",
+    "JID_H": "MSEID_H_炎の血",
+    "description": "자신의 HP가 가득 차지 않았을 때,<br>입히는 대미지 +4"
+  },
+  {
+    "ID": 164,
+    "icon": "<img class = \"skill\" src = \"image/164.png\">",
+    "JID": "MSEID_絆の祈り",
+    "skillname": "【인연의 기도】",
+    "JID_H": "MSEID_H_絆の祈り",
+    "description": "후위 시, 전위의 행운%로 발동. 전위의<br>HP가 0이 되는 공격을 받아도 1 남는다"
+  },
+  {
+    "ID": 165,
+    "icon": "<img class = \"skill\" src = \"image/165.png\">",
+    "JID": "MSEID_癒しの声",
+    "skillname": "【치유의 소리】",
+    "JID_H": "MSEID_H_癒しの声",
+    "description": "턴 개시 시, 자신의 2칸 주위 아군은<br>최대 HP의 10% HP 회복"
+  },
+  {
+    "ID": 166,
+    "icon": "<img class = \"skill\" src = \"image/166.png\">",
+    "JID": "MSEID_小さな声援",
+    "skillname": "【작은 성원】",
+    "JID_H": "MSEID_H_小さな声援",
+    "description": "아군이 2칸 이내에 있을 때,<br>아군이 입는 대미지 -2"
+  },
+  {
+    "ID": 167,
+    "icon": "<img class = \"skill\" src = \"image/167.png\">",
+    "JID": "MSEID_お転婆",
+    "skillname": "【말괄량이】",
+    "JID_H": "MSEID_H_お転婆",
+    "description": "공격을 걸어 적을 격파했을 때, 인접한<br>적 전원은 최대 HP의 20% HP가 감소"
+  },
+  {
+    "ID": 168,
+    "icon": "<img class = \"skill\" src = \"image/168.png\">",
+    "JID": "MSEID_完璧主義",
+    "skillname": "【완벽주의】",
+    "JID_H": "MSEID_H_完璧主義",
+    "description": "HP가 가득 찼을 때<br>명중, 회피 +15"
+  },
+  {
+    "ID": 169,
+    "icon": "<img class = \"skill\" src = \"image/169.png\">",
+    "JID": "MSEID_友情の誓い",
+    "skillname": "【우정의 약속】",
+    "JID_H": "MSEID_H_友情の誓い",
+    "description": "주인공이 아군이고, HP 절반 이하일 때,<br>자신이 입히는 대미지 +3, 입는 대미지 -3"
+  },
+  {
+    "ID": 170,
+    "icon": "<img class = \"skill\" src = \"image/170.png\">",
+    "JID": "MSEID_爆炎使い",
+    "skillname": "【폭염술사】",
+    "JID_H": "MSEID_H_爆炎使い",
+    "description": "자신이 공격을 걸거나 HP 절반 이하일 때,<br>2칸 이내 적 HP를 최대 HP의 20%만큼 감소"
+  },
+  {
+    "ID": 171,
+    "icon": "<img class = \"skill\" src = \"image/171.png\">",
+    "JID": "MSEID_白夜の捕縛術",
+    "skillname": "【백야의 포박술】",
+    "JID_H": "MSEID_H_白夜の捕縛術",
+    "description": "마이 캐슬에 감옥이 있으면 「포획」 커맨드<br>선택 가능. 격파 시, 적을 감옥에 넣는다"
+  },
+  {
+    "ID": 172,
+    "icon": "<img class = \"skill\" src = \"image/172.png\">",
+    "JID": "MSEID_叱咤激励",
+    "skillname": "【질타와 격려】",
+    "JID_H": "MSEID_H_叱咤激励",
+    "description": "아군이 2칸 이내에 있을 때,<br>아군이 입히는 대미지 +2"
+  },
+  {
+    "ID": 173,
+    "icon": "<img class = \"skill\" src = \"image/173.png\">",
+    "JID": "MSEID_天罰",
+    "skillname": "【천벌】",
+    "JID_H": "MSEID_H_天罰",
+    "description": "무기를 장비하지 않고 인접한 적에게 공격을<br>당했을 때, 대미지 절반을 적에게도 입힌다"
+  },
+  {
+    "ID": 174,
+    "icon": "<img class = \"skill\" src = \"image/174.png\">",
+    "JID": "MSEID_ぼんやり",
+    "skillname": "【멍 때리기】",
+    "JID_H": "MSEID_H_ぼんやり",
+    "description": "자신이 지팡이로 회복을 받았을 때,<br>회복량 1.5배"
+  },
+  {
+    "ID": 175,
+    "icon": "<img class = \"skill\" src = \"image/175.png\">",
+    "JID": "MSEID_尊大",
+    "skillname": "【자존심】",
+    "JID_H": "MSEID_H_尊大",
+    "description": "전투 시, 자신의 레벨이 적 레벨 이하라면<br>(상급직은 +20) 입히는 대미지 +4"
+  },
+  {
+    "ID": 176,
+    "icon": "<img class = \"skill\" src = \"image/176.png\">",
+    "JID": "MSEID_暗夜嫌い",
+    "skillname": "【암야 헌터】",
+    "JID_H": "MSEID_H_暗夜嫌い",
+    "description": "암야와 관련된 적과 전투 시,<br>입히는 대미지 +3"
+  },
+  {
+    "ID": 177,
+    "icon": "<img class = \"skill\" src = \"image/177.png\">",
+    "JID": "MSEID_悪あがき",
+    "skillname": "【발버둥】",
+    "JID_H": "MSEID_H_悪あがき",
+    "description": "HP 절반 이하가 되는 검·창·도끼 공격을<br>받았을 때, 대미지 절반을 적에게도 입힌다"
+  },
+  {
+    "ID": 178,
+    "icon": "<img class = \"skill\" src = \"image/178.png\">",
+    "JID": "MSEID_対抗意識",
+    "skillname": "【대항 의식】",
+    "JID_H": "MSEID_H_対抗意識",
+    "description": "전위 시, 자신의 레벨이 후위 이하라면<br>필살 +10, 입히는 대미지 +3, 입는 대미지 -1"
+  },
+  {
+    "ID": 179,
+    "icon": "<img class = \"skill\" src = \"image/179.png\">",
+    "JID": "MSEID_忍法車返し",
+    "skillname": "【인법 받아치기】",
+    "JID_H": "MSEID_H_忍法車返し",
+    "description": "암기(수리검)로 공격당했을 때, 입은<br>대미지의 절반과 능력 감소를 적에게도 적용"
+  },
+  {
+    "ID": 180,
+    "icon": "<img class = \"skill\" src = \"image/180.png\">",
+    "JID": "MSEID_勝者の愉悦",
+    "skillname": "【승자의 희열】",
+    "JID_H": "MSEID_H_勝者の愉悦",
+    "description": "자신이 공격을 걸어 적을 격파했을 때,<br>자신의 최대 HP의 20% HP 회복"
+  },
+  {
+    "ID": 181,
+    "icon": "<img class = \"skill\" src = \"image/181.png\">",
+    "JID": "MSEID_恩返し",
+    "skillname": "【은혜 갚기】",
+    "JID_H": "MSEID_H_恩返し",
+    "description": "누군가 지팡이로 자신을 회복시켜 줬을 때,<br>회복량의 절반은 상대방도 회복한다"
+  },
+  {
+    "ID": 182,
+    "icon": "<img class = \"skill\" src = \"image/182.png\">",
+    "JID": "MSEID_武士道",
+    "skillname": "【무사도】",
+    "JID_H": "MSEID_H_武士道",
+    "description": "전위 시, 자신의 레벨이 후위 이하라면<br>필살 +10, 입히는 대미지 +2, 입는 대미지 -2"
+  },
+  {
+    "ID": 183,
+    "icon": "<img class = \"skill\" src = \"image/183.png\">",
+    "JID": "MSEID_勝利への執念",
+    "skillname": "【승리의 집념】",
+    "JID_H": "MSEID_H_勝利への執念",
+    "description": "HP가 1/4 이하일 때,<br>필살 +30"
+  },
+  {
+    "ID": 184,
+    "icon": "<img class = \"skill\" src = \"image/184.png\">",
+    "JID": "MSEID_ダーティファイト",
+    "skillname": "【더티 파이트】",
+    "JID_H": "MSEID_H_ダーティファイト",
+    "description": "자신이 공격을 걸고, 적이 반격을 못할 때,<br>전투 종료 후, 적의 힘·속도 -3(턴 회복)"
+  },
+  {
+    "ID": 185,
+    "icon": "<img class = \"skill\" src = \"image/185.png\">",
+    "JID": "MSEID_可憐な花",
+    "skillname": "【가련한 꽃】",
+    "JID_H": "MSEID_H_可憐な花",
+    "description": "아군이 인접해 있을 때,<br>아군이 입히는 대미지 +1, 입는 대미지 -3"
+  },
+  {
+    "ID": 186,
+    "icon": "<img class = \"skill\" src = \"image/186.png\">",
+    "JID": "MSEID_不運の塊",
+    "skillname": "【불운덩어리】",
+    "JID_H": "MSEID_H_不運の塊",
+    "description": "주위 2칸 이내 적의 필살회피 -15<br>자신의 필살회피 -5"
+  },
+  {
+    "ID": 187,
+    "icon": "<img class = \"skill\" src = \"image/187.png\">",
+    "JID": "MSEID_怪力",
+    "skillname": "【괴력】",
+    "JID_H": "MSEID_H_怪力",
+    "description": "전투 시, 적의 힘보다 5 이상 높을 때,<br>입히는 대미지 +3"
+  },
+  {
+    "ID": 188,
+    "icon": "<img class = \"skill\" src = \"image/188.png\">",
+    "JID": "MSEID_血の疼き",
+    "skillname": "【피의 고통】",
+    "JID_H": "MSEID_H_血の疼き",
+    "description": "8자 이상의 연성 무기 장비 시,<br>필살 +10"
+  },
+  {
+    "ID": 189,
+    "icon": "<img class = \"skill\" src = \"image/189.png\">",
+    "JID": "MSEID_暗夜の拘束術",
+    "skillname": "【암야의 구속술】",
+    "JID_H": "MSEID_H_暗夜の拘束術",
+    "description": "마이 캐슬에 감옥이 있으면 「포획」 커맨드<br>선택 가능. 격파 시, 적을 감옥에 넣는다"
+  },
+  {
+    "ID": 190,
+    "icon": "<img class = \"skill\" src = \"image/190.png\">",
+    "JID": "MSEID_呪詛返し",
+    "skillname": "【저주 카운터】",
+    "JID_H": "MSEID_H_呪詛返し",
+    "description": "적에게 마법으로 공격당했을 때,<br>입은 대미지의 절반을 적에게도 입힌다"
+  },
+  {
+    "ID": 191,
+    "icon": "<img class = \"skill\" src = \"image/191.png\">",
+    "JID": "MSEID_妖艶な花",
+    "skillname": "【요염한 꽃】",
+    "JID_H": "MSEID_H_妖艶な花",
+    "description": "아군이 인접해 있을 때,<br>아군이 입히는 대미지 +3, 입는 대미지 -1"
+  },
+  {
+    "ID": 192,
+    "icon": "<img class = \"skill\" src = \"image/192.png\">",
+    "JID": "MSEID_負けん気",
+    "skillname": "【경쟁심】",
+    "JID_H": "MSEID_H_負けん気",
+    "description": "자신이 후위이며, 전위가 필살을 발생시키고<br>자신의 공격도 명중하면 반드시 필살 발생"
+  },
+  {
+    "ID": 193,
+    "icon": "<img class = \"skill\" src = \"image/193.png\">",
+    "JID": "MSEID_奇襲任務",
+    "skillname": "【기습 임무】",
+    "JID_H": "MSEID_H_奇襲任務",
+    "description": "적이 반격하지 못하는 상태에서<br>자신이 공격을 걸었을 때, 입히는 대미지 +4"
+  },
+  {
+    "ID": 194,
+    "icon": "<img class = \"skill\" src = \"image/194.png\">",
+    "JID": "MSEID_蒼の踊り",
+    "skillname": "【푸른 춤】",
+    "JID_H": "MSEID_H_蒼の踊り",
+    "description": "응원 커맨드 사용 가능. 주위 2칸 이내의<br>모든 아군에게 힘·속도 +1(1턴)"
+  },
+  {
+    "ID": 195,
+    "icon": "<img class = \"skill\" src = \"image/195.png\">",
+    "JID": "MSEID_殺戮本能",
+    "skillname": "【살육 본능】",
+    "JID_H": "MSEID_H_殺戮本能",
+    "description": "자신이 공격을 걸고 적을 격파했을 때,<br>힘·마력·기술·속도 +4(1턴)"
+  },
+  {
+    "ID": 196,
+    "icon": "<img class = \"skill\" src = \"image/196.png\">",
+    "JID": "MSEID_強面",
+    "skillname": "【위협】",
+    "JID_H": "MSEID_H_強面",
+    "description": "주위 2칸의 모든 적은 회피 -10"
+  },
+  {
+    "ID": 197,
+    "icon": "<img class = \"skill\" src = \"image/197.png\">",
+    "JID": "MSEID_女の本性",
+    "skillname": "【여자의 본성】",
+    "JID_H": "MSEID_H_女の本性",
+    "description": "적이 여성일 때,<br>입히는 대미지 +4, 필살 +20"
+  },
+  {
+    "ID": 198,
+    "icon": "<img class = \"skill\" src = \"image/198.png\">",
+    "JID": "MSEID_冷血",
+    "skillname": "【냉혈】",
+    "JID_H": "MSEID_H_冷血",
+    "description": "전투 시, 적의 HP가 가득이 아닐 때,<br>자신이 입히는 대미지 +3, 입는 대미지 -1"
+  },
+  {
+    "ID": 199,
+    "icon": "<img class = \"skill\" src = \"image/199.png\">",
+    "JID": "MSEID_拾いもの",
+    "skillname": "【습득물】",
+    "JID_H": "MSEID_H_拾いもの",
+    "description": "행운%로 발동. 7턴째까지<br>행동 종료 시에 광석이나 식재료를 3개 획득"
+  },
+  {
+    "ID": 200,
+    "icon": "<img class = \"skill\" src = \"image/200.png\">",
+    "JID": "MSEID_騎士道",
+    "skillname": "【기사도】",
+    "JID_H": "MSEID_H_騎士道",
+    "description": "전투 시, 적의 HP가 가득일 때,<br>자신이 입히는 대미지 +2, 입는 대미지 -2"
+  },
+  {
+    "ID": 201,
+    "icon": "<img class = \"skill\" src = \"image/201.png\">",
+    "JID": "MSEID_美しき王",
+    "skillname": "【아름다운 왕】",
+    "JID_H": "MSEID_H_美しき王",
+    "description": "주위 2칸의 적, 아군 모두는<br>입히는 대미지 -2"
+  },
+  {
+    "ID": 202,
+    "icon": "<img class = \"skill\" src = \"image/202.png\">",
+    "JID": "MSEID_軍略伝授",
+    "skillname": "【군략 전수】",
+    "JID_H": "MSEID_H_軍略伝授",
+    "description": "아군 전원의 명중 +5"
+  },
+  {
+    "ID": 203,
+    "icon": "<img class = \"skill\" src = \"image/203.png\">",
+    "JID": "MSEID_氷の血",
+    "skillname": "【얼음의 피】",
+    "JID_H": "MSEID_H_氷の血",
+    "description": "HP가 가득이 아닐 때 간접 공격을 받으면<br>대미지 절반을 돌려주고 적의 기술·속도 -3"
+  },
+  {
+    "ID": 204,
+    "icon": "<img class = \"skill\" src = \"image/204.png\">",
+    "JID": "MSEID_農地の主",
+    "skillname": "【농지 주인】",
+    "JID_H": "MSEID_H_農地の主",
+    "description": "산, 숲, 황지, 논밭 지형에 있을 때,<br>턴 개시 시, 최대 HP의 20% 회복"
+  },
+  {
+    "ID": 205,
+    "icon": "<img class = \"skill\" src = \"image/205.png\">",
+    "JID": "MSEID_竜の御子",
+    "skillname": "【용의 아이】",
+    "JID_H": "MSEID_H_竜の御子",
+    "description": "턴 개시 시, 용석을 장비하고 있으면<br>최대 HP의 15% 회복"
+  },
+  {
+    "ID": 206,
+    "icon": "<img class = \"skill\" src = \"image/206.png\">",
+    "JID": "MSEID_執事の嗜み",
+    "skillname": "【집사의 자세】",
+    "JID_H": "MSEID_H_執事の嗜み",
+    "description": "마이 캐슬에서 전투 시, 명중·회피 +20,<br>입히는 대미지 +2, 입는 대미지 -2"
+  },
+  {
+    "ID": 207,
+    "icon": "<img class = \"skill\" src = \"image/207.png\">",
+    "JID": "MSEID_チューニング",
+    "skillname": "【튜닝】",
+    "JID_H": "MSEID_H_チューニング",
+    "description": "응원 커맨드. 주위 2칸 이내의 아군 HP가<br>자신보다 낮으면 최대 HP의 10% 회복"
+  },
+  {
+    "ID": 208,
+    "icon": "<img class = \"skill\" src = \"image/208.png\">",
+    "JID": "MSEID_おっちょこちょい",
+    "skillname": "【덜렁이】",
+    "JID_H": "MSEID_H_おっちょこちょい",
+    "description": "자신이 공격을 걸어 명중 시, 적의 수비 -3<br>또한 적의 옷을 벗길 때가 있다"
+  },
+  {
+    "ID": 209,
+    "icon": "<img class = \"skill\" src = \"image/209.png\">",
+    "JID": "MSEID_幸運のおまじない",
+    "skillname": "【행운의 주문】",
+    "JID_H": "MSEID_H_幸運のおまじない",
+    "description": "행운과 관련된 확률 발동 스킬의<br>발동 확률 +20%"
+  },
+  {
+    "ID": 210,
+    "icon": "<img class = \"skill\" src = \"image/210.png\">",
+    "JID": "MSEID_大義の勇",
+    "skillname": "【대의의 용기】",
+    "JID_H": "MSEID_H_大義の勇",
+    "description": "전위이며, 공진·방진 상대의 HP가 가득 차지<br>않았을 때, 입히는 대미지 +3, 입는 대미지 +1"
+  },
+  {
+    "ID": 211,
+    "icon": "<img class = \"skill\" src = \"image/211.png\">",
+    "JID": "MSEID_前向き",
+    "skillname": "【긍정적】",
+    "JID_H": "MSEID_H_前向き",
+    "description": "「대기」 커맨드 선택 시,<br>속도 +4, 행운 +8(1턴)"
+  },
+  {
+    "ID": 212,
+    "icon": "<img class = \"skill\" src = \"image/212.png\">",
+    "JID": "MSEID_甘党",
+    "skillname": "【당 보충】",
+    "JID_H": "MSEID_H_甘党",
+    "description": "「대기」 커맨드 선택 시,<br>숨겨 둔 과자를 먹어 HP 4 회복"
+  },
+  {
+    "ID": 213,
+    "icon": "<img class = \"skill\" src = \"image/213.png\">",
+    "JID": "MSEID_じゃれつき",
+    "skillname": "【달라붙기】",
+    "JID_H": "MSEID_H_じゃれつき",
+    "description": "아군 턴 개시 시,<br>인접한 모든 적의 HP -5"
+  },
+  {
+    "ID": 214,
+    "icon": "<img class = \"skill\" src = \"image/214.png\">",
+    "JID": "MSEID_冷静沈着",
+    "skillname": "【냉정 침착】",
+    "JID_H": "MSEID_H_冷静沈着",
+    "description": "「대기」 커맨드 선택 시,<br>기술·마방 +4(1턴)"
+  },
+  {
+    "ID": 215,
+    "icon": "<img class = \"skill\" src = \"image/215.png\">",
+    "JID": "MSEID_五・七・五",
+    "skillname": "【5·7·5】",
+    "JID_H": "MSEID_H_五・七・五",
+    "description": "턴 개시 시, 미타마를 중심으로 세로 1열로<br>아군이 나란히 서 있을 때 HP를 5, 7, 5 회복"
+  },
+  {
+    "ID": 216,
+    "icon": "<img class = \"skill\" src = \"image/216.png\">",
+    "JID": "MSEID_天才肌",
+    "skillname": "【천재】",
+    "JID_H": "MSEID_H_天才肌",
+    "description": "전투 개시 시, 적의 힘·마력 중 높은 쪽의 수치가<br>자신보다 높을 경우, 적에게 입히는 대미지 +4"
+  },
+  {
+    "ID": 217,
+    "icon": "<img class = \"skill\" src = \"image/217.png\">",
+    "JID": "MSEID_執念",
+    "skillname": "【집념】",
+    "JID_H": "MSEID_H_執念",
+    "description": "그 맵에서 전투한 적이 있는 적에게<br>공격을 걸었을 때, 입히는 대미지 +4"
+  },
+  {
+    "ID": 218,
+    "icon": "<img class = \"skill\" src = \"image/218.png\">",
+    "JID": "MSEID_レディーファースト",
+    "skillname": "【레이디 퍼스트】",
+    "JID_H": "MSEID_H_レディーファースト",
+    "description": "후위이며, 공진·방진의 상대가 여성일 때,<br>그 상대가 입히는 대미지 +2"
+  },
+  {
+    "ID": 219,
+    "icon": "<img class = \"skill\" src = \"image/219.png\">",
+    "JID": "MSEID_臆病",
+    "skillname": "【겁쟁이】",
+    "JID_H": "MSEID_H_臆病",
+    "description": "전위일 때, 입는 대미지 -2<br>공진·방진이 아닐 때는 입는 대미지 +2"
+  },
+  {
+    "ID": 220,
+    "icon": "<img class = \"skill\" src = \"image/220.png\">",
+    "JID": "MSEID_だまし討ち",
+    "skillname": "【뒤통수 치기】",
+    "JID_H": "MSEID_H_だまし討ち",
+    "description": "남성 적에게 공격당했을 때,<br>적에게 입히는 대미지 +2"
+  },
+  {
+    "ID": 221,
+    "icon": "<img class = \"skill\" src = \"image/221.png\">",
+    "JID": "MSEID_ひろい食い",
+    "skillname": "【주워 먹기】",
+    "JID_H": "MSEID_H_ひろい食い",
+    "description": "턴 개시 시, 행운%로 발동<br>HP 10 회복"
+  },
+  {
+    "ID": 222,
+    "icon": "<img class = \"skill\" src = \"image/222.png\">",
+    "JID": "MSEID_強運の塊",
+    "skillname": "【강운덩어리】",
+    "JID_H": "MSEID_H_強運の塊",
+    "description": "자신의 필살회피 +5,<br>주위 2칸 이내의 아군 필살회피 +15"
+  },
+  {
+    "ID": 223,
+    "icon": "<img class = \"skill\" src = \"image/223.png\">",
+    "JID": "MSEID_乙女心の躍動",
+    "skillname": "【책벌레】",
+    "JID_H": "MSEID_H_乙女心の躍動",
+    "description": "마도서를 3개 이상 소지했을 때,<br>필살 +10"
+  },
+  {
+    "ID": 224,
+    "icon": "<img class = \"skill\" src = \"image/224.png\">",
+    "JID": "MSEID_女の子好き",
+    "skillname": "【여성 친화적】",
+    "JID_H": "MSEID_H_女の子好き",
+    "description": "전위이며, 공진·방진 상대가 여성일 때,<br>자신이 입히는 대미지 +2, 입는 대미지 -2"
+  },
+  {
+    "ID": 225,
+    "icon": "<img class = \"skill\" src = \"image/225.png\">",
+    "JID": "MSEID_邪な空想",
+    "skillname": "【부정한 공상】",
+    "JID_H": "MSEID_H_邪な空想",
+    "description": "자신에게 남성끼리의 방진이 인접했을 때,<br>자신이 입히는 대미지 +2, 입는 대미지 -2"
+  },
+  {
+    "ID": 226,
+    "icon": "<img class = \"skill\" src = \"image/226.png\">",
+    "JID": "MSEID_一攫千金",
+    "skillname": "【일확천금】",
+    "JID_H": "MSEID_H_一攫千金",
+    "description": "행운%로 발동<br>적 격파 시, 골드를 획득"
+  },
+  {
+    "ID": 227,
+    "icon": "<img class = \"skill\" src = \"image/227.png\">",
+    "JID": "MSEID_風の血",
+    "skillname": "【바람의 피】",
+    "JID_H": "MSEID_H_風の血",
+    "description": "HP가 가득이 아닐 때,<br>명중, 회피 +10"
+  }
+]
