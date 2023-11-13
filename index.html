@@ -64,9 +64,10 @@
     <br>
     <div class="row">
         <div class="col">
-            <table id = "table" data-toggle = "table" data-show-fullscreen = "true" data-search = "true" data-show-columns = "true" data-url = "data/fe14-skill.json">
+            <table id = "table" data-show-fullscreen = "true" data-search = "true" data-show-columns = "true">
                 <thead>
                 <tr>
+                    <th data-field = "ID" data-sortable="true" data-visible = "false"></th>
                     <th data-field = "icon"></th>
                     <th data-field = "skillname" data-sortable = "true">스킬명</th>
                     <th data-field = "description">설명</th>
@@ -81,6 +82,23 @@
 </body>
 </html>
 <script>
+    $(document).ready(function() {
+        let prefix = "";
+        if(window.location.href.includes("cass07")) {
+            prefix = "";
+        }else {
+            prefix = "http://localhost:63343/fe14-db/"
+        }
+
+        let tableData = [];
+        $.getJSON( "data/fe14-skill.json", jsonDataTable => {
+            jsonDataTable.forEach(item => {
+                tableData[item.ID -1] = item;
+            })
+            $("#table").bootstrapTable({data: tableData});
+        });
+    });
+
     function scrollTop_func() {
         $('html, body').animate({
             scrollTop: $("#navBar").offset().top
