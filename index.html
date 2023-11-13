@@ -55,8 +55,10 @@
         </div>
     </div>
 </nav>
-<a style="position : fixed; bottom : 20px; right : 20px; width : 50px; height : 50px; border-radius: 100px;" href="#" onclick="scrollTop_func();return false;">
-    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#3ba056" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+<a style="position : fixed; bottom : 20px; right : 20px; width : 50px; height : 50px; border-radius: 100px;" href="#"
+   onclick="scrollTop_func();return false;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#3ba056" class="bi bi-arrow-up-circle-fill"
+         viewBox="0 0 16 16">
         <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"></path>
     </svg>
 </a>
@@ -64,13 +66,24 @@
     <br>
     <div class="row">
         <div class="col">
-            <table id = "table" data-show-fullscreen = "true" data-search = "true" data-show-columns = "true">
+            <table id="table"
+                   data-show-fullscreen="true"
+                   data-detail-view="true"
+                   data-detail-view-icon="false"
+                   data-detail-view-by-click="true"
+                   data-detail-formatter="skill_detail_formatter"
+                   data-search="true"
+                   data-show-columns="true">
                 <thead>
                 <tr>
-                    <th data-field = "ID" data-sortable="true" data-visible = "false"></th>
-                    <th data-field = "icon"></th>
-                    <th data-field = "skillname" data-sortable = "true">스킬명</th>
-                    <th data-field = "description">설명</th>
+                    <th data-field="ID" data-sortable="true" data-visible="false">내부 순서</th>
+                    <th data-field="icon"></th>
+                    <th data-field="name" data-sortable="true">스킬명</th>
+                    <th data-field="description">설명</th>
+                    <th data-field="skillKindText">스킬 종류</th>
+                    <th data-field="skillSourceText" data-visible="false">습득법</th>
+                    <th data-field="skillObtainText" data-visible="false">습득 종류</th>
+                    <th data-field="skillObtainLevelText" data-visible="false">습득 레벨</th>
                 </tr>
                 </thead>
             </table>
@@ -82,22 +95,70 @@
 </body>
 </html>
 <script>
-    $(document).ready(function() {
+
+    let skillTableData;
+
+    $(document).ready(function () {
         let prefix = "";
-        if(window.location.href.includes("cass07")) {
+        if (window.location.href.includes("cass07")) {
             prefix = "";
-        }else {
+        } else {
             prefix = "http://localhost:63343/fe14-db/"
         }
 
         let tableData = [];
-        $.getJSON( "data/fe14-skill.json", jsonDataTable => {
+        let skillKindData = [];
+        let skillItemData = [];
+        $.getJSON("data/fe14-skill.json", jsonDataTable => {
             jsonDataTable.forEach(item => {
-                tableData[item.ID -1] = item;
+                tableData[item.ID - 1] = item;
             })
-            $("#table").bootstrapTable({data: tableData});
+        }).then($.getJSON("data/skill_kind.json", jsonDataTable => {
+            jsonDataTable.forEach(item => {
+                skillKindData[item.id] = item;
+            })
+        })).then($.getJSON("data/skill_item.json", jsonDataTable => {
+            jsonDataTable.forEach(item => {
+                skillItemData[item.skill_id] = item;
+            })
+        })).then(function () {
+            skillTableData = makeSkillResultTable(tableData, skillKindData, skillItemData);
+            $("#table").bootstrapTable({data: skillTableData});
         });
+
+
     });
+
+    function makeSkillResultTable(skillJson, skillKindJson, skillItemData) {
+        skillJson.forEach((singleSkill, index, array) => {
+            array[index].skillKindText = skillKindJson[singleSkill.kind].kind_name;
+            if (skillItemData[singleSkill.SEID] !== undefined) {
+                //아이템으로 획득 가능한 스킬
+                array[index].skillObtainItemText = skillItemData[singleSkill.SEID].name;
+            }
+        })
+        return skillJson;
+    }
+
+    function skill_detail_formatter(index, row) {
+        //let html = []
+
+        let detailText = row.name + "<br>" + row.description;
+        if (row.skillObtainItemText !== undefined) {
+            //아이템 사용 습득 스킬
+            detailText += "<br><br>습득법 : 아이템 사용<br>" + row.skillObtainItemText;
+        }
+        if (row.skillObtainClassText !== undefined) {
+            //클래스로 습득 스킬
+            detailText += "<br><br>습득법 : 클래스<br>" + row.skillObtainClassText + " " + row.skillObtainLevel + "레벨 달성";
+        }
+        if (row.skillObtainPersonalText !== undefined) {
+            //개인 스킬
+            detailText += "<br><br>개인 스킬 : <br>" + row.skillObtainPersonalText;
+        }
+
+        return detailText;
+    }
 
     function scrollTop_func() {
         $('html, body').animate({

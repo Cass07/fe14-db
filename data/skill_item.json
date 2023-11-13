@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "엘리트의 책",
+    "description": "「엘리트」 스킬을 습득 가능",
+    "skill_id": "MSEID_エリート"
+  },
+  {
+    "id": 2,
+    "name": "힘 흡수의 책",
+    "description": "「힘 흡수」 스킬을 습득 가능",
+    "skill_id": "MSEID_力の吸収"
+  },
+  {
+    "id": 3,
+    "name": "마력 흡수의 책",
+    "description": "「마력 흡수」 스킬을 습득 가능",
+    "skill_id": "MSEID_魔力の吸収"
+  },
+  {
+    "id": 4,
+    "name": "기술 흡수의 책",
+    "description": "「기술 흡수」 스킬을 습득 가능",
+    "skill_id": "MSEID_技の吸収"
+  },
+  {
+    "id": 5,
+    "name": "속도 흡수의 책",
+    "description": "「속도 흡수」 스킬을 습득 가능",
+    "skill_id": "MSEID_速さの吸収"
+  },
+  {
+    "id": 6,
+    "name": "행운 흡수의 책",
+    "description": "「행운 흡수」 스킬을 습득 가능",
+    "skill_id": "MSEID_幸運の吸収"
+  },
+  {
+    "id": 7,
+    "name": "수비 흡수의 책",
+    "description": "「수비 흡수」 스킬을 습득 가능",
+    "skill_id": "MSEID_守備の吸収"
+  },
+  {
+    "id": 8,
+    "name": "마방 흡수의 책",
+    "description": "「마방 흡수」 스킬을 습득 가능",
+    "skill_id": "MSEID_魔防の吸収"
+  },
+  {
+    "id": 9,
+    "name": "강검의 책",
+    "description": "「강검」 스킬을 습득 가능",
+    "skill_id": "MSEID_剛剣"
+  },
+  {
+    "id": 10,
+    "name": "베테랑의 감 책",
+    "description": "「베테랑의 감」 스킬을 습득 가능",
+    "skill_id": "MSEID_歴戦の勘"
+  },
+  {
+    "id": 11,
+    "name": "천공의 책",
+    "description": "「천공」 스킬을 습득 가능",
+    "skill_id": "MSEID_天空"
+  },
+  {
+    "id": 12,
+    "name": "워프의 책",
+    "description": "「워프」 스킬을 습득 가능",
+    "skill_id": "MSEID_ワープ"
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "id": 1,
+    "kind_name": "스탯"
+  },
+  {
+    "id": 2,
+    "kind_name": "봉인"
+  },
+  {
+    "id": 3,
+    "kind_name": "스탯 강화"
+  },
+  {
+    "id": 4,
+    "kind_name": "오의"
+  },
+  {
+    "id": 5,
+    "kind_name": "확률 발동"
+  },
+  {
+    "id": 6,
+    "kind_name": "카운터"
+  },
+  {
+    "id": 7,
+    "kind_name": "기타"
+  },
+  {
+    "id": 8,
+    "kind_name": "특효"
+  },
+  {
+    "id": 9,
+    "kind_name": "커맨드"
+  },
+  {
+    "id": 10,
+    "kind_name": "대미지 변화"
+  },
+  {
+    "id": 11,
+    "kind_name": "일격"
+  },
+  {
+    "id": 12,
+    "kind_name": "달인"
+  },
+  {
+    "id": 13,
+    "kind_name": "자신 지원"
+  },
+  {
+    "id": 14,
+    "kind_name": "아군 지원"
+  },
+  {
+    "id": 15,
+    "kind_name": "킬러"
+  },
+  {
+    "id": 16,
+    "kind_name": "명중회피"
+  },
+  {
+    "id": 17,
+    "kind_name": "회복"
+  },
+  {
+    "id": 18,
+    "kind_name": "고정 대미지"
+  },
+  {
+    "id": 19,
+    "kind_name": "아이템 입수"
+  },
+  {
+    "id": 20,
+    "kind_name": "성장"
+  },
+  {
+    "id": 21,
+    "kind_name": "재행동"
+  },
+  {
+    "id": 22,
+    "kind_name": "특효 무효"
+  },
+  {
+    "id": 23,
+    "kind_name": "공방진"
+  },
+  {
+    "id": 24,
+    "kind_name": "외침"
+  },
+  {
+    "id": 25,
+    "kind_name": "개인 스킬"
+  },
+  {
+    "id": 26,
+    "kind_name": "적 전용"
+  }
+]
