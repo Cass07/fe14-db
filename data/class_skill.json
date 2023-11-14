@@ -510,7 +510,7 @@
     "name": "다크 나이트",
     "JID_H": "MJID_H_ダークナイト",
     "description": "암야의 병과. 마를 깃들게 한 마도 기사.<br>검과 마도서, 양쪽 모두 사용한다.",
-    "skill1": "MSEID_H_魔力封じ",
+    "skill1": "MSEID_魔力封じ",
     "skill2": "MSEID_生命吸収",
     "skill3": "",
     "skill4": "",

@@ -187,7 +187,14 @@
     "name": "【마력 봉인】",
     "SEID_H": "MSEID_H_魔力封じ",
     "description": "전투 후, 적의 마력 -6<br>효과는 턴 회복",
-    "kind": 2
+    "kind": 2,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ダークナイト",
+        "get_class_name": "다크 나이트",
+        "get_level": 5
+      }
+    ]
   },
   {
     "ID": 13,
