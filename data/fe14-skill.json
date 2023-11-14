@@ -3166,8 +3166,8 @@
     "kind": 25,
     "skillPersonalUnitArray": [
       {
-        "unit_name": "시구레",
-        "unit_pid": "MPID_シグレ"
+        "unit_name": "드와이어",
+        "unit_pid": "MPID_ディーア"
       }
     ]
   },
@@ -3181,8 +3181,8 @@
     "kind": 25,
     "skillPersonalUnitArray": [
       {
-        "unit_name": "드와이어",
-        "unit_pid": "MPID_ディーア"
+        "unit_name": "시구레",
+        "unit_pid": "MPID_シグレ"
       }
     ]
   },
