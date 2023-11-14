@@ -6,7 +6,14 @@
     "name": "【최대HP+5】",
     "SEID_H": "MSEID_H_最大HP+5",
     "description": "자신의 HP +5",
-    "kind": 1
+    "kind": 1,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_アクスファイター",
+        "get_class_name": "액스 파이터",
+        "get_level": 1
+      }
+    ]
   },
   {
     "ID": 2,
@@ -15,7 +22,14 @@
     "name": "【힘+2】",
     "SEID_H": "MSEID_H_力+2",
     "description": "자신의 힘 +2",
-    "kind": 1
+    "kind": 1,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ドラゴンナイト",
+        "get_class_name": "드래곤 나이트",
+        "get_level": 1
+      }
+    ]
   },
   {
     "ID": 3,
@@ -24,7 +38,14 @@
     "name": "【마력+2】",
     "SEID_H": "MSEID_H_魔力+2",
     "description": "자신의 마력+2",
-    "kind": 1
+    "kind": 1,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_呪い師",
+        "get_class_name": "주술사",
+        "get_level": 1
+      }
+    ]
   },
   {
     "ID": 4,
@@ -33,7 +54,14 @@
     "name": "【기술+2】",
     "SEID_H": "MSEID_H_技+2",
     "description": "자신의 기술 +2",
-    "kind": 1
+    "kind": 1,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_弓使い",
+        "get_class_name": "궁수",
+        "get_level": 1
+      }
+    ]
   },
   {
     "ID": 5,
@@ -42,7 +70,14 @@
     "name": "【속도+2】",
     "SEID_H": "MSEID_H_速さ+2",
     "description": "자신의 속도 +2",
-    "kind": 1
+    "kind": 1,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ダークペガサス",
+        "get_class_name": "다크 팔콘",
+        "get_level": 1
+      }
+    ]
   },
   {
     "ID": 6,
@@ -51,7 +86,14 @@
     "name": "【행운+4】",
     "SEID_H": "MSEID_H_幸運+4",
     "description": "자신의 행운 +4",
-    "kind": 1
+    "kind": 1,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_歌姫",
+        "get_class_name": "가희",
+        "get_level": 1
+      }
+    ]
   },
   {
     "ID": 7,
@@ -60,7 +102,14 @@
     "name": "【수비+2】",
     "SEID_H": "MSEID_H_守備+2",
     "description": "자신의 수비 +2",
-    "kind": 1
+    "kind": 1,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_アーマーナイト",
+        "get_class_name": "아머 나이트",
+        "get_level": 1
+      }
+    ]
   },
   {
     "ID": 8,
@@ -69,7 +118,19 @@
     "name": "【마방+2】",
     "SEID_H": "MSEID_H_魔防+2",
     "description": "자신의 마방 +2",
-    "kind": 1
+    "kind": 1,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ロッドナイト1",
+        "get_class_name": "로드 나이트(남)",
+        "get_level": 1
+      },
+      {
+        "get_class": "MJID_ロッドナイト2",
+        "get_class_name": "로드 나이트(여)",
+        "get_level": 1
+      }
+    ]
   },
   {
     "ID": 9,
@@ -78,7 +139,14 @@
     "name": "【이동+1】",
     "SEID_H": "MSEID_H_移動+1",
     "description": "자신의 이동 +1",
-    "kind": 1
+    "kind": 1,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_シーフ",
+        "get_class_name": "시프",
+        "get_level": 10
+      }
+    ]
   },
   {
     "ID": 10,
@@ -87,7 +155,14 @@
     "name": "【용의 저주】",
     "SEID_H": "MSEID_H_竜呪",
     "description": "전투 후, 적의 모든 능력 -4<br>효과는 턴 회복",
-    "kind": 2
+    "kind": 2,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ダークブラッド",
+        "get_class_name": "다크 블러드",
+        "get_level": 5
+      }
+    ]
   },
   {
     "ID": 11,
@@ -96,7 +171,14 @@
     "name": "【힘 봉인】",
     "SEID_H": "MSEID_H_力封じ",
     "description": "전투 후, 적의 힘 -6<br>효과는 턴 회복",
-    "kind": 2
+    "kind": 2,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_兵法者",
+        "get_class_name": "병법가",
+        "get_level": 5
+      }
+    ]
   },
   {
     "ID": 12,
@@ -114,7 +196,14 @@
     "name": "【속도 봉인】",
     "SEID_H": "MSEID_H_速さ封じ",
     "description": "전투 후, 적의 속도 -6<br>효과는 턴 회복",
-    "kind": 2
+    "kind": 2,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_槍聖",
+        "get_class_name": "창성",
+        "get_level": 5
+      }
+    ]
   },
   {
     "ID": 14,
@@ -123,7 +212,14 @@
     "name": "【수비 봉인】",
     "SEID_H": "MSEID_H_守備封じ",
     "description": "전투 후, 적의 수비 -6<br>효과는 턴 회복",
-    "kind": 2
+    "kind": 2,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_槍術士",
+        "get_class_name": "창술사",
+        "get_level": 1
+      }
+    ]
   },
   {
     "ID": 15,
@@ -132,7 +228,14 @@
     "name": "【마방 봉인】",
     "SEID_H": "MSEID_H_魔防封じ",
     "description": "전투 후, 적의 마방 -6<br>효과는 턴 회복",
-    "kind": 2
+    "kind": 2,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_鬼人",
+        "get_class_name": "귀인",
+        "get_level": 1
+      }
+    ]
   },
   {
     "ID": 16,
@@ -141,7 +244,14 @@
     "name": "【힘의 외침】",
     "SEID_H": "MSEID_H_力の叫び",
     "description": "「응원」 커맨드 선택 시,<br>주위 2칸 이내 아군이 힘 +4(1턴)",
-    "kind": 3
+    "kind": 3,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_バーサーカー",
+        "get_class_name": "버서커",
+        "get_level": 5
+      }
+    ]
   },
   {
     "ID": 17,
@@ -150,7 +260,14 @@
     "name": "【마력의 외침】",
     "SEID_H": "MSEID_H_魔力の叫び",
     "description": "「응원」 커맨드 선택 시,<br>주위 2칸 이내 아군이 마력 +4(1턴)",
-    "kind": 3
+    "kind": 3,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_陰陽師",
+        "get_class_name": "음양사",
+        "get_level": 5
+      }
+    ]
   },
   {
     "ID": 18,
@@ -159,7 +276,14 @@
     "name": "【기술의 외침】",
     "SEID_H": "MSEID_H_技の叫び",
     "description": "「응원」 커맨드 선택 시,<br>주위 2칸 이내 아군이 기술 +4(1턴)",
-    "kind": 3
+    "kind": 3,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ボウナイト",
+        "get_class_name": "보우 나이트",
+        "get_level": 5
+      }
+    ]
   },
   {
     "ID": 19,
@@ -168,7 +292,14 @@
     "name": "【속도의 외침】",
     "SEID_H": "MSEID_H_速さの叫び",
     "description": "「응원」 커맨드 선택 시,<br>주위 2칸 이내 아군이 속도 +4(1턴)",
-    "kind": 3
+    "kind": 3,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_聖天馬武者",
+        "get_class_name": "성 천마 무사",
+        "get_level": 5
+      }
+    ]
   },
   {
     "ID": 20,
@@ -177,7 +308,19 @@
     "name": "【행운의 외침】",
     "SEID_H": "MSEID_H_幸運の叫び",
     "description": "「응원」 커맨드 선택 시,<br>주위 2칸 이내 아군이 행운 +8(1턴)",
-    "kind": 3
+    "kind": 3,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_修験者",
+        "get_class_name": "수행자",
+        "get_level": 10
+      },
+      {
+        "get_class": "MJID_巫女",
+        "get_class_name": "무녀",
+        "get_level": 10
+      }
+    ]
   },
   {
     "ID": 21,
@@ -186,7 +329,14 @@
     "name": "【수비의 외침】",
     "SEID_H": "MSEID_H_守備の叫び",
     "description": "「응원」 커맨드 선택 시,<br>주위 2칸 이내 아군이 수비 +4(1턴)",
-    "kind": 3
+    "kind": 3,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ドラゴンマスター",
+        "get_class_name": "드래곤 마스터",
+        "get_level": 5
+      }
+    ]
   },
   {
     "ID": 22,
@@ -195,7 +345,14 @@
     "name": "【마방의 외침】",
     "SEID_H": "MSEID_H_魔防の叫び",
     "description": "「응원」 커맨드 선택 시,<br>주위 2칸 이내 아군이 마방 +4(1턴)",
-    "kind": 3
+    "kind": 3,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ストラテジスト",
+        "get_class_name": "스트래터지스트",
+        "get_level": 5
+      }
+    ]
   },
   {
     "ID": 23,
@@ -204,7 +361,14 @@
     "name": "【이동의 외침】",
     "SEID_H": "MSEID_H_移動の叫び",
     "description": "「응원」 커맨드 선택 시,<br>주위 2칸 이내 아군이 이동 +1(1턴)",
-    "kind": 3
+    "kind": 3,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ダークペガサス",
+        "get_class_name": "다크 팔콘",
+        "get_level": 25
+      }
+    ]
   },
   {
     "ID": 24,
@@ -213,7 +377,14 @@
     "name": "【특별한 노래】",
     "SEID_H": "MSEID_H_特別な歌",
     "description": "「노래」를 사용한 대상 아군을<br>기술·속도·행운 +3(1턴)",
-    "kind": 3
+    "kind": 3,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_歌姫",
+        "get_class_name": "가희",
+        "get_level": 10
+      }
+    ]
   },
   {
     "ID": 25,
@@ -222,7 +393,14 @@
     "name": "【멸살】",
     "SEID_H": "MSEID_H_滅殺",
     "description": "공격 시, 기술×0.25%와 적에게 1 이상<br>대미지를 입힐 때 발동. 적을 반드시 격파",
-    "kind": 4
+    "kind": 4,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_上忍",
+        "get_class_name": "상급 닌자",
+        "get_level": 5
+      }
+    ]
   },
   {
     "ID": 26,
@@ -231,7 +409,14 @@
     "name": "【유성】",
     "SEID_H": "MSEID_H_流星",
     "description": "공격 시, 기술×0.5%로 발동<br>절반의 대미지로 5회 연속 공격",
-    "kind": 4
+    "kind": 4,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_剣聖",
+        "get_class_name": "검성",
+        "get_level": 5
+      }
+    ]
   },
   {
     "ID": 27,
@@ -240,7 +425,19 @@
     "name": "【용의 창】",
     "SEID_H": "MSEID_H_竜穿",
     "description": "공격 시, 기술×0.75%로 발동<br>공격력의 절반을 입히는 대미지에 추가",
-    "kind": 4
+    "kind": 4,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ダークプリンス",
+        "get_class_name": "다크 프린스",
+        "get_level": 10
+      },
+      {
+        "get_class": "MJID_ダークプリンセス",
+        "get_class_name": "다크 프린세스",
+        "get_level": 10
+      }
+    ]
   },
   {
     "ID": 28,
@@ -249,7 +446,14 @@
     "name": "【태양】",
     "SEID_H": "MSEID_H_太陽",
     "description": "공격 시, 기술%로 발동<br>적에게 입힌 대미지의 절반만큼 HP 회복",
-    "kind": 4
+    "kind": 4,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ブレイブヒーロー",
+        "get_class_name": "브레이브 히어로",
+        "get_level": 5
+      }
+    ]
   },
   {
     "ID": 29,
@@ -258,7 +462,14 @@
     "name": "【월광】",
     "SEID_H": "MSEID_H_月光",
     "description": "공격 시, 기술%로 발동<br>적 수비·마방의 절반을 무시하고 공격",
-    "kind": 4
+    "kind": 4,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_グレートナイト",
+        "get_class_name": "그레이트 나이트",
+        "get_level": 5
+      }
+    ]
   },
   {
     "ID": 30,
@@ -267,7 +478,14 @@
     "name": "【파천】",
     "SEID_H": "MSEID_H_破天",
     "description": "공격 시, 기술×1.5%로 발동. 공격에 따라<br>적의 힘이나 마력의 절반을 대미지에 추가",
-    "kind": 4
+    "kind": 4,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_婆娑羅",
+        "get_class_name": "바사라",
+        "get_level": 5
+      }
+    ]
   },
   {
     "ID": 31,
@@ -276,7 +494,14 @@
     "name": "【복수】",
     "SEID_H": "MSEID_H_復讐",
     "description": "공격 시, 기술×1.5%로 발동<br>자신의 HP 감소량의 절반을 대미지에 추가",
-    "kind": 4
+    "kind": 4,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ソーサラー",
+        "get_class_name": "소서러",
+        "get_level": 5
+      }
+    ]
   },
   {
     "ID": 32,
@@ -285,7 +510,14 @@
     "name": "【거대한 방패】",
     "SEID_H": "MSEID_H_大盾",
     "description": "기술%로 발동. 검·창·도끼·야수석·몬스터<br>·꼭두각시의 공격을 받았을 때 대미지 절반",
-    "kind": 5
+    "kind": 5,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ジェネラル",
+        "get_class_name": "제너럴",
+        "get_level": 15
+      }
+    ]
   },
   {
     "ID": 33,
@@ -294,7 +526,14 @@
     "name": "【성스러운 방패】",
     "SEID_H": "MSEID_H_聖盾",
     "description": "기술%로 발동. 활·마도서·암기·용석·브레스<br>·투석의 공격을 받았을 때 대미지 절반",
-    "kind": 5
+    "kind": 5,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_パラディン",
+        "get_class_name": "팔라딘",
+        "get_level": 15
+      }
+    ]
   },
   {
     "ID": 34,
@@ -303,7 +542,14 @@
     "name": "【용의 방패】",
     "SEID_H": "MSEID_H_竜盾",
     "description": "공격을 받는 아군의 행운×0.5%로 발동<br>인접한 아군이 공격당했을 때 대미지 절반",
-    "kind": 5
+    "kind": 5,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_白の血族",
+        "get_class_name": "백의 혈족",
+        "get_level": 5
+      }
+    ]
   },
   {
     "ID": 35,
@@ -312,7 +558,19 @@
     "name": "【기도】",
     "SEID_H": "MSEID_H_祈り",
     "description": "행운%로 발동. 자신의 HP가 2 이상일 때<br>HP가 0이 되는 공격을 받아도 1 남는다",
-    "kind": 5
+    "kind": 5,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_修験者",
+        "get_class_name": "수행자",
+        "get_level": 1
+      },
+      {
+        "get_class": "MJID_巫女",
+        "get_class_name": "무녀",
+        "get_level": 1
+      }
+    ]
   },
   {
     "ID": 36,
@@ -321,7 +579,14 @@
     "name": "【카운터】",
     "SEID_H": "MSEID_H_カウンター",
     "description": "인접한 적에게 공격당했을 때<br>받은 대미지만큼 적에게 대미지를 준다",
-    "kind": 6
+    "kind": 6,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_修羅",
+        "get_class_name": "수라",
+        "get_level": 15
+      }
+    ]
   },
   {
     "ID": 37,
@@ -330,7 +595,19 @@
     "name": "【마법 카운터】",
     "SEID_H": "MSEID_H_魔法カウンター",
     "description": "마법으로 공격당했을 때<br>받은 대미지만큼 적에게 대미지를 준다",
-    "kind": 6
+    "kind": 6,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_山伏",
+        "get_class_name": "도사",
+        "get_level": 15
+      },
+      {
+        "get_class": "MJID_戦巫女",
+        "get_class_name": "전투 무녀",
+        "get_level": 15
+      }
+    ]
   },
   {
     "ID": 38,
@@ -339,7 +616,14 @@
     "name": "【매복】",
     "SEID_H": "MSEID_H_待ち伏せ",
     "description": "전투 개시 시, 자신의 HP가 절반 이하일 때<br>적에게 공격당해도 자신이 먼저 공격한다",
-    "kind": 7
+    "kind": 7,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_侍",
+        "get_class_name": "사무라이",
+        "get_level": 10
+      }
+    ]
   },
   {
     "ID": 39,
@@ -348,7 +632,19 @@
     "name": "【야수 특효】",
     "SEID_H": "MSEID_H_獣特効",
     "description": "자신이 늑대 인간, 여우족일 때<br>야수 특효 공격을 가한다",
-    "kind": 8
+    "kind": 8,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ガルー",
+        "get_class_name": "늑대 인간",
+        "get_level": 10
+      },
+      {
+        "get_class": "MJID_妖狐",
+        "get_class_name": "여우족",
+        "get_level": 10
+      }
+    ]
   },
   {
     "ID": 40,
@@ -357,7 +653,14 @@
     "name": "【인형 부수기】",
     "SEID_H": "MSEID_H_人形崩し",
     "description": "인간형 특효 공격을 가한다<br>인형사, 꼭두각시, 골렘에게 유효",
-    "kind": 8
+    "kind": 8,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_絡繰師",
+        "get_class_name": "인형사",
+        "get_level": 5
+      }
+    ]
   },
   {
     "ID": 41,
@@ -366,7 +669,14 @@
     "name": "【암야】",
     "SEID_H": "MSEID_H_暗夜",
     "description": "전투 시, 공진·방진 상대가 지닌<br>전투 스킬을 자신도 공유한다",
-    "kind": 7
+    "kind": 7,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ダークブラッド",
+        "get_class_name": "다크 블러드",
+        "get_level": 15
+      }
+    ]
   },
   {
     "ID": 42,
@@ -375,7 +685,14 @@
     "name": "【백야】",
     "SEID_H": "MSEID_H_白夜",
     "description": "스킬 발동 확률 +10%",
-    "kind": 7
+    "kind": 7,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_白の血族",
+        "get_class_name": "백의 혈족",
+        "get_level": 15
+      }
+    ]
   },
   {
     "ID": 43,
@@ -384,7 +701,14 @@
     "name": "【구출】",
     "SEID_H": "MSEID_H_救出",
     "description": "「구출」 커맨드 선택 가능<br>인접한 아군을 자신의 후위로 옮긴다",
-    "kind": 9
+    "kind": 9,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ソシアルナイト",
+        "get_class_name": "소셜 나이트",
+        "get_level": 10
+      }
+    ]
   },
   {
     "ID": 44,
@@ -393,7 +717,14 @@
     "name": "【박치기】",
     "SEID_H": "MSEID_H_体当たり",
     "description": "「박치기」 커맨드 선택 가능<br>인접한 아군을 1칸 밀어낸다",
-    "kind": 9
+    "kind": 9,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_鬼人",
+        "get_class_name": "귀인",
+        "get_level": 10
+      }
+    ]
   },
   {
     "ID": 45,
@@ -402,7 +733,14 @@
     "name": "【파고들기】",
     "SEID_H": "MSEID_H_切り込み",
     "description": "「파고들기」 커맨드 선택 가능<br>공격 후, 자신과 적의 위치를 바꾼다",
-    "kind": 9
+    "kind": 9,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ドラゴンナイト",
+        "get_class_name": "드래곤 나이트",
+        "get_level": 10
+      }
+    ]
   },
   {
     "ID": 46,
@@ -411,7 +749,14 @@
     "name": "【바꾸기】",
     "SEID_H": "MSEID_H_入れ替え",
     "description": "「바꾸기」 커맨드 선택 가능<br>인접한 아군과 자신의 위치를 바꾼다",
-    "kind": 9
+    "kind": 9,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_槍術士",
+        "get_class_name": "창술사",
+        "get_level": 10
+      }
+    ]
   },
   {
     "ID": 47,
@@ -420,7 +765,14 @@
     "name": "【분신 인형】",
     "SEID_H": "MSEID_H_写し身人形",
     "description": "「분신」 커맨드를 1 맵당 1회 선택 가능<br>자신과 능력, 생명을 공유하는 인형을 만든다",
-    "kind": 9
+    "kind": 9,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_絡繰師",
+        "get_class_name": "인형사",
+        "get_level": 15
+      }
+    ]
   },
   {
     "ID": 48,
@@ -429,7 +781,14 @@
     "name": "【선수 필승】",
     "SEID_H": "MSEID_H_先手必勝",
     "description": "자신이 공격을 걸었을 때<br>입히는 대미지 +4",
-    "kind": 10
+    "kind": 10,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_弓使い",
+        "get_class_name": "궁수",
+        "get_level": 10
+      }
+    ]
   },
   {
     "ID": 49,
@@ -438,7 +797,14 @@
     "name": "【후수 불패】",
     "SEID_H": "MSEID_H_後手不敗",
     "description": "자신이 공격을 당했을 때<br>입히는 대미지 +3",
-    "kind": 10
+    "kind": 10,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_マーシナリー",
+        "get_class_name": "머서너리",
+        "get_level": 10
+      }
+    ]
   },
   {
     "ID": 50,
@@ -447,7 +813,14 @@
     "name": "【평지 돌격】",
     "SEID_H": "MSEID_H_広所突撃",
     "description": "자신이 지형 효과 0인 장소에서<br>전투 시, 입히는 대미지 +3",
-    "kind": 10
+    "kind": 10,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ソシアルナイト",
+        "get_class_name": "소셜 나이트",
+        "get_level": 1
+      }
+    ]
   },
   {
     "ID": 51,
@@ -456,7 +829,14 @@
     "name": "【협소 방어】",
     "SEID_H": "MSEID_H_閉所防御",
     "description": "자신이 지형 효과 0 이외의 장소에서<br>전투 시, 입는 대미지 -3",
-    "kind": 10
+    "kind": 10,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_アーマーナイト",
+        "get_class_name": "아머 나이트",
+        "get_level": 10
+      }
+    ]
   },
   {
     "ID": 52,
@@ -465,7 +845,14 @@
     "name": "【짝의 환영】",
     "SEID_H": "MSEID_H_偶像の幻",
     "description": "짝수 턴,<br>적에게 입히는 대미지 +4",
-    "kind": 10
+    "kind": 10,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_妖狐",
+        "get_class_name": "여우족",
+        "get_level": 1
+      }
+    ]
   },
   {
     "ID": 53,
@@ -474,7 +861,14 @@
     "name": "【홀로 솟은 이빨】",
     "SEID_H": "MSEID_H_奇襲の牙",
     "description": "홀수 턴,<br>적에게 입히는 대미지 +4",
-    "kind": 10
+    "kind": 10,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ガルー",
+        "get_class_name": "늑대 인간",
+        "get_level": 1
+      }
+    ]
   },
   {
     "ID": 54,
@@ -483,7 +877,14 @@
     "name": "【사선】",
     "SEID_H": "MSEID_H_死線",
     "description": "전투 중, 적에게 입히는 대미지 +10,<br>적에게 입는 대미지 +10",
-    "kind": 10
+    "kind": 10,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_兵法者",
+        "get_class_name": "병법가",
+        "get_level": 15
+      }
+    ]
   },
   {
     "ID": 55,
@@ -492,7 +893,14 @@
     "name": "【갑부】",
     "SEID_H": "MSEID_H_お大尽",
     "description": "금화 소지 중 공격을 걸었을 때, 금화를<br>쓰며 입히는 대미지 +10, 입는 대미지 -10",
-    "kind": 10
+    "kind": 10,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_大商人",
+        "get_class_name": "거상",
+        "get_level": 15
+      }
+    ]
   },
   {
     "ID": 56,
@@ -501,7 +909,14 @@
     "name": "【청류의 일격】",
     "SEID_H": "MSEID_H_清流の一撃",
     "description": "자신이 공격을 걸었을 때,<br>그 전투 중, 회피 +30",
-    "kind": 11
+    "kind": 11,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_侍",
+        "get_class_name": "사무라이",
+        "get_level": 1
+      }
+    ]
   },
   {
     "ID": 57,
@@ -510,7 +925,14 @@
     "name": "【비연의 일격】",
     "SEID_H": "MSEID_H_飛燕の一撃",
     "description": "자신이 공격을 걸었을 때,<br>그 전투 중의 추가 공격이 쉬워진다(+5)",
-    "kind": 11
+    "kind": 11,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_天馬武者",
+        "get_class_name": "천마 무사",
+        "get_level": 1
+      }
+    ]
   },
   {
     "ID": 58,
@@ -519,7 +941,14 @@
     "name": "【귀신의 일격】",
     "SEID_H": "MSEID_H_鬼神の一撃",
     "description": "자신이 공격을 걸었을 때,<br>그 전투 중, 필살 +20",
-    "kind": 11
+    "kind": 11,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_修羅",
+        "get_class_name": "수라",
+        "get_level": 5
+      }
+    ]
   },
   {
     "ID": 59,
@@ -528,7 +957,14 @@
     "name": "【흉조의 일격】",
     "SEID_H": "MSEID_H_凶鳥の一撃",
     "description": "자신이 공격을 걸었을 때,<br>그 전투 중, 명중 +40",
-    "kind": 11
+    "kind": 11,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_弓聖",
+        "get_class_name": "궁성",
+        "get_level": 5
+      }
+    ]
   },
   {
     "ID": 60,
@@ -537,7 +973,14 @@
     "name": "【금강의 일격】",
     "SEID_H": "MSEID_H_金剛の一撃",
     "description": "자신이 공격을 걸었을 때,<br>그 전투에서 입는 물리 대미지 -10",
-    "kind": 11
+    "kind": 11,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_グレートナイト",
+        "get_class_name": "그레이트 나이트",
+        "get_level": 15
+      }
+    ]
   },
   {
     "ID": 61,
@@ -546,7 +989,14 @@
     "name": "【명경의 일격】",
     "SEID_H": "MSEID_H_明鏡の一撃",
     "description": "자신이 공격을 걸었을 때,<br>그 전투에서 입는 마법 대미지 -20",
-    "kind": 11
+    "kind": 11,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_聖天馬武者",
+        "get_class_name": "성 천마 무사",
+        "get_level": 15
+      }
+    ]
   },
   {
     "ID": 62,
@@ -555,7 +1005,14 @@
     "name": "【내려다보는 자】",
     "SEID_H": "MSEID_H_見下す者",
     "description": "적이 기마 유닛 이외일 때,<br>입히는 대미지 +5",
-    "kind": 10
+    "kind": 10,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_レヴナントナイト",
+        "get_class_name": "레버넌트 나이트",
+        "get_level": 15
+      }
+    ]
   },
   {
     "ID": 63,
@@ -564,7 +1021,14 @@
     "name": "【수비 대형】",
     "SEID_H": "MSEID_H_守備隊形",
     "description": "전투 중, 자신도 적도<br>추가 공격이 발생하지 않는다",
-    "kind": 7
+    "kind": 7,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ジェネラル",
+        "get_class_name": "제너럴",
+        "get_level": 5
+      }
+    ]
   },
   {
     "ID": 64,
@@ -573,7 +1037,14 @@
     "name": "【검의 달인】",
     "SEID_H": "MSEID_H_剣の達人",
     "description": "검을 장비하고 공격했을 때,<br>입히는 대미지 +5",
-    "kind": 12
+    "kind": 12,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_剣聖",
+        "get_class_name": "검성",
+        "get_level": 15
+      }
+    ]
   },
   {
     "ID": 65,
@@ -582,7 +1053,14 @@
     "name": "【창의 달인】",
     "SEID_H": "MSEID_H_槍の達人",
     "description": "창을 장비하고 공격했을 때,<br>입히는 대미지 +5",
-    "kind": 12
+    "kind": 12,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_槍聖",
+        "get_class_name": "창성",
+        "get_level": 15
+      }
+    ]
   },
   {
     "ID": 66,
@@ -591,7 +1069,14 @@
     "name": "【도끼의 달인】",
     "SEID_H": "MSEID_H_斧の達人",
     "description": "도끼를 장비하고 공격했을 때,<br>입히는 대미지 +5",
-    "kind": 12
+    "kind": 12,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_バーサーカー",
+        "get_class_name": "버서커",
+        "get_level": 15
+      }
+    ]
   },
   {
     "ID": 67,
@@ -600,7 +1085,14 @@
     "name": "【암기의 달인】",
     "SEID_H": "MSEID_H_暗器の達人",
     "description": "암기를 장비하고 공격했을 때,<br>입히는 대미지 +5",
-    "kind": 12
+    "kind": 12,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_上忍",
+        "get_class_name": "상급 닌자",
+        "get_level": 15
+      }
+    ]
   },
   {
     "ID": 68,
@@ -609,7 +1101,14 @@
     "name": "【활의 달인】",
     "SEID_H": "MSEID_H_弓の達人",
     "description": "활을 장비하고 공격했을 때,<br>입히는 대미지 +5",
-    "kind": 12
+    "kind": 12,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_弓聖",
+        "get_class_name": "궁성",
+        "get_level": 15
+      }
+    ]
   },
   {
     "ID": 69,
@@ -618,7 +1117,14 @@
     "name": "【마법의 달인】",
     "SEID_H": "MSEID_H_魔の達人",
     "description": "마도서를 장비하고 공격했을 때,<br>입히는 대미지 +5",
-    "kind": 12
+    "kind": 12,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_陰陽師",
+        "get_class_name": "음양사",
+        "get_level": 15
+      }
+    ]
   },
   {
     "ID": 70,
@@ -627,7 +1133,14 @@
     "name": "【수비수】",
     "SEID_H": "MSEID_H_守り手",
     "description": "방진 상태에서 전위일 때,<br>자신의 모든 능력 +1",
-    "kind": 13
+    "kind": 13,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_パラディン",
+        "get_class_name": "팔라딘",
+        "get_level": 5
+      }
+    ]
   },
   {
     "ID": 71,
@@ -636,7 +1149,14 @@
     "name": "【명가의 아들】",
     "SEID_H": "MSEID_H_名家の令息",
     "description": "주위 2칸 이내의 여성 아군이<br>전투 시, 입는 대미지 -2",
-    "kind": 14
+    "kind": 14,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ロッドナイト1",
+        "get_class_name": "로드 나이트(남)",
+        "get_level": 10
+      }
+    ]
   },
   {
     "ID": 72,
@@ -645,7 +1165,14 @@
     "name": "【귀족의 딸】",
     "SEID_H": "MSEID_H_深窓の令嬢",
     "description": "주위 2칸 이내의 남성 아군이<br>전투 시, 입는 대미지 -2",
-    "kind": 14
+    "kind": 14,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ロッドナイト2",
+        "get_class_name": "로드 나이트(여)",
+        "get_level": 10
+      }
+    ]
   },
   {
     "ID": 73,
@@ -654,7 +1181,14 @@
     "name": "【전투 지휘】",
     "SEID_H": "MSEID_H_戦闘指揮",
     "description": "주위 2칸 이내의 아군이 전투 시,<br>입히는 대미지 +2, 입는 대미지 -2",
-    "kind": 14
+    "kind": 14,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ストラテジスト",
+        "get_class_name": "스트래터지스트",
+        "get_level": 15
+      }
+    ]
   },
   {
     "ID": 74,
@@ -663,7 +1197,14 @@
     "name": "【마의 바람】",
     "SEID_H": "MSEID_H_魔の風",
     "description": "주위 2칸 이내의 적이 전투 시,<br>적이 입는 마법 대미지 +2",
-    "kind": 14
+    "kind": 14,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ダークマージ",
+        "get_class_name": "다크 메이지",
+        "get_level": 10
+      }
+    ]
   },
   {
     "ID": 75,
@@ -672,7 +1213,14 @@
     "name": "【평화의 소리】",
     "SEID_H": "MSEID_H_平和の声",
     "description": "주위 2칸 이내의 적이 전투 시,<br>적이 입히는 물리 대미지 -2",
-    "kind": 14
+    "kind": 14,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_歌姫",
+        "get_class_name": "가희",
+        "get_level": 25
+      }
+    ]
   },
   {
     "ID": 76,
@@ -681,7 +1229,14 @@
     "name": "【이방의 왕녀】",
     "SEID_H": "MSEID_H_異邦の王女",
     "description": "주위 2칸 이내 「이방의 군」이 전투 시,<br>적이 입히는 대미지 -2, 입는 대미지 +2",
-    "kind": 14
+    "kind": 14,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_歌姫",
+        "get_class_name": "가희",
+        "get_level": 35
+      }
+    ]
   },
   {
     "ID": 77,
@@ -690,7 +1245,14 @@
     "name": "【검 킬러】",
     "SEID_H": "MSEID_H_剣殺し",
     "description": "적이 검을 장비하고 있을 경우,<br>자신의 명중·회피 +50",
-    "kind": 15
+    "kind": 15,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ドラゴンマスター",
+        "get_class_name": "드래곤 마스터",
+        "get_level": 15
+      }
+    ]
   },
   {
     "ID": 78,
@@ -699,7 +1261,14 @@
     "name": "【창 킬러】",
     "SEID_H": "MSEID_H_槍殺し",
     "description": "적이 창을 장비하고 있을 경우,<br>자신의 명중·회피 +50",
-    "kind": 15
+    "kind": 15,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_鍛冶",
+        "get_class_name": "대장장이",
+        "get_level": 15
+      }
+    ]
   },
   {
     "ID": 79,
@@ -708,7 +1277,14 @@
     "name": "【도끼 킬러】",
     "SEID_H": "MSEID_H_斧殺し",
     "description": "적이 도끼를 장비하고 있을 경우,<br>자신의 명중·회피 +50",
-    "kind": 15
+    "kind": 15,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ブレイブヒーロー",
+        "get_class_name": "브레이브 히어로",
+        "get_level": 15
+      }
+    ]
   },
   {
     "ID": 80,
@@ -717,7 +1293,14 @@
     "name": "【암기 킬러】",
     "SEID_H": "MSEID_H_暗器殺し",
     "description": "적이 암기를 장비하고 있을 경우,<br>자신의 명중·회피 +50",
-    "kind": 15
+    "kind": 15,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ボウナイト",
+        "get_class_name": "보우 나이트",
+        "get_level": 15
+      }
+    ]
   },
   {
     "ID": 81,
@@ -726,7 +1309,14 @@
     "name": "【활 킬러】",
     "SEID_H": "MSEID_H_弓殺し",
     "description": "적이 활을 장비하고 있을 경우,<br>자신의 명중·회피 +50",
-    "kind": 15
+    "kind": 15,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ソーサラー",
+        "get_class_name": "소서러",
+        "get_level": 15
+      }
+    ]
   },
   {
     "ID": 82,
@@ -735,7 +1325,19 @@
     "name": "【마법 킬러】",
     "SEID_H": "MSEID_H_魔殺し",
     "description": "적이 마도서를 장비하고 있을 경우,<br>자신의 명중·회피 +50",
-    "kind": 15
+    "kind": 15,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_バトラー",
+        "get_class_name": "버틀러",
+        "get_level": 15
+      },
+      {
+        "get_class": "MJID_メイド",
+        "get_class_name": "메이드",
+        "get_level": 15
+      }
+    ]
   },
   {
     "ID": 83,
@@ -744,7 +1346,14 @@
     "name": "【마구 휘두르기】",
     "SEID_H": "MSEID_H_大振り",
     "description": "자신의 명중 -10, 필살 +10",
-    "kind": 16
+    "kind": 16,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_アクスファイター",
+        "get_class_name": "액스 파이터",
+        "get_level": 10
+      }
+    ]
   },
   {
     "ID": 84,
@@ -753,7 +1362,14 @@
     "name": "【하극상】",
     "SEID_H": "MSEID_H_下剋上",
     "description": "자신보다 적의 레벨이 높을 때,<br>명중, 회피 +15(상급직은 레벨 +20)",
-    "kind": 16
+    "kind": 16,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_村人",
+        "get_class_name": "마을 사람",
+        "get_level": 10
+      }
+    ]
   },
   {
     "ID": 85,
@@ -762,7 +1378,14 @@
     "name": "【럭키 7】",
     "SEID_H": "MSEID_H_ラッキー7",
     "description": "7턴째 종료까지<br>자신의 명중·회피 +20",
-    "kind": 16
+    "kind": 16,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_アドベンチャラー",
+        "get_class_name": "어드벤처러",
+        "get_level": 5
+      }
+    ]
   },
   {
     "ID": 86,
@@ -771,7 +1394,14 @@
     "name": "【천공 날기】",
     "SEID_H": "MSEID_H_天翔ける",
     "description": "적이 비행 유닛일 때,<br>명중·회피 +30",
-    "kind": 16
+    "kind": 16,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_金鵄武者",
+        "get_class_name": "킨시 무사",
+        "get_level": 5
+      }
+    ]
   },
   {
     "ID": 87,
@@ -780,7 +1410,14 @@
     "name": "【주박】",
     "SEID_H": "MSEID_H_呪縛",
     "description": "인접한 적이 전투 시,<br>적의 회피 -20",
-    "kind": 16
+    "kind": 16,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ダークマージ",
+        "get_class_name": "다크 메이지",
+        "get_level": 1
+      }
+    ]
   },
   {
     "ID": 88,
@@ -789,7 +1426,14 @@
     "name": "【괴짜】",
     "SEID_H": "MSEID_H_傾奇者",
     "description": "전투 시, 자신과 적의 명중 +30,<br>확률 발동 스킬의 발생률 +15",
-    "kind": 16
+    "kind": 16,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_婆娑羅",
+        "get_class_name": "바사라",
+        "get_level": 15
+      }
+    ]
   },
   {
     "ID": 89,
@@ -798,7 +1442,14 @@
     "name": "【완고한 마음】",
     "SEID_H": "MSEID_H_しぶとい心",
     "description": "행운%로 발동. 턴 개시 시,<br>최대 HP의 20% HP 회복",
-    "kind": 17
+    "kind": 17,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_マーシナリー",
+        "get_class_name": "머서너리",
+        "get_level": 1
+      }
+    ]
   },
   {
     "ID": 90,
@@ -807,7 +1458,14 @@
     "name": "【리프레시】",
     "SEID_H": "MSEID_H_リフレッシュ",
     "description": "턴 개시 시, 주위 2칸 이내에 아무도<br>없을 때, 최대 HP의 20% HP 회복",
-    "kind": 17
+    "kind": 17,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ダークペガサス",
+        "get_class_name": "다크 팔콘",
+        "get_level": 10
+      }
+    ]
   },
   {
     "ID": 91,
@@ -816,7 +1474,14 @@
     "name": "【화합의 마음】",
     "SEID_H": "MSEID_H_和の心",
     "description": "턴 개시 시, 주위 2칸 이내에 아군이<br>있을 때, 최대 HP의 10% HP 회복",
-    "kind": 17
+    "kind": 17,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_天馬武者",
+        "get_class_name": "천마 무사",
+        "get_level": 10
+      }
+    ]
   },
   {
     "ID": 92,
@@ -825,7 +1490,19 @@
     "name": "【회복】",
     "SEID_H": "MSEID_H_回復",
     "description": "턴 개시 시,<br>최대 HP의 30% HP 회복",
-    "kind": 17
+    "kind": 17,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_山伏",
+        "get_class_name": "도사",
+        "get_level": 5
+      },
+      {
+        "get_class": "MJID_戦巫女",
+        "get_class_name": "전투 무녀",
+        "get_level": 5
+      }
+    ]
   },
   {
     "ID": 93,
@@ -834,7 +1511,14 @@
     "name": "【짝의 휴식】",
     "SEID_H": "MSEID_H_偶然のまどろみ",
     "description": "짝수 턴 개시 시,<br>최대 HP의 40% HP 회복",
-    "kind": 17
+    "kind": 17,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_九尾の狐",
+        "get_class_name": "구미호",
+        "get_level": 5
+      }
+    ]
   },
   {
     "ID": 94,
@@ -843,7 +1527,14 @@
     "name": "【홀의 울음소리】",
     "SEID_H": "MSEID_H_奇妙な鳴き声",
     "description": "홀수 턴 개시 시,<br>최대 HP의 40% HP 회복",
-    "kind": 17
+    "kind": 17,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_マーナガルム",
+        "get_class_name": "늑대 괴인",
+        "get_level": 5
+      }
+    ]
   },
   {
     "ID": 95,
@@ -852,7 +1543,14 @@
     "name": "【천공의 빛】",
     "SEID_H": "MSEID_H_天照らす",
     "description": "턴 개시 시, 주위 2칸 이내의 아군은<br>최대 HP의 20% HP 회복",
-    "kind": 17
+    "kind": 17,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_金鵄武者",
+        "get_class_name": "킨시 무사",
+        "get_level": 15
+      }
+    ]
   },
   {
     "ID": 96,
@@ -861,7 +1559,14 @@
     "name": "【생명 흡수】",
     "SEID_H": "MSEID_H_生命吸収",
     "description": "자신이 공격을 걸어 적을 쓰러뜨렸을 때,<br>최대 HP의 50% HP 회복",
-    "kind": 17
+    "kind": 17,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ダークナイト",
+        "get_class_name": "다크 나이트",
+        "get_level": 15
+      }
+    ]
   },
   {
     "ID": 97,
@@ -870,7 +1575,14 @@
     "name": "【잘 듣는 약】",
     "SEID_H": "MSEID_H_よく効く薬",
     "description": "HP 회복약, 능력 상승약의<br>효과 1.5배",
-    "kind": 17
+    "kind": 17,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_薬商人",
+        "get_class_name": "약사",
+        "get_level": 1
+      }
+    ]
   },
   {
     "ID": 98,
@@ -879,7 +1591,19 @@
     "name": "【봉사의 기쁨】",
     "SEID_H": "MSEID_H_ご奉仕の喜び",
     "description": "자신이 지팡이로 아군을 회복시킬 때,<br>자신도 같은 양만큼 회복한다",
-    "kind": 17
+    "kind": 17,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_バトラー",
+        "get_class_name": "버틀러",
+        "get_level": 5
+      },
+      {
+        "get_class": "MJID_メイド",
+        "get_class_name": "메이드",
+        "get_level": 5
+      }
+    ]
   },
   {
     "ID": 99,
@@ -888,7 +1612,14 @@
     "name": "【뱀독】",
     "SEID_H": "MSEID_H_蛇毒",
     "description": "자신이 공격을 걸었을 때, 전투 후,<br>적의 HP를 최대 HP의 20% 감소시킨다",
-    "kind": 18
+    "kind": 18,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_忍",
+        "get_class_name": "닌자",
+        "get_level": 10
+      }
+    ]
   },
   {
     "ID": 100,
@@ -897,7 +1628,14 @@
     "name": "【죽음의 한숨】",
     "SEID_H": "MSEID_H_死の吐息",
     "description": "자신이 공격을 걸었을 때, 전투 후, 주위<br>2칸의 적 HP를 최대 HP의 20% 감소시킨다",
-    "kind": 18
+    "kind": 18,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_レヴナントナイト",
+        "get_class_name": "레버넌트 나이트",
+        "get_level": 5
+      }
+    ]
   },
   {
     "ID": 101,
@@ -906,7 +1644,19 @@
     "name": "【추격하는 이빨】",
     "SEID_H": "MSEID_H_四牙",
     "description": "전투 후, 적 HP를<br>최대 HP의 20% 감소시킨다",
-    "kind": 18
+    "kind": 18,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_マーナガルム",
+        "get_class_name": "늑대 괴인",
+        "get_level": 15
+      },
+      {
+        "get_class": "MJID_九尾の狐",
+        "get_class_name": "구미호",
+        "get_level": 15
+      }
+    ]
   },
   {
     "ID": 102,
@@ -915,7 +1665,14 @@
     "name": "【장인의 기술】",
     "SEID_H": "MSEID_H_匠の技",
     "description": "행운%로 발동. 공격을 걸어 적을<br>쓰러뜨렸을 때, 철의 무기 중 하나를 획득",
-    "kind": 19
+    "kind": 19,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_鍛冶",
+        "get_class_name": "대장장이",
+        "get_level": 5
+      }
+    ]
   },
   {
     "ID": 103,
@@ -924,7 +1681,14 @@
     "name": "【불로 소득】",
     "SEID_H": "MSEID_H_左うちわ",
     "description": "행운%로 발동. 7턴째 종료까지<br>행동 종료 시에 금화를 획득",
-    "kind": 19
+    "kind": 19,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_大商人",
+        "get_class_name": "거상",
+        "get_level": 5
+      }
+    ]
   },
   {
     "ID": 104,
@@ -933,7 +1697,19 @@
     "name": "【고귀한 혈통】",
     "SEID_H": "MSEID_H_高貴なる血統",
     "description": "획득 경험치 1.2배",
-    "kind": 20
+    "kind": 20,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ダークプリンス",
+        "get_class_name": "다크 프린스",
+        "get_level": 1
+      },
+      {
+        "get_class": "MJID_ダークプリンセス",
+        "get_class_name": "다크 프린세스",
+        "get_level": 1
+      }
+    ]
   },
   {
     "ID": 105,
@@ -942,7 +1718,14 @@
     "name": "【복권】",
     "SEID_H": "MSEID_H_おみくじ",
     "description": "행운%로 발동. 자신이 공격을 걸어 적을<br>쓰러뜨렸을 때, 획득 경험치 2배",
-    "kind": 20
+    "kind": 20,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_呪い師",
+        "get_class_name": "주술사",
+        "get_level": 10
+      }
+    ]
   },
   {
     "ID": 106,
@@ -951,7 +1734,14 @@
     "name": "【좋은 성장】",
     "SEID_H": "MSEID_H_良成長",
     "description": "레벨 업 시, 모든 능력의<br>성장 판정에 +10",
-    "kind": 20
+    "kind": 20,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_村人",
+        "get_class_name": "마을 사람",
+        "get_level": 1
+      }
+    ]
   },
   {
     "ID": 107,
@@ -960,7 +1750,14 @@
     "name": "【상비약】",
     "SEID_H": "MSEID_H_常備薬",
     "description": "HP 회복약, 능력 상승약을 사용했을 때,<br>행동이 완료되지 않고 추가 행동 가능",
-    "kind": 21
+    "kind": 21,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_薬商人",
+        "get_class_name": "약사",
+        "get_level": 10
+      }
+    ]
   },
   {
     "ID": 108,
@@ -969,7 +1766,14 @@
     "name": "【질풍신뢰】",
     "SEID_H": "MSEID_H_疾風迅雷",
     "description": "자신이 공격을 걸어 적을 쓰러뜨린 후,<br>한 번 더 행동 가능(공진·방진 시 제외)",
-    "kind": 21
+    "kind": 21,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ダークペガサス",
+        "get_class_name": "다크 팔콘",
+        "get_level": 35
+      }
+    ]
   },
   {
     "ID": 109,
@@ -978,7 +1782,14 @@
     "name": "【통과하기】",
     "SEID_H": "MSEID_H_すり抜け",
     "description": "적을 통과하여 이동할 수 있다",
-    "kind": 7
+    "kind": 7,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_アドベンチャラー",
+        "get_class_name": "어드벤처러",
+        "get_level": 15
+      }
+    ]
   },
   {
     "ID": 110,
@@ -987,7 +1798,19 @@
     "name": "【자물쇠 열기】",
     "SEID_H": "MSEID_H_鍵開け",
     "description": "열쇠가 없어도<br>문이나 보물 상자를 열 수 있다",
-    "kind": 7
+    "kind": 7,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_シーフ",
+        "get_class_name": "시프",
+        "get_level": 1
+      },
+      {
+        "get_class": "MJID_忍",
+        "get_class_name": "닌자",
+        "get_level": 1
+      }
+    ]
   },
   {
     "ID": 111,
@@ -1122,7 +1945,14 @@
     "name": "【짝의 위장술】",
     "SEID_H": "MSEID_H_偶人の空蝉",
     "description": "짝수 턴,<br>입는 마법 대미지 -4",
-    "kind": 10
+    "kind": 10,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_魔戦士",
+        "get_class_name": "마전사",
+        "get_level": 1
+      }
+    ]
   },
   {
     "ID": 126,
@@ -1131,7 +1961,14 @@
     "name": "【정신 통일】",
     "SEID_H": "MSEID_H_精神統一",
     "description": "적에게 공격당했을 때,<br>입는 마법 대미지 -4",
-    "kind": 10
+    "kind": 10,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_魔戦士",
+        "get_class_name": "마전사",
+        "get_level": 10
+      }
+    ]
   },
   {
     "ID": 127,
@@ -1140,7 +1977,14 @@
     "name": "【무념무상】",
     "SEID_H": "MSEID_H_心頭滅却",
     "description": "자신이 당한 능력 감소의<br>회복 속도가 2배가 된다",
-    "kind": 7
+    "kind": 7,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_魔戦士",
+        "get_class_name": "마전사",
+        "get_level": 25
+      }
+    ]
   },
   {
     "ID": 128,
@@ -1149,7 +1993,14 @@
     "name": "【발도 일섬】",
     "SEID_H": "MSEID_H_居合一閃",
     "description": "자신이 공격을 걸었을 때,<br>입히는 대미지 +7",
-    "kind": 10
+    "kind": 10,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_魔戦士",
+        "get_class_name": "마전사",
+        "get_level": 35
+      }
+    ]
   },
   {
     "ID": 129,
@@ -1158,7 +2009,14 @@
     "name": "【측량술】",
     "SEID_H": "MSEID_H_測量術",
     "description": "「포대」 커맨드 사용 시,<br>포대의 명중 +10",
-    "kind": 16
+    "kind": 16,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_シューター",
+        "get_class_name": "슈터",
+        "get_level": 1
+      }
+    ]
   },
   {
     "ID": 130,
@@ -1167,7 +2025,14 @@
     "name": "【자동 포대】",
     "SEID_H": "MSEID_H_自動砲台",
     "description": "기술%로 발동. 자신이 슈터일 때,<br>턴 개시 시, 자동으로 범위 내 적 하나를 공격",
-    "kind": 5
+    "kind": 5,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_シューター",
+        "get_class_name": "슈터",
+        "get_level": 10
+      }
+    ]
   },
   {
     "ID": 131,
@@ -1176,7 +2041,14 @@
     "name": "【포신 개조】",
     "SEID_H": "MSEID_H_砲身改造",
     "description": "「포대」 커맨드 사용 시,<br>포대의 범위 +1, 내사정·외사정 -1",
-    "kind": 7
+    "kind": 7,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_シューター",
+        "get_class_name": "슈터",
+        "get_level": 25
+      }
+    ]
   },
   {
     "ID": 132,
@@ -1185,7 +2057,14 @@
     "name": "【험로 답파】",
     "SEID_H": "MSEID_H_水陸両用",
     "description": "자신이 슈터일 때, 이동 +1 및<br>진입 가능한 지형의 이동 코스트를 1로 취급",
-    "kind": 7
+    "kind": 7,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_シューター",
+        "get_class_name": "슈터",
+        "get_level": 35
+      }
+    ]
   },
   {
     "ID": 133,
@@ -1194,7 +2073,14 @@
     "name": "【어둠의 가호】",
     "SEID_H": "MSEID_H_暗闇の加護",
     "description": "다크 메이지 계열 전용 마법을 장비 가능",
-    "kind": 7
+    "kind": 7,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_魔女",
+        "get_class_name": "마녀",
+        "get_level": 1
+      }
+    ]
   },
   {
     "ID": 134,
@@ -1203,7 +2089,14 @@
     "name": "【마녀의 가마】",
     "SEID_H": "MSEID_H_魔女の大釜",
     "description": "행운%로 발동. 7턴째까지<br>행동 종료 시에 약을 획득",
-    "kind": 19
+    "kind": 19,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_魔女",
+        "get_class_name": "마녀",
+        "get_level": 10
+      }
+    ]
   },
   {
     "ID": 135,
@@ -1212,7 +2105,14 @@
     "name": "【워프】",
     "SEID_H": "MSEID_H_ワープ",
     "description": "「워프」 커맨드 사용 시, 자신을 아군의<br>인접 칸으로 이동시키고, 이어서 행동 가능",
-    "kind": 9
+    "kind": 9,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_魔女",
+        "get_class_name": "마녀",
+        "get_level": 25
+      }
+    ]
   },
   {
     "ID": 136,
@@ -1221,7 +2121,14 @@
     "name": "【마녀의 독약】",
     "SEID_H": "MSEID_H_魔女の毒薬",
     "description": "기술×1.5%로 발동. 공격을 걸었을 때,<br>전투 후, 적의 이동력 0, 회피 -20(1턴)",
-    "kind": 5
+    "kind": 5,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_魔女",
+        "get_class_name": "마녀",
+        "get_level": 35
+      }
+    ]
   },
   {
     "ID": 137,
@@ -1257,7 +2164,14 @@
     "name": "【힘 흡수】",
     "SEID_H": "MSEID_H_力の吸収",
     "description": "자신이 적을 쓰러뜨리면 힘 +2(최대 +10)<br>(장 종료까지. 다른 흡수 스킬과 중복 불가)",
-    "kind": 3
+    "kind": 3,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ヴァンガード",
+        "get_class_name": "뱅가드",
+        "get_level": 35
+      }
+    ]
   },
   {
     "ID": 141,
@@ -1284,7 +2198,14 @@
     "name": "【속도 흡수】",
     "SEID_H": "MSEID_H_速さの吸収",
     "description": "자신이 적을 쓰러뜨리면 속도 +2(최대 +10)<br>(장 종료까지. 다른 흡수 스킬과 중복 불가)",
-    "kind": 3
+    "kind": 3,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_スターロード",
+        "get_class_name": "스타 로드",
+        "get_level": 35
+      }
+    ]
   },
   {
     "ID": 144,
@@ -1320,7 +2241,14 @@
     "name": "【유검】",
     "SEID_H": "MSEID_H_柔剣",
     "description": "속도 +3, 수비 -1",
-    "kind": 1
+    "kind": 1,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_スターロード",
+        "get_class_name": "스타 로드",
+        "get_level": 1
+      }
+    ]
   },
   {
     "ID": 148,
@@ -1329,7 +2257,19 @@
     "name": "【카리스마】",
     "SEID_H": "MSEID_H_カリスマ",
     "description": "주위 2칸 이내의 아군이 전투 시,<br>적에게 입히는 대미지 +2",
-    "kind": 14
+    "kind": 14,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_スターロード",
+        "get_class_name": "스타 로드",
+        "get_level": 10
+      },
+      {
+        "get_class": "MJID_マスターロード",
+        "get_class_name": "마스터 로드",
+        "get_level": 10
+      }
+    ]
   },
   {
     "ID": 149,
@@ -1338,7 +2278,14 @@
     "name": "【방진+】",
     "SEID_H": "MSEID_H_防陣＋",
     "description": "방진에서 후위일 때, 자신이 얻는<br>듀얼 가드 포인트 +1",
-    "kind": 23
+    "kind": 23,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_スターロード",
+        "get_class_name": "스타 로드",
+        "get_level": 25
+      }
+    ]
   },
   {
     "ID": 150,
@@ -1347,7 +2294,14 @@
     "name": "【강검】",
     "SEID_H": "MSEID_H_剛剣",
     "description": "힘 +3, 속도 -1",
-    "kind": 1
+    "kind": 1,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ヴァンガード",
+        "get_class_name": "뱅가드",
+        "get_level": 1
+      }
+    ]
   },
   {
     "ID": 151,
@@ -1356,7 +2310,14 @@
     "name": "【베테랑의 감】",
     "SEID_H": "MSEID_H_歴戦の勘",
     "description": "전투 시, 필살회피 +15",
-    "kind": 16
+    "kind": 16,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ヴァンガード",
+        "get_class_name": "뱅가드",
+        "get_level": 10
+      }
+    ]
   },
   {
     "ID": 152,
@@ -1365,7 +2326,19 @@
     "name": "【천공】",
     "SEID_H": "MSEID_H_天空",
     "description": "공격 시, 기술×0.5%로 발동<br>태양과 월광의 2회 연속 공격",
-    "kind": 4
+    "kind": 4,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_ヴァンガード",
+        "get_class_name": "뱅가드",
+        "get_level": 25
+      },
+      {
+        "get_class": "MJID_マスターロード",
+        "get_class_name": "마스터 로드",
+        "get_level": 25
+      }
+    ]
   },
   {
     "ID": 153,
@@ -1374,7 +2347,14 @@
     "name": "【공진+】",
     "SEID_H": "MSEID_H_攻陣＋",
     "description": "공진에서 후위일 때,<br>적에게 입히는 대미지 +3",
-    "kind": 23
+    "kind": 23,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_マスターロード",
+        "get_class_name": "마스터 로드",
+        "get_level": 1
+      }
+    ]
   },
   {
     "ID": 154,
@@ -1383,7 +2363,14 @@
     "name": "【각성】",
     "SEID_H": "MSEID_H_覚醒",
     "description": "HP가 절반 이하일 때,<br>명중·회피·필살·필살회피 +30",
-    "kind": 16
+    "kind": 16,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_マスターロード",
+        "get_class_name": "마스터 로드",
+        "get_level": 35
+      }
+    ]
   },
   {
     "ID": 155,
@@ -1392,7 +2379,14 @@
     "name": "【전술 지침】",
     "SEID_H": "MSEID_H_戦術指南",
     "description": "방진에서 후위일 때,<br>전위의 명중 +10",
-    "kind": 23
+    "kind": 23,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_神軍師",
+        "get_class_name": "참모",
+        "get_level": 1
+      }
+    ]
   },
   {
     "ID": 156,
@@ -1401,7 +2395,14 @@
     "name": "【진법】",
     "SEID_H": "MSEID_H_方陣",
     "description": "인접한 아군이 전투 시,<br>필살 +10, 필살회피 +10",
-    "kind": 14
+    "kind": 14,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_神軍師",
+        "get_class_name": "참모",
+        "get_level": 10
+      }
+    ]
   },
   {
     "ID": 157,
@@ -1410,7 +2411,14 @@
     "name": "【화려한 불꽃】",
     "SEID_H": "MSEID_H_華炎",
     "description": "기술%로 발동. 물리 공격이라면 마력÷2<br>마법이라면 힘÷2를 공격 시 대미지에 추가",
-    "kind": 4
+    "kind": 4,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_神軍師",
+        "get_class_name": "참모",
+        "get_level": 25
+      }
+    ]
   },
   {
     "ID": 158,
@@ -1419,7 +2427,14 @@
     "name": "【무지개색 외침】",
     "SEID_H": "MSEID_H_七色の叫び",
     "description": "「응원」 커맨드 선택 시, 주위 4칸<br>이내의 아군이 모든 능력 +2(1턴)",
-    "kind": 24
+    "kind": 24,
+    "skillObtainClassArray": [
+      {
+        "get_class": "MJID_神軍師",
+        "get_class_name": "참모",
+        "get_level": 35
+      }
+    ]
   },
   {
     "ID": 159,
@@ -1428,7 +2443,17 @@
     "name": "【신비한 매력】",
     "SEID_H": "MSEID_H_不思議な魅力",
     "description": "후위 시, 전위와 지원C 이상이라면 전위가<br>명중 +10, 입히는 대미지 +2, 입는 대미지 -2",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "카무이(남)",
+        "unit_pid": "MPID_デフォルト名1"
+      },
+      {
+        "unit_name": "카무이(여)",
+        "unit_pid": "MPID_デフォルト名2"
+      }
+    ]
   },
   {
     "ID": 160,
@@ -1437,7 +2462,13 @@
     "name": "【절대 진격】",
     "SEID_H": "MSEID_H_絶対進攻",
     "description": "후위 시, 전위가 주인공이라면<br>주인공의 명중 +15, 입히는 대미지 +3",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "군터",
+        "unit_pid": "MPID_ギュンター"
+      }
+    ]
   },
   {
     "ID": 161,
@@ -1446,7 +2477,13 @@
     "name": "【절대 원호】",
     "SEID_H": "MSEID_H_絶対援護",
     "description": "후위 시, 전위가 주인공이라면<br>주인공이 입히는 대미지 +2, 입는 대미지 -2",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "펠리시아",
+        "unit_pid": "MPID_フェリシア"
+      }
+    ]
   },
   {
     "ID": 162,
@@ -1455,7 +2492,13 @@
     "name": "【절대 사수】",
     "SEID_H": "MSEID_H_絶対死守",
     "description": "후위 시, 전위가 주인공이라면<br>주인공의 회피 +15, 입는 대미지 -3",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "제이콥",
+        "unit_pid": "MPID_ジョーカー"
+      }
+    ]
   },
   {
     "ID": 163,
@@ -1464,7 +2507,13 @@
     "name": "【불꽃의 피】",
     "SEID_H": "MSEID_H_炎の血",
     "description": "자신의 HP가 가득 차지 않았을 때,<br>입히는 대미지 +4",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "린카",
+        "unit_pid": "MPID_リンカ"
+      }
+    ]
   },
   {
     "ID": 164,
@@ -1473,7 +2522,13 @@
     "name": "【인연의 기도】",
     "SEID_H": "MSEID_H_絆の祈り",
     "description": "후위 시, 전위의 행운%로 발동. 전위의<br>HP가 0이 되는 공격을 받아도 1 남는다",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "카제",
+        "unit_pid": "MPID_スズカゼ"
+      }
+    ]
   },
   {
     "ID": 165,
@@ -1482,7 +2537,13 @@
     "name": "【치유의 소리】",
     "SEID_H": "MSEID_H_癒しの声",
     "description": "턴 개시 시, 자신의 2칸 주위 아군은<br>최대 HP의 10% HP 회복",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "사쿠라",
+        "unit_pid": "MPID_サクラ"
+      }
+    ]
   },
   {
     "ID": 166,
@@ -1491,7 +2552,13 @@
     "name": "【작은 성원】",
     "SEID_H": "MSEID_H_小さな声援",
     "description": "아군이 2칸 이내에 있을 때,<br>아군이 입는 대미지 -2",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "아주라",
+        "unit_pid": "MPID_アクア"
+      }
+    ]
   },
   {
     "ID": 167,
@@ -1500,7 +2567,13 @@
     "name": "【말괄량이】",
     "SEID_H": "MSEID_H_お転婆",
     "description": "공격을 걸어 적을 격파했을 때, 인접한<br>적 전원은 최대 HP의 20% HP가 감소",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "하나",
+        "unit_pid": "MPID_カザハナ"
+      }
+    ]
   },
   {
     "ID": 168,
@@ -1509,7 +2582,13 @@
     "name": "【완벽주의】",
     "SEID_H": "MSEID_H_完璧主義",
     "description": "HP가 가득 찼을 때<br>명중, 회피 +15",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "츠바키",
+        "unit_pid": "MPID_ツバキ"
+      }
+    ]
   },
   {
     "ID": 169,
@@ -1518,7 +2597,13 @@
     "name": "【우정의 약속】",
     "SEID_H": "MSEID_H_友情の誓い",
     "description": "주인공이 아군이고, HP 절반 이하일 때,<br>자신이 입히는 대미지 +3, 입는 대미지 -3",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "사일러스",
+        "unit_pid": "MPID_サイラス"
+      }
+    ]
   },
   {
     "ID": 170,
@@ -1527,7 +2612,13 @@
     "name": "【폭염술사】",
     "SEID_H": "MSEID_H_爆炎使い",
     "description": "자신이 공격을 걸거나 HP 절반 이하일 때,<br>2칸 이내 적 HP를 최대 HP의 20%만큼 감소",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "사이조",
+        "unit_pid": "MPID_サイゾウ"
+      }
+    ]
   },
   {
     "ID": 171,
@@ -1536,7 +2627,13 @@
     "name": "【백야의 포박술】",
     "SEID_H": "MSEID_H_白夜の捕縛術",
     "description": "마이 캐슬에 감옥이 있으면 「포획」 커맨드<br>선택 가능. 격파 시, 적을 감옥에 넣는다",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "오로치",
+        "unit_pid": "MPID_オロチ"
+      }
+    ]
   },
   {
     "ID": 172,
@@ -1545,7 +2642,13 @@
     "name": "【질타와 격려】",
     "SEID_H": "MSEID_H_叱咤激励",
     "description": "아군이 2칸 이내에 있을 때,<br>아군이 입히는 대미지 +2",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "히노카",
+        "unit_pid": "MPID_ヒノカ"
+      }
+    ]
   },
   {
     "ID": 173,
@@ -1554,7 +2657,13 @@
     "name": "【천벌】",
     "SEID_H": "MSEID_H_天罰",
     "description": "무기를 장비하지 않고 인접한 적에게 공격을<br>당했을 때, 대미지 절반을 적에게도 입힌다",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "아자마",
+        "unit_pid": "MPID_アサマ"
+      }
+    ]
   },
   {
     "ID": 174,
@@ -1563,7 +2672,13 @@
     "name": "【멍 때리기】",
     "SEID_H": "MSEID_H_ぼんやり",
     "description": "자신이 지팡이로 회복을 받았을 때,<br>회복량 1.5배",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "세츠나",
+        "unit_pid": "MPID_セツナ"
+      }
+    ]
   },
   {
     "ID": 175,
@@ -1572,7 +2687,13 @@
     "name": "【자존심】",
     "SEID_H": "MSEID_H_尊大",
     "description": "전투 시, 자신의 레벨이 적 레벨 이하라면<br>(상급직은 +20) 입히는 대미지 +4",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "하야토",
+        "unit_pid": "MPID_ツクヨミ"
+      }
+    ]
   },
   {
     "ID": 176,
@@ -1581,7 +2702,13 @@
     "name": "【암야 헌터】",
     "SEID_H": "MSEID_H_暗夜嫌い",
     "description": "암야와 관련된 적과 전투 시,<br>입히는 대미지 +3",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "오보로",
+        "unit_pid": "MPID_オボロ"
+      }
+    ]
   },
   {
     "ID": 177,
@@ -1590,7 +2717,13 @@
     "name": "【발버둥】",
     "SEID_H": "MSEID_H_悪あがき",
     "description": "HP 절반 이하가 되는 검·창·도끼 공격을<br>받았을 때, 대미지 절반을 적에게도 입힌다",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "히나타",
+        "unit_pid": "MPID_ヒナタ"
+      }
+    ]
   },
   {
     "ID": 178,
@@ -1599,7 +2732,13 @@
     "name": "【대항 의식】",
     "SEID_H": "MSEID_H_対抗意識",
     "description": "전위 시, 자신의 레벨이 후위 이하라면<br>필살 +10, 입히는 대미지 +3, 입는 대미지 -1",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "타쿠미",
+        "unit_pid": "MPID_タクミ"
+      }
+    ]
   },
   {
     "ID": 179,
@@ -1608,7 +2747,13 @@
     "name": "【인법 받아치기】",
     "SEID_H": "MSEID_H_忍法車返し",
     "description": "암기(수리검)로 공격당했을 때, 입은<br>대미지의 절반과 능력 감소를 적에게도 적용",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "카게로",
+        "unit_pid": "MPID_カゲロウ"
+      }
+    ]
   },
   {
     "ID": 180,
@@ -1617,7 +2762,13 @@
     "name": "【승자의 희열】",
     "SEID_H": "MSEID_H_勝者の愉悦",
     "description": "자신이 공격을 걸어 적을 격파했을 때,<br>자신의 최대 HP의 20% HP 회복",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "레이나",
+        "unit_pid": "MPID_ユウギリ"
+      }
+    ]
   },
   {
     "ID": 181,
@@ -1626,7 +2777,13 @@
     "name": "【은혜 갚기】",
     "SEID_H": "MSEID_H_恩返し",
     "description": "누군가 지팡이로 자신을 회복시켜 줬을 때,<br>회복량의 절반은 상대방도 회복한다",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "카덴",
+        "unit_pid": "MPID_ニシキ"
+      }
+    ]
   },
   {
     "ID": 182,
@@ -1635,7 +2792,13 @@
     "name": "【무사도】",
     "SEID_H": "MSEID_H_武士道",
     "description": "전위 시, 자신의 레벨이 후위 이하라면<br>필살 +10, 입히는 대미지 +2, 입는 대미지 -2",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "료마",
+        "unit_pid": "MPID_リョウマ"
+      }
+    ]
   },
   {
     "ID": 183,
@@ -1644,7 +2807,13 @@
     "name": "【승리의 집념】",
     "SEID_H": "MSEID_H_勝利への執念",
     "description": "HP가 1/4 이하일 때,<br>필살 +30",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "스칼렛",
+        "unit_pid": "MPID_クリムゾン"
+      }
+    ]
   },
   {
     "ID": 184,
@@ -1653,7 +2822,13 @@
     "name": "【더티 파이트】",
     "SEID_H": "MSEID_H_ダーティファイト",
     "description": "자신이 공격을 걸고, 적이 반격을 못할 때,<br>전투 종료 후, 적의 힘·속도 -3(턴 회복)",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "슈라",
+        "unit_pid": "MPID_アシュラ"
+      }
+    ]
   },
   {
     "ID": 185,
@@ -1662,7 +2837,13 @@
     "name": "【가련한 꽃】",
     "SEID_H": "MSEID_H_可憐な花",
     "description": "아군이 인접해 있을 때,<br>아군이 입히는 대미지 +1, 입는 대미지 -3",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "엘리스",
+        "unit_pid": "MPID_エリーゼ"
+      }
+    ]
   },
   {
     "ID": 186,
@@ -1671,7 +2852,13 @@
     "name": "【불운덩어리】",
     "SEID_H": "MSEID_H_不運の塊",
     "description": "주위 2칸 이내 적의 필살회피 -15<br>자신의 필살회피 -5",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "아서",
+        "unit_pid": "MPID_ハロルド"
+      }
+    ]
   },
   {
     "ID": 187,
@@ -1680,7 +2867,13 @@
     "name": "【괴력】",
     "SEID_H": "MSEID_H_怪力",
     "description": "전투 시, 적의 힘보다 5 이상 높을 때,<br>입히는 대미지 +3",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "엘피",
+        "unit_pid": "MPID_エルフィ"
+      }
+    ]
   },
   {
     "ID": 188,
@@ -1689,7 +2882,13 @@
     "name": "【피의 고통】",
     "SEID_H": "MSEID_H_血の疼き",
     "description": "8자 이상의 연성 무기 장비 시,<br>필살 +10",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "오딘",
+        "unit_pid": "MPID_オーディン"
+      }
+    ]
   },
   {
     "ID": 189,
@@ -1698,7 +2897,13 @@
     "name": "【암야의 구속술】",
     "SEID_H": "MSEID_H_暗夜の拘束術",
     "description": "마이 캐슬에 감옥이 있으면 「포획」 커맨드<br>선택 가능. 격파 시, 적을 감옥에 넣는다",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "닐스",
+        "unit_pid": "MPID_ゼロ"
+      }
+    ]
   },
   {
     "ID": 190,
@@ -1707,7 +2912,13 @@
     "name": "【저주 카운터】",
     "SEID_H": "MSEID_H_呪詛返し",
     "description": "적에게 마법으로 공격당했을 때,<br>입은 대미지의 절반을 적에게도 입힌다",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "닉스",
+        "unit_pid": "MPID_ニュクス"
+      }
+    ]
   },
   {
     "ID": 191,
@@ -1716,7 +2927,13 @@
     "name": "【요염한 꽃】",
     "SEID_H": "MSEID_H_妖艶な花",
     "description": "아군이 인접해 있을 때,<br>아군이 입히는 대미지 +3, 입는 대미지 -1",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "카밀라",
+        "unit_pid": "MPID_カミラ"
+      }
+    ]
   },
   {
     "ID": 192,
@@ -1725,7 +2942,13 @@
     "name": "【경쟁심】",
     "SEID_H": "MSEID_H_負けん気",
     "description": "자신이 후위이며, 전위가 필살을 발생시키고<br>자신의 공격도 명중하면 반드시 필살 발생",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "셀레나",
+        "unit_pid": "MPID_ルーナ"
+      }
+    ]
   },
   {
     "ID": 193,
@@ -1734,7 +2957,13 @@
     "name": "【기습 임무】",
     "SEID_H": "MSEID_H_奇襲任務",
     "description": "적이 반격하지 못하는 상태에서<br>자신이 공격을 걸었을 때, 입히는 대미지 +4",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "베르카",
+        "unit_pid": "MPID_ベルカ"
+      }
+    ]
   },
   {
     "ID": 194,
@@ -1743,7 +2972,13 @@
     "name": "【푸른 춤】",
     "SEID_H": "MSEID_H_蒼の踊り",
     "description": "응원 커맨드 사용 가능. 주위 2칸 이내의<br>모든 아군에게 힘·속도 +1(1턴)",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "라슬로",
+        "unit_pid": "MPID_ラズワルド"
+      }
+    ]
   },
   {
     "ID": 195,
@@ -1752,7 +2987,13 @@
     "name": "【살육 본능】",
     "SEID_H": "MSEID_H_殺戮本能",
     "description": "자신이 공격을 걸고 적을 격파했을 때,<br>힘·마력·기술·속도 +4(1턴)",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "페리",
+        "unit_pid": "MPID_ピエリ"
+      }
+    ]
   },
   {
     "ID": 196,
@@ -1761,7 +3002,13 @@
     "name": "【위협】",
     "SEID_H": "MSEID_H_強面",
     "description": "주위 2칸의 모든 적은 회피 -10",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "베니",
+        "unit_pid": "MPID_ブノワ"
+      }
+    ]
   },
   {
     "ID": 197,
@@ -1770,7 +3017,13 @@
     "name": "【여자의 본성】",
     "SEID_H": "MSEID_H_女の本性",
     "description": "적이 여성일 때,<br>입히는 대미지 +4, 필살 +20",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "샤를로트",
+        "unit_pid": "MPID_シャーロッテ"
+      }
+    ]
   },
   {
     "ID": 198,
@@ -1779,7 +3032,13 @@
     "name": "【냉혈】",
     "SEID_H": "MSEID_H_冷血",
     "description": "전투 시, 적의 HP가 가득이 아닐 때,<br>자신이 입히는 대미지 +3, 입는 대미지 -1",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "리오",
+        "unit_pid": "MPID_レオン"
+      }
+    ]
   },
   {
     "ID": 199,
@@ -1788,7 +3047,13 @@
     "name": "【습득물】",
     "SEID_H": "MSEID_H_拾いもの",
     "description": "행운%로 발동. 7턴째까지<br>행동 종료 시에 광석이나 식재료를 3개 획득",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "키튼",
+        "unit_pid": "MPID_フランネル"
+      }
+    ]
   },
   {
     "ID": 200,
@@ -1797,7 +3062,13 @@
     "name": "【기사도】",
     "SEID_H": "MSEID_H_騎士道",
     "description": "전투 시, 적의 HP가 가득일 때,<br>자신이 입히는 대미지 +2, 입는 대미지 -2",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "젠더",
+        "unit_pid": "MPID_マークス"
+      }
+    ]
   },
   {
     "ID": 201,
@@ -1806,7 +3077,13 @@
     "name": "【아름다운 왕】",
     "SEID_H": "MSEID_H_美しき王",
     "description": "주위 2칸의 적, 아군 모두는<br>입히는 대미지 -2",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "이자나",
+        "unit_pid": "MPID_イザナ"
+      }
+    ]
   },
   {
     "ID": 202,
@@ -1815,7 +3092,13 @@
     "name": "【군략 전수】",
     "SEID_H": "MSEID_H_軍略伝授",
     "description": "아군 전원의 명중 +5",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "유키무라",
+        "unit_pid": "MPID_ユキムラ"
+      }
+    ]
   },
   {
     "ID": 203,
@@ -1824,7 +3107,13 @@
     "name": "【얼음의 피】",
     "SEID_H": "MSEID_H_氷の血",
     "description": "HP가 가득이 아닐 때 간접 공격을 받으면<br>대미지 절반을 돌려주고 적의 기술·속도 -3",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "플로라",
+        "unit_pid": "MPID_フローラ"
+      }
+    ]
   },
   {
     "ID": 204,
@@ -1833,7 +3122,13 @@
     "name": "【농지 주인】",
     "SEID_H": "MSEID_H_農地の主",
     "description": "산, 숲, 황지, 논밭 지형에 있을 때,<br>턴 개시 시, 최대 HP의 20% 회복",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "모즈",
+        "unit_pid": "MPID_モズメ"
+      }
+    ]
   },
   {
     "ID": 205,
@@ -1842,7 +3137,17 @@
     "name": "【용의 아이】",
     "SEID_H": "MSEID_H_竜の御子",
     "description": "턴 개시 시, 용석을 장비하고 있으면<br>최대 HP의 15% 회복",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "칸나(남)",
+        "unit_pid": "MPID_カンナ1"
+      },
+      {
+        "unit_name": "칸나(여)",
+        "unit_pid": "MPID_カンナ2"
+      }
+    ]
   },
   {
     "ID": 206,
@@ -1851,7 +3156,13 @@
     "name": "【집사의 자세】",
     "SEID_H": "MSEID_H_執事の嗜み",
     "description": "마이 캐슬에서 전투 시, 명중·회피 +20,<br>입히는 대미지 +2, 입는 대미지 -2",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "시구레",
+        "unit_pid": "MPID_シグレ"
+      }
+    ]
   },
   {
     "ID": 207,
@@ -1860,7 +3171,13 @@
     "name": "【튜닝】",
     "SEID_H": "MSEID_H_チューニング",
     "description": "응원 커맨드. 주위 2칸 이내의 아군 HP가<br>자신보다 낮으면 최대 HP의 10% 회복",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "드와이어",
+        "unit_pid": "MPID_ディーア"
+      }
+    ]
   },
   {
     "ID": 208,
@@ -1869,7 +3186,13 @@
     "name": "【덜렁이】",
     "SEID_H": "MSEID_H_おっちょこちょい",
     "description": "자신이 공격을 걸어 명중 시, 적의 수비 -3<br>또한 적의 옷을 벗길 때가 있다",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "소피",
+        "unit_pid": "MPID_ゾフィー"
+      }
+    ]
   },
   {
     "ID": 209,
@@ -1878,7 +3201,13 @@
     "name": "【행운의 주문】",
     "SEID_H": "MSEID_H_幸運のおまじない",
     "description": "행운과 관련된 확률 발동 스킬의<br>발동 확률 +20%",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "미도리",
+        "unit_pid": "MPID_ミドリコ"
+      }
+    ]
   },
   {
     "ID": 210,
@@ -1887,7 +3216,13 @@
     "name": "【대의의 용기】",
     "SEID_H": "MSEID_H_大義の勇",
     "description": "전위이며, 공진·방진 상대의 HP가 가득 차지<br>않았을 때, 입히는 대미지 +3, 입는 대미지 +1",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "시로",
+        "unit_pid": "MPID_シノノメ"
+      }
+    ]
   },
   {
     "ID": 211,
@@ -1896,7 +3231,13 @@
     "name": "【긍정적】",
     "SEID_H": "MSEID_H_前向き",
     "description": "「대기」 커맨드 선택 시,<br>속도 +4, 행운 +8(1턴)",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "키라기",
+        "unit_pid": "MPID_キサラギ"
+      }
+    ]
   },
   {
     "ID": 212,
@@ -1905,7 +3246,13 @@
     "name": "【당 보충】",
     "SEID_H": "MSEID_H_甘党",
     "description": "「대기」 커맨드 선택 시,<br>숨겨 둔 과자를 먹어 HP 4 회복",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "아스기",
+        "unit_pid": "MPID_グレイ"
+      }
+    ]
   },
   {
     "ID": 213,
@@ -1914,7 +3261,13 @@
     "name": "【달라붙기】",
     "SEID_H": "MSEID_H_じゃれつき",
     "description": "아군 턴 개시 시,<br>인접한 모든 적의 HP -5",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "셀키",
+        "unit_pid": "MPID_キヌ"
+      }
+    ]
   },
   {
     "ID": 214,
@@ -1923,7 +3276,13 @@
     "name": "【냉정 침착】",
     "SEID_H": "MSEID_H_冷静沈着",
     "description": "「대기」 커맨드 선택 시,<br>기술·마방 +4(1턴)",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "히사메",
+        "unit_pid": "MPID_ヒサメ"
+      }
+    ]
   },
   {
     "ID": 215,
@@ -1932,7 +3291,13 @@
     "name": "【5·7·5】",
     "SEID_H": "MSEID_H_五・七・五",
     "description": "턴 개시 시, 미타마를 중심으로 세로 1열로<br>아군이 나란히 서 있을 때 HP를 5, 7, 5 회복",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "미타마",
+        "unit_pid": "MPID_ミタマ"
+      }
+    ]
   },
   {
     "ID": 216,
@@ -1941,7 +3306,13 @@
     "name": "【천재】",
     "SEID_H": "MSEID_H_天才肌",
     "description": "전투 개시 시, 적의 힘·마력 중 높은 쪽의 수치가<br>자신보다 높을 경우, 적에게 입히는 대미지 +4",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "카도리",
+        "unit_pid": "MPID_マトイ"
+      }
+    ]
   },
   {
     "ID": 217,
@@ -1950,7 +3321,13 @@
     "name": "【집념】",
     "SEID_H": "MSEID_H_執念",
     "description": "그 맵에서 전투한 적이 있는 적에게<br>공격을 걸었을 때, 입히는 대미지 +4",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "라자트",
+        "unit_pid": "MPID_シャラ"
+      }
+    ]
   },
   {
     "ID": 218,
@@ -1959,7 +3336,13 @@
     "name": "【레이디 퍼스트】",
     "SEID_H": "MSEID_H_レディーファースト",
     "description": "후위이며, 공진·방진의 상대가 여성일 때,<br>그 상대가 입히는 대미지 +2",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "시그버트",
+        "unit_pid": "MPID_ジークベルト"
+      }
+    ]
   },
   {
     "ID": 219,
@@ -1968,7 +3351,13 @@
     "name": "【겁쟁이】",
     "SEID_H": "MSEID_H_臆病",
     "description": "전위일 때, 입는 대미지 -2<br>공진·방진이 아닐 때는 입는 대미지 +2",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "포레스트",
+        "unit_pid": "MPID_フォレオ"
+      }
+    ]
   },
   {
     "ID": 220,
@@ -1977,7 +3366,13 @@
     "name": "【뒤통수 치기】",
     "SEID_H": "MSEID_H_だまし討ち",
     "description": "남성 적에게 공격당했을 때,<br>적에게 입히는 대미지 +2",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "이그니셔스",
+        "unit_pid": "MPID_イグニス"
+      }
+    ]
   },
   {
     "ID": 221,
@@ -1986,7 +3381,13 @@
     "name": "【주워 먹기】",
     "SEID_H": "MSEID_H_ひろい食い",
     "description": "턴 개시 시, 행운%로 발동<br>HP 10 회복",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "벨로리아",
+        "unit_pid": "MPID_ベロア"
+      }
+    ]
   },
   {
     "ID": 222,
@@ -1995,7 +3396,13 @@
     "name": "【강운덩어리】",
     "SEID_H": "MSEID_H_強運の塊",
     "description": "자신의 필살회피 +5,<br>주위 2칸 이내의 아군 필살회피 +15",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "퍼시",
+        "unit_pid": "MPID_ルッツ"
+      }
+    ]
   },
   {
     "ID": 223,
@@ -2004,7 +3411,13 @@
     "name": "【책벌레】",
     "SEID_H": "MSEID_H_乙女心の躍動",
     "description": "마도서를 3개 이상 소지했을 때,<br>필살 +10",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "오펠리아",
+        "unit_pid": "MPID_オフェリア"
+      }
+    ]
   },
   {
     "ID": 224,
@@ -2013,7 +3426,13 @@
     "name": "【여성 친화적】",
     "SEID_H": "MSEID_H_女の子好き",
     "description": "전위이며, 공진·방진 상대가 여성일 때,<br>자신이 입히는 대미지 +2, 입는 대미지 -2",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "솔레이",
+        "unit_pid": "MPID_ソレイユ"
+      }
+    ]
   },
   {
     "ID": 225,
@@ -2022,7 +3441,13 @@
     "name": "【부정한 공상】",
     "SEID_H": "MSEID_H_邪な空想",
     "description": "자신에게 남성끼리의 방진이 인접했을 때,<br>자신이 입히는 대미지 +2, 입는 대미지 -2",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "니나",
+        "unit_pid": "MPID_エポニーヌ"
+      }
+    ]
   },
   {
     "ID": 226,
@@ -2031,7 +3456,13 @@
     "name": "【일확천금】",
     "SEID_H": "MSEID_H_一攫千金",
     "description": "행운%로 발동<br>적 격파 시, 골드를 획득",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "안나",
+        "unit_pid": "MPID_アンナ"
+      }
+    ]
   },
   {
     "ID": 227,
@@ -2040,6 +3471,12 @@
     "name": "【바람의 피】",
     "SEID_H": "MSEID_H_風の血",
     "description": "HP가 가득이 아닐 때,<br>명중, 회피 +10",
-    "kind": 25
+    "kind": 25,
+    "skillPersonalUnitArray": [
+      {
+        "unit_name": "푸가",
+        "unit_pid": "MPID_フウガ"
+      }
+    ]
   }
 ]

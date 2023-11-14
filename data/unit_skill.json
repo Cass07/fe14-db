@@ -1,0 +1,357 @@
+[
+  {
+    "PID": "MPID_デフォルト名1",
+    "name": "카무이(남)",
+    "SEID": "MSEID_不思議な魅力"
+  },
+  {
+    "PID": "MPID_デフォルト名2",
+    "name": "카무이(여)",
+    "SEID": "MSEID_不思議な魅力"
+  },
+  {
+    "PID": "MPID_ギュンター",
+    "name": "군터",
+    "SEID": "MSEID_絶対進攻"
+  },
+  {
+    "PID": "MPID_フェリシア",
+    "name": "펠리시아",
+    "SEID": "MSEID_絶対援護"
+  },
+  {
+    "PID": "MPID_ジョーカー",
+    "name": "제이콥",
+    "SEID": "MSEID_絶対死守"
+  },
+  {
+    "PID": "MPID_リンカ",
+    "name": "린카",
+    "SEID": "MSEID_炎の血"
+  },
+  {
+    "PID": "MPID_スズカゼ",
+    "name": "카제",
+    "SEID": "MSEID_絆の祈り"
+  },
+  {
+    "PID": "MPID_サクラ",
+    "name": "사쿠라",
+    "SEID": "MSEID_癒しの声"
+  },
+  {
+    "PID": "MPID_アクア",
+    "name": "아주라",
+    "SEID": "MSEID_小さな声援"
+  },
+  {
+    "PID": "MPID_カザハナ",
+    "name": "하나",
+    "SEID": "MSEID_お転婆"
+  },
+  {
+    "PID": "MPID_ツバキ",
+    "name": "츠바키",
+    "SEID": "MSEID_完璧主義"
+  },
+  {
+    "PID": "MPID_サイラス",
+    "name": "사일러스",
+    "SEID": "MSEID_友情の誓い"
+  },
+  {
+    "PID": "MPID_サイゾウ",
+    "name": "사이조",
+    "SEID": "MSEID_爆炎使い"
+  },
+  {
+    "PID": "MPID_オロチ",
+    "name": "오로치",
+    "SEID": "MSEID_白夜の捕縛術"
+  },
+  {
+    "PID": "MPID_ヒノカ",
+    "name": "히노카",
+    "SEID": "MSEID_叱咤激励"
+  },
+  {
+    "PID": "MPID_アサマ",
+    "name": "아자마",
+    "SEID": "MSEID_天罰"
+  },
+  {
+    "PID": "MPID_セツナ",
+    "name": "세츠나",
+    "SEID": "MSEID_ぼんやり"
+  },
+  {
+    "PID": "MPID_ツクヨミ",
+    "name": "하야토",
+    "SEID": "MSEID_尊大"
+  },
+  {
+    "PID": "MPID_オボロ",
+    "name": "오보로",
+    "SEID": "MSEID_暗夜嫌い"
+  },
+  {
+    "PID": "MPID_ヒナタ",
+    "name": "히나타",
+    "SEID": "MSEID_悪あがき"
+  },
+  {
+    "PID": "MPID_タクミ",
+    "name": "타쿠미",
+    "SEID": "MSEID_対抗意識"
+  },
+  {
+    "PID": "MPID_カゲロウ",
+    "name": "카게로",
+    "SEID": "MSEID_忍法車返し"
+  },
+  {
+    "PID": "MPID_ユウギリ",
+    "name": "레이나",
+    "SEID": "MSEID_勝者の愉悦"
+  },
+  {
+    "PID": "MPID_ニシキ",
+    "name": "카덴",
+    "SEID": "MSEID_恩返し"
+  },
+  {
+    "PID": "MPID_リョウマ",
+    "name": "료마",
+    "SEID": "MSEID_武士道"
+  },
+  {
+    "PID": "MPID_クリムゾン",
+    "name": "스칼렛",
+    "SEID": "MSEID_勝利への執念"
+  },
+  {
+    "PID": "MPID_アシュラ",
+    "name": "슈라",
+    "SEID": "MSEID_ダーティファイト"
+  },
+  {
+    "PID": "MPID_エリーゼ",
+    "name": "엘리스",
+    "SEID": "MSEID_可憐な花"
+  },
+  {
+    "PID": "MPID_ハロルド",
+    "name": "아서",
+    "SEID": "MSEID_不運の塊"
+  },
+  {
+    "PID": "MPID_エルフィ",
+    "name": "엘피",
+    "SEID": "MSEID_怪力"
+  },
+  {
+    "PID": "MPID_オーディン",
+    "name": "오딘",
+    "SEID": "MSEID_血の疼き"
+  },
+  {
+    "PID": "MPID_ゼロ",
+    "name": "닐스",
+    "SEID": "MSEID_暗夜の拘束術"
+  },
+  {
+    "PID": "MPID_ニュクス",
+    "name": "닉스",
+    "SEID": "MSEID_呪詛返し"
+  },
+  {
+    "PID": "MPID_カミラ",
+    "name": "카밀라",
+    "SEID": "MSEID_妖艶な花"
+  },
+  {
+    "PID": "MPID_ルーナ",
+    "name": "셀레나",
+    "SEID": "MSEID_負けん気"
+  },
+  {
+    "PID": "MPID_ベルカ",
+    "name": "베르카",
+    "SEID": "MSEID_奇襲任務"
+  },
+  {
+    "PID": "MPID_ラズワルド",
+    "name": "라슬로",
+    "SEID": "MSEID_蒼の踊り"
+  },
+  {
+    "PID": "MPID_ピエリ",
+    "name": "페리",
+    "SEID": "MSEID_殺戮本能"
+  },
+  {
+    "PID": "MPID_ブノワ",
+    "name": "베니",
+    "SEID": "MSEID_強面"
+  },
+  {
+    "PID": "MPID_シャーロッテ",
+    "name": "샤를로트",
+    "SEID": "MSEID_女の本性"
+  },
+  {
+    "PID": "MPID_レオン",
+    "name": "리오",
+    "SEID": "MSEID_冷血"
+  },
+  {
+    "PID": "MPID_フランネル",
+    "name": "키튼",
+    "SEID": "MSEID_拾いもの"
+  },
+  {
+    "PID": "MPID_マークス",
+    "name": "젠더",
+    "SEID": "MSEID_騎士道"
+  },
+  {
+    "PID": "MPID_イザナ",
+    "name": "이자나",
+    "SEID": "MSEID_美しき王"
+  },
+  {
+    "PID": "MPID_ユキムラ",
+    "name": "유키무라",
+    "SEID": "MSEID_軍略伝授"
+  },
+  {
+    "PID": "MPID_フローラ",
+    "name": "플로라",
+    "SEID": "MSEID_氷の血"
+  },
+  {
+    "PID": "MPID_モズメ",
+    "name": "모즈",
+    "SEID": "MSEID_農地の主"
+  },
+  {
+    "PID": "MPID_カンナ1",
+    "name": "칸나(남)",
+    "SEID": "MSEID_竜の御子"
+  },
+  {
+    "PID": "MPID_カンナ2",
+    "name": "칸나(여)",
+    "SEID": "MSEID_竜の御子"
+  },
+  {
+    "PID": "MPID_シグレ",
+    "name": "시구레",
+    "SEID": "MSEID_執事の嗜み"
+  },
+  {
+    "PID": "MPID_ディーア",
+    "name": "드와이어",
+    "SEID": "MSEID_チューニング"
+  },
+  {
+    "PID": "MPID_ゾフィー",
+    "name": "소피",
+    "SEID": "MSEID_おっちょこちょい"
+  },
+  {
+    "PID": "MPID_ミドリコ",
+    "name": "미도리",
+    "SEID": "MSEID_幸運のおまじない"
+  },
+  {
+    "PID": "MPID_シノノメ",
+    "name": "시로",
+    "SEID": "MSEID_大義の勇"
+  },
+  {
+    "PID": "MPID_キサラギ",
+    "name": "키라기",
+    "SEID": "MSEID_前向き"
+  },
+  {
+    "PID": "MPID_グレイ",
+    "name": "아스기",
+    "SEID": "MSEID_甘党"
+  },
+  {
+    "PID": "MPID_キヌ",
+    "name": "셀키",
+    "SEID": "MSEID_じゃれつき"
+  },
+  {
+    "PID": "MPID_ヒサメ",
+    "name": "히사메",
+    "SEID": "MSEID_冷静沈着"
+  },
+  {
+    "PID": "MPID_ミタマ",
+    "name": "미타마",
+    "SEID": "MSEID_五・七・五"
+  },
+  {
+    "PID": "MPID_マトイ",
+    "name": "카도리",
+    "SEID": "MSEID_天才肌"
+  },
+  {
+    "PID": "MPID_シャラ",
+    "name": "라자트",
+    "SEID": "MSEID_執念"
+  },
+  {
+    "PID": "MPID_ジークベルト",
+    "name": "시그버트",
+    "SEID": "MSEID_レディーファースト"
+  },
+  {
+    "PID": "MPID_フォレオ",
+    "name": "포레스트",
+    "SEID": "MSEID_臆病"
+  },
+  {
+    "PID": "MPID_イグニス",
+    "name": "이그니셔스",
+    "SEID": "MSEID_だまし討ち"
+  },
+  {
+    "PID": "MPID_ベロア",
+    "name": "벨로리아",
+    "SEID": "MSEID_ひろい食い"
+  },
+  {
+    "PID": "MPID_ルッツ",
+    "name": "퍼시",
+    "SEID": "MSEID_強運の塊"
+  },
+  {
+    "PID": "MPID_オフェリア",
+    "name": "오펠리아",
+    "SEID": "MSEID_乙女心の躍動"
+  },
+  {
+    "PID": "MPID_ソレイユ",
+    "name": "솔레이",
+    "SEID": "MSEID_女の子好き"
+  },
+  {
+    "PID": "MPID_エポニーヌ",
+    "name": "니나",
+    "SEID": "MSEID_邪な空想"
+  },
+  {
+    "PID": "MPID_アンナ",
+    "name": "안나",
+    "SEID": "MSEID_一攫千金"
+  },
+  {
+    "PID": "MPID_フウガ",
+    "name": "푸가",
+    "SEID": "MSEID_風の血"
+  }
+]
