@@ -1,0 +1,2656 @@
+[
+  {
+    "JID": "MJID_ダークブラッド",
+    "name": "다크 블러드",
+    "JID_H": "MJID_H_ダークブラッド",
+    "description": "암야의 마음을 지닌 자. 고귀한 피의 왕족.<br>검과 용석에 더해 마도서를 사용한다.",
+    "skill1": "MSEID_竜呪",
+    "skill2": "MSEID_暗夜",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 2,
+    "inheritable": 1,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/10.png\">",
+        "SEID": "MSEID_竜呪",
+        "skill_name": "【용의 저주】",
+        "description": "전투 후, 적의 모든 능력 -4<br>효과는 턴 회복",
+        "get_level": 5
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/41.png\">",
+        "SEID": "MSEID_暗夜",
+        "skill_name": "【암야】",
+        "description": "전투 시, 공진·방진 상대가 지닌<br>전투 스킬을 자신도 공유한다",
+        "get_level": 15
+      }
+    ],
+    "change_array": [
+      {
+        "condition": 0,
+        "JID": "MJID_ダークプリンス"
+      },
+      {
+        "condition": 0,
+        "JID": "MJID_ダークプリンセス"
+      }
+    ]
+  },
+  {
+    "JID": "MJID_ダークプリンス",
+    "name": "다크 프린스",
+    "JID_H": "MJID_H_ダークプリンス",
+    "description": "암야 왕국의 장비를 두른 왕족.<br>그 몸은 용의 힘을 품고 있다.",
+    "skill1": "MSEID_高貴なる血統",
+    "skill2": "MSEID_竜穿",
+    "skill3": "",
+    "skill4": "",
+    "gender": 1,
+    "oppose_JID": "MJID_ダークプリンセス",
+    "class_rank": 1,
+    "inheritable": 1,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/104.png\">",
+        "SEID": "MSEID_高貴なる血統",
+        "skill_name": "【고귀한 혈통】",
+        "description": "획득 경험치 1.2배",
+        "get_level": 1
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/27.png\">",
+        "SEID": "MSEID_竜穿",
+        "skill_name": "【용의 창】",
+        "description": "공격 시, 기술×0.75%로 발동<br>공격력의 절반을 입히는 대미지에 추가",
+        "get_level": 10
+      }
+    ],
+    "change_array": [
+      {
+        "JID": "MJID_白の血族",
+        "condition": 1
+      },
+      {
+        "JID": "MJID_ダークブラッド",
+        "condition": 2
+      }
+    ]
+  },
+  {
+    "JID": "MJID_ダークプリンセス",
+    "name": "다크 프린세스",
+    "JID_H": "MJID_H_ダークプリンセス",
+    "description": "암야 왕국의 장비를 두른 왕족.<br>그 몸은 용의 힘을 품고 있다.",
+    "skill1": "MSEID_高貴なる血統",
+    "skill2": "MSEID_竜穿",
+    "skill3": "",
+    "skill4": "",
+    "gender": 2,
+    "oppose_JID": "MJID_ダークプリンス",
+    "class_rank": 1,
+    "inheritable": 1,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/104.png\">",
+        "SEID": "MSEID_高貴なる血統",
+        "skill_name": "【고귀한 혈통】",
+        "description": "획득 경험치 1.2배",
+        "get_level": 1
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/27.png\">",
+        "SEID": "MSEID_竜穿",
+        "skill_name": "【용의 창】",
+        "description": "공격 시, 기술×0.75%로 발동<br>공격력의 절반을 입히는 대미지에 추가",
+        "get_level": 10
+      }
+    ],
+    "change_array": [
+      {
+        "JID": "MJID_白の血族",
+        "condition": 1
+      },
+      {
+        "JID": "MJID_ダークブラッド",
+        "condition": 2
+      }
+    ]
+  },
+  {
+    "JID": "MJID_白の血族",
+    "name": "백의 혈족",
+    "JID_H": "MJID_H_白の血族",
+    "description": "백야의 마음을 지닌 자. 고귀한 피의 왕족.<br>도와 용석에 더해 지팡이를 사용한다.",
+    "skill1": "MSEID_竜盾",
+    "skill2": "MSEID_白夜",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 2,
+    "inheritable": 1,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/34.png\">",
+        "SEID": "MSEID_竜盾",
+        "skill_name": "【용의 방패】",
+        "description": "공격을 받는 아군의 행운×0.5%로 발동<br>인접한 아군이 공격당했을 때 대미지 절반",
+        "get_level": 5
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/42.png\">",
+        "SEID": "MSEID_白夜",
+        "skill_name": "【백야】",
+        "description": "스킬 발동 확률 +10%",
+        "get_level": 15
+      }
+    ],
+    "change_array": [
+      {
+        "condition": 0,
+        "JID": "MJID_ダークプリンス"
+      },
+      {
+        "condition": 0,
+        "JID": "MJID_ダークプリンセス"
+      }
+    ]
+  },
+  {
+    "JID": "MJID_パラディン",
+    "name": "팔라딘",
+    "JID_H": "MJID_H_パラディン",
+    "description": "암야의 병과. 용감한 고위 기사.<br>소셜 나이트보다 뛰어난 능력을 지닌다.",
+    "skill1": "MSEID_守り手",
+    "skill2": "MSEID_聖盾",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 2,
+    "inheritable": 0,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/70.png\">",
+        "SEID": "MSEID_守り手",
+        "skill_name": "【수비수】",
+        "description": "방진 상태에서 전위일 때,<br>자신의 모든 능력 +1",
+        "get_level": 5
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/33.png\">",
+        "SEID": "MSEID_聖盾",
+        "skill_name": "【성스러운 방패】",
+        "description": "기술%로 발동. 활·마도서·암기·용석·브레스<br>·투석의 공격을 받았을 때 대미지 절반",
+        "get_level": 15
+      }
+    ],
+    "change_array": [
+      {
+        "condition": 0,
+        "JID": "MJID_ソシアルナイト"
+      }
+    ]
+  },
+  {
+    "JID": "MJID_ソシアルナイト",
+    "name": "소셜 나이트",
+    "JID_H": "MJID_H_ソシアルナイト",
+    "description": "암야의 병과. 말 위에서 싸우는 기사.<br>검과 창을 모두 사용할 수 있다.",
+    "skill1": "MSEID_広所突撃",
+    "skill2": "MSEID_救出",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 1,
+    "inheritable": 0,
+    "alter_JID": "MJID_忍",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/50.png\">",
+        "SEID": "MSEID_広所突撃",
+        "skill_name": "【평지 돌격】",
+        "description": "자신이 지형 효과 0인 장소에서<br>전투 시, 입히는 대미지 +3",
+        "get_level": 1
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/43.png\">",
+        "SEID": "MSEID_救出",
+        "skill_name": "【구출】",
+        "description": "「구출」 커맨드 선택 가능<br>인접한 아군을 자신의 후위로 옮긴다",
+        "get_level": 10
+      }
+    ],
+    "change_array": [
+      {
+        "JID": "MJID_パラディン",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_グレートナイト",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "JID": "MJID_グレートナイト",
+    "name": "그레이트 나이트",
+    "JID_H": "MJID_H_グレートナイト",
+    "description": "암야의 병과. 중장비를 걸친 말 위의 기사.<br>검, 창, 도끼를 모두 다룬다.",
+    "skill1": "MSEID_月光",
+    "skill2": "MSEID_金剛の一撃",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 2,
+    "inheritable": 0,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/29.png\">",
+        "SEID": "MSEID_月光",
+        "skill_name": "【월광】",
+        "description": "공격 시, 기술%로 발동<br>적 수비·마방의 절반을 무시하고 공격",
+        "get_level": 5
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/60.png\">",
+        "SEID": "MSEID_金剛の一撃",
+        "skill_name": "【금강의 일격】",
+        "description": "자신이 공격을 걸었을 때,<br>그 전투에서 입는 물리 대미지 -10",
+        "get_level": 15
+      }
+    ],
+    "change_array": [
+      {
+        "condition": 0,
+        "JID": "MJID_ソシアルナイト"
+      },
+      {
+        "condition": 0,
+        "JID": "MJID_アーマーナイト"
+      }
+    ]
+  },
+  {
+    "JID": "MJID_アーマーナイト",
+    "name": "아머 나이트",
+    "JID_H": "MJID_H_アーマーナイト",
+    "description": "암야의 병과. 무거운 갑옷을 두른 보병.<br>이동은 느리지만 수비가 단단하다.",
+    "skill1": "MSEID_守備+2",
+    "skill2": "MSEID_閉所防御",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 1,
+    "inheritable": 0,
+    "alter_JID": "MJID_槍術士",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/7.png\">",
+        "SEID": "MSEID_守備+2",
+        "skill_name": "【수비+2】",
+        "description": "자신의 수비 +2",
+        "get_level": 1
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/51.png\">",
+        "SEID": "MSEID_閉所防御",
+        "skill_name": "【협소 방어】",
+        "description": "자신이 지형 효과 0 이외의 장소에서<br>전투 시, 입는 대미지 -3",
+        "get_level": 10
+      }
+    ],
+    "change_array": [
+      {
+        "JID": "MJID_グレートナイト",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_ジェネラル",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "JID": "MJID_ジェネラル",
+    "name": "제너럴",
+    "JID_H": "MJID_H_ジェネラル",
+    "description": "암야의 병과. 갑옷으로 몸을 두른 장군.<br>수비가 극도로 좋다.",
+    "skill1": "MSEID_守備隊形",
+    "skill2": "MSEID_大盾",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 2,
+    "inheritable": 0,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/63.png\">",
+        "SEID": "MSEID_守備隊形",
+        "skill_name": "【수비 대형】",
+        "description": "전투 중, 자신도 적도<br>추가 공격이 발생하지 않는다",
+        "get_level": 5
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/32.png\">",
+        "SEID": "MSEID_大盾",
+        "skill_name": "【거대한 방패】",
+        "description": "기술%로 발동. 검·창·도끼·야수석·몬스터<br>·꼭두각시의 공격을 받았을 때 대미지 절반",
+        "get_level": 15
+      }
+    ],
+    "change_array": [
+      {
+        "condition": 0,
+        "JID": "MJID_アーマーナイト"
+      }
+    ]
+  },
+  {
+    "JID": "MJID_バーサーカー",
+    "name": "버서커",
+    "JID_H": "MJID_H_バーサーカー",
+    "description": "암야의 병과. 도끼를 휘두르는 광전사.<br>필살의 일격이 특기다.",
+    "skill1": "MSEID_力の叫び",
+    "skill2": "MSEID_斧の達人",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 2,
+    "inheritable": 0,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/16.png\">",
+        "SEID": "MSEID_力の叫び",
+        "skill_name": "【힘의 외침】",
+        "description": "「응원」 커맨드 선택 시,<br>주위 2칸 이내 아군이 힘 +4(1턴)",
+        "get_level": 5
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/66.png\">",
+        "SEID": "MSEID_斧の達人",
+        "skill_name": "【도끼의 달인】",
+        "description": "도끼를 장비하고 공격했을 때,<br>입히는 대미지 +5",
+        "get_level": 15
+      }
+    ],
+    "change_array": [
+      {
+        "condition": 0,
+        "JID": "MJID_アクスファイター"
+      }
+    ]
+  },
+  {
+    "JID": "MJID_アクスファイター",
+    "name": "액스 파이터",
+    "JID_H": "MJID_H_アクスファイター",
+    "description": "암야의 병과. 체력이 좋은 도끼 전사.<br>공격은 강하지만 방어가 약하다.",
+    "skill1": "MSEID_最大HP+5",
+    "skill2": "MSEID_大振り",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 1,
+    "inheritable": 0,
+    "alter_JID": "MJID_鬼人",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/1.png\">",
+        "SEID": "MSEID_最大HP+5",
+        "skill_name": "【최대HP+5】",
+        "description": "자신의 HP +5",
+        "get_level": 1
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/83.png\">",
+        "SEID": "MSEID_大振り",
+        "skill_name": "【마구 휘두르기】",
+        "description": "자신의 명중 -10, 필살 +10",
+        "get_level": 10
+      }
+    ],
+    "change_array": [
+      {
+        "JID": "MJID_バーサーカー",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_ブレイブヒーロー",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "JID": "MJID_ブレイブヒーロー",
+    "name": "브레이브 히어로",
+    "JID_H": "MJID_H_ブレイブヒーロー",
+    "description": "암야의 병과. 용감하기로 유명한 용사.<br>검과 도끼를 상황에 맞춰 쓴다.",
+    "skill1": "MSEID_太陽",
+    "skill2": "MSEID_斧殺し",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 2,
+    "inheritable": 0,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/28.png\">",
+        "SEID": "MSEID_太陽",
+        "skill_name": "【태양】",
+        "description": "공격 시, 기술%로 발동<br>적에게 입힌 대미지의 절반만큼 HP 회복",
+        "get_level": 5
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/79.png\">",
+        "SEID": "MSEID_斧殺し",
+        "skill_name": "【도끼 킬러】",
+        "description": "적이 도끼를 장비하고 있을 경우,<br>자신의 명중·회피 +50",
+        "get_level": 15
+      }
+    ],
+    "change_array": [
+      {
+        "condition": 0,
+        "JID": "MJID_アクスファイター"
+      },
+      {
+        "condition": 0,
+        "JID": "MJID_マーシナリー"
+      }
+    ]
+  },
+  {
+    "JID": "MJID_マーシナリー",
+    "name": "머서너리",
+    "JID_H": "MJID_H_マーシナリー",
+    "description": "암야의 병과. 주어진 임무를 달성하는<br>용병. 밸런스가 좋고, 특히 기술이 좋다.",
+    "skill1": "MSEID_しぶとい心",
+    "skill2": "MSEID_後手不敗",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 1,
+    "inheritable": 0,
+    "alter_JID": "MJID_侍",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/89.png\">",
+        "SEID": "MSEID_しぶとい心",
+        "skill_name": "【완고한 마음】",
+        "description": "행운%로 발동. 턴 개시 시,<br>최대 HP의 20% HP 회복",
+        "get_level": 1
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/49.png\">",
+        "SEID": "MSEID_後手不敗",
+        "skill_name": "【후수 불패】",
+        "description": "자신이 공격을 당했을 때<br>입히는 대미지 +3",
+        "get_level": 10
+      }
+    ],
+    "change_array": [
+      {
+        "JID": "MJID_ブレイブヒーロー",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_ボウナイト",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "JID": "MJID_ボウナイト",
+    "name": "보우 나이트",
+    "JID_H": "MJID_H_ボウナイト",
+    "description": "암야의 병과. 말 위에서 활을 쓰는 기사.<br>활 외에도 검을 다룰 줄도 안다.",
+    "skill1": "MSEID_技の叫び",
+    "skill2": "MSEID_暗器殺し",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 2,
+    "inheritable": 0,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/18.png\">",
+        "SEID": "MSEID_技の叫び",
+        "skill_name": "【기술의 외침】",
+        "description": "「응원」 커맨드 선택 시,<br>주위 2칸 이내 아군이 기술 +4(1턴)",
+        "get_level": 5
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/80.png\">",
+        "SEID": "MSEID_暗器殺し",
+        "skill_name": "【암기 킬러】",
+        "description": "적이 암기를 장비하고 있을 경우,<br>자신의 명중·회피 +50",
+        "get_level": 15
+      }
+    ],
+    "change_array": [
+      {
+        "condition": 0,
+        "JID": "MJID_マーシナリー"
+      },
+      {
+        "condition": 0,
+        "JID": "MJID_シーフ"
+      }
+    ]
+  },
+  {
+    "JID": "MJID_シーフ",
+    "name": "시프",
+    "JID_H": "MJID_H_シーフ",
+    "description": "암야의 병과. 자물쇠 열기가 특기.<br>활을 쓰고 속도와 마방이 뛰어나다.",
+    "skill1": "MSEID_鍵開け",
+    "skill2": "MSEID_移動+1",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 1,
+    "inheritable": 0,
+    "alter_JID": "MJID_弓使い",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/110.png\">",
+        "SEID": "MSEID_鍵開け",
+        "skill_name": "【자물쇠 열기】",
+        "description": "열쇠가 없어도<br>문이나 보물 상자를 열 수 있다",
+        "get_level": 1
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/9.png\">",
+        "SEID": "MSEID_移動+1",
+        "skill_name": "【이동+1】",
+        "description": "자신의 이동 +1",
+        "get_level": 10
+      }
+    ],
+    "change_array": [
+      {
+        "JID": "MJID_ボウナイト",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_アドベンチャラー",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "JID": "MJID_アドベンチャラー",
+    "name": "어드벤처러",
+    "JID_H": "MJID_H_アドベンチャラー",
+    "description": "암야의 병과. 유적 보물을 찾는 모험가.<br>활과 지팡이로 다양한 활약을 한다.",
+    "skill1": "MSEID_ラッキー7",
+    "skill2": "MSEID_すり抜け",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 2,
+    "inheritable": 0,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/85.png\">",
+        "SEID": "MSEID_ラッキー7",
+        "skill_name": "【럭키 7】",
+        "description": "7턴째 종료까지<br>자신의 명중·회피 +20",
+        "get_level": 5
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/109.png\">",
+        "SEID": "MSEID_すり抜け",
+        "skill_name": "【통과하기】",
+        "description": "적을 통과하여 이동할 수 있다",
+        "get_level": 15
+      }
+    ],
+    "change_array": [
+      {
+        "condition": 0,
+        "JID": "MJID_シーフ"
+      }
+    ]
+  },
+  {
+    "JID": "MJID_剣聖",
+    "name": "검성",
+    "JID_H": "MJID_H_剣聖",
+    "description": "백야의 병과. 도의 경지에 오른 자.<br>속도와 회피가 상당히 높다.",
+    "skill1": "MSEID_流星",
+    "skill2": "MSEID_剣の達人",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 2,
+    "inheritable": 0,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/26.png\">",
+        "SEID": "MSEID_流星",
+        "skill_name": "【유성】",
+        "description": "공격 시, 기술×0.5%로 발동<br>절반의 대미지로 5회 연속 공격",
+        "get_level": 5
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/64.png\">",
+        "SEID": "MSEID_剣の達人",
+        "skill_name": "【검의 달인】",
+        "description": "검을 장비하고 공격했을 때,<br>입히는 대미지 +5",
+        "get_level": 15
+      }
+    ],
+    "change_array": [
+      {
+        "condition": 0,
+        "JID": "MJID_侍"
+      }
+    ]
+  },
+  {
+    "JID": "MJID_侍",
+    "name": "사무라이",
+    "JID_H": "MJID_H_侍",
+    "description": "백야의 병과. 도의 길을 가는 자.<br>속도를 활용한 전투가 특기다.",
+    "skill1": "MSEID_清流の一撃",
+    "skill2": "MSEID_待ち伏せ",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 1,
+    "inheritable": 0,
+    "alter_JID": "MJID_マーシナリー",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/56.png\">",
+        "SEID": "MSEID_清流の一撃",
+        "skill_name": "【청류의 일격】",
+        "description": "자신이 공격을 걸었을 때,<br>그 전투 중, 회피 +30",
+        "get_level": 1
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/38.png\">",
+        "SEID": "MSEID_待ち伏せ",
+        "skill_name": "【매복】",
+        "description": "전투 개시 시, 자신의 HP가 절반 이하일 때<br>적에게 공격당해도 자신이 먼저 공격한다",
+        "get_level": 10
+      }
+    ],
+    "change_array": [
+      {
+        "JID": "MJID_剣聖",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_兵法者",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "JID": "MJID_兵法者",
+    "name": "병법가",
+    "JID_H": "MJID_H_兵法者",
+    "description": "백야의 병과. 다양한 적들과 전투한다.<br>도·월도·곤봉을 자유자재로 다룬다.",
+    "skill1": "MSEID_力封じ",
+    "skill2": "MSEID_死線",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 2,
+    "inheritable": 0,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/11.png\">",
+        "SEID": "MSEID_力封じ",
+        "skill_name": "【힘 봉인】",
+        "description": "전투 후, 적의 힘 -6<br>효과는 턴 회복",
+        "get_level": 5
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/54.png\">",
+        "SEID": "MSEID_死線",
+        "skill_name": "【사선】",
+        "description": "전투 중, 적에게 입히는 대미지 +10,<br>적에게 입는 대미지 +10",
+        "get_level": 15
+      }
+    ],
+    "change_array": [
+      {
+        "condition": 0,
+        "JID": "MJID_侍"
+      },
+      {
+        "condition": 0,
+        "JID": "MJID_村人"
+      }
+    ]
+  },
+  {
+    "JID": "MJID_修羅",
+    "name": "수라",
+    "JID_H": "MJID_H_修羅",
+    "description": "백야의 병과. 귀인을 넘은 귀신 같은 전사.<br>곤봉과 부채로 모든 적을 분쇄한다.",
+    "skill1": "MSEID_鬼神の一撃",
+    "skill2": "MSEID_カウンター",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 2,
+    "inheritable": 0,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/58.png\">",
+        "SEID": "MSEID_鬼神の一撃",
+        "skill_name": "【귀신의 일격】",
+        "description": "자신이 공격을 걸었을 때,<br>그 전투 중, 필살 +20",
+        "get_level": 5
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/36.png\">",
+        "SEID": "MSEID_カウンター",
+        "skill_name": "【카운터】",
+        "description": "인접한 적에게 공격당했을 때<br>받은 대미지만큼 적에게 대미지를 준다",
+        "get_level": 15
+      }
+    ],
+    "change_array": [
+      {
+        "condition": 0,
+        "JID": "MJID_鬼人"
+      }
+    ]
+  },
+  {
+    "JID": "MJID_鬼人",
+    "name": "귀인",
+    "JID_H": "MJID_H_鬼人",
+    "description": "백야의 병과. 곤봉을 쓰는 귀신 같은 전사.<br>힘과 수비가 뛰어나다.",
+    "skill1": "MSEID_魔防封じ",
+    "skill2": "MSEID_体当たり",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 1,
+    "inheritable": 0,
+    "alter_JID": "MJID_アクスファイター",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/15.png\">",
+        "SEID": "MSEID_魔防封じ",
+        "skill_name": "【마방 봉인】",
+        "description": "전투 후, 적의 마방 -6<br>효과는 턴 회복",
+        "get_level": 1
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/44.png\">",
+        "SEID": "MSEID_体当たり",
+        "skill_name": "【박치기】",
+        "description": "「박치기」 커맨드 선택 가능<br>인접한 아군을 1칸 밀어낸다",
+        "get_level": 10
+      }
+    ],
+    "change_array": [
+      {
+        "JID": "MJID_修羅",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_鍛冶",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "JID": "MJID_鍛冶",
+    "name": "대장장이",
+    "JID_H": "MJID_H_鍛冶",
+    "description": "백야의 병과. 무기를 제작하는 장인.<br>도와 곤봉을 쓰며, 기술이 뛰어나다.",
+    "skill1": "MSEID_匠の技",
+    "skill2": "MSEID_槍殺し",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 2,
+    "inheritable": 0,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/102.png\">",
+        "SEID": "MSEID_匠の技",
+        "skill_name": "【장인의 기술】",
+        "description": "행운%로 발동. 공격을 걸어 적을<br>쓰러뜨렸을 때, 철의 무기 중 하나를 획득",
+        "get_level": 5
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/78.png\">",
+        "SEID": "MSEID_槍殺し",
+        "skill_name": "【창 킬러】",
+        "description": "적이 창을 장비하고 있을 경우,<br>자신의 명중·회피 +50",
+        "get_level": 15
+      }
+    ],
+    "change_array": [
+      {
+        "condition": 0,
+        "JID": "MJID_鬼人"
+      }
+    ]
+  },
+  {
+    "JID": "MJID_槍聖",
+    "name": "창성",
+    "JID_H": "MJID_H_槍聖",
+    "description": "백야의 병과. 월도의 경지에 오른 자.<br>안정된 능력을 지니고 있다.",
+    "skill1": "MSEID_速さ封じ",
+    "skill2": "MSEID_槍の達人",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 2,
+    "inheritable": 0,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/13.png\">",
+        "SEID": "MSEID_速さ封じ",
+        "skill_name": "【속도 봉인】",
+        "description": "전투 후, 적의 속도 -6<br>효과는 턴 회복",
+        "get_level": 5
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/65.png\">",
+        "SEID": "MSEID_槍の達人",
+        "skill_name": "【창의 달인】",
+        "description": "창을 장비하고 공격했을 때,<br>입히는 대미지 +5",
+        "get_level": 15
+      }
+    ],
+    "change_array": [
+      {
+        "condition": 0,
+        "JID": "MJID_槍術士"
+      }
+    ]
+  },
+  {
+    "JID": "MJID_槍術士",
+    "name": "창술사",
+    "JID_H": "MJID_H_槍術士",
+    "description": "백야의 병과. 월도의 길을 가는 자.<br>적의 수비를 무너뜨리는 것이 특기.",
+    "skill1": "MSEID_守備封じ",
+    "skill2": "MSEID_入れ替え",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 1,
+    "inheritable": 0,
+    "alter_JID": "MJID_アーマーナイト",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/14.png\">",
+        "SEID": "MSEID_守備封じ",
+        "skill_name": "【수비 봉인】",
+        "description": "전투 후, 적의 수비 -6<br>효과는 턴 회복",
+        "get_level": 1
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/46.png\">",
+        "SEID": "MSEID_入れ替え",
+        "skill_name": "【바꾸기】",
+        "description": "「바꾸기」 커맨드 선택 가능<br>인접한 아군과 자신의 위치를 바꾼다",
+        "get_level": 10
+      }
+    ],
+    "change_array": [
+      {
+        "JID": "MJID_槍聖",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_婆娑羅",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "JID": "MJID_婆娑羅",
+    "name": "바사라",
+    "JID_H": "MJID_H_婆娑羅",
+    "description": "백야의 병과. 기발하고 튀는 삶을 사는 자.<br>월도와 부채로 적을 교란시킨다.",
+    "skill1": "MSEID_破天",
+    "skill2": "MSEID_傾奇者",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 2,
+    "inheritable": 0,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/30.png\">",
+        "SEID": "MSEID_破天",
+        "skill_name": "【파천】",
+        "description": "공격 시, 기술×1.5%로 발동. 공격에 따라<br>적의 힘이나 마력의 절반을 대미지에 추가",
+        "get_level": 5
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/88.png\">",
+        "SEID": "MSEID_傾奇者",
+        "skill_name": "【괴짜】",
+        "description": "전투 시, 자신과 적의 명중 +30,<br>확률 발동 스킬의 발생률 +15",
+        "get_level": 15
+      }
+    ],
+    "change_array": [
+      {
+        "condition": 0,
+        "JID": "MJID_槍術士"
+      },
+      {
+        "condition": 0,
+        "JID": "MJID_呪い師"
+      }
+    ]
+  },
+  {
+    "JID": "MJID_呪い師",
+    "name": "주술사",
+    "JID_H": "MJID_H_呪い師",
+    "description": "백야의 병과. 주술을 수양하는 자.<br>부채를 이용해 백야의 술법을 사용한다.",
+    "skill1": "MSEID_魔力+2",
+    "skill2": "MSEID_おみくじ",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 1,
+    "inheritable": 0,
+    "alter_JID": "MJID_ダークマージ",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/3.png\">",
+        "SEID": "MSEID_魔力+2",
+        "skill_name": "【마력+2】",
+        "description": "자신의 마력+2",
+        "get_level": 1
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/105.png\">",
+        "SEID": "MSEID_おみくじ",
+        "skill_name": "【복권】",
+        "description": "행운%로 발동. 자신이 공격을 걸어 적을<br>쓰러뜨렸을 때, 획득 경험치 2배",
+        "get_level": 10
+      }
+    ],
+    "change_array": [
+      {
+        "JID": "MJID_婆娑羅",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_陰陽師",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "JID": "MJID_陰陽師",
+    "name": "음양사",
+    "JID_H": "MJID_H_陰陽師",
+    "description": "백야의 병과. 다양한 주술과 학문 깨친 자.<br>부채와 지팡이, 양쪽 지식에 정통하다.",
+    "skill1": "MSEID_魔力の叫び",
+    "skill2": "MSEID_魔の達人",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 2,
+    "inheritable": 0,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/17.png\">",
+        "SEID": "MSEID_魔力の叫び",
+        "skill_name": "【마력의 외침】",
+        "description": "「응원」 커맨드 선택 시,<br>주위 2칸 이내 아군이 마력 +4(1턴)",
+        "get_level": 5
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/69.png\">",
+        "SEID": "MSEID_魔の達人",
+        "skill_name": "【마법의 달인】",
+        "description": "마도서를 장비하고 공격했을 때,<br>입히는 대미지 +5",
+        "get_level": 15
+      }
+    ],
+    "change_array": [
+      {
+        "condition": 0,
+        "JID": "MJID_呪い師"
+      },
+      {
+        "condition": 0,
+        "JID": "MJID_修験者"
+      },
+      {
+        "condition": 0,
+        "JID": "MJID_巫女"
+      }
+    ]
+  },
+  {
+    "JID": "MJID_修験者",
+    "name": "수행자",
+    "JID_H": "MJID_H_修験者",
+    "description": "백야의 병과. 깨달음을 위해 수행하는 자.<br>지팡이로 동료를 치료할 수 있다.",
+    "skill1": "MSEID_祈り",
+    "skill2": "MSEID_幸運の叫び",
+    "skill3": "",
+    "skill4": "",
+    "gender": 1,
+    "oppose_JID": "MJID_巫女",
+    "class_rank": 1,
+    "inheritable": 0,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/35.png\">",
+        "SEID": "MSEID_祈り",
+        "skill_name": "【기도】",
+        "description": "행운%로 발동. 자신의 HP가 2 이상일 때<br>HP가 0이 되는 공격을 받아도 1 남는다",
+        "get_level": 1
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/20.png\">",
+        "SEID": "MSEID_幸運の叫び",
+        "skill_name": "【행운의 외침】",
+        "description": "「응원」 커맨드 선택 시,<br>주위 2칸 이내 아군이 행운 +8(1턴)",
+        "get_level": 10
+      }
+    ],
+    "change_array": [
+      {
+        "JID": "MJID_陰陽師",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_山伏",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "JID": "MJID_巫女",
+    "name": "무녀",
+    "JID_H": "MJID_H_巫女",
+    "description": "백야의 병과. 신을 섬기며 인간을 치유하는<br>여성. 지팡이로 동료를 치료할 수 있다.",
+    "skill1": "MSEID_祈り",
+    "skill2": "MSEID_幸運の叫び",
+    "skill3": "",
+    "skill4": "",
+    "gender": 2,
+    "oppose_JID": "MJID_修験者",
+    "class_rank": 1,
+    "inheritable": 0,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/35.png\">",
+        "SEID": "MSEID_祈り",
+        "skill_name": "【기도】",
+        "description": "행운%로 발동. 자신의 HP가 2 이상일 때<br>HP가 0이 되는 공격을 받아도 1 남는다",
+        "get_level": 1
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/20.png\">",
+        "SEID": "MSEID_幸運の叫び",
+        "skill_name": "【행운의 외침】",
+        "description": "「응원」 커맨드 선택 시,<br>주위 2칸 이내 아군이 행운 +8(1턴)",
+        "get_level": 10
+      }
+    ],
+    "change_array": [
+      {
+        "JID": "MJID_陰陽師",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_戦巫女",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "JID": "MJID_山伏",
+    "name": "도사",
+    "JID_H": "MJID_H_山伏",
+    "description": "백야의 병과. 고행 끝에 깨달음을 얻은 자.<br>지팡이로 치료하고 월도로 적을 벤다.",
+    "skill1": "MSEID_回復",
+    "skill2": "MSEID_魔法カウンター",
+    "skill3": "",
+    "skill4": "",
+    "gender": 1,
+    "oppose_JID": "MJID_戦巫女",
+    "class_rank": 2,
+    "inheritable": 0,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/92.png\">",
+        "SEID": "MSEID_回復",
+        "skill_name": "【회복】",
+        "description": "턴 개시 시,<br>최대 HP의 30% HP 회복",
+        "get_level": 5
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/37.png\">",
+        "SEID": "MSEID_魔法カウンター",
+        "skill_name": "【마법 카운터】",
+        "description": "마법으로 공격당했을 때<br>받은 대미지만큼 적에게 대미지를 준다",
+        "get_level": 15
+      }
+    ],
+    "change_array": [
+      {
+        "condition": 0,
+        "JID": "MJID_修験者"
+      }
+    ]
+  },
+  {
+    "JID": "MJID_戦巫女",
+    "name": "전투 무녀",
+    "JID_H": "MJID_H_戦巫女",
+    "description": "백야의 병과. 신과 인간을 위해 싸운다.<br>지팡이로 치료하고 장궁으로 적을 쏜다.",
+    "skill1": "MSEID_回復",
+    "skill2": "MSEID_魔法カウンター",
+    "skill3": "",
+    "skill4": "",
+    "gender": 2,
+    "oppose_JID": "MJID_山伏",
+    "class_rank": 2,
+    "inheritable": 0,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/92.png\">",
+        "SEID": "MSEID_回復",
+        "skill_name": "【회복】",
+        "description": "턴 개시 시,<br>최대 HP의 30% HP 회복",
+        "get_level": 5
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/37.png\">",
+        "SEID": "MSEID_魔法カウンター",
+        "skill_name": "【마법 카운터】",
+        "description": "마법으로 공격당했을 때<br>받은 대미지만큼 적에게 대미지를 준다",
+        "get_level": 15
+      }
+    ],
+    "change_array": [
+      {
+        "condition": 0,
+        "JID": "MJID_巫女"
+      }
+    ]
+  },
+  {
+    "JID": "MJID_聖天馬武者",
+    "name": "성 천마 무사",
+    "JID_H": "MJID_H_聖天馬武者",
+    "description": "백야의 병과. 고위 천마 무사.<br>월도 외에 지팡이로 동료를 지원한다.",
+    "skill1": "MSEID_速さの叫び",
+    "skill2": "MSEID_明鏡の一撃",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 2,
+    "inheritable": 0,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/19.png\">",
+        "SEID": "MSEID_速さの叫び",
+        "skill_name": "【속도의 외침】",
+        "description": "「응원」 커맨드 선택 시,<br>주위 2칸 이내 아군이 속도 +4(1턴)",
+        "get_level": 5
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/61.png\">",
+        "SEID": "MSEID_明鏡の一撃",
+        "skill_name": "【명경의 일격】",
+        "description": "자신이 공격을 걸었을 때,<br>그 전투에서 입는 마법 대미지 -20",
+        "get_level": 15
+      }
+    ],
+    "change_array": [
+      {
+        "condition": 0,
+        "JID": "MJID_天馬武者"
+      }
+    ]
+  },
+  {
+    "JID": "MJID_天馬武者",
+    "name": "천마 무사",
+    "JID_H": "MJID_H_天馬武者",
+    "description": "백야의 병과. 천마를 다루는 하늘의<br>무사. 속도, 마방이 뛰어나다.",
+    "skill1": "MSEID_飛燕の一撃",
+    "skill2": "MSEID_和の心",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 1,
+    "inheritable": 0,
+    "alter_JID": "MJID_ドラゴンナイト",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/57.png\">",
+        "SEID": "MSEID_飛燕の一撃",
+        "skill_name": "【비연의 일격】",
+        "description": "자신이 공격을 걸었을 때,<br>그 전투 중의 추가 공격이 쉬워진다(+5)",
+        "get_level": 1
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/91.png\">",
+        "SEID": "MSEID_和の心",
+        "skill_name": "【화합의 마음】",
+        "description": "턴 개시 시, 주위 2칸 이내에 아군이<br>있을 때, 최대 HP의 10% HP 회복",
+        "get_level": 10
+      }
+    ],
+    "change_array": [
+      {
+        "JID": "MJID_聖天馬武者",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_金鵄武者",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "JID": "MJID_金鵄武者",
+    "name": "킨시 무사",
+    "JID_H": "MJID_H_金鵄武者",
+    "description": "백야의 병과. 전설의 새, 킨시를 다룬다.<br>월도와 장궁을 이용한 공중전에 뛰어나다.",
+    "skill1": "MSEID_天翔ける",
+    "skill2": "MSEID_天照らす",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 2,
+    "inheritable": 0,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/86.png\">",
+        "SEID": "MSEID_天翔ける",
+        "skill_name": "【천공 날기】",
+        "description": "적이 비행 유닛일 때,<br>명중·회피 +30",
+        "get_level": 5
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/95.png\">",
+        "SEID": "MSEID_天照らす",
+        "skill_name": "【천공의 빛】",
+        "description": "턴 개시 시, 주위 2칸 이내의 아군은<br>최대 HP의 20% HP 회복",
+        "get_level": 15
+      }
+    ],
+    "change_array": [
+      {
+        "condition": 0,
+        "JID": "MJID_天馬武者"
+      },
+      {
+        "condition": 0,
+        "JID": "MJID_弓使い"
+      }
+    ]
+  },
+  {
+    "JID": "MJID_弓使い",
+    "name": "궁수",
+    "JID_H": "MJID_H_弓使い",
+    "description": "백야의 병과. 장궁의 길을 가는 자.<br>기술이 뛰어나다.",
+    "skill1": "MSEID_技+2",
+    "skill2": "MSEID_先手必勝",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 1,
+    "inheritable": 0,
+    "alter_JID": "MJID_シーフ",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/4.png\">",
+        "SEID": "MSEID_技+2",
+        "skill_name": "【기술+2】",
+        "description": "자신의 기술 +2",
+        "get_level": 1
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/48.png\">",
+        "SEID": "MSEID_先手必勝",
+        "skill_name": "【선수 필승】",
+        "description": "자신이 공격을 걸었을 때<br>입히는 대미지 +4",
+        "get_level": 10
+      }
+    ],
+    "change_array": [
+      {
+        "JID": "MJID_金鵄武者",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_弓聖",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "JID": "MJID_弓聖",
+    "name": "궁성",
+    "JID_H": "MJID_H_弓聖",
+    "description": "백야의 병과. 장궁의 경지에 오른 자.<br>명중과 필살이 뛰어나다.",
+    "skill1": "MSEID_凶鳥の一撃",
+    "skill2": "MSEID_弓の達人",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 2,
+    "inheritable": 0,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/59.png\">",
+        "SEID": "MSEID_凶鳥の一撃",
+        "skill_name": "【흉조의 일격】",
+        "description": "자신이 공격을 걸었을 때,<br>그 전투 중, 명중 +40",
+        "get_level": 5
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/68.png\">",
+        "SEID": "MSEID_弓の達人",
+        "skill_name": "【활의 달인】",
+        "description": "활을 장비하고 공격했을 때,<br>입히는 대미지 +5",
+        "get_level": 15
+      }
+    ],
+    "change_array": [
+      {
+        "condition": 0,
+        "JID": "MJID_弓使い"
+      }
+    ]
+  },
+  {
+    "JID": "MJID_ドラゴンマスター",
+    "name": "드래곤 마스터",
+    "JID_H": "MJID_H_ドラゴンマスター",
+    "description": "암야의 병과. 고위 용 기사. 도끼와<br>창을 다루며 적군을 파괴시킨다.",
+    "skill1": "MSEID_守備の叫び",
+    "skill2": "MSEID_剣殺し",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 2,
+    "inheritable": 0,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/21.png\">",
+        "SEID": "MSEID_守備の叫び",
+        "skill_name": "【수비의 외침】",
+        "description": "「응원」 커맨드 선택 시,<br>주위 2칸 이내 아군이 수비 +4(1턴)",
+        "get_level": 5
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/77.png\">",
+        "SEID": "MSEID_剣殺し",
+        "skill_name": "【검 킬러】",
+        "description": "적이 검을 장비하고 있을 경우,<br>자신의 명중·회피 +50",
+        "get_level": 15
+      }
+    ],
+    "change_array": [
+      {
+        "condition": 0,
+        "JID": "MJID_ドラゴンナイト"
+      }
+    ]
+  },
+  {
+    "JID": "MJID_ドラゴンナイト",
+    "name": "드래곤 나이트",
+    "JID_H": "MJID_H_ドラゴンナイト",
+    "description": "암야의 병과. 비룡을 다루는 용 기사.<br>힘과 수비가 뛰어나다.",
+    "skill1": "MSEID_力+2",
+    "skill2": "MSEID_切り込み",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 1,
+    "inheritable": 0,
+    "alter_JID": "MJID_天馬武者",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/2.png\">",
+        "SEID": "MSEID_力+2",
+        "skill_name": "【힘+2】",
+        "description": "자신의 힘 +2",
+        "get_level": 1
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/45.png\">",
+        "SEID": "MSEID_切り込み",
+        "skill_name": "【파고들기】",
+        "description": "「파고들기」 커맨드 선택 가능<br>공격 후, 자신과 적의 위치를 바꾼다",
+        "get_level": 10
+      }
+    ],
+    "change_array": [
+      {
+        "JID": "MJID_ドラゴンマスター",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_レヴナントナイト",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "JID": "MJID_レヴナントナイト",
+    "name": "레버넌트 나이트",
+    "JID_H": "MJID_H_レヴナントナイト",
+    "description": "암야의 병과. 마룡을 다루는 마룡 기사.<br>도끼와 마도서로 적군을 유린한다.",
+    "skill1": "MSEID_死の吐息",
+    "skill2": "MSEID_見下す者",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 2,
+    "inheritable": 0,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/100.png\">",
+        "SEID": "MSEID_死の吐息",
+        "skill_name": "【죽음의 한숨】",
+        "description": "자신이 공격을 걸었을 때, 전투 후, 주위<br>2칸의 적 HP를 최대 HP의 20% 감소시킨다",
+        "get_level": 5
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/62.png\">",
+        "SEID": "MSEID_見下す者",
+        "skill_name": "【내려다보는 자】",
+        "description": "적이 기마 유닛 이외일 때,<br>입히는 대미지 +5",
+        "get_level": 15
+      }
+    ],
+    "change_array": [
+      {
+        "condition": 0,
+        "JID": "MJID_ドラゴンナイト"
+      }
+    ]
+  },
+  {
+    "JID": "MJID_上忍",
+    "name": "상급 닌자",
+    "JID_H": "MJID_H_上忍",
+    "description": "백야의 병과. 닌자들의 대장.<br>수리검과 도로 표적을 처리한다.",
+    "skill1": "MSEID_滅殺",
+    "skill2": "MSEID_暗器の達人",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 2,
+    "inheritable": 0,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/25.png\">",
+        "SEID": "MSEID_滅殺",
+        "skill_name": "【멸살】",
+        "description": "공격 시, 기술×0.25%와 적에게 1 이상<br>대미지를 입힐 때 발동. 적을 반드시 격파",
+        "get_level": 5
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/67.png\">",
+        "SEID": "MSEID_暗器の達人",
+        "skill_name": "【암기의 달인】",
+        "description": "암기를 장비하고 공격했을 때,<br>입히는 대미지 +5",
+        "get_level": 15
+      }
+    ],
+    "change_array": [
+      {
+        "condition": 0,
+        "JID": "MJID_忍"
+      }
+    ]
+  },
+  {
+    "JID": "MJID_忍",
+    "name": "닌자",
+    "JID_H": "MJID_H_忍",
+    "description": "백야의 병과. 비밀 임무를 수행한다.<br>수리검으로 적을 공격, 약화시킨다.",
+    "skill1": "MSEID_鍵開け",
+    "skill2": "MSEID_蛇毒",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 1,
+    "inheritable": 0,
+    "alter_JID": "MJID_ソシアルナイト",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/110.png\">",
+        "SEID": "MSEID_鍵開け",
+        "skill_name": "【자물쇠 열기】",
+        "description": "열쇠가 없어도<br>문이나 보물 상자를 열 수 있다",
+        "get_level": 1
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/99.png\">",
+        "SEID": "MSEID_蛇毒",
+        "skill_name": "【뱀독】",
+        "description": "자신이 공격을 걸었을 때, 전투 후,<br>적의 HP를 최대 HP의 20% 감소시킨다",
+        "get_level": 10
+      }
+    ],
+    "change_array": [
+      {
+        "JID": "MJID_上忍",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_絡繰師",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "JID": "MJID_絡繰師",
+    "name": "인형사",
+    "JID_H": "MJID_H_絡繰師",
+    "description": "백야의 병과. 꼭두각시를 만드는 장인.<br>수리검과 장궁을 잘 다룬다.",
+    "skill1": "MSEID_人形崩し",
+    "skill2": "MSEID_写し身人形",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 2,
+    "inheritable": 0,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/40.png\">",
+        "SEID": "MSEID_人形崩し",
+        "skill_name": "【인형 부수기】",
+        "description": "인간형 특효 공격을 가한다<br>인형사, 꼭두각시, 골렘에게 유효",
+        "get_level": 5
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/47.png\">",
+        "SEID": "MSEID_写し身人形",
+        "skill_name": "【분신 인형】",
+        "description": "「분신」 커맨드를 1 맵당 1회 선택 가능<br>자신과 능력, 생명을 공유하는 인형을 만든다",
+        "get_level": 15
+      }
+    ],
+    "change_array": [
+      {
+        "condition": 0,
+        "JID": "MJID_薬商人"
+      },
+      {
+        "condition": 0,
+        "JID": "MJID_忍"
+      }
+    ]
+  },
+  {
+    "JID": "MJID_薬商人",
+    "name": "약사",
+    "JID_H": "MJID_H_薬商人",
+    "description": "백야의 병과. 약에 대해 박식한 약사.<br>장궁으로 자신의 몸을 지킨다.",
+    "skill1": "MSEID_よく効く薬",
+    "skill2": "MSEID_常備薬",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 1,
+    "inheritable": 0,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/97.png\">",
+        "SEID": "MSEID_よく効く薬",
+        "skill_name": "【잘 듣는 약】",
+        "description": "HP 회복약, 능력 상승약의<br>효과 1.5배",
+        "get_level": 1
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/107.png\">",
+        "SEID": "MSEID_常備薬",
+        "skill_name": "【상비약】",
+        "description": "HP 회복약, 능력 상승약을 사용했을 때,<br>행동이 완료되지 않고 추가 행동 가능",
+        "get_level": 10
+      }
+    ],
+    "change_array": [
+      {
+        "JID": "MJID_絡繰師",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_大商人",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "JID": "MJID_大商人",
+    "name": "거상",
+    "JID_H": "MJID_H_大商人",
+    "description": "백야의 병과. 수완이 좋은 장사꾼.<br>장궁과 월도로 자신의 몸과 부를 지킨다.",
+    "skill1": "MSEID_左うちわ",
+    "skill2": "MSEID_お大尽",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 2,
+    "inheritable": 0,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/103.png\">",
+        "SEID": "MSEID_左うちわ",
+        "skill_name": "【불로 소득】",
+        "description": "행운%로 발동. 7턴째 종료까지<br>행동 종료 시에 금화를 획득",
+        "get_level": 5
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/55.png\">",
+        "SEID": "MSEID_お大尽",
+        "skill_name": "【갑부】",
+        "description": "금화 소지 중 공격을 걸었을 때, 금화를<br>쓰며 입히는 대미지 +10, 입는 대미지 -10",
+        "get_level": 15
+      }
+    ],
+    "change_array": [
+      {
+        "condition": 0,
+        "JID": "MJID_村人"
+      },
+      {
+        "condition": 0,
+        "JID": "MJID_薬商人"
+      }
+    ]
+  },
+  {
+    "JID": "MJID_ソーサラー",
+    "name": "소서러",
+    "JID_H": "MJID_H_ソーサラー",
+    "description": "암야의 병과. 심오한 경지에 오른<br>고위 술사. 마력이 굉장히 높다.",
+    "skill1": "MSEID_復讐",
+    "skill2": "MSEID_弓殺し",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 2,
+    "inheritable": 0,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/31.png\">",
+        "SEID": "MSEID_復讐",
+        "skill_name": "【복수】",
+        "description": "공격 시, 기술×1.5%로 발동<br>자신의 HP 감소량의 절반을 대미지에 추가",
+        "get_level": 5
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/81.png\">",
+        "SEID": "MSEID_弓殺し",
+        "skill_name": "【활 킬러】",
+        "description": "적이 활을 장비하고 있을 경우,<br>자신의 명중·회피 +50",
+        "get_level": 15
+      }
+    ],
+    "change_array": [
+      {
+        "condition": 0,
+        "JID": "MJID_ダークマージ"
+      }
+    ]
+  },
+  {
+    "JID": "MJID_ダークマージ",
+    "name": "다크 메이지",
+    "JID_H": "MJID_H_ダークマージ",
+    "description": "암야의 병과. 암야의 술법을 배운 술사.<br>마도서로 적을 공격한다.",
+    "skill1": "MSEID_呪縛",
+    "skill2": "MSEID_魔の風",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 1,
+    "inheritable": 0,
+    "alter_JID": "MJID_呪い師",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/87.png\">",
+        "SEID": "MSEID_呪縛",
+        "skill_name": "【주박】",
+        "description": "인접한 적이 전투 시,<br>적의 회피 -20",
+        "get_level": 1
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/74.png\">",
+        "SEID": "MSEID_魔の風",
+        "skill_name": "【마의 바람】",
+        "description": "주위 2칸 이내의 적이 전투 시,<br>적이 입는 마법 대미지 +2",
+        "get_level": 10
+      }
+    ],
+    "change_array": [
+      {
+        "JID": "MJID_ソーサラー",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_ダークナイト",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "JID": "MJID_ダークナイト",
+    "name": "다크 나이트",
+    "JID_H": "MJID_H_ダークナイト",
+    "description": "암야의 병과. 마를 깃들게 한 마도 기사.<br>검과 마도서, 양쪽 모두 사용한다.",
+    "skill1": "MSEID_魔力封じ",
+    "skill2": "MSEID_生命吸収",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 2,
+    "inheritable": 0,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/12.png\">",
+        "SEID": "MSEID_魔力封じ",
+        "skill_name": "【마력 봉인】",
+        "description": "전투 후, 적의 마력 -6<br>효과는 턴 회복",
+        "get_level": 5
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/96.png\">",
+        "SEID": "MSEID_生命吸収",
+        "skill_name": "【생명 흡수】",
+        "description": "자신이 공격을 걸어 적을 쓰러뜨렸을 때,<br>최대 HP의 50% HP 회복",
+        "get_level": 15
+      }
+    ],
+    "change_array": [
+      {
+        "condition": 0,
+        "JID": "MJID_ダークマージ"
+      }
+    ]
+  },
+  {
+    "JID": "MJID_ストラテジスト",
+    "name": "스트래터지스트",
+    "JID_H": "MJID_H_ストラテジスト",
+    "description": "암야의 병과. 마상에서 지휘하는 전술가.<br>마도서와 지팡이로 전투를 이끈다.",
+    "skill1": "MSEID_魔防の叫び",
+    "skill2": "MSEID_戦闘指揮",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 2,
+    "inheritable": 0,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/22.png\">",
+        "SEID": "MSEID_魔防の叫び",
+        "skill_name": "【마방의 외침】",
+        "description": "「응원」 커맨드 선택 시,<br>주위 2칸 이내 아군이 마방 +4(1턴)",
+        "get_level": 5
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/73.png\">",
+        "SEID": "MSEID_戦闘指揮",
+        "skill_name": "【전투 지휘】",
+        "description": "주위 2칸 이내의 아군이 전투 시,<br>입히는 대미지 +2, 입는 대미지 -2",
+        "get_level": 15
+      }
+    ],
+    "change_array": [
+      {
+        "condition": 0,
+        "JID": "MJID_ロッドナイト1"
+      },
+      {
+        "condition": 0,
+        "JID": "MJID_ロッドナイト2"
+      }
+    ]
+  },
+  {
+    "JID": "MJID_ロッドナイト1",
+    "name": "로드 나이트(남)",
+    "JID_H": "MJID_H_ロッドナイト",
+    "description": "암야의 병과. 전투력은 없다.<br>지팡이로 동료를 치료한다.",
+    "skill1": "MSEID_魔防+2",
+    "skill2": "MSEID_名家の令息",
+    "skill3": "",
+    "skill4": "",
+    "gender": 1,
+    "oppose_JID": "MJID_ロッドナイト2",
+    "class_rank": 1,
+    "inheritable": 0,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/8.png\">",
+        "SEID": "MSEID_魔防+2",
+        "skill_name": "【마방+2】",
+        "description": "자신의 마방 +2",
+        "get_level": 1
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/71.png\">",
+        "SEID": "MSEID_名家の令息",
+        "skill_name": "【명가의 아들】",
+        "description": "주위 2칸 이내의 여성 아군이<br>전투 시, 입는 대미지 -2",
+        "get_level": 10
+      }
+    ],
+    "change_array": [
+      {
+        "JID": "MJID_ストラテジスト",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_バトラー",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "JID": "MJID_ロッドナイト2",
+    "name": "로드 나이트(여)",
+    "JID_H": "MJID_H_ロッドナイト",
+    "description": "암야의 병과. 전투력은 없다.<br>지팡이로 동료를 치료한다.",
+    "skill1": "MSEID_魔防+2",
+    "skill2": "MSEID_深窓の令嬢",
+    "skill3": "",
+    "skill4": "",
+    "gender": 2,
+    "oppose_JID": "MJID_ロッドナイト1",
+    "class_rank": 1,
+    "inheritable": 0,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/8.png\">",
+        "SEID": "MSEID_魔防+2",
+        "skill_name": "【마방+2】",
+        "description": "자신의 마방 +2",
+        "get_level": 1
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/72.png\">",
+        "SEID": "MSEID_深窓の令嬢",
+        "skill_name": "【귀족의 딸】",
+        "description": "주위 2칸 이내의 남성 아군이<br>전투 시, 입는 대미지 -2",
+        "get_level": 10
+      }
+    ],
+    "change_array": [
+      {
+        "JID": "MJID_ストラテジスト",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_メイド",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "JID": "MJID_バトラー",
+    "name": "버틀러",
+    "JID_H": "MJID_H_バトラー",
+    "description": "암야의 병과. 주인을 위해 싸우는 집사.<br>지팡이로 치료하고 암기로 주인을 지킨다.",
+    "skill1": "MSEID_ご奉仕の喜び",
+    "skill2": "MSEID_魔殺し",
+    "skill3": "",
+    "skill4": "",
+    "gender": 1,
+    "oppose_JID": "MJID_メイド",
+    "class_rank": 2,
+    "inheritable": 0,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/98.png\">",
+        "SEID": "MSEID_ご奉仕の喜び",
+        "skill_name": "【봉사의 기쁨】",
+        "description": "자신이 지팡이로 아군을 회복시킬 때,<br>자신도 같은 양만큼 회복한다",
+        "get_level": 5
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/82.png\">",
+        "SEID": "MSEID_魔殺し",
+        "skill_name": "【마법 킬러】",
+        "description": "적이 마도서를 장비하고 있을 경우,<br>자신의 명중·회피 +50",
+        "get_level": 15
+      }
+    ],
+    "change_array": [
+      {
+        "condition": 0,
+        "JID": "MJID_ロッドナイト1"
+      }
+    ]
+  },
+  {
+    "JID": "MJID_メイド",
+    "name": "메이드",
+    "JID_H": "MJID_H_メイド",
+    "description": "암야의 병과. 주인을 위해 싸우는 하녀.<br>지팡이로 치료하고 암기로 주인을 지킨다.",
+    "skill1": "MSEID_ご奉仕の喜び",
+    "skill2": "MSEID_魔殺し",
+    "skill3": "",
+    "skill4": "",
+    "gender": 2,
+    "oppose_JID": "MJID_バトラー",
+    "class_rank": 2,
+    "inheritable": 0,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/98.png\">",
+        "SEID": "MSEID_ご奉仕の喜び",
+        "skill_name": "【봉사의 기쁨】",
+        "description": "자신이 지팡이로 아군을 회복시킬 때,<br>자신도 같은 양만큼 회복한다",
+        "get_level": 5
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/82.png\">",
+        "SEID": "MSEID_魔殺し",
+        "skill_name": "【마법 킬러】",
+        "description": "적이 마도서를 장비하고 있을 경우,<br>자신의 명중·회피 +50",
+        "get_level": 15
+      }
+    ],
+    "change_array": [
+      {
+        "condition": 0,
+        "JID": "MJID_ロッドナイト2"
+      }
+    ]
+  },
+  {
+    "JID": "MJID_ガルー",
+    "name": "늑대 인간",
+    "JID_H": "MJID_H_ガルー",
+    "description": "암야의 병과. 전설의 식인 늑대 인간.<br>힘과 속도가 뛰어나다.",
+    "skill1": "MSEID_奇襲の牙",
+    "skill2": "MSEID_獣特効",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 1,
+    "inheritable": 1,
+    "alter_JID": "MJID_シーフ",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/53.png\">",
+        "SEID": "MSEID_奇襲の牙",
+        "skill_name": "【홀로 솟은 이빨】",
+        "description": "홀수 턴,<br>적에게 입히는 대미지 +4",
+        "get_level": 1
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/39.png\">",
+        "SEID": "MSEID_獣特効",
+        "skill_name": "【야수 특효】",
+        "description": "자신이 늑대 인간, 여우족일 때<br>야수 특효 공격을 가한다",
+        "get_level": 10
+      }
+    ],
+    "change_array": [
+      {
+        "JID": "MJID_マーナガルム",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "JID": "MJID_マーナガルム",
+    "name": "늑대 괴인",
+    "JID_H": "MJID_H_マーナガルム",
+    "description": "암야의 병과. 보다 강인한 고위 늑대 인간.<br>늑대 인간보다 뛰어난 능력을 지닌다.",
+    "skill1": "MSEID_奇妙な鳴き声",
+    "skill2": "MSEID_四牙",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 2,
+    "inheritable": 1,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/94.png\">",
+        "SEID": "MSEID_奇妙な鳴き声",
+        "skill_name": "【홀의 울음소리】",
+        "description": "홀수 턴 개시 시,<br>최대 HP의 40% HP 회복",
+        "get_level": 5
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/101.png\">",
+        "SEID": "MSEID_四牙",
+        "skill_name": "【추격하는 이빨】",
+        "description": "전투 후, 적 HP를<br>최대 HP의 20% 감소시킨다",
+        "get_level": 15
+      }
+    ],
+    "change_array": [
+      {
+        "condition": 0,
+        "JID": "MJID_ガルー"
+      }
+    ]
+  },
+  {
+    "JID": "MJID_妖狐",
+    "name": "여우족",
+    "JID_H": "MJID_H_妖狐",
+    "description": "백야의 병과. 사람으로 둔갑한다는 여우.<br>속도와 마방이 뛰어나다.",
+    "skill1": "MSEID_偶像の幻",
+    "skill2": "MSEID_獣特効",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 1,
+    "inheritable": 1,
+    "alter_JID": "MJID_薬商人",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/52.png\">",
+        "SEID": "MSEID_偶像の幻",
+        "skill_name": "【짝의 환영】",
+        "description": "짝수 턴,<br>적에게 입히는 대미지 +4",
+        "get_level": 1
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/39.png\">",
+        "SEID": "MSEID_獣特効",
+        "skill_name": "【야수 특효】",
+        "description": "자신이 늑대 인간, 여우족일 때<br>야수 특효 공격을 가한다",
+        "get_level": 10
+      }
+    ],
+    "change_array": [
+      {
+        "JID": "MJID_九尾の狐",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "JID": "MJID_九尾の狐",
+    "name": "구미호",
+    "JID_H": "MJID_H_九尾の狐",
+    "description": "백야의 병과. 강한 영력의 고위 여우.<br>여우족보다 뛰어난 능력을 지닌다.",
+    "skill1": "MSEID_偶然のまどろみ",
+    "skill2": "MSEID_四牙",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 2,
+    "inheritable": 1,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/93.png\">",
+        "SEID": "MSEID_偶然のまどろみ",
+        "skill_name": "【짝의 휴식】",
+        "description": "짝수 턴 개시 시,<br>최대 HP의 40% HP 회복",
+        "get_level": 5
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/101.png\">",
+        "SEID": "MSEID_四牙",
+        "skill_name": "【추격하는 이빨】",
+        "description": "전투 후, 적 HP를<br>최대 HP의 20% 감소시킨다",
+        "get_level": 15
+      }
+    ],
+    "change_array": [
+      {
+        "condition": 0,
+        "JID": "MJID_妖狐"
+      }
+    ]
+  },
+  {
+    "JID": "MJID_歌姫",
+    "name": "가희",
+    "JID_H": "MJID_H_歌姫",
+    "description": "아름다운 노래로 마음을 보듬는 여성.<br>노래하여 동료를 다시 움직이게 한다.",
+    "skill1": "MSEID_幸運+4",
+    "skill2": "MSEID_特別な歌",
+    "skill3": "MSEID_平和の声",
+    "skill4": "MSEID_異邦の王女",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 0,
+    "inheritable": 2,
+    "alter_JID": "MJID_ロッドナイト",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/6.png\">",
+        "SEID": "MSEID_幸運+4",
+        "skill_name": "【행운+4】",
+        "description": "자신의 행운 +4",
+        "get_level": 1
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/24.png\">",
+        "SEID": "MSEID_特別な歌",
+        "skill_name": "【특별한 노래】",
+        "description": "「노래」를 사용한 대상 아군을<br>기술·속도·행운 +3(1턴)",
+        "get_level": 10
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/75.png\">",
+        "SEID": "MSEID_平和の声",
+        "skill_name": "【평화의 소리】",
+        "description": "주위 2칸 이내의 적이 전투 시,<br>적이 입히는 물리 대미지 -2",
+        "get_level": 25
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/76.png\">",
+        "SEID": "MSEID_異邦の王女",
+        "skill_name": "【이방의 왕녀】",
+        "description": "주위 2칸 이내 「이방의 군」이 전투 시,<br>적이 입히는 대미지 -2, 입는 대미지 +2",
+        "get_level": 35
+      }
+    ]
+  },
+  {
+    "JID": "MJID_村人",
+    "name": "마을 사람",
+    "JID_H": "MJID_H_村人",
+    "description": "백야의 병과. 마을에 사는 평범한 사람들.<br>전투 시, 월도를 들고 싸운다.",
+    "skill1": "MSEID_良成長",
+    "skill2": "MSEID_下剋上",
+    "skill3": "",
+    "skill4": "",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 1,
+    "inheritable": 1,
+    "alter_JID": "MJID_薬商人",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/106.png\">",
+        "SEID": "MSEID_良成長",
+        "skill_name": "【좋은 성장】",
+        "description": "레벨 업 시, 모든 능력의<br>성장 판정에 +10",
+        "get_level": 1
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/84.png\">",
+        "SEID": "MSEID_下剋上",
+        "skill_name": "【하극상】",
+        "description": "자신보다 적의 레벨이 높을 때,<br>명중, 회피 +15(상급직은 레벨 +20)",
+        "get_level": 10
+      }
+    ],
+    "change_array": [
+      {
+        "JID": "MJID_兵法者",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_大商人",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "JID": "MJID_魔戦士",
+    "name": "마전사",
+    "JID_H": "MJID_H_魔戦士",
+    "description": "백야의 병과. 특수 전투 기술을 익힌 자.<br>도·곤봉·수리검을 자유롭게 다룬다.",
+    "skill1": "MSEID_偶人の空蝉",
+    "skill2": "MSEID_精神統一",
+    "skill3": "MSEID_心頭滅却",
+    "skill4": "MSEID_居合一閃",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 0,
+    "inheritable": 2,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/125.png\">",
+        "SEID": "MSEID_偶人の空蝉",
+        "skill_name": "【짝의 위장술】",
+        "description": "짝수 턴,<br>입는 마법 대미지 -4",
+        "get_level": 1
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/126.png\">",
+        "SEID": "MSEID_精神統一",
+        "skill_name": "【정신 통일】",
+        "description": "적에게 공격당했을 때,<br>입는 마법 대미지 -4",
+        "get_level": 10
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/127.png\">",
+        "SEID": "MSEID_心頭滅却",
+        "skill_name": "【무념무상】",
+        "description": "자신이 당한 능력 감소의<br>회복 속도가 2배가 된다",
+        "get_level": 25
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/128.png\">",
+        "SEID": "MSEID_居合一閃",
+        "skill_name": "【발도 일섬】",
+        "description": "자신이 공격을 걸었을 때,<br>입히는 대미지 +7",
+        "get_level": 35
+      }
+    ]
+  },
+  {
+    "JID": "MJID_ダークペガサス",
+    "name": "다크 팔콘",
+    "JID_H": "MJID_H_ダークペガサス",
+    "description": "암야의 병과. 칠흑의 천마를 다루는 기사.<br>창과 마도서로 전장을 가른다.",
+    "skill1": "MSEID_速さ+2",
+    "skill2": "MSEID_リフレッシュ",
+    "skill3": "MSEID_移動の叫び",
+    "skill4": "MSEID_疾風迅雷",
+    "gender": 0,
+    "oppose_JID": "",
+    "class_rank": 0,
+    "inheritable": 2,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/5.png\">",
+        "SEID": "MSEID_速さ+2",
+        "skill_name": "【속도+2】",
+        "description": "자신의 속도 +2",
+        "get_level": 1
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/90.png\">",
+        "SEID": "MSEID_リフレッシュ",
+        "skill_name": "【리프레시】",
+        "description": "턴 개시 시, 주위 2칸 이내에 아무도<br>없을 때, 최대 HP의 20% HP 회복",
+        "get_level": 10
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/23.png\">",
+        "SEID": "MSEID_移動の叫び",
+        "skill_name": "【이동의 외침】",
+        "description": "「응원」 커맨드 선택 시,<br>주위 2칸 이내 아군이 이동 +1(1턴)",
+        "get_level": 25
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/108.png\">",
+        "SEID": "MSEID_疾風迅雷",
+        "skill_name": "【질풍신뢰】",
+        "description": "자신이 공격을 걸어 적을 쓰러뜨린 후,<br>한 번 더 행동 가능(공진·방진 시 제외)",
+        "get_level": 35
+      }
+    ]
+  },
+  {
+    "JID": "MJID_シューター",
+    "name": "슈터",
+    "JID_H": "MJID_H_シューター",
+    "description": "이계의 병과. 이동 포대를 다루는 포수.<br>활 외에도 포대로 광범위하게 공격한다.",
+    "skill1": "MSEID_測量術",
+    "skill2": "MSEID_自動砲台",
+    "skill3": "MSEID_砲身改造",
+    "skill4": "MSEID_水陸両用",
+    "gender": 1,
+    "oppose_JID": "",
+    "class_rank": 0,
+    "inheritable": 2,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/129.png\">",
+        "SEID": "MSEID_測量術",
+        "skill_name": "【측량술】",
+        "description": "「포대」 커맨드 사용 시,<br>포대의 명중 +10",
+        "get_level": 1
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/130.png\">",
+        "SEID": "MSEID_自動砲台",
+        "skill_name": "【자동 포대】",
+        "description": "기술%로 발동. 자신이 슈터일 때,<br>턴 개시 시, 자동으로 범위 내 적 하나를 공격",
+        "get_level": 10
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/131.png\">",
+        "SEID": "MSEID_砲身改造",
+        "skill_name": "【포신 개조】",
+        "description": "「포대」 커맨드 사용 시,<br>포대의 범위 +1, 내사정·외사정 -1",
+        "get_level": 25
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/132.png\">",
+        "SEID": "MSEID_水陸両用",
+        "skill_name": "【험로 답파】",
+        "description": "자신이 슈터일 때, 이동 +1 및<br>진입 가능한 지형의 이동 코스트를 1로 취급",
+        "get_level": 35
+      }
+    ]
+  },
+  {
+    "JID": "MJID_魔女",
+    "name": "마녀",
+    "JID_H": "MJID_H_魔女",
+    "description": "이계의 병과. 공간을 다루는 자.<br>마법 외에 워프로 장거리 이동을 한다.",
+    "skill1": "MSEID_暗闇の加護",
+    "skill2": "MSEID_魔女の大釜",
+    "skill3": "MSEID_ワープ",
+    "skill4": "MSEID_魔女の毒薬",
+    "gender": 2,
+    "oppose_JID": "",
+    "class_rank": 0,
+    "inheritable": 2,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/133.png\">",
+        "SEID": "MSEID_暗闇の加護",
+        "skill_name": "【어둠의 가호】",
+        "description": "다크 메이지 계열 전용 마법을 장비 가능",
+        "get_level": 1
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/134.png\">",
+        "SEID": "MSEID_魔女の大釜",
+        "skill_name": "【마녀의 가마】",
+        "description": "행운%로 발동. 7턴째까지<br>행동 종료 시에 약을 획득",
+        "get_level": 10
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/135.png\">",
+        "SEID": "MSEID_ワープ",
+        "skill_name": "【워프】",
+        "description": "「워프」 커맨드 사용 시, 자신을 아군의<br>인접 칸으로 이동시키고, 이어서 행동 가능",
+        "get_level": 25
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/136.png\">",
+        "SEID": "MSEID_魔女の毒薬",
+        "skill_name": "【마녀의 독약】",
+        "description": "기술×1.5%로 발동. 공격을 걸었을 때,<br>전투 후, 적의 이동력 0, 회피 -20(1턴)",
+        "get_level": 35
+      }
+    ]
+  },
+  {
+    "JID": "MJID_スターロード",
+    "name": "스타 로드",
+    "JID_H": "MJID_H_スターロード",
+    "description": "이계의 병과. 전설 속에 등장하는 왕.<br>검을 휘두르며 싸운다.",
+    "skill1": "MSEID_柔剣",
+    "skill2": "MSEID_カリスマ",
+    "skill3": "MSEID_防陣＋",
+    "skill4": "MSEID_速さの吸収",
+    "gender": 1,
+    "oppose_JID": "",
+    "class_rank": 0,
+    "inheritable": 2,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/147.png\">",
+        "SEID": "MSEID_柔剣",
+        "skill_name": "【유검】",
+        "description": "속도 +3, 수비 -1",
+        "get_level": 1
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/148.png\">",
+        "SEID": "MSEID_カリスマ",
+        "skill_name": "【카리스마】",
+        "description": "주위 2칸 이내의 아군이 전투 시,<br>적에게 입히는 대미지 +2",
+        "get_level": 10
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/149.png\">",
+        "SEID": "MSEID_防陣＋",
+        "skill_name": "【방진+】",
+        "description": "방진에서 후위일 때, 자신이 얻는<br>듀얼 가드 포인트 +1",
+        "get_level": 25
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/143.png\">",
+        "SEID": "MSEID_速さの吸収",
+        "skill_name": "【속도 흡수】",
+        "description": "자신이 적을 쓰러뜨리면 속도 +2(최대 +10)<br>(장 종료까지. 다른 흡수 스킬과 중복 불가)",
+        "get_level": 35
+      }
+    ]
+  },
+  {
+    "JID": "MJID_ヴァンガード",
+    "name": "뱅가드",
+    "JID_H": "MJID_H_ヴァンガード",
+    "description": "이계의 병과. 최전선에서 싸우는 장군.<br>검과 도끼를 다룰 수 있다.",
+    "skill1": "MSEID_剛剣",
+    "skill2": "MSEID_歴戦の勘",
+    "skill3": "MSEID_天空",
+    "skill4": "MSEID_力の吸収",
+    "gender": 1,
+    "oppose_JID": "",
+    "class_rank": 0,
+    "inheritable": 2,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/150.png\">",
+        "SEID": "MSEID_剛剣",
+        "skill_name": "【강검】",
+        "description": "힘 +3, 속도 -1",
+        "get_level": 1
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/151.png\">",
+        "SEID": "MSEID_歴戦の勘",
+        "skill_name": "【베테랑의 감】",
+        "description": "전투 시, 필살회피 +15",
+        "get_level": 10
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/152.png\">",
+        "SEID": "MSEID_天空",
+        "skill_name": "【천공】",
+        "description": "공격 시, 기술×0.5%로 발동<br>태양과 월광의 2회 연속 공격",
+        "get_level": 25
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/140.png\">",
+        "SEID": "MSEID_力の吸収",
+        "skill_name": "【힘 흡수】",
+        "description": "자신이 적을 쓰러뜨리면 힘 +2(최대 +10)<br>(장 종료까지. 다른 흡수 스킬과 중복 불가)",
+        "get_level": 35
+      }
+    ]
+  },
+  {
+    "JID": "MJID_マスターロード",
+    "name": "마스터 로드",
+    "JID_H": "MJID_H_マスターロード",
+    "description": "이계의 병과. 군을 통솔하는 왕족.<br>검과 함께 창도 사용한다.",
+    "skill1": "MSEID_攻陣＋",
+    "skill2": "MSEID_カリスマ",
+    "skill3": "MSEID_天空",
+    "skill4": "MSEID_覚醒",
+    "gender": 2,
+    "oppose_JID": "",
+    "class_rank": 0,
+    "inheritable": 2,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/153.png\">",
+        "SEID": "MSEID_攻陣＋",
+        "skill_name": "【공진+】",
+        "description": "공진에서 후위일 때,<br>적에게 입히는 대미지 +3",
+        "get_level": 1
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/148.png\">",
+        "SEID": "MSEID_カリスマ",
+        "skill_name": "【카리스마】",
+        "description": "주위 2칸 이내의 아군이 전투 시,<br>적에게 입히는 대미지 +2",
+        "get_level": 10
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/152.png\">",
+        "SEID": "MSEID_天空",
+        "skill_name": "【천공】",
+        "description": "공격 시, 기술×0.5%로 발동<br>태양과 월광의 2회 연속 공격",
+        "get_level": 25
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/154.png\">",
+        "SEID": "MSEID_覚醒",
+        "skill_name": "【각성】",
+        "description": "HP가 절반 이하일 때,<br>명중·회피·필살·필살회피 +30",
+        "get_level": 35
+      }
+    ]
+  },
+  {
+    "JID": "MJID_神軍師",
+    "name": "참모",
+    "JID_H": "MJID_H_神軍師",
+    "description": "이계의 병과. 천재적인 지휘력을<br>자랑하는 참모. 검과 마법을 사용한다.",
+    "skill1": "MSEID_戦術指南",
+    "skill2": "MSEID_方陣",
+    "skill3": "MSEID_華炎",
+    "skill4": "MSEID_七色の叫び",
+    "gender": 1,
+    "oppose_JID": "",
+    "class_rank": 0,
+    "inheritable": 2,
+    "alter_JID": "",
+    "skill_array": [
+      {
+        "icon": "<img class = \"skill\" src = \"image/155.png\">",
+        "SEID": "MSEID_戦術指南",
+        "skill_name": "【전술 지침】",
+        "description": "방진에서 후위일 때,<br>전위의 명중 +10",
+        "get_level": 1
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/156.png\">",
+        "SEID": "MSEID_方陣",
+        "skill_name": "【진법】",
+        "description": "인접한 아군이 전투 시,<br>필살 +10, 필살회피 +10",
+        "get_level": 10
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/157.png\">",
+        "SEID": "MSEID_華炎",
+        "skill_name": "【화려한 불꽃】",
+        "description": "기술%로 발동. 물리 공격이라면 마력÷2<br>마법이라면 힘÷2를 공격 시 대미지에 추가",
+        "get_level": 25
+      },
+      {
+        "icon": "<img class = \"skill\" src = \"image/158.png\">",
+        "SEID": "MSEID_七色の叫び",
+        "skill_name": "【무지개색 외침】",
+        "description": "「응원」 커맨드 선택 시, 주위 4칸<br>이내의 아군이 모든 능력 +2(1턴)",
+        "get_level": 35
+      }
+    ]
+  }
+]

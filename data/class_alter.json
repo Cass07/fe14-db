@@ -1,0 +1,92 @@
+[
+  {
+    "base_JID": "MJID_ソシアルナイト",
+    "marrage_disable": 0,
+    "alter_JID": "MJID_忍"
+  },
+  {
+    "base_JID": "MJID_アーマーナイト",
+    "marrage_disable": 0,
+    "alter_JID": "MJID_槍術士"
+  },
+  {
+    "base_JID": "MJID_アクスファイター",
+    "marrage_disable": 0,
+    "alter_JID": "MJID_鬼人"
+  },
+  {
+    "base_JID": "MJID_マーシナリー",
+    "marrage_disable": 0,
+    "alter_JID": "MJID_侍"
+  },
+  {
+    "base_JID": "MJID_シーフ",
+    "marrage_disable": 0,
+    "alter_JID": "MJID_弓使い"
+  },
+  {
+    "base_JID": "MJID_侍",
+    "marrage_disable": 0,
+    "alter_JID": "MJID_マーシナリー"
+  },
+  {
+    "base_JID": "MJID_鬼人",
+    "marrage_disable": 0,
+    "alter_JID": "MJID_アクスファイター"
+  },
+  {
+    "base_JID": "MJID_槍術士",
+    "marrage_disable": 0,
+    "alter_JID": "MJID_アーマーナイト"
+  },
+  {
+    "base_JID": "MJID_呪い師",
+    "marrage_disable": 0,
+    "alter_JID": "MJID_ダークマージ"
+  },
+  {
+    "base_JID": "MJID_天馬武者",
+    "marrage_disable": 0,
+    "alter_JID": "MJID_ドラゴンナイト"
+  },
+  {
+    "base_JID": "MJID_弓使い",
+    "marrage_disable": 0,
+    "alter_JID": "MJID_シーフ"
+  },
+  {
+    "base_JID": "MJID_ドラゴンナイト",
+    "marrage_disable": 0,
+    "alter_JID": "MJID_天馬武者"
+  },
+  {
+    "base_JID": "MJID_忍",
+    "marrage_disable": 0,
+    "alter_JID": "MJID_ソシアルナイト"
+  },
+  {
+    "base_JID": "MJID_ダークマージ",
+    "marrage_disable": 0,
+    "alter_JID": "MJID_呪い師"
+  },
+  {
+    "base_JID": "MJID_ガルー",
+    "marrage_disable": 1,
+    "alter_JID": "MJID_シーフ"
+  },
+  {
+    "base_JID": "MJID_妖狐",
+    "marrage_disable": 1,
+    "alter_JID": "MJID_薬商人"
+  },
+  {
+    "base_JID": "MJID_歌姫",
+    "marrage_disable": 1,
+    "alter_JID": "MJID_ロッドナイト"
+  },
+  {
+    "base_JID": "MJID_村人",
+    "marrage_disable": 1,
+    "alter_JID": "MJID_薬商人"
+  }
+]

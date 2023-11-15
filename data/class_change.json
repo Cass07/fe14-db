@@ -1,0 +1,306 @@
+[
+  {
+    "base_JID": "MJID_ダークプリンス",
+    "change_JID_array": [
+      {
+        "JID": "MJID_白の血族",
+        "condition": 1
+      },
+      {
+        "JID": "MJID_ダークブラッド",
+        "condition": 2
+      }
+    ]
+  },
+  {
+    "base_JID": "MJID_ダークプリンセス",
+    "change_JID_array": [
+      {
+        "JID": "MJID_白の血族",
+        "condition": 1
+      },
+      {
+        "JID": "MJID_ダークブラッド",
+        "condition": 2
+      }
+    ]
+  },
+  {
+    "base_JID": "MJID_ソシアルナイト",
+    "change_JID_array": [
+      {
+        "JID": "MJID_パラディン",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_グレートナイト",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "base_JID": "MJID_アーマーナイト",
+    "change_JID_array": [
+      {
+        "JID": "MJID_グレートナイト",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_ジェネラル",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "base_JID": "MJID_アクスファイター",
+    "change_JID_array": [
+      {
+        "JID": "MJID_バーサーカー",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_ブレイブヒーロー",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "base_JID": "MJID_マーシナリー",
+    "change_JID_array": [
+      {
+        "JID": "MJID_ブレイブヒーロー",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_ボウナイト",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "base_JID": "MJID_シーフ",
+    "change_JID_array": [
+      {
+        "JID": "MJID_ボウナイト",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_アドベンチャラー",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "base_JID": "MJID_ドラゴンナイト",
+    "change_JID_array": [
+      {
+        "JID": "MJID_ドラゴンマスター",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_レヴナントナイト",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "base_JID": "MJID_ダークマージ",
+    "change_JID_array": [
+      {
+        "JID": "MJID_ソーサラー",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_ダークナイト",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "base_JID": "MJID_ロッドナイト1",
+    "change_JID_array": [
+      {
+        "JID": "MJID_ストラテジスト",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_バトラー",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "base_JID": "MJID_ロッドナイト2",
+    "change_JID_array": [
+      {
+        "JID": "MJID_ストラテジスト",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_メイド",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "base_JID": "MJID_ガルー",
+    "change_JID_array": [
+      {
+        "JID": "MJID_マーナガルム",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "base_JID": "MJID_侍",
+    "change_JID_array": [
+      {
+        "JID": "MJID_剣聖",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_兵法者",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "base_JID": "MJID_村人",
+    "change_JID_array": [
+      {
+        "JID": "MJID_兵法者",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_大商人",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "base_JID": "MJID_薬商人",
+    "change_JID_array": [
+      {
+        "JID": "MJID_絡繰師",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_大商人",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "base_JID": "MJID_忍",
+    "change_JID_array": [
+      {
+        "JID": "MJID_上忍",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_絡繰師",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "base_JID": "MJID_鬼人",
+    "change_JID_array": [
+      {
+        "JID": "MJID_修羅",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_鍛冶",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "base_JID": "MJID_槍術士",
+    "change_JID_array": [
+      {
+        "JID": "MJID_槍聖",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_婆娑羅",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "base_JID": "MJID_呪い師",
+    "change_JID_array": [
+      {
+        "JID": "MJID_婆娑羅",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_陰陽師",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "base_JID": "MJID_修験者",
+    "change_JID_array": [
+      {
+        "JID": "MJID_陰陽師",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_山伏",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "base_JID": "MJID_巫女",
+    "change_JID_array": [
+      {
+        "JID": "MJID_陰陽師",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_戦巫女",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "base_JID": "MJID_天馬武者",
+    "change_JID_array": [
+      {
+        "JID": "MJID_聖天馬武者",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_金鵄武者",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "base_JID": "MJID_弓使い",
+    "change_JID_array": [
+      {
+        "JID": "MJID_金鵄武者",
+        "condition": 0
+      },
+      {
+        "JID": "MJID_弓聖",
+        "condition": 0
+      }
+    ]
+  },
+  {
+    "base_JID": "MJID_妖狐",
+    "change_JID_array": [
+      {
+        "JID": "MJID_九尾の狐",
+        "condition": 0
+      }
+    ]
+  }
+]

@@ -50,7 +50,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item"><a class="nav-link" href="index.html">스킬 리스트</a></li>
-                <!-- <li class="nav-item"><a class="nav-link" href="job-list.html">클래스 리스트</a></li> -->
+                <li class="nav-item"><a class="nav-link active" href="job-list.html">클래스 리스트</a></li>
             </ul>
         </div>
     </div>
@@ -65,7 +65,7 @@
 <div class="container">
     <br>
     <div class="row">
-        <div class="col" style = "display:none;">
+        <div class="col">
             <table id="table"
                    data-show-fullscreen="true"
                    data-detail-view="true"
@@ -77,11 +77,11 @@
                 <thead>
                 <tr>
                     <th data-field="ID" data-sortable="true" data-visible="false">내부 순서</th>
-                    <th data-field="icon"></th>
-                    <th data-field="name" data-sortable="true">스킬명</th>
+                    <th data-field="name" data-sortable="true">클래스명</th>
                     <th data-field="description">설명</th>
-                    <th data-field="skillKindText">스킬 종류</th>
-                    <th data-field="skillSourceText" data-visible="false">습득법</th>
+                    <th data-field="getSkillIcon">습득 스킬</th>
+                    <th data-field="class_rank_text" data-visible="false">종류</th>
+                    <th data-field="upper_class" data-visible="false">상위 클래스</th>
                 </tr>
                 </thead>
             </table>
@@ -95,6 +95,7 @@
 <script>
 
     let skillTableData;
+    let jobDictionary;
 
     $(document).ready(function () {
         let prefix = "";
@@ -104,152 +105,182 @@
             prefix = "http://localhost:63343/fe14-db/"
         }
 
-        let tableData = [];
-        let skillKindData = [];
-        let skillItemData = [];
+        let jobData = [];
+        jobDictionary = [];
+        let skillData = [];
+        let jobChangeData = [];
         let unitData = [];
-        $.getJSON("data/fe14-skill.json", jsonDataTable => {
+        $.getJSON("data/fe14-job.json", jsonDataTable => {
             jsonDataTable.forEach(item => {
-                tableData[item.ID - 1] = item;
+                jobData.push(item);
+                jobDictionary[item.JID] = item;
             })
-        }).then($.getJSON("data/skill_kind.json", jsonDataTable => {
+        }).then($.getJSON("data/fe14-skill.json", jsonDataTable => {
             jsonDataTable.forEach(item => {
-                skillKindData[item.id] = item;
+                skillData[item.SEID] = item;
             })
-        })).then($.getJSON("data/skill_item.json", jsonDataTable => {
+        })).then($.getJSON("data/class_change.json", jsonDataTable => {
             jsonDataTable.forEach(item => {
-                skillItemData[item.skill_id] = item;
-            })
-        })).then($.getJSON("data/unit_skill.json", jsonDataTable => {
-            jsonDataTable.forEach(item => {
-                unitData.push(item);
+                jobChangeData.push(item);
             })
         })).then(function () {
-            skillTableData = makeSkillResultTable(tableData, skillKindData, skillItemData);
+            skillTableData = makeSkillResultTable(jobData);
             $("#table").bootstrapTable({data: skillTableData});
         });
 
 
     });
 
-    function makeSkillResultTable(skillJson, skillKindJson, skillItemData) {
-        skillJson.forEach((singleSkill, index, array) => {
-            array[index].skillKindText = skillKindJson[singleSkill.kind].kind_name;
-            if (skillItemData[singleSkill.SEID] !== undefined) {
-                //아이템으로 획득 가능한 스킬
-                array[index].skillObtainItemText = skillItemData[singleSkill.SEID].name;
-            }
-            let skillSourceText = "";
-            if (singleSkill.skillObtainItemText !== undefined) {
-                //아이템 사용 습득 스킬
-                skillSourceText += `${singleSkill.skillObtainItemText}<br>`;
-            }
-            if (singleSkill.skillObtainClassArray !== undefined && singleSkill.skillObtainClassArray.length > 0) {
-                //클래스로 습득 스킬
-                singleSkill.skillObtainClassArray.forEach(singleClassData => {
-                    skillSourceText += `${singleClassData.get_class_name} ${singleClassData.get_level}레벨<br>`;
-                })
-            }
-            if (singleSkill.skillPersonalUnitArray !== undefined) {
-                //개인 스킬
-                singleSkill.skillPersonalUnitArray.forEach(singleUnit => {
-                    skillSourceText += `${singleUnit.unit_name}의 개인 스킬<br>`;
-                })
+    function makeSkillResultTable(jobJson) {
+        jobJson.forEach((singleJob, index, array) => {
+            let getSkillHtml = "";
+            singleJob.skill_array.forEach(singleSkill => {
+                getSkillHtml += `${singleSkill.icon} ${singleSkill.skill_name}<br>`;
+            })
+            array[index].getSkillIcon = getSkillHtml.slice(0,-4);
 
-            }
-            array[index].skillSourceText = skillSourceText.slice(0,-4);
-        })
-        return skillJson;
-    }
-
-    function makeSkillClassTableJob(skillJson, jobData) {
-        let jobDataSortbySkill =[];
-        jobData.forEach(singleJob => {
-            for(let i = 1; i <= 4; i++) {
-                let sid = singleJob['skill' + i];
-                if(jobDataSortbySkill[sid] === undefined) {
-                    jobDataSortbySkill[sid] = [];
-                }
-                let newSkillDataObject = {};
-                //클래스 아이디
-                newSkillDataObject.get_class = singleJob.JID;
-                newSkillDataObject.get_class_name = singleJob.name;
-                //스킬 습득 레벨
-                if(i === 1) {
-                    if(singleJob.job_rank === 1 || singleJob.job_rank === 0) {
-                        newSkillDataObject.get_level = 1;
-                    } else if (singleJob.job_rank === 2) {
-                        newSkillDataObject.get_level = 5;
-                    }
-                } else if (i === 2) {
-                    if(singleJob.job_rank === 1 || singleJob.job_rank === 0) {
-                        newSkillDataObject.get_level = 10;
-                    } else if (singleJob.job_rank === 2) {
-                        newSkillDataObject.get_level = 15;
-                    }
-                } else if (i === 3) {
-                    newSkillDataObject.get_level = 25;
-                } else if (i === 4) {
-                    newSkillDataObject.get_level = 35;
-                }
-
-                jobDataSortbySkill[sid].push(newSkillDataObject);
-            }
-
-        });
-
-
-        skillJson.forEach((singleSkill, index, array) => {
-            if(jobDataSortbySkill[singleSkill.SEID] !== undefined) {
-                array[index].skillObtainClassArray = jobDataSortbySkill[singleSkill.SEID];
+            //클래스 상하위 텍스트
+            if(singleJob.class_rank === 2) {
+                array[index].class_rank_text = "상위직";
+            }else if(singleJob.class_rank === 1) {
+                array[index].class_rank_text = "하위직";
             }else {
-                array[index].skillObtainClassArray = [];
+                array[index].class_rank_text = "특수직";
             }
 
+            //클래스체인지 텍스트
+            let upperClassText = "-";
+            if(singleJob.class_rank === 1) {
+                upperClassText = "";
+                singleJob.change_array.forEach(singleClassChange => {
+                    upperClassText += `${jobDictionary[singleClassChange.JID].name}<br>`;
+                })
+                upperClassText = upperClassText.slice(0,-4);
+            }
+            array[index].upper_class = upperClassText;
+
+
+        })
+        return jobJson;
+    }
+    function insertSkillDatatoJobData(jobData, skillData) {
+        jobData.forEach((singleJob, index, array) =>{
+            let jobSkillArray = [];
+            for (let i = 1; i <= 4; i++){
+                let sid = singleJob['skill' + i];
+                if(skillData[sid] !== undefined) {
+                    //스킬 존재함
+                    let skillDataObject = {};
+                    skillDataObject.icon = skillData[sid].icon;
+                    skillDataObject.SEID = skillData[sid].SEID;
+                    skillDataObject.skill_name = skillData[sid].name;
+                    skillDataObject.description = skillData[sid].description;
+
+                    //스킬 습득 레벨
+                    if(i === 1) {
+                        if(singleJob.class_rank === 1 || singleJob.class_rank === 0) {
+                            skillDataObject.get_level = 1;
+                        } else if (singleJob.class_rank === 2) {
+                            skillDataObject.get_level = 5;
+                        }
+                    } else if (i === 2) {
+                        if(singleJob.class_rank === 1 || singleJob.class_rank === 0) {
+                            skillDataObject.get_level = 10;
+                        } else if (singleJob.class_rank === 2) {
+                            skillDataObject.get_level = 15;
+                        }
+                    } else if (i === 3) {
+                        skillDataObject.get_level = 25;
+                    } else if (i === 4) {
+                        skillDataObject.get_level = 35;
+                    }
+
+                    jobSkillArray.push(skillDataObject);
+                }
+            }
+            array[index].skill_array = jobSkillArray;
         });
-        console.log(skillJson);
-        console.log(JSON.stringify(skillJson));
+
+        return jobData;
     }
 
-    function makeSkillClassTableUnit(skillJson, unitData) {
-        let unitDataSortbySkill =[];
-        unitData.forEach(singleUnit => {
-            if(unitDataSortbySkill[singleUnit.SEID] === undefined) {
-                unitDataSortbySkill[singleUnit.SEID] = [];
+    function insertChangeDatatoJobData(jobData, changeData) {
+        let changeKeyArray = [];
+        changeData.forEach(singleChange => {
+            changeKeyArray[singleChange.base_JID] = singleChange;
+            console.log(singleChange.base_JID);
+
+
+            /*
+            singleChange.change_JID_array.forEach(singleHighclassData => {
+                if(changeKeyArray[singleHighclassData.JID] === undefined) {
+                    changeKeyArray[singleHighclassData.JID] = {};
+                    changeKeyArray[singleHighclassData.JID].result_JID = singleHighclassData.JID;
+                    changeKeyArray[singleHighclassData.JID].change_JID_array = [];
+                }
+                let lowJIDObject = {};
+                lowJIDObject.condition = 0;
+                lowJIDObject.JID = singleChange.base_JID;
+                changeKeyArray[singleHighclassData.JID].change_JID_array.push(lowJIDObject)
+            })
+             */
+
+        })
+        console.log(changeKeyArray);
+
+        jobData.forEach((singleJob, index, array) =>{
+            let jobChangeArray = [];
+            if(changeKeyArray[singleJob.JID] !== undefined) {
+                array[index].change_array = changeKeyArray[singleJob.JID].change_JID_array;
             }
-            let unitDataObject = {};
-            unitDataObject.unit_name = singleUnit.name;
-            unitDataObject.unit_pid = singleUnit.PID;
-            unitDataSortbySkill[singleUnit.SEID].push(unitDataObject);
         });
 
+        console.log(JSON.stringify(jobData));
 
-        skillJson.forEach((singleSkill, index, array) => {
-            if(unitDataSortbySkill[singleSkill.SEID] !== undefined) {
-                array[index].skillPersonalUnitArray = unitDataSortbySkill[singleSkill.SEID];
-            }
-
-        });
-        console.log(skillJson);
-        console.log(JSON.stringify(skillJson));
+        return jobData;
     }
-
 
     function skill_detail_formatter(index, row) {
         //let html = []
 
-        let detailText = row.name + "<br>" + row.description;
-        if (row.skillObtainItemText !== undefined) {
-            //아이템 사용 습득 스킬
-            detailText += "<br><br>습득법 : 아이템 사용<br>" + row.skillObtainItemText;
+        let detailText = `${row.name}<br>${row.description}<br>`;
+        if(row.class_rank === 2) {
+            detailText += "<br>상위직";
+        }else if (row.class_rank === 1) {
+            detailText += "<br>하위직";
+            //가능한 상위직 추가
+        }else if (row.class_rank === 0) {
+            detailText += "<br>특수직 (최대 레벨 40)";
         }
-        if (row.skillObtainClassArray !== undefined && row.skillObtainClassArray.length > 0) {
-            //클래스로 습득 스킬
-            detailText += "<br><br>습득법 : 클래스<br>";
-            row.skillObtainClassArray.forEach(singleClassData => {
-                detailText += `${singleClassData.get_class_name} ${singleClassData.get_level}레벨 달성<br>`;
+
+        if(row.class_rank === 2 || row.class_rank === 1) {
+            //가능한 하위/상위직 추가
+            detailText += "<br>";
+            row.change_array.forEach(singleClassChange => {
+                detailText += `【${jobDictionary[singleClassChange.JID].name}】, `;
             })
+            detailText = detailText.slice(0,-2);
+            detailText += (row.class_rank === 2? "에서 클래스 체인지 가능": (isBatchim(detailText.slice(detailText.length-2,detailText.length-1))?"":"으")+ "로 클래스 체인지 가능");
         }
+
+        if(row.inheritable === 1) {
+            detailText += "<br>버디/매리지 프루프로 전달 불가, 자식에게 계승만 가능";
+        }else if(row.inheritable === 2) {
+            detailText += "<br>버디/매리지 프루프로 전달 불가, 자식에게 계승 불가";
+        }
+
+        if(row.gender === 1) {
+            detailText += "<br>남성 전용";
+        }else if(row.gender === 2) {
+            detailText += "<br>여성 전용";
+        }
+
+        detailText += "<br><br>";
+        //계승 스킬 출력
+        row.skill_array.forEach(singleSkill => {
+            detailText += `${singleSkill.get_level}레벨 - ${singleSkill.icon} ${singleSkill.skill_name}<br>${singleSkill.description}<br>`;
+        });
+
         if (row.skillPersonalUnitArray !== undefined) {
             //개인 스킬
             console.log(row.skillPersonalUnitArray);
@@ -257,10 +288,33 @@
             row.skillPersonalUnitArray.forEach(singleUnit => {
                 detailText += `${singleUnit.unit_name}, `;
             })
-            detailText = detailText.slice(0,-2);
+            detailText = detailText;
         }
 
+
+        //클래스체인지 병과와 스킬 출력
+        if (row.class_rank === 1) {
+            detailText += "<br><br>";
+            row.change_array.forEach(singleClassChange => {
+                detailText += `【${jobDictionary[singleClassChange.JID].name}】${(isBatchim(jobDictionary[singleClassChange.JID].name)?"":"으")}로 클래스체인지 했을 때 얻을 수 있는 스킬<br>`;
+                jobDictionary[singleClassChange.JID].skill_array.forEach(singleSkill => {
+                    detailText += `${singleSkill.get_level}레벨 - ${singleSkill.icon} ${singleSkill.skill_name}<br>${singleSkill.description}<br>`;
+                });
+                detailText += "<br>";
+            })
+            detailText = detailText.slice(0,-4);
+        }
+
+
+
         return detailText;
+    }
+
+    //받침이 없거나 ㄹ(8)이라면 로, 아니라면 으로
+    function isBatchim(word) {
+        let lastStrCode = word.charCodeAt(word.length-1);
+        if (lastStrCode < 44032 || lastStrCode > 55203) return 0;
+        return (lastStrCode - 44032) % 28 === 0 || (lastStrCode - 44032) % 28 === 8 ;
     }
 
     function scrollTop_func() {
