@@ -2547,8 +2547,8 @@
     "kind": 25,
     "skillPersonalUnitArray": [
       {
-        "unit_name": "사쿠라",
-        "unit_pid": "MPID_サクラ"
+        "unit_name": "아주라",
+        "unit_pid": "MPID_アクア"
       }
     ]
   },
@@ -2562,8 +2562,8 @@
     "kind": 25,
     "skillPersonalUnitArray": [
       {
-        "unit_name": "아주라",
-        "unit_pid": "MPID_アクア"
+        "unit_name": "사쿠라",
+        "unit_pid": "MPID_サクラ"
       }
     ]
   },
@@ -3361,8 +3361,8 @@
     "kind": 25,
     "skillPersonalUnitArray": [
       {
-        "unit_name": "포레스트",
-        "unit_pid": "MPID_フォレオ"
+        "unit_name": "이그니셔스",
+        "unit_pid": "MPID_イグニス"
       }
     ]
   },
@@ -3376,8 +3376,8 @@
     "kind": 25,
     "skillPersonalUnitArray": [
       {
-        "unit_name": "이그니셔스",
-        "unit_pid": "MPID_イグニス"
+        "unit_name": "포레스트",
+        "unit_pid": "MPID_フォレオ"
       }
     ]
   },

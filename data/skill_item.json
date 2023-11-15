@@ -70,5 +70,11 @@
     "name": "워프의 책",
     "description": "「워프」 스킬을 습득 가능",
     "skill_id": "MSEID_ワープ"
+  },
+  {
+    "id": 13,
+    "name": "근접 사격의 책",
+    "description": "「근접 사격」 스킬을 습득 가능",
+    "skill_id": "MSEID_近接射撃"
   }
 ]

@@ -37,12 +37,12 @@
   {
     "PID": "MPID_サクラ",
     "name": "사쿠라",
-    "SEID": "MSEID_癒しの声"
+    "SEID": "MSEID_小さな声援"
   },
   {
     "PID": "MPID_アクア",
     "name": "아주라",
-    "SEID": "MSEID_小さな声援"
+    "SEID": "MSEID_癒しの声"
   },
   {
     "PID": "MPID_カザハナ",
@@ -312,12 +312,12 @@
   {
     "PID": "MPID_フォレオ",
     "name": "포레스트",
-    "SEID": "MSEID_臆病"
+    "SEID": "MSEID_だまし討ち"
   },
   {
     "PID": "MPID_イグニス",
     "name": "이그니셔스",
-    "SEID": "MSEID_だまし討ち"
+    "SEID": "MSEID_臆病"
   },
   {
     "PID": "MPID_ベロア",
