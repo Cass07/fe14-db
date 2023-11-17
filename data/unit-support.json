@@ -1148,16 +1148,16 @@
     "name": "칸나(남)",
     "buddy": [
       "MPID_ジークベルト",
-      "Percy",
+      "MPID_ルッツ",
       "MPID_シノノメ"
     ],
     "srank": [
       "MPID_ゾフィー",
       "MPID_ミドリコ",
-      "Velouria",
-      "Ophelia",
-      "Soleil",
-      "Nina",
+      "MPID_ベロア",
+      "MPID_オフェリア",
+      "MPID_ソレイユ",
+      "MPID_エポニーヌ",
       "MPID_キヌ",
       "MPID_ミタマ",
       "MPID_マトイ",
@@ -1169,7 +1169,7 @@
     "name": "칸나(여)",
     "buddy": [
       "MPID_ミドリコ",
-      "Velouria",
+      "MPID_ベロア",
       "MPID_キヌ",
       "MPID_ミタマ"
     ],
@@ -1178,8 +1178,8 @@
       "MPID_ディーア",
       "MPID_ジークベルト",
       "MPID_フォレオ",
-      "Ignatius",
-      "Percy",
+      "MPID_イグニス",
+      "MPID_ルッツ",
       "MPID_シノノメ",
       "MPID_キサラギ",
       "MPID_グレイ",
@@ -1198,10 +1198,10 @@
       "MPID_カンナ2",
       "MPID_ゾフィー",
       "MPID_ミドリコ",
-      "Velouria",
-      "Ophelia",
-      "Soleil",
-      "Nina",
+      "MPID_ベロア",
+      "MPID_オフェリア",
+      "MPID_ソレイユ",
+      "MPID_エポニーヌ",
       "MPID_キヌ",
       "MPID_ミタマ",
       "MPID_マトイ",
@@ -1212,7 +1212,7 @@
     "PID": "MPID_ディーア",
     "name": "드와이어",
     "buddy": [
-      "Percy",
+      "MPID_ルッツ",
       "MPID_グレイ",
       "MPID_キサラギ"
     ],
@@ -1221,10 +1221,10 @@
       "MPID_カンナ2",
       "MPID_ゾフィー",
       "MPID_ミドリコ",
-      "Velouria",
-      "Ophelia",
-      "Soleil",
-      "Nina",
+      "MPID_ベロア",
+      "MPID_オフェリア",
+      "MPID_ソレイユ",
+      "MPID_エポニーヌ",
       "MPID_キヌ",
       "MPID_ミタマ",
       "MPID_マトイ",
@@ -1235,8 +1235,8 @@
     "PID": "MPID_ゾフィー",
     "name": "소피",
     "buddy": [
-      "Velouria",
-      "Soleil",
+      "MPID_ベロア",
+      "MPID_ソレイユ",
       "MPID_マトイ"
     ],
     "srank": [
@@ -1246,8 +1246,8 @@
       "MPID_ディーア",
       "MPID_ジークベルト",
       "MPID_フォレオ",
-      "Ignatius",
-      "Percy",
+      "MPID_イグニス",
+      "MPID_ルッツ",
       "MPID_シノノメ",
       "MPID_キサラギ",
       "MPID_グレイ",
@@ -1259,7 +1259,7 @@
     "name": "미도리",
     "buddy": [
       "MPID_カンナ2",
-      "Ophelia",
+      "MPID_オフェリア",
       "MPID_キヌ"
     ],
     "srank": [
@@ -1269,8 +1269,8 @@
       "MPID_ディーア",
       "MPID_ジークベルト",
       "MPID_フォレオ",
-      "Ignatius",
-      "Percy",
+      "MPID_イグニス",
+      "MPID_ルッツ",
       "MPID_シノノメ",
       "MPID_キサラギ",
       "MPID_グレイ",
@@ -1295,8 +1295,8 @@
       "MPID_ミタマ",
       "MPID_マトイ",
       "MPID_シャラ",
-      "Ophelia",
-      "Nina"
+      "MPID_オフェリア",
+      "MPID_エポニーヌ"
     ]
   },
   {
@@ -1317,8 +1317,8 @@
       "MPID_ミタマ",
       "MPID_マトイ",
       "MPID_シャラ",
-      "Velouria",
-      "Soleil"
+      "MPID_ベロア",
+      "MPID_ソレイユ"
     ]
   },
   {
@@ -1328,7 +1328,7 @@
       "MPID_ディーア",
       "MPID_シノノメ",
       "MPID_ヒサメ",
-      "Ignatius"
+      "MPID_イグニス"
     ],
     "srank": [
       "MPID_デフォルト名2",
@@ -1339,8 +1339,8 @@
       "MPID_ミタマ",
       "MPID_マトイ",
       "MPID_シャラ",
-      "Soleil",
-      "Nina"
+      "MPID_ソレイユ",
+      "MPID_エポニーヌ"
     ]
   },
   {
@@ -1350,7 +1350,7 @@
       "MPID_カンナ2",
       "MPID_ミドリコ",
       "MPID_シャラ",
-      "Velouria"
+      "MPID_ベロア"
     ],
     "srank": [
       "MPID_デフォルト名1",
@@ -1361,7 +1361,7 @@
       "MPID_キサラギ",
       "MPID_グレイ",
       "MPID_ヒサメ",
-      "Ignatius",
+      "MPID_イグニス",
       "MPID_フォレオ"
     ]
   },
@@ -1372,7 +1372,7 @@
       "MPID_シグレ",
       "MPID_キサラギ",
       "MPID_グレイ",
-      "Percy"
+      "MPID_ルッツ"
     ],
     "srank": [
       "MPID_デフォルト名2",
@@ -1383,8 +1383,8 @@
       "MPID_ミタマ",
       "MPID_マトイ",
       "MPID_シャラ",
-      "Velouria",
-      "Ophelia"
+      "MPID_ベロア",
+      "MPID_オフェリア"
     ]
   },
   {
@@ -1394,7 +1394,7 @@
       "MPID_カンナ2",
       "MPID_マトイ",
       "MPID_シャラ",
-      "Soleil"
+      "MPID_ソレイユ"
     ],
     "srank": [
       "MPID_デフォルト名1",
@@ -1405,7 +1405,7 @@
       "MPID_キサラギ",
       "MPID_グレイ",
       "MPID_ヒサメ",
-      "Percy",
+      "MPID_ルッツ",
       "MPID_ジークベルト"
     ]
   },
@@ -1416,7 +1416,7 @@
       "MPID_ゾフィー",
       "MPID_ミタマ",
       "MPID_シャラ",
-      "Nina"
+      "MPID_エポニーヌ"
     ],
     "srank": [
       "MPID_デフォルト名1",
@@ -1428,7 +1428,7 @@
       "MPID_グレイ",
       "MPID_ヒサメ",
       "MPID_ジークベルト",
-      "Ignatius"
+      "MPID_イグニス"
     ]
   },
   {
@@ -1438,7 +1438,7 @@
       "MPID_マトイ",
       "MPID_ミタマ",
       "MPID_キヌ",
-      "Ophelia"
+      "MPID_オフェリア"
     ],
     "srank": [
       "MPID_デフォルト名2",
@@ -1451,7 +1451,7 @@
       "MPID_グレイ",
       "MPID_ヒサメ",
       "MPID_フォレオ",
-      "Percy"
+      "MPID_ルッツ"
     ]
   },
   {
@@ -1460,7 +1460,7 @@
     "buddy": [
       "MPID_カンナ1",
       "MPID_フォレオ",
-      "Ignatius",
+      "MPID_イグニス",
       "MPID_シノノメ"
     ],
     "srank": [
@@ -1468,10 +1468,10 @@
       "MPID_カンナ2",
       "MPID_ゾフィー",
       "MPID_ミドリコ",
-      "Velouria",
-      "Ophelia",
-      "Soleil",
-      "Nina",
+      "MPID_ベロア",
+      "MPID_オフェリア",
+      "MPID_ソレイユ",
+      "MPID_エポニーヌ",
       "MPID_ミタマ",
       "MPID_マトイ"
     ]
@@ -1482,7 +1482,7 @@
     "buddy": [
       "MPID_シグレ",
       "MPID_ジークベルト",
-      "Ignatius",
+      "MPID_イグニス",
       "MPID_キサラギ"
     ],
     "srank": [
@@ -1490,10 +1490,10 @@
       "MPID_カンナ2",
       "MPID_ゾフィー",
       "MPID_ミドリコ",
-      "Velouria",
-      "Ophelia",
-      "Soleil",
-      "Nina",
+      "MPID_ベロア",
+      "MPID_オフェリア",
+      "MPID_ソレイユ",
+      "MPID_エポニーヌ",
       "MPID_キヌ",
       "MPID_シャラ"
     ]
@@ -1504,7 +1504,7 @@
     "buddy": [
       "MPID_ジークベルト",
       "MPID_フォレオ",
-      "Percy",
+      "MPID_ルッツ",
       "MPID_グレイ"
     ],
     "srank": [
@@ -1512,10 +1512,10 @@
       "MPID_カンナ2",
       "MPID_ゾフィー",
       "MPID_ミドリコ",
-      "Velouria",
-      "Ophelia",
-      "Soleil",
-      "Nina",
+      "MPID_ベロア",
+      "MPID_オフェリア",
+      "MPID_ソレイユ",
+      "MPID_エポニーヌ",
       "MPID_キヌ",
       "MPID_マトイ"
     ]
@@ -1526,7 +1526,7 @@
     "buddy": [
       "MPID_カンナ2",
       "MPID_ゾフィー",
-      "Nina",
+      "MPID_エポニーヌ",
       "MPID_キヌ"
     ],
     "srank": [
@@ -1536,8 +1536,8 @@
       "MPID_ディーア",
       "MPID_ジークベルト",
       "MPID_フォレオ",
-      "Ignatius",
-      "Percy",
+      "MPID_イグニス",
+      "MPID_ルッツ",
       "MPID_ヒサメ",
       "MPID_キサラギ"
     ]
@@ -1548,7 +1548,7 @@
     "buddy": [
       "MPID_カンナ1",
       "MPID_ディーア",
-      "Ignatius",
+      "MPID_イグニス",
       "MPID_ヒサメ"
     ],
     "srank": [
@@ -1556,10 +1556,10 @@
       "MPID_カンナ2",
       "MPID_ゾフィー",
       "MPID_ミドリコ",
-      "Velouria",
-      "Ophelia",
-      "Soleil",
-      "Nina",
+      "MPID_ベロア",
+      "MPID_オフェリア",
+      "MPID_ソレイユ",
+      "MPID_エポニーヌ",
       "MPID_ミタマ",
       "MPID_シャラ"
     ]
@@ -1569,7 +1569,7 @@
     "name": "오펠리아",
     "buddy": [
       "MPID_ミドリコ",
-      "Soleil",
+      "MPID_ソレイユ",
       "MPID_シャラ"
     ],
     "srank": [
@@ -1579,8 +1579,8 @@
       "MPID_ディーア",
       "MPID_ジークベルト",
       "MPID_フォレオ",
-      "Ignatius",
-      "Percy",
+      "MPID_イグニス",
+      "MPID_ルッツ",
       "MPID_シノノメ",
       "Hisama"
     ]
@@ -1590,8 +1590,8 @@
     "name": "솔레이",
     "buddy": [
       "MPID_ゾフィー",
-      "Ophelia",
-      "Nina",
+      "MPID_オフェリア",
+      "MPID_エポニーヌ",
       "MPID_ミタマ"
     ],
     "srank": [
@@ -1601,8 +1601,8 @@
       "MPID_ディーア",
       "MPID_ジークベルト",
       "MPID_フォレオ",
-      "Ignatius",
-      "Percy",
+      "MPID_イグニス",
+      "MPID_ルッツ",
       "MPID_キサラギ",
       "MPID_グレイ"
     ]
@@ -1611,8 +1611,8 @@
     "PID": "MPID_エポニーヌ",
     "name": "니나",
     "buddy": [
-      "Soleil",
-      "Velouria",
+      "MPID_ソレイユ",
+      "MPID_ベロア",
       "MPID_マトイ"
     ],
     "srank": [
@@ -1622,8 +1622,8 @@
       "MPID_ディーア",
       "MPID_ジークベルト",
       "MPID_フォレオ",
-      "Ignatius",
-      "Percy",
+      "MPID_イグニス",
+      "MPID_ルッツ",
       "MPID_グレイ",
       "MPID_シノノメ"
     ]
