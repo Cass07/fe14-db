@@ -1,0 +1,1649 @@
+[
+  {
+    "PID": "MPID_デフォルト名1",
+    "name": "카무이(남)",
+    "buddy": [],
+    "srank": [
+      "MPID_フェリシア",
+      "MPID_アクア",
+      "MPID_モズメ",
+      "MPID_エリーゼ",
+      "MPID_エルフィ",
+      "MPID_ゼロ",
+      "MPID_ニュクス",
+      "MPID_カミラ",
+      "MPID_ルーナ",
+      "MPID_ベルカ",
+      "MPID_ピエリ",
+      "MPID_シャーロッテ",
+      "MPID_フローラ",
+      "MPID_リンカ",
+      "MPID_サクラ",
+      "MPID_カザハナ",
+      "MPID_オロチ",
+      "MPID_ヒノカ",
+      "MPID_セツナ",
+      "MPID_オボロ",
+      "MPID_カゲロウ",
+      "MPID_ユウギリ",
+      "MPID_クリムゾン",
+      "MPID_アンナ",
+      "MPID_ゾフィー",
+      "MPID_ミドリコ",
+      "MPID_ベロア",
+      "MPID_オフェリア",
+      "MPID_ソレイユ",
+      "MPID_エポニーヌ",
+      "MPID_キヌ",
+      "MPID_ミタマ",
+      "MPID_マトイ",
+      "MPID_シャラ"
+    ]
+  },
+  {
+    "PID": "MPID_デフォルト名2",
+    "name": "카무이(여)",
+    "buddy": [],
+    "srank": [
+      "MPID_ギュンター",
+      "MPID_ジョーカー",
+      "MPID_スズカゼ",
+      "MPID_サイラス",
+      "MPID_アシュラ",
+      "MPID_イザナ",
+      "MPID_ハロルド",
+      "MPID_オーディン",
+      "MPID_ゼロ",
+      "MPID_ラズワルド",
+      "MPID_ブノワ",
+      "MPID_レオン",
+      "MPID_フランネル",
+      "MPID_マークス",
+      "MPID_ツバキ",
+      "MPID_サイゾウ",
+      "MPID_アサマ",
+      "MPID_ツクヨミ",
+      "MPID_ヒナタ",
+      "MPID_タクミ",
+      "MPID_ニシキ",
+      "MPID_リョウマ",
+      "MPID_ユキムラ",
+      "MPID_シグレ",
+      "MPID_ディーア",
+      "MPID_ジークベルト",
+      "MPID_フォレオ",
+      "MPID_イグニス",
+      "MPID_ルッツ",
+      "MPID_シノノメ",
+      "MPID_キサラギ",
+      "MPID_グレイ",
+      "MPID_ヒサメ",
+      "MPID_シャラ"
+    ]
+  },
+  {
+    "PID": "MPID_ギュンター",
+    "name": "군터",
+    "buddy": [
+      "MPID_ジョーカー"
+    ],
+    "srank": [
+      "MPID_デフォルト名2"
+    ]
+  },
+  {
+    "PID": "MPID_フェリシア",
+    "name": "펠리시아",
+    "buddy": [
+      "MPID_カザハナ",
+      "MPID_ピエリ",
+      "MPID_フローラ"
+    ],
+    "srank": [
+      "MPID_デフォルト名1",
+      "MPID_ジョーカー",
+      "MPID_サイラス",
+      "MPID_スズカゼ",
+      "MPID_マークス",
+      "MPID_レオン",
+      "MPID_ブノワ",
+      "MPID_フランネル",
+      "MPID_ハロルド",
+      "MPID_オーディン",
+      "MPID_ラズワルド",
+      "MPID_ゼロ",
+      "MPID_リョウマ",
+      "MPID_タクミ",
+      "MPID_サイゾウ",
+      "MPID_ニシキ",
+      "MPID_ヒナタ",
+      "MPID_アサマ",
+      "MPID_ツバキ",
+      "MPID_ツクヨミ"
+    ]
+  },
+  {
+    "PID": "MPID_ジョーカー",
+    "name": "제이콥",
+    "buddy": [
+      "MPID_ギュンター",
+      "MPID_サイラス",
+      "MPID_タクミ"
+    ],
+    "srank": [
+      "MPID_デフォルト名2",
+      "MPID_フェリシア",
+      "MPID_アクア",
+      "MPID_モズメ",
+      "MPID_カミラ",
+      "MPID_エリーゼ",
+      "MPID_シャーロッテ",
+      "MPID_エルフィ",
+      "MPID_ピエリ",
+      "MPID_ベルカ",
+      "MPID_ルーナ",
+      "MPID_ニュクス",
+      "MPID_ヒノカ",
+      "MPID_サクラ",
+      "MPID_リンカ",
+      "MPID_オロチ",
+      "MPID_カゲロウ",
+      "MPID_カザハナ",
+      "MPID_セツナ",
+      "MPID_オボロ"
+    ]
+  },
+  {
+    "PID": "MPID_リンカ",
+    "name": "린카",
+    "buddy": [
+      "MPID_オロチ",
+      "MPID_カゲロウ",
+      "MPID_オボロ",
+      "MPID_シャーロッテ"
+    ],
+    "srank": [
+      "MPID_デフォルト名1",
+      "MPID_ジョーカー",
+      "MPID_サイラス",
+      "MPID_スズカゼ",
+      "MPID_リョウマ",
+      "MPID_タクミ",
+      "MPID_サイゾウ",
+      "MPID_ニシキ",
+      "MPID_ヒナタ",
+      "MPID_アサマ",
+      "MPID_ツバキ",
+      "MPID_ツクヨミ",
+      "MPID_ブノワ",
+      "MPID_フランネル"
+    ]
+  },
+  {
+    "PID": "MPID_スズカゼ",
+    "name": "카제",
+    "buddy": [
+      "MPID_サイゾウ",
+      "MPID_サイラス",
+      "MPID_マークス"
+    ],
+    "srank": [
+      "MPID_デフォルト名2",
+      "MPID_フェリシア",
+      "MPID_アクア",
+      "MPID_モズメ",
+      "MPID_カミラ",
+      "MPID_エリーゼ",
+      "MPID_シャーロッテ",
+      "MPID_エルフィ",
+      "MPID_ピエリ",
+      "MPID_ベルカ",
+      "MPID_ルーナ",
+      "MPID_ニュクス",
+      "MPID_ヒノカ",
+      "MPID_サクラ",
+      "MPID_リンカ",
+      "MPID_オロチ",
+      "MPID_カゲロウ",
+      "MPID_カザハナ",
+      "MPID_セツナ",
+      "MPID_オボロ"
+    ]
+  },
+  {
+    "PID": "MPID_サクラ",
+    "name": "사쿠라",
+    "buddy": [
+      "MPID_ヒノカ",
+      "MPID_カザハナ",
+      "MPID_アクア",
+      "MPID_エリーゼ"
+    ],
+    "srank": [
+      "MPID_デフォルト名1",
+      "MPID_ジョーカー",
+      "MPID_サイラス",
+      "MPID_スズカゼ",
+      "MPID_サイゾウ",
+      "MPID_ニシキ",
+      "MPID_ヒナタ",
+      "MPID_アサマ",
+      "MPID_ツバキ",
+      "MPID_ツクヨミ",
+      "MPID_マークス",
+      "MPID_レオン"
+    ]
+  },
+  {
+    "PID": "MPID_アクア",
+    "name": "아주라",
+    "buddy": [
+      "MPID_ヒノカ",
+      "MPID_サクラ",
+      "MPID_エリーゼ"
+    ],
+    "srank": [
+      "MPID_デフォルト名1",
+      "MPID_ジョーカー",
+      "MPID_サイラス",
+      "MPID_スズカゼ",
+      "MPID_マークス",
+      "MPID_レオン",
+      "MPID_ブノワ",
+      "MPID_フランネル",
+      "MPID_ハロルド",
+      "MPID_オーディン",
+      "MPID_ラズワルド",
+      "MPID_ゼロ",
+      "MPID_リョウマ",
+      "MPID_タクミ",
+      "MPID_サイゾウ",
+      "MPID_ニシキ",
+      "MPID_ヒナタ",
+      "MPID_アサマ",
+      "MPID_ツバキ",
+      "MPID_ツクヨミ"
+    ]
+  },
+  {
+    "PID": "MPID_カザハナ",
+    "name": "하나",
+    "buddy": [
+      "MPID_フェリシア",
+      "MPID_サクラ",
+      "MPID_セツナ",
+      "MPID_エルフィ"
+    ],
+    "srank": [
+      "MPID_デフォルト名1",
+      "MPID_ジョーカー",
+      "MPID_サイラス",
+      "MPID_スズカゼ",
+      "MPID_リョウマ",
+      "MPID_タクミ",
+      "MPID_サイゾウ",
+      "MPID_ニシキ",
+      "MPID_ヒナタ",
+      "MPID_アサマ",
+      "MPID_ツバキ",
+      "MPID_ツクヨミ",
+      "MPID_ラズワルド",
+      "MPID_フランネル"
+    ]
+  },
+  {
+    "PID": "MPID_ツバキ",
+    "name": "츠바키",
+    "buddy": [
+      "MPID_アサマ",
+      "MPID_サイゾウ",
+      "MPID_ヒナタ",
+      "MPID_ゼロ"
+    ],
+    "srank": [
+      "MPID_デフォルト名2",
+      "MPID_フェリシア",
+      "MPID_アクア",
+      "MPID_モズメ",
+      "MPID_ヒノカ",
+      "MPID_サクラ",
+      "MPID_リンカ",
+      "MPID_オロチ",
+      "MPID_カゲロウ",
+      "MPID_カザハナ",
+      "MPID_セツナ",
+      "MPID_オボロ",
+      "MPID_ルーナ",
+      "MPID_ニュクス"
+    ]
+  },
+  {
+    "PID": "MPID_サイラス",
+    "name": "사일러스",
+    "buddy": [
+      "MPID_リョウマ",
+      "MPID_ジョーカー",
+      "MPID_スズカゼ"
+    ],
+    "srank": [
+      "MPID_デフォルト名2",
+      "MPID_フェリシア",
+      "MPID_アクア",
+      "MPID_モズメ",
+      "MPID_カミラ",
+      "MPID_エリーゼ",
+      "MPID_シャーロッテ",
+      "MPID_エルフィ",
+      "MPID_ピエリ",
+      "MPID_ベルカ",
+      "MPID_ルーナ",
+      "MPID_ニュクス",
+      "MPID_ヒノカ",
+      "MPID_サクラ",
+      "MPID_リンカ",
+      "MPID_オロチ",
+      "MPID_カゲロウ",
+      "MPID_カザハナ",
+      "MPID_セツナ",
+      "MPID_オボロ"
+    ]
+  },
+  {
+    "PID": "MPID_サイゾウ",
+    "name": "사이조",
+    "buddy": [
+      "MPID_リョウマ",
+      "MPID_ツバキ",
+      "MPID_スズカゼ",
+      "MPID_ラズワルド"
+    ],
+    "srank": [
+      "MPID_デフォルト名2",
+      "MPID_フェリシア",
+      "MPID_アクア",
+      "MPID_モズメ",
+      "MPID_ヒノカ",
+      "MPID_サクラ",
+      "MPID_リンカ",
+      "MPID_オロチ",
+      "MPID_カゲロウ",
+      "MPID_カザハナ",
+      "MPID_セツナ",
+      "MPID_オボロ",
+      "MPID_シャーロッテ",
+      "MPID_ベルカ"
+    ]
+  },
+  {
+    "PID": "MPID_オロチ",
+    "name": "오로치",
+    "buddy": [
+      "MPID_リンカ",
+      "MPID_カゲロウ",
+      "MPID_オボロ",
+      "MPID_ニュクス"
+    ],
+    "srank": [
+      "MPID_デフォルト名1",
+      "MPID_ジョーカー",
+      "MPID_サイラス",
+      "MPID_スズカゼ",
+      "MPID_リョウマ",
+      "MPID_タクミ",
+      "MPID_サイゾウ",
+      "MPID_ニシキ",
+      "MPID_ヒナタ",
+      "MPID_アサマ",
+      "MPID_ツバキ",
+      "MPID_ツクヨミ",
+      "MPID_ラズワルド",
+      "MPID_オーディン"
+    ]
+  },
+  {
+    "PID": "MPID_ヒノカ",
+    "name": "히노카",
+    "buddy": [
+      "MPID_サクラ",
+      "MPID_セツナ",
+      "MPID_アクア",
+      "MPID_カミラ"
+    ],
+    "srank": [
+      "MPID_デフォルト名1",
+      "MPID_ジョーカー",
+      "MPID_サイラス",
+      "MPID_スズカゼ",
+      "MPID_サイゾウ",
+      "MPID_ニシキ",
+      "MPID_ヒナタ",
+      "MPID_アサマ",
+      "MPID_ツバキ",
+      "MPID_ツクヨミ",
+      "MPID_マークス",
+      "MPID_レオン"
+    ]
+  },
+  {
+    "PID": "MPID_アサマ",
+    "name": "아자마",
+    "buddy": [
+      "MPID_ニシキ",
+      "MPID_ツバキ",
+      "MPID_ツクヨミ",
+      "MPID_ハロルド"
+    ],
+    "srank": [
+      "MPID_デフォルト名2",
+      "MPID_フェリシア",
+      "MPID_アクア",
+      "MPID_モズメ",
+      "MPID_ヒノカ",
+      "MPID_サクラ",
+      "MPID_リンカ",
+      "MPID_オロチ",
+      "MPID_カゲロウ",
+      "MPID_カザハナ",
+      "MPID_セツナ",
+      "MPID_オボロ",
+      "MPID_エルフィ",
+      "MPID_ベルカ"
+    ]
+  },
+  {
+    "PID": "MPID_セツナ",
+    "name": "세츠나",
+    "buddy": [
+      "MPID_ヒノカ",
+      "MPID_カゲロウ",
+      "MPID_カザハナ",
+      "MPID_ルーナ"
+    ],
+    "srank": [
+      "MPID_デフォルト名1",
+      "MPID_ジョーカー",
+      "MPID_サイラス",
+      "MPID_スズカゼ",
+      "MPID_リョウマ",
+      "MPID_タクミ",
+      "MPID_サイゾウ",
+      "MPID_ニシキ",
+      "MPID_ヒナタ",
+      "MPID_アサマ",
+      "MPID_ツバキ",
+      "MPID_ツクヨミ",
+      "MPID_ゼロ",
+      "MPID_ハロルド"
+    ]
+  },
+  {
+    "PID": "MPID_ツクヨミ",
+    "name": "하야토",
+    "buddy": [
+      "MPID_ニシキ",
+      "MPID_アサマ",
+      "MPID_ブノワ",
+      "MPID_フウガ"
+    ],
+    "srank": [
+      "MPID_デフォルト名2",
+      "MPID_フェリシア",
+      "MPID_アクア",
+      "MPID_モズメ",
+      "MPID_ヒノカ",
+      "MPID_サクラ",
+      "MPID_リンカ",
+      "MPID_オロチ",
+      "MPID_カゲロウ",
+      "MPID_カザハナ",
+      "MPID_セツナ",
+      "MPID_オボロ",
+      "MPID_エルフィ",
+      "MPID_ニュクス"
+    ]
+  },
+  {
+    "PID": "MPID_オボロ",
+    "name": "오보로",
+    "buddy": [
+      "MPID_オロチ",
+      "MPID_リンカ",
+      "MPID_モズメ",
+      "MPID_ベルカ"
+    ],
+    "srank": [
+      "MPID_デフォルト名1",
+      "MPID_ジョーカー",
+      "MPID_サイラス",
+      "MPID_スズカゼ",
+      "MPID_リョウマ",
+      "MPID_タクミ",
+      "MPID_サイゾウ",
+      "MPID_ニシキ",
+      "MPID_ヒナタ",
+      "MPID_アサマ",
+      "MPID_ツバキ",
+      "MPID_ツクヨミ",
+      "MPID_ブノワ",
+      "MPID_ゼロ"
+    ]
+  },
+  {
+    "PID": "MPID_ヒナタ",
+    "name": "히나타",
+    "buddy": [
+      "MPID_タクミ",
+      "MPID_ニシキ",
+      "MPID_ツバキ",
+      "MPID_オーディン"
+    ],
+    "srank": [
+      "MPID_デフォルト名2",
+      "MPID_フェリシア",
+      "MPID_アクア",
+      "MPID_モズメ",
+      "MPID_ヒノカ",
+      "MPID_サクラ",
+      "MPID_リンカ",
+      "MPID_オロチ",
+      "MPID_カゲロウ",
+      "MPID_カザハナ",
+      "MPID_セツナ",
+      "MPID_オボロ",
+      "MPID_ピエリ",
+      "MPID_ルーナ"
+    ]
+  },
+  {
+    "PID": "MPID_タクミ",
+    "name": "타쿠미",
+    "buddy": [
+      "MPID_リョウマ",
+      "MPID_ヒナタ",
+      "MPID_ジョーカー",
+      "MPID_レオン"
+    ],
+    "srank": [
+      "MPID_デフォルト名2",
+      "MPID_フェリシア",
+      "MPID_アクア",
+      "MPID_モズメ",
+      "MPID_リンカ",
+      "MPID_オロチ",
+      "MPID_カゲロウ",
+      "MPID_カザハナ",
+      "MPID_セツナ",
+      "MPID_オボロ",
+      "MPID_カミラ",
+      "MPID_エリーゼ"
+    ]
+  },
+  {
+    "PID": "MPID_カゲロウ",
+    "name": "카게로",
+    "buddy": [
+      "MPID_オロチ",
+      "MPID_リンカ",
+      "MPID_セツナ",
+      "MPID_ピエリ"
+    ],
+    "srank": [
+      "MPID_デフォルト名1",
+      "MPID_ジョーカー",
+      "MPID_サイラス",
+      "MPID_スズカゼ",
+      "MPID_リョウマ",
+      "MPID_タクミ",
+      "MPID_サイゾウ",
+      "MPID_ニシキ",
+      "MPID_ヒナタ",
+      "MPID_アサマ",
+      "MPID_ツバキ",
+      "MPID_ツクヨミ",
+      "MPID_オーディン",
+      "MPID_ハロルド"
+    ]
+  },
+  {
+    "PID": "MPID_ユウギリ",
+    "name": "레이나",
+    "buddy": [],
+    "srank": [
+      "MPID_デフォルト名1"
+    ]
+  },
+  {
+    "PID": "MPID_ニシキ",
+    "name": "카덴",
+    "buddy": [
+      "MPID_ヒナタ",
+      "MPID_アサマ",
+      "MPID_ツクヨミ",
+      "MPID_フランネル"
+    ],
+    "srank": [
+      "MPID_デフォルト名2",
+      "MPID_フェリシア",
+      "MPID_アクア",
+      "MPID_モズメ",
+      "MPID_ヒノカ",
+      "MPID_サクラ",
+      "MPID_リンカ",
+      "MPID_オロチ",
+      "MPID_カゲロウ",
+      "MPID_カザハナ",
+      "MPID_セツナ",
+      "MPID_オボロ",
+      "MPID_シャーロッテ",
+      "MPID_ピエリ"
+    ]
+  },
+  {
+    "PID": "MPID_リョウマ",
+    "name": "료마",
+    "buddy": [
+      "MPID_サイゾウ",
+      "MPID_サイラス",
+      "MPID_タクミ",
+      "MPID_マークス"
+    ],
+    "srank": [
+      "MPID_デフォルト名2",
+      "MPID_フェリシア",
+      "MPID_アクア",
+      "MPID_モズメ",
+      "MPID_リンカ",
+      "MPID_オロチ",
+      "MPID_カゲロウ",
+      "MPID_カザハナ",
+      "MPID_セツナ",
+      "MPID_オボロ",
+      "MPID_カミラ",
+      "MPID_エリーゼ"
+    ]
+  },
+  {
+    "PID": "MPID_クリムゾン",
+    "name": "스칼렛",
+    "buddy": [],
+    "srank": [
+      "MPID_デフォルト名1"
+    ]
+  },
+  {
+    "PID": "MPID_アシュラ",
+    "name": "슈라",
+    "buddy": [],
+    "srank": [
+      "MPID_デフォルト名2"
+    ]
+  },
+  {
+    "PID": "MPID_エリーゼ",
+    "name": "엘리스",
+    "buddy": [
+      "MPID_カミラ",
+      "MPID_アクア",
+      "MPID_エルフィ",
+      "MPID_サクラ"
+    ],
+    "srank": [
+      "MPID_デフォルト名1",
+      "MPID_ジョーカー",
+      "MPID_サイラス",
+      "MPID_スズカゼ",
+      "MPID_ブノワ",
+      "MPID_フランネル",
+      "MPID_ハロルド",
+      "MPID_オーディン",
+      "MPID_ラズワルド",
+      "MPID_ゼロ",
+      "MPID_リョウマ",
+      "MPID_タクミ"
+    ]
+  },
+  {
+    "PID": "MPID_ハロルド",
+    "name": "아서",
+    "buddy": [
+      "MPID_ブノワ",
+      "MPID_フランネル",
+      "MPID_ゼロ",
+      "MPID_アサマ"
+    ],
+    "srank": [
+      "MPID_デフォルト名2",
+      "MPID_フェリシア",
+      "MPID_アクア",
+      "MPID_モズメ",
+      "MPID_カミラ",
+      "MPID_エリーゼ",
+      "MPID_シャーロッテ",
+      "MPID_エルフィ",
+      "MPID_ピエリ",
+      "MPID_ベルカ",
+      "MPID_ルーナ",
+      "MPID_ニュクス",
+      "MPID_カゲロウ",
+      "MPID_セツナ"
+    ]
+  },
+  {
+    "PID": "MPID_エルフィ",
+    "name": "엘피",
+    "buddy": [
+      "MPID_エリーゼ",
+      "MPID_モズメ",
+      "MPID_ニュクス",
+      "MPID_カザハナ"
+    ],
+    "srank": [
+      "MPID_デフォルト名1",
+      "MPID_ジョーカー",
+      "MPID_サイラス",
+      "MPID_スズカゼ",
+      "MPID_マークス",
+      "MPID_レオン",
+      "MPID_ブノワ",
+      "MPID_フランネル",
+      "MPID_ハロルド",
+      "MPID_オーディン",
+      "MPID_ラズワルド",
+      "MPID_ゼロ",
+      "MPID_ツクヨミ",
+      "MPID_アサマ"
+    ]
+  },
+  {
+    "PID": "MPID_オーディン",
+    "name": "오딘",
+    "buddy": [
+      "MPID_レオン",
+      "MPID_ラズワルド",
+      "MPID_ゼロ",
+      "MPID_ヒナタ"
+    ],
+    "srank": [
+      "MPID_デフォルト名2",
+      "MPID_フェリシア",
+      "MPID_アクア",
+      "MPID_モズメ",
+      "MPID_カミラ",
+      "MPID_エリーゼ",
+      "MPID_シャーロッテ",
+      "MPID_エルフィ",
+      "MPID_ピエリ",
+      "MPID_ベルカ",
+      "MPID_ルーナ",
+      "MPID_ニュクス",
+      "MPID_オロチ",
+      "MPID_カゲロウ"
+    ]
+  },
+  {
+    "PID": "MPID_ゼロ",
+    "name": "닐스",
+    "buddy": [
+      "MPID_レオン",
+      "MPID_オーディン",
+      "MPID_ハロルド",
+      "MPID_ツバキ"
+    ],
+    "srank": [
+      "MPID_デフォルト名2",
+      "MPID_デフォルト名1",
+      "MPID_フェリシア",
+      "MPID_アクア",
+      "MPID_モズメ",
+      "MPID_カミラ",
+      "MPID_エリーゼ",
+      "MPID_シャーロッテ",
+      "MPID_エルフィ",
+      "MPID_ピエリ",
+      "MPID_ベルカ",
+      "MPID_ルーナ",
+      "MPID_ニュクス",
+      "MPID_セツナ",
+      "MPID_オボロ"
+    ]
+  },
+  {
+    "PID": "MPID_ニュクス",
+    "name": "닉스",
+    "buddy": [
+      "MPID_モズメ",
+      "MPID_シャーロッテ",
+      "MPID_エルフィ",
+      "MPID_オロチ"
+    ],
+    "srank": [
+      "MPID_デフォルト名1",
+      "MPID_ジョーカー",
+      "MPID_サイラス",
+      "MPID_スズカゼ",
+      "MPID_マークス",
+      "MPID_レオン",
+      "MPID_ブノワ",
+      "MPID_フランネル",
+      "MPID_ハロルド",
+      "MPID_オーディン",
+      "MPID_ラズワルド",
+      "MPID_ゼロ",
+      "MPID_ツクヨミ",
+      "MPID_ツバキ"
+    ]
+  },
+  {
+    "PID": "MPID_カミラ",
+    "name": "카밀라",
+    "buddy": [
+      "MPID_エリーゼ",
+      "MPID_ベルカ",
+      "MPID_ルーナ",
+      "MPID_ヒノカ"
+    ],
+    "srank": [
+      "MPID_デフォルト名1",
+      "MPID_ジョーカー",
+      "MPID_サイラス",
+      "MPID_スズカゼ",
+      "MPID_ブノワ",
+      "MPID_フランネル",
+      "MPID_ハロルド",
+      "MPID_オーディン",
+      "MPID_ラズワルド",
+      "MPID_ゼロ",
+      "MPID_リョウマ",
+      "MPID_タクミ"
+    ]
+  },
+  {
+    "PID": "MPID_ルーナ",
+    "name": "셀레나",
+    "buddy": [
+      "MPID_カミラ",
+      "MPID_ベルカ",
+      "MPID_ピエリ",
+      "MPID_セツナ"
+    ],
+    "srank": [
+      "MPID_デフォルト名1",
+      "MPID_ジョーカー",
+      "MPID_サイラス",
+      "MPID_スズカゼ",
+      "MPID_マークス",
+      "MPID_レオン",
+      "MPID_ブノワ",
+      "MPID_フランネル",
+      "MPID_ハロルド",
+      "MPID_オーディン",
+      "MPID_ラズワルド",
+      "MPID_ゼロ",
+      "MPID_ツバキ",
+      "MPID_ヒナタ"
+    ]
+  },
+  {
+    "PID": "MPID_ベルカ",
+    "name": "베르카",
+    "buddy": [
+      "MPID_カミラ",
+      "MPID_シャーロッテ",
+      "MPID_ルーナ",
+      "MPID_オボロ"
+    ],
+    "srank": [
+      "MPID_デフォルト名1",
+      "MPID_ジョーカー",
+      "MPID_サイラス",
+      "MPID_スズカゼ",
+      "MPID_マークス",
+      "MPID_レオン",
+      "MPID_ブノワ",
+      "MPID_フランネル",
+      "MPID_ハロルド",
+      "MPID_オーディン",
+      "MPID_ラズワルド",
+      "MPID_ゼロ",
+      "MPID_アサマ",
+      "MPID_サイゾウ"
+    ]
+  },
+  {
+    "PID": "MPID_ラズワルド",
+    "name": "라슬로",
+    "buddy": [
+      "MPID_マークス",
+      "MPID_オーディン",
+      "MPID_フランネル",
+      "MPID_サイゾウ"
+    ],
+    "srank": [
+      "MPID_デフォルト名2",
+      "MPID_フェリシア",
+      "MPID_アクア",
+      "MPID_モズメ",
+      "MPID_カミラ",
+      "MPID_エリーゼ",
+      "MPID_シャーロッテ",
+      "MPID_エルフィ",
+      "MPID_ピエリ",
+      "MPID_ベルカ",
+      "MPID_ルーナ",
+      "MPID_ニュクス",
+      "MPID_オロチ",
+      "MPID_カザハナ"
+    ]
+  },
+  {
+    "PID": "MPID_ピエリ",
+    "name": "페리",
+    "buddy": [
+      "MPID_フェリシア",
+      "MPID_シャーロッテ",
+      "MPID_ルーナ",
+      "MPID_カゲロウ"
+    ],
+    "srank": [
+      "MPID_デフォルト名1",
+      "MPID_ジョーカー",
+      "MPID_サイラス",
+      "MPID_スズカゼ",
+      "MPID_マークス",
+      "MPID_レオン",
+      "MPID_ブノワ",
+      "MPID_フランネル",
+      "MPID_ハロルド",
+      "MPID_オーディン",
+      "MPID_ラズワルド",
+      "MPID_ゼロ",
+      "MPID_ヒナタ",
+      "MPID_ニシキ"
+    ]
+  },
+  {
+    "PID": "MPID_ブノワ",
+    "name": "베니",
+    "buddy": [
+      "MPID_フランネル",
+      "MPID_ハロルド",
+      "MPID_ツクヨミ"
+    ],
+    "srank": [
+      "MPID_デフォルト名2",
+      "MPID_フェリシア",
+      "MPID_アクア",
+      "MPID_モズメ",
+      "MPID_カミラ",
+      "MPID_エリーゼ",
+      "MPID_シャーロッテ",
+      "MPID_エルフィ",
+      "MPID_ピエリ",
+      "MPID_ベルカ",
+      "MPID_ルーナ",
+      "MPID_ニュクス",
+      "MPID_リンカ",
+      "MPID_オボロ"
+    ]
+  },
+  {
+    "PID": "MPID_シャーロッテ",
+    "name": "샤를로트",
+    "buddy": [
+      "MPID_ピエリ",
+      "MPID_ベルカ",
+      "MPID_ニュクス",
+      "MPID_リンカ"
+    ],
+    "srank": [
+      "MPID_デフォルト名1",
+      "MPID_ジョーカー",
+      "MPID_サイラス",
+      "MPID_スズカゼ",
+      "MPID_マークス",
+      "MPID_レオン",
+      "MPID_ブノワ",
+      "MPID_フランネル",
+      "MPID_ハロルド",
+      "MPID_オーディン",
+      "MPID_ラズワルド",
+      "MPID_ゼロ",
+      "MPID_サイゾウ",
+      "MPID_ニシキ"
+    ]
+  },
+  {
+    "PID": "MPID_レオン",
+    "name": "리오",
+    "buddy": [
+      "MPID_マークス",
+      "MPID_オーディン",
+      "MPID_ゼロ",
+      "MPID_タクミ"
+    ],
+    "srank": [
+      "MPID_デフォルト名2",
+      "MPID_フェリシア",
+      "MPID_アクア",
+      "MPID_モズメ",
+      "MPID_シャーロッテ",
+      "MPID_エルフィ",
+      "MPID_ピエリ",
+      "MPID_ベルカ",
+      "MPID_ルーナ",
+      "MPID_ニュクス",
+      "MPID_ヒノカ",
+      "MPID_サクラ"
+    ]
+  },
+  {
+    "PID": "MPID_フランネル",
+    "name": "키튼",
+    "buddy": [
+      "MPID_ブノワ",
+      "MPID_ハロルド",
+      "MPID_ラズワルド",
+      "MPID_ニシキ"
+    ],
+    "srank": [
+      "MPID_デフォルト名2",
+      "MPID_フェリシア",
+      "MPID_アクア",
+      "MPID_モズメ",
+      "MPID_カミラ",
+      "MPID_エリーゼ",
+      "MPID_シャーロッテ",
+      "MPID_エルフィ",
+      "MPID_ピエリ",
+      "MPID_ベルカ",
+      "MPID_ルーナ",
+      "MPID_ニュクス",
+      "MPID_リンカ",
+      "MPID_カザハナ"
+    ]
+  },
+  {
+    "PID": "MPID_マークス",
+    "name": "젠더",
+    "buddy": [
+      "MPID_スズカゼ",
+      "MPID_ラズワルド",
+      "MPID_レオン",
+      "MPID_リョウマ"
+    ],
+    "srank": [
+      "MPID_デフォルト名2",
+      "MPID_フェリシア",
+      "MPID_アクア",
+      "MPID_モズメ",
+      "MPID_シャーロッテ",
+      "MPID_エルフィ",
+      "MPID_ピエリ",
+      "MPID_ベルカ",
+      "MPID_ルーナ",
+      "MPID_ニュクス",
+      "MPID_ヒノカ",
+      "MPID_サクラ"
+    ]
+  },
+  {
+    "PID": "MPID_イザナ",
+    "name": "이자나",
+    "buddy": [],
+    "srank": [
+      "MPID_デフォルト名2"
+    ]
+  },
+  {
+    "PID": "MPID_ユキムラ",
+    "name": "유키무라",
+    "buddy": [],
+    "srank": [
+      "MPID_デフォルト名2"
+    ]
+  },
+  {
+    "PID": "MPID_フローラ",
+    "name": "플로라",
+    "buddy": [
+      "MPID_フェリシア"
+    ],
+    "srank": [
+      "MPID_デフォルト名1"
+    ]
+  },
+  {
+    "PID": "MPID_モズメ",
+    "name": "모즈",
+    "buddy": [
+      "MPID_オボロ",
+      "MPID_エルフィ",
+      "MPID_ニュクス"
+    ],
+    "srank": [
+      "MPID_デフォルト名1",
+      "MPID_ジョーカー",
+      "MPID_サイラス",
+      "MPID_スズカゼ",
+      "MPID_マークス",
+      "MPID_レオン",
+      "MPID_ブノワ",
+      "MPID_フランネル",
+      "MPID_ハロルド",
+      "MPID_オーディン",
+      "MPID_ラズワルド",
+      "MPID_ゼロ",
+      "MPID_リョウマ",
+      "MPID_タクミ",
+      "MPID_サイゾウ",
+      "MPID_ニシキ",
+      "MPID_ヒナタ",
+      "MPID_アサマ",
+      "MPID_ツバキ",
+      "MPID_ツクヨミ"
+    ]
+  },
+  {
+    "PID": "MPID_カンナ1",
+    "name": "칸나(남)",
+    "buddy": [
+      "MPID_ジークベルト",
+      "Percy",
+      "MPID_シノノメ"
+    ],
+    "srank": [
+      "MPID_ゾフィー",
+      "MPID_ミドリコ",
+      "Velouria",
+      "Ophelia",
+      "Soleil",
+      "Nina",
+      "MPID_キヌ",
+      "MPID_ミタマ",
+      "MPID_マトイ",
+      "MPID_シャラ"
+    ]
+  },
+  {
+    "PID": "MPID_カンナ2",
+    "name": "칸나(여)",
+    "buddy": [
+      "MPID_ミドリコ",
+      "Velouria",
+      "MPID_キヌ",
+      "MPID_ミタマ"
+    ],
+    "srank": [
+      "MPID_シグレ",
+      "MPID_ディーア",
+      "MPID_ジークベルト",
+      "MPID_フォレオ",
+      "Ignatius",
+      "Percy",
+      "MPID_シノノメ",
+      "MPID_キサラギ",
+      "MPID_グレイ",
+      "MPID_ヒサメ"
+    ]
+  },
+  {
+    "PID": "MPID_シグレ",
+    "name": "시구레",
+    "buddy": [
+      "MPID_フォレオ",
+      "MPID_ヒサメ"
+    ],
+    "srank": [
+      "MPID_デフォルト名2",
+      "MPID_カンナ2",
+      "MPID_ゾフィー",
+      "MPID_ミドリコ",
+      "Velouria",
+      "Ophelia",
+      "Soleil",
+      "Nina",
+      "MPID_キヌ",
+      "MPID_ミタマ",
+      "MPID_マトイ",
+      "MPID_シャラ"
+    ]
+  },
+  {
+    "PID": "MPID_ディーア",
+    "name": "드와이어",
+    "buddy": [
+      "Percy",
+      "MPID_グレイ",
+      "MPID_キサラギ"
+    ],
+    "srank": [
+      "MPID_デフォルト名2",
+      "MPID_カンナ2",
+      "MPID_ゾフィー",
+      "MPID_ミドリコ",
+      "Velouria",
+      "Ophelia",
+      "Soleil",
+      "Nina",
+      "MPID_キヌ",
+      "MPID_ミタマ",
+      "MPID_マトイ",
+      "MPID_シャラ"
+    ]
+  },
+  {
+    "PID": "MPID_ゾフィー",
+    "name": "소피",
+    "buddy": [
+      "Velouria",
+      "Soleil",
+      "MPID_マトイ"
+    ],
+    "srank": [
+      "MPID_デフォルト名1",
+      "MPID_カンナ1",
+      "MPID_シグレ",
+      "MPID_ディーア",
+      "MPID_ジークベルト",
+      "MPID_フォレオ",
+      "Ignatius",
+      "Percy",
+      "MPID_シノノメ",
+      "MPID_キサラギ",
+      "MPID_グレイ",
+      "MPID_ヒサメ"
+    ]
+  },
+  {
+    "PID": "MPID_ミドリコ",
+    "name": "미도리",
+    "buddy": [
+      "MPID_カンナ2",
+      "Ophelia",
+      "MPID_キヌ"
+    ],
+    "srank": [
+      "MPID_デフォルト名1",
+      "MPID_カンナ1",
+      "MPID_シグレ",
+      "MPID_ディーア",
+      "MPID_ジークベルト",
+      "MPID_フォレオ",
+      "Ignatius",
+      "Percy",
+      "MPID_シノノメ",
+      "MPID_キサラギ",
+      "MPID_グレイ",
+      "MPID_ヒサメ"
+    ]
+  },
+  {
+    "PID": "MPID_シノノメ",
+    "name": "시로",
+    "buddy": [
+      "MPID_カンナ1",
+      "MPID_キサラギ",
+      "MPID_グレイ",
+      "MPID_ジークベルト"
+    ],
+    "srank": [
+      "MPID_デフォルト名2",
+      "MPID_カンナ2",
+      "MPID_ゾフィー",
+      "MPID_ミドリコ",
+      "MPID_キヌ",
+      "MPID_ミタマ",
+      "MPID_マトイ",
+      "MPID_シャラ",
+      "Ophelia",
+      "Nina"
+    ]
+  },
+  {
+    "PID": "MPID_キサラギ",
+    "name": "키라기",
+    "buddy": [
+      "MPID_ディーア",
+      "MPID_シノノメ",
+      "MPID_ヒサメ",
+      "MPID_フォレオ"
+    ],
+    "srank": [
+      "MPID_デフォルト名2",
+      "MPID_カンナ2",
+      "MPID_ゾフィー",
+      "MPID_ミドリコ",
+      "MPID_キヌ",
+      "MPID_ミタマ",
+      "MPID_マトイ",
+      "MPID_シャラ",
+      "Velouria",
+      "Soleil"
+    ]
+  },
+  {
+    "PID": "MPID_グレイ",
+    "name": "아스기",
+    "buddy": [
+      "MPID_ディーア",
+      "MPID_シノノメ",
+      "MPID_ヒサメ",
+      "Ignatius"
+    ],
+    "srank": [
+      "MPID_デフォルト名2",
+      "MPID_カンナ2",
+      "MPID_ゾフィー",
+      "MPID_ミドリコ",
+      "MPID_キヌ",
+      "MPID_ミタマ",
+      "MPID_マトイ",
+      "MPID_シャラ",
+      "Soleil",
+      "Nina"
+    ]
+  },
+  {
+    "PID": "MPID_キヌ",
+    "name": "셀키",
+    "buddy": [
+      "MPID_カンナ2",
+      "MPID_ミドリコ",
+      "MPID_シャラ",
+      "Velouria"
+    ],
+    "srank": [
+      "MPID_デフォルト名1",
+      "MPID_カンナ1",
+      "MPID_シグレ",
+      "MPID_ディーア",
+      "MPID_シノノメ",
+      "MPID_キサラギ",
+      "MPID_グレイ",
+      "MPID_ヒサメ",
+      "Ignatius",
+      "MPID_フォレオ"
+    ]
+  },
+  {
+    "PID": "MPID_ヒサメ",
+    "name": "히사메",
+    "buddy": [
+      "MPID_シグレ",
+      "MPID_キサラギ",
+      "MPID_グレイ",
+      "Percy"
+    ],
+    "srank": [
+      "MPID_デフォルト名2",
+      "MPID_カンナ2",
+      "MPID_ゾフィー",
+      "MPID_ミドリコ",
+      "MPID_キヌ",
+      "MPID_ミタマ",
+      "MPID_マトイ",
+      "MPID_シャラ",
+      "Velouria",
+      "Ophelia"
+    ]
+  },
+  {
+    "PID": "MPID_ミタマ",
+    "name": "미타마",
+    "buddy": [
+      "MPID_カンナ2",
+      "MPID_マトイ",
+      "MPID_シャラ",
+      "Soleil"
+    ],
+    "srank": [
+      "MPID_デフォルト名1",
+      "MPID_カンナ1",
+      "MPID_シグレ",
+      "MPID_ディーア",
+      "MPID_シノノメ",
+      "MPID_キサラギ",
+      "MPID_グレイ",
+      "MPID_ヒサメ",
+      "Percy",
+      "MPID_ジークベルト"
+    ]
+  },
+  {
+    "PID": "MPID_マトイ",
+    "name": "카도리",
+    "buddy": [
+      "MPID_ゾフィー",
+      "MPID_ミタマ",
+      "MPID_シャラ",
+      "Nina"
+    ],
+    "srank": [
+      "MPID_デフォルト名1",
+      "MPID_カンナ1",
+      "MPID_シグレ",
+      "MPID_ディーア",
+      "MPID_シノノメ",
+      "MPID_キサラギ",
+      "MPID_グレイ",
+      "MPID_ヒサメ",
+      "MPID_ジークベルト",
+      "Ignatius"
+    ]
+  },
+  {
+    "PID": "MPID_シャラ",
+    "name": "라자트",
+    "buddy": [
+      "MPID_マトイ",
+      "MPID_ミタマ",
+      "MPID_キヌ",
+      "Ophelia"
+    ],
+    "srank": [
+      "MPID_デフォルト名2",
+      "MPID_デフォルト名1",
+      "MPID_カンナ1",
+      "MPID_シグレ",
+      "MPID_ディーア",
+      "MPID_シノノメ",
+      "MPID_キサラギ",
+      "MPID_グレイ",
+      "MPID_ヒサメ",
+      "MPID_フォレオ",
+      "Percy"
+    ]
+  },
+  {
+    "PID": "MPID_ジークベルト",
+    "name": "시그버트",
+    "buddy": [
+      "MPID_カンナ1",
+      "MPID_フォレオ",
+      "Ignatius",
+      "MPID_シノノメ"
+    ],
+    "srank": [
+      "MPID_デフォルト名2",
+      "MPID_カンナ2",
+      "MPID_ゾフィー",
+      "MPID_ミドリコ",
+      "Velouria",
+      "Ophelia",
+      "Soleil",
+      "Nina",
+      "MPID_ミタマ",
+      "MPID_マトイ"
+    ]
+  },
+  {
+    "PID": "MPID_フォレオ",
+    "name": "포레스트",
+    "buddy": [
+      "MPID_シグレ",
+      "MPID_ジークベルト",
+      "Ignatius",
+      "MPID_キサラギ"
+    ],
+    "srank": [
+      "MPID_デフォルト名2",
+      "MPID_カンナ2",
+      "MPID_ゾフィー",
+      "MPID_ミドリコ",
+      "Velouria",
+      "Ophelia",
+      "Soleil",
+      "Nina",
+      "MPID_キヌ",
+      "MPID_シャラ"
+    ]
+  },
+  {
+    "PID": "MPID_イグニス",
+    "name": "이그니셔스",
+    "buddy": [
+      "MPID_ジークベルト",
+      "MPID_フォレオ",
+      "Percy",
+      "MPID_グレイ"
+    ],
+    "srank": [
+      "MPID_デフォルト名2",
+      "MPID_カンナ2",
+      "MPID_ゾフィー",
+      "MPID_ミドリコ",
+      "Velouria",
+      "Ophelia",
+      "Soleil",
+      "Nina",
+      "MPID_キヌ",
+      "MPID_マトイ"
+    ]
+  },
+  {
+    "PID": "MPID_ベロア",
+    "name": "벨로리아",
+    "buddy": [
+      "MPID_カンナ2",
+      "MPID_ゾフィー",
+      "Nina",
+      "MPID_キヌ"
+    ],
+    "srank": [
+      "MPID_デフォルト名1",
+      "MPID_カンナ1",
+      "MPID_シグレ",
+      "MPID_ディーア",
+      "MPID_ジークベルト",
+      "MPID_フォレオ",
+      "Ignatius",
+      "Percy",
+      "MPID_ヒサメ",
+      "MPID_キサラギ"
+    ]
+  },
+  {
+    "PID": "MPID_ルッツ",
+    "name": "퍼시",
+    "buddy": [
+      "MPID_カンナ1",
+      "MPID_ディーア",
+      "Ignatius",
+      "MPID_ヒサメ"
+    ],
+    "srank": [
+      "MPID_デフォルト名2",
+      "MPID_カンナ2",
+      "MPID_ゾフィー",
+      "MPID_ミドリコ",
+      "Velouria",
+      "Ophelia",
+      "Soleil",
+      "Nina",
+      "MPID_ミタマ",
+      "MPID_シャラ"
+    ]
+  },
+  {
+    "PID": "MPID_オフェリア",
+    "name": "오펠리아",
+    "buddy": [
+      "MPID_ミドリコ",
+      "Soleil",
+      "MPID_シャラ"
+    ],
+    "srank": [
+      "MPID_デフォルト名1",
+      "MPID_カンナ1",
+      "MPID_シグレ",
+      "MPID_ディーア",
+      "MPID_ジークベルト",
+      "MPID_フォレオ",
+      "Ignatius",
+      "Percy",
+      "MPID_シノノメ",
+      "Hisama"
+    ]
+  },
+  {
+    "PID": "MPID_ソレイユ",
+    "name": "솔레이",
+    "buddy": [
+      "MPID_ゾフィー",
+      "Ophelia",
+      "Nina",
+      "MPID_ミタマ"
+    ],
+    "srank": [
+      "MPID_デフォルト名1",
+      "MPID_カンナ1",
+      "MPID_シグレ",
+      "MPID_ディーア",
+      "MPID_ジークベルト",
+      "MPID_フォレオ",
+      "Ignatius",
+      "Percy",
+      "MPID_キサラギ",
+      "MPID_グレイ"
+    ]
+  },
+  {
+    "PID": "MPID_エポニーヌ",
+    "name": "니나",
+    "buddy": [
+      "Soleil",
+      "Velouria",
+      "MPID_マトイ"
+    ],
+    "srank": [
+      "MPID_デフォルト名1",
+      "MPID_カンナ1",
+      "MPID_シグレ",
+      "MPID_ディーア",
+      "MPID_ジークベルト",
+      "MPID_フォレオ",
+      "Ignatius",
+      "Percy",
+      "MPID_グレイ",
+      "MPID_シノノメ"
+    ]
+  },
+  {
+    "PID": "MPID_アンナ",
+    "name": "안나",
+    "buddy": [],
+    "srank": [
+      "MPID_デフォルト名1"
+    ]
+  },
+  {
+    "PID": "MPID_フウガ",
+    "name": "푸가",
+    "buddy": [
+      "MPID_ツクヨミ"
+    ],
+    "srank": [
+      "MPID_デフォルト名2"
+    ]
+  }
+]
