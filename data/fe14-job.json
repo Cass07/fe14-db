@@ -79,6 +79,16 @@
         "JID": "MJID_ダークブラッド",
         "condition": 2
       }
+    ],
+    "firstjob_array": [
+      {
+        "PID": "MPID_デフォルト名1",
+        "name": "카무이(남)"
+      },
+      {
+        "PID": "MPID_カンナ1",
+        "name": "칸나(남)"
+      }
     ]
   },
   {
@@ -119,6 +129,16 @@
       {
         "JID": "MJID_ダークブラッド",
         "condition": 2
+      }
+    ],
+    "firstjob_array": [
+      {
+        "PID": "MPID_デフォルト名2",
+        "name": "카무이(여)"
+      },
+      {
+        "PID": "MPID_カンナ2",
+        "name": "칸나(여)"
       }
     ]
   },
@@ -239,6 +259,46 @@
         "JID": "MJID_グレートナイト",
         "condition": 0
       }
+    ],
+    "firstjob_array": [
+      {
+        "PID": "MPID_ギュンター",
+        "name": "군터"
+      },
+      {
+        "PID": "MPID_サイラス",
+        "name": "사일러스"
+      },
+      {
+        "PID": "MPID_ピエリ",
+        "name": "페리"
+      },
+      {
+        "PID": "MPID_マークス",
+        "name": "젠더"
+      },
+      {
+        "PID": "MPID_ゾフィー",
+        "name": "소피"
+      },
+      {
+        "PID": "MPID_ジークベルト",
+        "name": "시그버트"
+      }
+    ],
+    "secondjob_array": [
+      {
+        "PID": "MPID_ジョーカー",
+        "name": "제이콥"
+      },
+      {
+        "PID": "MPID_ハロルド",
+        "name": "아서"
+      },
+      {
+        "PID": "MPID_ディーア",
+        "name": "드와이어"
+      }
     ]
   },
   {
@@ -320,6 +380,20 @@
       {
         "JID": "MJID_ジェネラル",
         "condition": 0
+      }
+    ],
+    "firstjob_array": [
+      {
+        "PID": "MPID_エルフィ",
+        "name": "엘피"
+      },
+      {
+        "PID": "MPID_ブノワ",
+        "name": "베니"
+      },
+      {
+        "PID": "MPID_イグニス",
+        "name": "이그니셔스"
       }
     ]
   },
@@ -436,6 +510,48 @@
         "JID": "MJID_ブレイブヒーロー",
         "condition": 0
       }
+    ],
+    "firstjob_array": [
+      {
+        "PID": "MPID_ハロルド",
+        "name": "아서"
+      },
+      {
+        "PID": "MPID_シャーロッテ",
+        "name": "샤를로트"
+      }
+    ],
+    "secondjob_array": [
+      {
+        "PID": "MPID_ベルカ",
+        "name": "베르카"
+      },
+      {
+        "PID": "MPID_ブノワ",
+        "name": "베니"
+      },
+      {
+        "PID": "MPID_フランネル",
+        "name": "키튼"
+      },
+      {
+        "PID": "MPID_イグニス",
+        "name": "이그니셔스"
+      },
+      {
+        "PID": "MPID_ベロア",
+        "name": "벨로리아"
+      },
+      {
+        "PID": "MPID_ルッツ",
+        "name": "퍼시"
+      }
+    ],
+    "thirdjob_array": [
+      {
+        "PID": "MPID_アシュラ",
+        "name": "슈라"
+      }
     ]
   },
   {
@@ -518,6 +634,44 @@
         "JID": "MJID_ボウナイト",
         "condition": 0
       }
+    ],
+    "firstjob_array": [
+      {
+        "PID": "MPID_ルーナ",
+        "name": "셀레나"
+      },
+      {
+        "PID": "MPID_ラズワルド",
+        "name": "라슬로"
+      },
+      {
+        "PID": "MPID_ソレイユ",
+        "name": "솔레이"
+      }
+    ],
+    "secondjob_array": [
+      {
+        "PID": "MPID_ギュンター",
+        "name": "군터"
+      },
+      {
+        "PID": "MPID_フェリシア",
+        "name": "펠리시아"
+      },
+      {
+        "PID": "MPID_サイラス",
+        "name": "사일러스"
+      },
+      {
+        "PID": "MPID_ゾフィー",
+        "name": "소피"
+      }
+    ],
+    "thirdjob_array": [
+      {
+        "PID": "MPID_フローラ",
+        "name": "플로라"
+      }
     ]
   },
   {
@@ -599,6 +753,34 @@
       {
         "JID": "MJID_アドベンチャラー",
         "condition": 0
+      }
+    ],
+    "firstjob_array": [
+      {
+        "PID": "MPID_アシュラ",
+        "name": "슈라"
+      },
+      {
+        "PID": "MPID_ゼロ",
+        "name": "닐스"
+      },
+      {
+        "PID": "MPID_エポニーヌ",
+        "name": "니나"
+      },
+      {
+        "PID": "MPID_アンナ",
+        "name": "안나"
+      }
+    ],
+    "secondjob_array": [
+      {
+        "PID": "MPID_クリムゾン",
+        "name": "스칼렛"
+      },
+      {
+        "PID": "MPID_ニュクス",
+        "name": "닉스"
       }
     ]
   },
@@ -714,6 +896,66 @@
       {
         "JID": "MJID_兵法者",
         "condition": 0
+      }
+    ],
+    "firstjob_array": [
+      {
+        "PID": "MPID_カザハナ",
+        "name": "하나"
+      },
+      {
+        "PID": "MPID_ヒナタ",
+        "name": "히나타"
+      },
+      {
+        "PID": "MPID_リョウマ",
+        "name": "료마"
+      },
+      {
+        "PID": "MPID_ヒサメ",
+        "name": "히사메"
+      },
+      {
+        "PID": "MPID_フウガ",
+        "name": "푸가"
+      }
+    ],
+    "secondjob_array": [
+      {
+        "PID": "MPID_スズカゼ",
+        "name": "카제"
+      },
+      {
+        "PID": "MPID_ツバキ",
+        "name": "츠바키"
+      },
+      {
+        "PID": "MPID_サイゾウ",
+        "name": "사이조"
+      },
+      {
+        "PID": "MPID_オーディン",
+        "name": "오딘"
+      },
+      {
+        "PID": "MPID_イザナ",
+        "name": "이자나"
+      },
+      {
+        "PID": "MPID_ユキムラ",
+        "name": "유키무라"
+      },
+      {
+        "PID": "MPID_シノノメ",
+        "name": "시로"
+      },
+      {
+        "PID": "MPID_マトイ",
+        "name": "카도리"
+      },
+      {
+        "PID": "MPID_オフェリア",
+        "name": "오펠리아"
       }
     ]
   },
@@ -834,6 +1076,34 @@
         "JID": "MJID_鍛冶",
         "condition": 0
       }
+    ],
+    "firstjob_array": [
+      {
+        "PID": "MPID_リンカ",
+        "name": "린카"
+      }
+    ],
+    "secondjob_array": [
+      {
+        "PID": "MPID_ツクヨミ",
+        "name": "하야토"
+      },
+      {
+        "PID": "MPID_ヒナタ",
+        "name": "히나타"
+      },
+      {
+        "PID": "MPID_ヒサメ",
+        "name": "히사메"
+      },
+      {
+        "PID": "MPID_シャラ",
+        "name": "라자트"
+      },
+      {
+        "PID": "MPID_フウガ",
+        "name": "푸가"
+      }
     ]
   },
   {
@@ -949,6 +1219,30 @@
         "JID": "MJID_婆娑羅",
         "condition": 0
       }
+    ],
+    "firstjob_array": [
+      {
+        "PID": "MPID_オボロ",
+        "name": "오보로"
+      },
+      {
+        "PID": "MPID_シノノメ",
+        "name": "시로"
+      }
+    ],
+    "secondjob_array": [
+      {
+        "PID": "MPID_ヒノカ",
+        "name": "히노카"
+      },
+      {
+        "PID": "MPID_タクミ",
+        "name": "타쿠미"
+      },
+      {
+        "PID": "MPID_キサラギ",
+        "name": "키라기"
+      }
     ]
   },
   {
@@ -1030,6 +1324,38 @@
       {
         "JID": "MJID_陰陽師",
         "condition": 0
+      }
+    ],
+    "firstjob_array": [
+      {
+        "PID": "MPID_オロチ",
+        "name": "오로치"
+      },
+      {
+        "PID": "MPID_ツクヨミ",
+        "name": "하야토"
+      },
+      {
+        "PID": "MPID_シャラ",
+        "name": "라자트"
+      }
+    ],
+    "secondjob_array": [
+      {
+        "PID": "MPID_カゲロウ",
+        "name": "카게로"
+      },
+      {
+        "PID": "MPID_ユウギリ",
+        "name": "레이나"
+      },
+      {
+        "PID": "MPID_ニシキ",
+        "name": "카덴"
+      },
+      {
+        "PID": "MPID_キヌ",
+        "name": "셀키"
       }
     ]
   },
@@ -1117,6 +1443,26 @@
         "JID": "MJID_山伏",
         "condition": 0
       }
+    ],
+    "firstjob_array": [
+      {
+        "PID": "MPID_アサマ",
+        "name": "아자마"
+      },
+      {
+        "PID": "MPID_イザナ",
+        "name": "이자나"
+      }
+    ],
+    "thirdjob_array": [
+      {
+        "PID": "MPID_ユキムラ",
+        "name": "유키무라"
+      },
+      {
+        "PID": "MPID_フウガ",
+        "name": "푸가"
+      }
     ]
   },
   {
@@ -1157,6 +1503,22 @@
       {
         "JID": "MJID_戦巫女",
         "condition": 0
+      }
+    ],
+    "firstjob_array": [
+      {
+        "PID": "MPID_サクラ",
+        "name": "사쿠라"
+      },
+      {
+        "PID": "MPID_ミタマ",
+        "name": "미타마"
+      }
+    ],
+    "secondjob_array": [
+      {
+        "PID": "MPID_カザハナ",
+        "name": "하나"
       }
     ]
   },
@@ -1310,6 +1672,46 @@
         "JID": "MJID_金鵄武者",
         "condition": 0
       }
+    ],
+    "firstjob_array": [
+      {
+        "PID": "MPID_ツバキ",
+        "name": "츠바키"
+      },
+      {
+        "PID": "MPID_ヒノカ",
+        "name": "히노카"
+      },
+      {
+        "PID": "MPID_ユウギリ",
+        "name": "레이나"
+      },
+      {
+        "PID": "MPID_シグレ",
+        "name": "시구레"
+      },
+      {
+        "PID": "MPID_マトイ",
+        "name": "카도리"
+      }
+    ],
+    "secondjob_array": [
+      {
+        "PID": "MPID_サクラ",
+        "name": "사쿠라"
+      },
+      {
+        "PID": "MPID_アクア",
+        "name": "아주라"
+      },
+      {
+        "PID": "MPID_リョウマ",
+        "name": "료마"
+      },
+      {
+        "PID": "MPID_ルーナ",
+        "name": "셀레나"
+      }
     ]
   },
   {
@@ -1391,6 +1793,26 @@
       {
         "JID": "MJID_弓聖",
         "condition": 0
+      }
+    ],
+    "firstjob_array": [
+      {
+        "PID": "MPID_セツナ",
+        "name": "세츠나"
+      },
+      {
+        "PID": "MPID_タクミ",
+        "name": "타쿠미"
+      },
+      {
+        "PID": "MPID_キサラギ",
+        "name": "키라기"
+      }
+    ],
+    "secondjob_array": [
+      {
+        "PID": "MPID_モズメ",
+        "name": "모즈"
       }
     ]
   },
@@ -1507,6 +1929,44 @@
         "JID": "MJID_レヴナントナイト",
         "condition": 0
       }
+    ],
+    "firstjob_array": [
+      {
+        "PID": "MPID_クリムゾン",
+        "name": "스칼렛"
+      },
+      {
+        "PID": "MPID_カミラ",
+        "name": "카밀라"
+      },
+      {
+        "PID": "MPID_ベルカ",
+        "name": "베르카"
+      },
+      {
+        "PID": "MPID_ルッツ",
+        "name": "퍼시"
+      }
+    ],
+    "secondjob_array": [
+      {
+        "PID": "MPID_エリーゼ",
+        "name": "엘리스"
+      },
+      {
+        "PID": "MPID_マークス",
+        "name": "젠더"
+      },
+      {
+        "PID": "MPID_ジークベルト",
+        "name": "시그버트"
+      }
+    ],
+    "thirdjob_array": [
+      {
+        "PID": "MPID_ギュンター",
+        "name": "군터"
+      }
     ]
   },
   {
@@ -1622,6 +2082,60 @@
         "JID": "MJID_絡繰師",
         "condition": 0
       }
+    ],
+    "firstjob_array": [
+      {
+        "PID": "MPID_スズカゼ",
+        "name": "카제"
+      },
+      {
+        "PID": "MPID_サイゾウ",
+        "name": "사이조"
+      },
+      {
+        "PID": "MPID_カゲロウ",
+        "name": "카게로"
+      },
+      {
+        "PID": "MPID_グレイ",
+        "name": "아스기"
+      }
+    ],
+    "secondjob_array": [
+      {
+        "PID": "MPID_リンカ",
+        "name": "린카"
+      },
+      {
+        "PID": "MPID_セツナ",
+        "name": "세츠나"
+      },
+      {
+        "PID": "MPID_アシュラ",
+        "name": "슈라"
+      },
+      {
+        "PID": "MPID_ラズワルド",
+        "name": "라슬로"
+      },
+      {
+        "PID": "MPID_ミドリコ",
+        "name": "미도리"
+      },
+      {
+        "PID": "MPID_グレイ",
+        "name": "아스기"
+      },
+      {
+        "PID": "MPID_ソレイユ",
+        "name": "솔레이"
+      }
+    ],
+    "thirdjob_array": [
+      {
+        "PID": "MPID_ユウギリ",
+        "name": "레이나"
+      }
     ]
   },
   {
@@ -1703,6 +2217,44 @@
       {
         "JID": "MJID_大商人",
         "condition": 0
+      }
+    ],
+    "firstjob_array": [
+      {
+        "PID": "MPID_ユキムラ",
+        "name": "유키무라"
+      },
+      {
+        "PID": "MPID_ミドリコ",
+        "name": "미도리"
+      }
+    ],
+    "secondjob_array": [
+      {
+        "PID": "MPID_オロチ",
+        "name": "오로치"
+      },
+      {
+        "PID": "MPID_アサマ",
+        "name": "아자마"
+      },
+      {
+        "PID": "MPID_オボロ",
+        "name": "오보로"
+      },
+      {
+        "PID": "MPID_ミタマ",
+        "name": "미타마"
+      }
+    ],
+    "thirdjob_array": [
+      {
+        "PID": "MPID_イザナ",
+        "name": "이자나"
+      },
+      {
+        "PID": "MPID_アンナ",
+        "name": "안나"
       }
     ]
   },
@@ -1822,6 +2374,50 @@
       {
         "JID": "MJID_ダークナイト",
         "condition": 0
+      }
+    ],
+    "firstjob_array": [
+      {
+        "PID": "MPID_オーディン",
+        "name": "오딘"
+      },
+      {
+        "PID": "MPID_ニュクス",
+        "name": "닉스"
+      },
+      {
+        "PID": "MPID_レオン",
+        "name": "리오"
+      },
+      {
+        "PID": "MPID_オフェリア",
+        "name": "오펠리아"
+      }
+    ],
+    "secondjob_array": [
+      {
+        "PID": "MPID_ゼロ",
+        "name": "닐스"
+      },
+      {
+        "PID": "MPID_カミラ",
+        "name": "카밀라"
+      },
+      {
+        "PID": "MPID_ピエリ",
+        "name": "페리"
+      },
+      {
+        "PID": "MPID_フローラ",
+        "name": "플로라"
+      },
+      {
+        "PID": "MPID_フォレオ",
+        "name": "포레스트"
+      },
+      {
+        "PID": "MPID_エポニーヌ",
+        "name": "니나"
       }
     ]
   },
@@ -2094,6 +2690,16 @@
         "JID": "MJID_マーナガルム",
         "condition": 0
       }
+    ],
+    "firstjob_array": [
+      {
+        "PID": "MPID_フランネル",
+        "name": "키튼"
+      },
+      {
+        "PID": "MPID_ベロア",
+        "name": "벨로리아"
+      }
     ]
   },
   {
@@ -2168,6 +2774,16 @@
         "JID": "MJID_九尾の狐",
         "condition": 0
       }
+    ],
+    "firstjob_array": [
+      {
+        "PID": "MPID_ニシキ",
+        "name": "카덴"
+      },
+      {
+        "PID": "MPID_キヌ",
+        "name": "셀키"
+      }
     ]
   },
   {
@@ -2220,7 +2836,7 @@
     "oppose_JID": "",
     "class_rank": 0,
     "inheritable": 2,
-    "alter_JID": "MJID_ロッドナイト",
+    "alter_JID": "MJID_ロッドナイト2",
     "skill_array": [
       {
         "icon": "<img class = \"skill\" src = \"image/6.png\">",
@@ -2249,6 +2865,12 @@
         "skill_name": "【이방의 왕녀】",
         "description": "주위 2칸 이내 「이방의 군」이 전투 시,<br>적이 입히는 대미지 -2, 입는 대미지 +2",
         "get_level": 35
+      }
+    ],
+    "firstjob_array": [
+      {
+        "PID": "MPID_アクア",
+        "name": "아주라"
       }
     ]
   },
@@ -2290,6 +2912,12 @@
       {
         "JID": "MJID_大商人",
         "condition": 0
+      }
+    ],
+    "firstjob_array": [
+      {
+        "PID": "MPID_モズメ",
+        "name": "모즈"
       }
     ]
   },

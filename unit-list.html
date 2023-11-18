@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+    <title>파엠 if 데이터베이스</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <meta name="description" content="파엠 if 데이터베이스">
+    <!-- <meta property="og:url" content="http://feh.wiki/thracia/index.php?title=오프닝"> -->
+    <meta property="og:title" content="파엠 if 데이터베이스">
+    <meta property="og:type" content="website">
+    <!-- <meta property="og:image" content="../images/metaimg.png"> -->
+    <meta property="og:description" content="파엠 if 데이터베이스">
+    <meta property="og:site_name" content="파엠 if 데이터베이스">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" href="images/thra/lightbrand_57.png" type="image/x-icon"/>
+    <link rel="icon" href="images/thra/lightbrand_57.png" type="image/x-icon"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="images/thra/lightbrand_57.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="images/thra/lightbrand_114.png"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css">
+    <link rel="stylesheet" href="assets/css/select2.min.css"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+
+</head>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/select2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+<script src="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.js"></script>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navBar">
+    <div class="container-fluid" style="margin : 0 10px">
+        <a class="navbar-brand" href="#">파엠 if 데이터베이스</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">스킬 리스트</a></li>
+                <li class="nav-item"><a class="nav-link" href="job-list.html">클래스 리스트</a></li>
+                <li class="nav-item"><a class="nav-link active" href="unit-list.html">유닛 리스트</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<a style="position : fixed; bottom : 20px; right : 20px; width : 50px; height : 50px; border-radius: 100px; z-index: 9999;" href="#"
+   onclick="scrollTop_func();return false;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#3ba056" class="bi bi-arrow-up-circle-fill"
+         viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"></path>
+    </svg>
+</a>
+<div class="container">
+    <br>
+    <div class="row">
+        <div class="col">
+            <table id="table"
+                   data-show-fullscreen="true"
+                   data-detail-view="true"
+                   data-detail-view-icon="false"
+                   data-detail-view-by-click="true"
+                   data-detail-formatter="skill_detail_formatter"
+                   data-search="true"
+                   data-show-columns="true">
+                <thead>
+                <tr>
+                    <th data-field="name" data-sortable="true">유닛명</th>
+                    <th data-field="first_class">본직업</th>
+                    <th data-field="second_class">부직업</th>
+                    <th data-field="marrage_class" data-visible="false">S랭크 클래스</th>
+                    <th data-field="buddy_class" data-visible="false">버디 클래스</th>
+                    <th data-field="class_rank_text" data-visible="false" data-sortable="true">종류</th>
+                    <th data-field="upper_class" data-visible="false">상위 클래스</th>
+                </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <div style="height : 50px"></div>
+</div>
+
+</body>
+</html>
+<script>
+
+    let skillTableData;
+    let unitDictionary;
+    let jobDictionary;
+
+    $(document).ready(function () {
+        let prefix = "";
+        if (window.location.href.includes("cass07")) {
+            prefix = "";
+        } else {
+            prefix = "http://localhost:63343/fe14-db/"
+        }
+
+        let jobData = [];
+        let skillData = [];
+        unitDictionary = [];
+        let unitData = [];
+        $.getJSON("data/fe14-job.json", jsonDataTable => {
+            jsonDataTable.forEach(item => {
+                jobData[item.JID] = item;
+            })
+        }).then($.getJSON("data/fe14-skill.json", jsonDataTable => {
+            jsonDataTable.forEach(item => {
+                skillData[item.SEID] = item;
+            })
+        })).then($.getJSON("data/fe14-unit.json", jsonDataTable => {
+            jsonDataTable.forEach(item => {
+                unitData.push(item);
+                unitDictionary[item.PID] = item;
+            })
+        })).then(function () {
+            jobDictionary = jobData;
+            skillTableData = makeSkillResultTable(unitData, jobData);
+            $("#table").bootstrapTable({data: skillTableData});
+        });
+
+
+    });
+
+    function makeSkillResultTable(unitData, jobData) {
+        unitData.forEach((singleUnit, index, array) => {
+            //본직업
+            array[index].first_class = jobData[singleUnit["JID_array"][0]]["name"];
+            //부직업
+            array[index].second_class = (singleUnit["JID_array"][1] !== undefined? jobData[singleUnit["JID_array"][1]]["name"]:"주인공의 부직업") +
+                (singleUnit["JID_array"][2] !== undefined? "<br>"+jobData[singleUnit["JID_array"][2]]["name"]:"");
+
+
+        })
+        return unitData;
+    }
+
+    function getMarrageJobObject(mainUnitData, marrageUnitData, jobData) {
+        //매리지 유닛의 주직업을 제공
+        //매리지 유닛의 주직업이 매리지 계승 불가거나, 자신의 주직업과 매리지 유닛의 주직업이 겹친다면, 매리지 유닛의 부직업을 제공
+        //위 둘을 만족하지 못한다면, 매리지 유닛의 주직업의 얼터직업을 제공
+        //매리지 유닛의 주직업의 얼터 직업이 없다면, 매리지 유닛의 부직업을 제공
+        //넷 다 불가능하다면, 아무 클래스도 계승되지 않음
+    }
+
+    function getChildJobObject(childUnitData, mainParentUnitData, secondParentUnitData, jobData) {
+
+    }
+
+    function skill_detail_formatter(index, row) {
+        //let html = []
+
+        let detailText = `${row.name}<br>일칭 : ${row.name_j} (${row.name_jk})<br>영칭 : ${row.name_e} (${row.name_ek})`;
+
+        detailText += `<br><br> 기본 클래스 습득 스킬<br>`;
+
+        let finalBaseJobJIDArray = row.JID_array;
+        row.JID_array.forEach(singleJID => {
+            //베이스 클래스의 상위 클래스데이터를 추가해줌
+            let singleJob = jobDictionary[singleJID];
+            singleJob.change_array.forEach(singleHighJIDObject => {
+                if(!finalBaseJobJIDArray.includes(singleHighJIDObject.JID)) {
+                    finalBaseJobJIDArray.push(singleHighJIDObject.JID);
+                }
+            })
+        });
+
+
+        finalBaseJobJIDArray.forEach(singleJID => {
+            let singleJob = jobDictionary[singleJID];
+            console.log(singleJob);
+            detailText += `${singleJob.name} : `;
+            singleJob.skill_array.forEach(singleSkill => {
+                detailText += `${singleSkill.icon} ${singleSkill.skill_name}, `;
+            });
+            detailText = detailText.slice(0,-2) + "<br>";
+        })
+
+        return detailText;
+    }
+
+    //받침이 없거나 ㄹ(8)이라면 로, 아니라면 으로
+    function isBatchim(word) {
+        let lastStrCode = word.charCodeAt(word.length-1);
+        if (lastStrCode < 44032 || lastStrCode > 55203) return 0;
+        return (lastStrCode - 44032) % 28 === 0 || (lastStrCode - 44032) % 28 === 8 ;
+    }
+
+    function scrollTop_func() {
+        $('html, body').animate({
+            scrollTop: $("#navBar").offset().top
+        }, 100, 'linear');
+    }
+
+</script>

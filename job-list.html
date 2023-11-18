@@ -51,6 +51,7 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item"><a class="nav-link" href="index.html">스킬 리스트</a></li>
                 <li class="nav-item"><a class="nav-link active" href="job-list.html">클래스 리스트</a></li>
+                <li class="nav-item"><a class="nav-link" href="unit-list.html">유닛 리스트</a></li>
             </ul>
         </div>
     </div>
@@ -82,6 +83,8 @@
                     <th data-field="getSkillIcon">습득 스킬</th>
                     <th data-field="class_rank_text" data-visible="false" data-sortable="true">종류</th>
                     <th data-field="upper_class" data-visible="false">상위 클래스</th>
+                    <th data-field="firstclass_unit" data-visible="false">주직업 유닛</th>
+                    <th data-field="secondclass_unit" data-visible="false">부직업 유닛</th>
                 </tr>
                 </thead>
             </table>
@@ -158,6 +161,36 @@
                 upperClassText = upperClassText.slice(0,-4);
             }
             array[index].upper_class = upperClassText;
+
+            //소지 유닛 텍스트
+            let firstUnitText = "-";
+            if(singleJob.firstjob_array !== undefined) {
+                firstUnitText = "";
+                singleJob.firstjob_array.forEach(singleJobUnit => {
+                    firstUnitText += `${singleJobUnit.name}<br>`;
+                });
+                firstUnitText = firstUnitText.slice(0,-2);
+            }
+            array[index].firstclass_unit = firstUnitText;
+
+            let secondUnitText = "";
+            if(singleJob.secondjob_array !== undefined) {
+                singleJob.secondjob_array.forEach(singleJobUnit => {
+                    secondUnitText += `${singleJobUnit.name}<br>`;
+                });
+                secondUnitText = secondUnitText.slice(0,-2);
+            }
+            if(singleJob.thirdjob_array !== undefined) {
+                singleJob.thirdjob_array.forEach(singleJobUnit => {
+                    secondUnitText += `${singleJobUnit.name}<br>`;
+                });
+                secondUnitText = secondUnitText.slice(0,-2);
+            }
+            if (secondUnitText === "") {
+                secondUnitText = "-";
+            }
+
+            array[index].secondclass_unit = secondUnitText;
 
 
         })
@@ -303,6 +336,29 @@
                 detailText += "<br>";
             })
             detailText = detailText.slice(0,-4);
+        }
+
+        //소지 캐릭터 출력
+        if(row.firstjob_array !== undefined) {
+            detailText += "<br><br>위 클래스를 주직업으로 가진 유닛 : ";
+            row.firstjob_array.forEach(singleJobUnit => {
+                detailText += `【${singleJobUnit.name}】, `;
+            });
+            detailText = detailText.slice(0,-2);
+        }
+        if(row.secondjob_array !== undefined) {
+            detailText += "<br>위 클래스를 부직업으로 가진 유닛 : ";
+            row.secondjob_array.forEach(singleJobUnit => {
+                detailText += `【${singleJobUnit.name}】, `;
+            });
+            detailText = detailText.slice(0,-2);
+        }
+        if(row.thirdjob_array !== undefined) {
+            detailText += "<br>위 클래스를 2번째 부직업으로 가진 유닛 (계승, 전달 불가) : ";
+            row.thirdjob_array.forEach(singleJobUnit => {
+                detailText += `【${singleJobUnit.name}】, `;
+            });
+            detailText = detailText.slice(0,-2);
         }
 
 
