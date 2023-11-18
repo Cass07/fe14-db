@@ -166,7 +166,7 @@
 
         detailText += `<br><br> 기본 클래스 습득 스킬<br>`;
 
-        let finalBaseJobJIDArray = row.JID_array;
+        let finalBaseJobJIDArray = row.JID_array.slice();
         row.JID_array.forEach(singleJID => {
             //베이스 클래스의 상위 클래스데이터를 추가해줌
             let singleJob = jobDictionary[singleJID];
