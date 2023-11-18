@@ -182,7 +182,6 @@
 
         finalBaseJobJIDArray.forEach(singleJID => {
             let singleJob = jobDictionary[singleJID];
-            console.log(singleJob);
             detailText += `${singleJob.name} : `;
             singleJob.skill_array.forEach(singleSkill => {
                 detailText += `${singleSkill.icon} ${singleSkill.skill_name}, `;
