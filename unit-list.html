@@ -170,11 +170,13 @@
         row.JID_array.forEach(singleJID => {
             //베이스 클래스의 상위 클래스데이터를 추가해줌
             let singleJob = jobDictionary[singleJID];
-            singleJob.change_array.forEach(singleHighJIDObject => {
-                if(!finalBaseJobJIDArray.includes(singleHighJIDObject.JID)) {
-                    finalBaseJobJIDArray.push(singleHighJIDObject.JID);
-                }
-            })
+            if(singleJob.change_array !== undefined) {
+                singleJob.change_array.forEach(singleHighJIDObject => {
+                    if(!finalBaseJobJIDArray.includes(singleHighJIDObject.JID)) {
+                        finalBaseJobJIDArray.push(singleHighJIDObject.JID);
+                    }
+                })
+            }
         });
 
 
