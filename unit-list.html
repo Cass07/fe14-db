@@ -129,7 +129,6 @@
             skillTableData = makeSkillResultTable(unitData, jobData);
 
             let unitDataJobCalc = calculateSupportClass(skillTableData);
-            console.log(unitDataJobCalc);
             $("#table").bootstrapTable({data: unitDataJobCalc});
         });
 
@@ -271,7 +270,7 @@
         })
 
         //S랭크 상대의 매리지 클래스 출력
-        if (row.srank_array_calc.length > 0) {
+        if (row.srank_array_calc !== undefined && row.srank_array_calc.length > 0) {
             let srankJobArray = [];
             row.srank_array_calc.forEach(singleSrankUnitJob => {
                 if (srankJobArray[singleSrankUnitJob.JID] === undefined) {
@@ -285,12 +284,12 @@
             Object.keys(srankJobArray).forEach(function (key) {
                 detailText += srankJobArray[key].slice(0, -2) + "<br>";
             })
+
+            detailText = detailText.slice(0,-4);
         }
 
-        detailText = detailText.slice(0,-4);
-
         //A+랭크 상대의 버디 클래스 출력
-        if (row.buddy_array_calc.length > 0) {
+        if (row.buddy_array_calc !== undefined && row.buddy_array_calc.length > 0) {
             let buddyJobArray = [];
             row.buddy_array_calc.forEach(singleSrankUnitJob => {
                 if (buddyJobArray[singleSrankUnitJob.JID] === undefined) {
@@ -304,9 +303,9 @@
             Object.keys(buddyJobArray).forEach(function (key) {
                 detailText += buddyJobArray[key].slice(0, -2) + "<br>";
             })
-        }
 
-        detailText = detailText.slice(0,-4);
+            detailText = detailText.slice(0,-4);
+        }
 
         return detailText;
     }
