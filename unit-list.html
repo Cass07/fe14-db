@@ -56,7 +56,8 @@
         </div>
     </div>
 </nav>
-<a style="position : fixed; bottom : 20px; right : 20px; width : 50px; height : 50px; border-radius: 100px; z-index: 9999;" href="#"
+<a style="position : fixed; bottom : 20px; right : 20px; width : 50px; height : 50px; border-radius: 100px; z-index: 9999;"
+   href="#"
    onclick="scrollTop_func();return false;">
     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#3ba056" class="bi bi-arrow-up-circle-fill"
          viewBox="0 0 16 16">
@@ -80,10 +81,8 @@
                     <th data-field="name" data-sortable="true">유닛명</th>
                     <th data-field="first_class">본직업</th>
                     <th data-field="second_class">부직업</th>
-                    <th data-field="marrage_class" data-visible="false">S랭크 클래스</th>
-                    <th data-field="buddy_class" data-visible="false">버디 클래스</th>
-                    <th data-field="class_rank_text" data-visible="false" data-sortable="true">종류</th>
-                    <th data-field="upper_class" data-visible="false">상위 클래스</th>
+                    <th data-field="srank_array_calc_text" data-visible="false">S랭크 클래스</th>
+                    <th data-field="buddy_array_calc_text" data-visible="false">버디 클래스</th>
                 </tr>
                 </thead>
             </table>
@@ -128,7 +127,10 @@
         })).then(function () {
             jobDictionary = jobData;
             skillTableData = makeSkillResultTable(unitData, jobData);
-            $("#table").bootstrapTable({data: skillTableData});
+
+            let unitDataJobCalc = calculateSupportClass(skillTableData);
+            console.log(unitDataJobCalc);
+            $("#table").bootstrapTable({data: unitDataJobCalc});
         });
 
 
@@ -139,20 +141,100 @@
             //본직업
             array[index].first_class = jobData[singleUnit["JID_array"][0]]["name"];
             //부직업
-            array[index].second_class = (singleUnit["JID_array"][1] !== undefined? jobData[singleUnit["JID_array"][1]]["name"]:"주인공의 부직업") +
-                (singleUnit["JID_array"][2] !== undefined? "<br>"+jobData[singleUnit["JID_array"][2]]["name"]:"");
-
+            array[index].second_class = (singleUnit["JID_array"][1] !== undefined ? jobData[singleUnit["JID_array"][1]]["name"] : "주인공의 부직업") +
+                (singleUnit["JID_array"][2] !== undefined ? "<br>" + jobData[singleUnit["JID_array"][2]]["name"] : "");
 
         })
         return unitData;
     }
 
+    function calculateSupportClass(unitData) {
+        unitData.forEach((singleUnit, index, array) => {
+            //버디 상대별 직업 받아오는거
+            if (singleUnit.buddy_array.length > 0) {
+                array[index].buddy_array_calc = [];
+                let buddy_array_calc_name = [];
+                singleUnit.buddy_array.forEach(singleBuddy => {
+                    let receiveJobObject = getMarrageJobObject(singleUnit, unitDictionary[singleBuddy], jobDictionary);
+                    if (receiveJobObject !== false) {
+                        let buddyCalcObject = {};
+                        buddyCalcObject.PID = singleBuddy;
+                        buddyCalcObject.name = unitDictionary[singleBuddy].name;
+                        buddyCalcObject.JID = receiveJobObject.JID;
+                        buddyCalcObject.job_name = receiveJobObject.name;
+                        buddyCalcObject.skill_array = receiveJobObject.skill_array;
+                        buddyCalcObject.change_array = receiveJobObject.change_array;
+                        array[index].buddy_array_calc.push(buddyCalcObject);
+                        if (!buddy_array_calc_name.includes(receiveJobObject.name)) {
+                            buddy_array_calc_name.push(receiveJobObject.name);
+                        }
+                    }
+                })
+                array[index].buddy_array_calc_text = buddy_array_calc_name.join("<br>");
+
+            }
+
+            //매리지 상대별 직업 받아오는거
+            if (singleUnit.srank_array.length > 0) {
+                array[index].srank_array_calc = [];
+                let srank_array_calc_name = [];
+                singleUnit.srank_array.forEach(singleSrank => {
+                    let receiveJobObject = getMarrageJobObject(singleUnit, unitDictionary[singleSrank], jobDictionary);
+                    if (receiveJobObject !== false) {
+                        let srankCalcObject = {};
+                        srankCalcObject.PID = singleSrank;
+                        srankCalcObject.name = unitDictionary[singleSrank].name;
+                        srankCalcObject.JID = receiveJobObject.JID;
+                        srankCalcObject.job_name = receiveJobObject.name;
+                        srankCalcObject.skill_array = receiveJobObject.skill_array;
+                        srankCalcObject.change_array = receiveJobObject.change_array;
+                        array[index].srank_array_calc.push(srankCalcObject);
+                        if (!srank_array_calc_name.includes(receiveJobObject.name)) {
+                            srank_array_calc_name.push(receiveJobObject.name);
+                        }
+                    }
+                })
+                array[index].srank_array_calc_text = srank_array_calc_name.join("<br>");
+                if (array[index].srank_array_calc_text === "") {
+                    array[index].srank_array_calc_text = "없음";
+                }
+            }
+        });
+
+        return unitData;
+    }
+
     function getMarrageJobObject(mainUnitData, marrageUnitData, jobData) {
-        //매리지 유닛의 주직업을 제공
-        //매리지 유닛의 주직업이 매리지 계승 불가거나, 자신의 주직업과 매리지 유닛의 주직업이 겹친다면, 매리지 유닛의 부직업을 제공
-        //위 둘을 만족하지 못한다면, 매리지 유닛의 주직업의 얼터직업을 제공
-        //매리지 유닛의 주직업의 얼터 직업이 없다면, 매리지 유닛의 부직업을 제공
-        //넷 다 불가능하다면, 아무 클래스도 계승되지 않음
+
+        let marrageJobJID = marrageUnitData.JID_array[0];
+        let mainUnitJobJID = mainUnitData.JID_array[0];
+        //매리지 상대의 주직업이 계승불가거나 자신의 주직업과 겹친다면 부직업을 제공
+        if (jobData[marrageJobJID].inheritable > 0 || marrageJobJID === mainUnitJobJID || marrageJobJID === jobData[mainUnitJobJID].oppose_JID) {
+            marrageJobJID = marrageUnitData.JID_array[1];
+        }
+        //매리지 상대의 부직업이 없다면 클래스 선택안한 카무이임 그냥 false 리턴하셈
+        if (marrageJobJID === undefined) {
+            return false;
+        }
+        //매리지 상대의 부직업이 자신의 주직업과 겹친다면 매리지 상대의 주직업의 얼터직업을 제공
+        if (marrageJobJID === mainUnitJobJID || marrageJobJID === jobData[mainUnitJobJID].oppose_JID) {
+            marrageJobJID = jobData[marrageUnitData.JID_array[0]].alter_JID;
+        }
+        //매리지 상대의 주직업의 얼터 직업이 없다면, 매리지 상대의 부직업의 얼터직업을 제공
+        if (marrageJobJID === "") {
+            marrageJobJID = jobData[marrageUnitData.JID_array[1]].alter_JID;
+        }
+        //넷 다 했는데도 없다면, 아무 클래스도 계승되지 않음
+        if (marrageJobJID === "" || marrageJobJID === undefined) {
+            return false
+        } else {
+            //자신의 성별과 맞지 않는 직업이라면, 반대 성별의 직업을 리턴
+            if (jobData[marrageJobJID].gender > 0 && jobData[marrageJobJID].gender !== mainUnitData.gender) {
+                marrageJobJID = jobData[marrageJobJID].oppose_JID;
+            }
+            return jobData[marrageJobJID]
+        }
+
     }
 
     function getChildJobObject(childUnitData, mainParentUnitData, secondParentUnitData, jobData) {
@@ -170,15 +252,14 @@
         row.JID_array.forEach(singleJID => {
             //베이스 클래스의 상위 클래스데이터를 추가해줌
             let singleJob = jobDictionary[singleJID];
-            if(singleJob.change_array !== undefined) {
+            if (singleJob.change_array !== undefined) {
                 singleJob.change_array.forEach(singleHighJIDObject => {
-                    if(!finalBaseJobJIDArray.includes(singleHighJIDObject.JID)) {
+                    if (!finalBaseJobJIDArray.includes(singleHighJIDObject.JID)) {
                         finalBaseJobJIDArray.push(singleHighJIDObject.JID);
                     }
                 })
             }
         });
-
 
         finalBaseJobJIDArray.forEach(singleJID => {
             let singleJob = jobDictionary[singleJID];
@@ -186,17 +267,55 @@
             singleJob.skill_array.forEach(singleSkill => {
                 detailText += `${singleSkill.icon} ${singleSkill.skill_name}, `;
             });
-            detailText = detailText.slice(0,-2) + "<br>";
+            detailText = detailText.slice(0, -2) + "<br>";
         })
+
+        //S랭크 상대의 매리지 클래스 출력
+        if (row.srank_array_calc.length > 0) {
+            let srankJobArray = [];
+            row.srank_array_calc.forEach(singleSrankUnitJob => {
+                if (srankJobArray[singleSrankUnitJob.JID] === undefined) {
+                    srankJobArray[singleSrankUnitJob.JID] = `${singleSrankUnitJob.job_name} : `;
+                }
+                srankJobArray[singleSrankUnitJob.JID] += `${singleSrankUnitJob.name}, `;
+            })
+
+            detailText += "<br>매리지 프루프로 받을 수 있는 클래스<br>";
+
+            Object.keys(srankJobArray).forEach(function (key) {
+                detailText += srankJobArray[key].slice(0, -2) + "<br>";
+            })
+        }
+
+        detailText = detailText.slice(0,-4);
+
+        //A+랭크 상대의 버디 클래스 출력
+        if (row.buddy_array_calc.length > 0) {
+            let buddyJobArray = [];
+            row.buddy_array_calc.forEach(singleSrankUnitJob => {
+                if (buddyJobArray[singleSrankUnitJob.JID] === undefined) {
+                    buddyJobArray[singleSrankUnitJob.JID] = `${singleSrankUnitJob.job_name} : `;
+                }
+                buddyJobArray[singleSrankUnitJob.JID] += `${singleSrankUnitJob.name}, `;
+            })
+
+            detailText += "<br><br>버디 프루프로 받을 수 있는 클래스<br>";
+
+            Object.keys(buddyJobArray).forEach(function (key) {
+                detailText += buddyJobArray[key].slice(0, -2) + "<br>";
+            })
+        }
+
+        detailText = detailText.slice(0,-4);
 
         return detailText;
     }
 
     //받침이 없거나 ㄹ(8)이라면 로, 아니라면 으로
     function isBatchim(word) {
-        let lastStrCode = word.charCodeAt(word.length-1);
+        let lastStrCode = word.charCodeAt(word.length - 1);
         if (lastStrCode < 44032 || lastStrCode > 55203) return 0;
-        return (lastStrCode - 44032) % 28 === 0 || (lastStrCode - 44032) % 28 === 8 ;
+        return (lastStrCode - 44032) % 28 === 0 || (lastStrCode - 44032) % 28 === 8;
     }
 
     function scrollTop_func() {
