@@ -68,6 +68,9 @@
     <br>
     <div class="row">
         <div class="col">
+            <label for = "kamui_second_class">카무이의 부직업</label>
+            <select class="select_class" id="kamui_second_class" style="width : 100%;">
+            </select>
             <table id="table"
                    data-show-fullscreen="true"
                    data-detail-view="true"
@@ -107,6 +110,8 @@
             prefix = "http://localhost:63343/fe14-db/"
         }
 
+        initKamuiJobSelect2();
+
         let jobData = [];
         let skillData = [];
         unitDictionary = [];
@@ -135,13 +140,13 @@
 
     });
 
-    function makeSkillResultTable(unitData, jobData) {
+    function makeSkillResultTable(unitData) {
         unitData.forEach((singleUnit, index, array) => {
             //본직업
-            array[index].first_class = jobData[singleUnit["JID_array"][0]]["name"];
+            array[index].first_class = jobDictionary[singleUnit["JID_array"][0]]["name"];
             //부직업
-            array[index].second_class = (singleUnit["JID_array"][1] !== undefined ? jobData[singleUnit["JID_array"][1]]["name"] : "주인공의 부직업") +
-                (singleUnit["JID_array"][2] !== undefined ? "<br>" + jobData[singleUnit["JID_array"][2]]["name"] : "");
+            array[index].second_class = (singleUnit["JID_array"][1] !== undefined ? jobDictionary[singleUnit["JID_array"][1]]["name"] : "주인공의 부직업") +
+                (singleUnit["JID_array"][2] !== undefined ? "<br>" + jobDictionary[singleUnit["JID_array"][2]]["name"] : "");
 
         })
         return unitData;
@@ -237,6 +242,19 @@
     }
 
     function getChildJobObject(childUnitData, mainParentUnitData, secondParentUnitData, jobData) {
+        //main과 second 성별 확인해서 아빠 엄마 구분
+
+        //애비의 주직업
+        //애비 주직업이 계승불가거나 (2) 자식의 주직업과 겹치면 애비의 부직업
+        //애비 부직업 겹치면 애비 주직업 얼터
+        //애비 주직업 대체클래스 없으면 애비 부직업 얼터
+
+        //애미의 주직업
+        //엄마 주직업이 계승불가거나 (2) 자식의 주직업과 1에서 받은 직업과 겹치면 엄마 부직업
+        //엄마 부직업이 자식의 주직업과 1에서 받은 직업과 겹치면 엄마 주직업 얼터
+        //엄마 주직업 얼터가 없으면 엄마 부직업 얼터
+
+        //1과 2 중에서 자식의 정해진 부직업과 다른 직업이 계승받은 직업이 됨
 
     }
 
@@ -274,18 +292,47 @@
             let srankJobArray = [];
             row.srank_array_calc.forEach(singleSrankUnitJob => {
                 if (srankJobArray[singleSrankUnitJob.JID] === undefined) {
-                    srankJobArray[singleSrankUnitJob.JID] = `${singleSrankUnitJob.job_name} : `;
+                    //상위클래스
+                    let upperClass = [];
+                    //기본클래스 데이터
+                    let jobData = jobDictionary[singleSrankUnitJob.JID];
+                    if (!finalBaseJobJIDArray.includes(singleSrankUnitJob.JID)) {
+                        upperClass.push(singleSrankUnitJob.JID);
+                    }
+                    //상위데이터 가져옴
+                    if(jobData.change_array !== undefined) {
+                        jobData.change_array.forEach(singleHighJIDObject => {
+                            //기본직으로 얻을 수 있는 상위직은 스킵함
+                            if (!finalBaseJobJIDArray.includes(singleHighJIDObject.JID)) {
+                                upperClass.push(singleHighJIDObject.JID);
+                            }
+                        })
+                    }
+                    srankJobArray[singleSrankUnitJob.JID] = {};
+                    srankJobArray[singleSrankUnitJob.JID]['main'] = `${singleSrankUnitJob.job_name} : `;
+                    srankJobArray[singleSrankUnitJob.JID]['skill'] = "";
+
+                    //추가획득 스킬 계산
+                    upperClass.forEach(singleJID => {
+                        let singleJob = jobDictionary[singleJID];
+                        srankJobArray[singleSrankUnitJob.JID]['skill'] += `${singleJob.name} : `;
+                        singleJob.skill_array.forEach(singleSkill => {
+                            srankJobArray[singleSrankUnitJob.JID]['skill'] += `${singleSkill.icon} ${singleSkill.skill_name}, `;
+                        });
+                        srankJobArray[singleSrankUnitJob.JID]['skill'] = srankJobArray[singleSrankUnitJob.JID]['skill'].slice(0, -2) + "<br>";
+                    })
                 }
-                srankJobArray[singleSrankUnitJob.JID] += `${singleSrankUnitJob.name}, `;
+                srankJobArray[singleSrankUnitJob.JID]['main'] += `${singleSrankUnitJob.name}, `;
             })
 
             detailText += "<br>매리지 프루프로 받을 수 있는 클래스<br>";
 
             Object.keys(srankJobArray).forEach(function (key) {
-                detailText += srankJobArray[key].slice(0, -2) + "<br>";
+                detailText += srankJobArray[key]['main'].slice(0, -2) + "<br>";
+                detailText += srankJobArray[key]['skill'] + "<br>" ;
             })
 
-            detailText = detailText.slice(0,-4);
+            detailText = detailText.slice(0, -4);
         }
 
         //A+랭크 상대의 버디 클래스 출력
@@ -293,18 +340,47 @@
             let buddyJobArray = [];
             row.buddy_array_calc.forEach(singleSrankUnitJob => {
                 if (buddyJobArray[singleSrankUnitJob.JID] === undefined) {
-                    buddyJobArray[singleSrankUnitJob.JID] = `${singleSrankUnitJob.job_name} : `;
+                    //상위클래스
+                    let upperClass = [];
+                    //기본클래스 데이터
+                    let jobData = jobDictionary[singleSrankUnitJob.JID];
+                    if (!finalBaseJobJIDArray.includes(singleSrankUnitJob.JID)) {
+                        upperClass.push(singleSrankUnitJob.JID);
+                    }
+                    //상위데이터 가져옴
+                    if(jobData.change_array !== undefined) {
+                        jobData.change_array.forEach(singleHighJIDObject => {
+                            //기본직으로 얻을 수 있는 상위직은 스킵함
+                            if (!finalBaseJobJIDArray.includes(singleHighJIDObject.JID)) {
+                                upperClass.push(singleHighJIDObject.JID);
+                            }
+                        })
+                    }
+
+                    buddyJobArray[singleSrankUnitJob.JID] = {};
+                    buddyJobArray[singleSrankUnitJob.JID]['main'] = `${singleSrankUnitJob.job_name} : `;
+                    buddyJobArray[singleSrankUnitJob.JID]['skill'] = "";
+                    //추가획득 스킬 계산
+                    upperClass.forEach(singleJID => {
+                        let singleJob = jobDictionary[singleJID];
+                        buddyJobArray[singleSrankUnitJob.JID]['skill'] += `${singleJob.name} : `;
+                        singleJob.skill_array.forEach(singleSkill => {
+                            buddyJobArray[singleSrankUnitJob.JID]['skill'] += `${singleSkill.icon} ${singleSkill.skill_name}, `;
+                        });
+                        buddyJobArray[singleSrankUnitJob.JID]['skill'] = buddyJobArray[singleSrankUnitJob.JID]['skill'].slice(0, -2) + "<br>";
+                    })
                 }
-                buddyJobArray[singleSrankUnitJob.JID] += `${singleSrankUnitJob.name}, `;
+                buddyJobArray[singleSrankUnitJob.JID]['main'] += `${singleSrankUnitJob.name}, `;
             })
 
             detailText += "<br><br>버디 프루프로 받을 수 있는 클래스<br>";
 
             Object.keys(buddyJobArray).forEach(function (key) {
-                detailText += buddyJobArray[key].slice(0, -2) + "<br>";
+                detailText += buddyJobArray[key]['main'].slice(0, -2) + "<br>";
+                detailText += buddyJobArray[key]['skill'] + "<br>" ;
             })
 
-            detailText = detailText.slice(0,-4);
+            detailText = detailText.slice(0, -4);
         }
 
         return detailText;
@@ -316,6 +392,135 @@
         if (lastStrCode < 44032 || lastStrCode > 55203) return 0;
         return (lastStrCode - 44032) % 28 === 0 || (lastStrCode - 44032) % 28 === 8;
     }
+
+    function initKamuiJobSelect2() {
+        let subClass = [
+            {
+                "id": 0,
+                "text": "없음",
+                "JID": ""
+            },
+            {
+                "id": 1,
+                "text": "소셜 나이트",
+                "JID": "MJID_ソシアルナイト"
+            },
+            {
+                "id": 2,
+                "text": "아머 나이트",
+                "JID": "MJID_アーマーナイト"
+            },
+            {
+                "id": 3,
+                "text": "액스 파이터",
+                "JID": "MJID_アクスファイター"
+            },
+            {
+                "id": 4,
+                "text": "머서너리",
+                "JID": "MJID_マーシナリー"
+            },
+            {
+                "id": 5,
+                "text": "시프",
+                "JID": "MJID_シーフ"
+            },
+            {
+                "id": 6,
+                "text": "사무라이",
+                "JID": "MJID_侍"
+            },
+            {
+                "id": 7,
+                "text": "귀인",
+                "JID": "MJID_鬼人"
+            },
+            {
+                "id": 8,
+                "text": "창술사",
+                "JID": "MJID_槍術士"
+            },
+            {
+                "id": 9,
+                "text": "주술사",
+                "JID": "MJID_呪い師"
+            },
+            {
+                "id": 10,
+                "text": "수행자/무녀",
+                "JID": "MJID_修験者",
+                "JID2": "MJID_巫女"
+            },
+            {
+                "id": 11,
+                "text": "천마 무사",
+                "JID": "MJID_天馬武者"
+            },
+            {
+                "id": 12,
+                "text": "궁수",
+                "JID": "MJID_弓使い"
+            },
+            {
+                "id": 13,
+                "text": "드래곤 나이트",
+                "JID": "MJID_ドラゴンナイト"
+            },
+            {
+                "id": 14,
+                "text": "닌자",
+                "JID": "MJID_忍"
+            },
+            {
+                "id": 15,
+                "text": "약사",
+                "JID": "MJID_薬商人"
+            },
+            {
+                "id": 16,
+                "text": "다크 메이지",
+                "JID": "MJID_ダークマージ"
+            },
+            {
+                "id": 17,
+                "text": "로드 나이트",
+                "JID": "MJID_ロッドナイト1",
+                "JID2": "MJID_ロッドナイト2"
+            }
+        ];
+
+        $('.select_class').select2({
+            data: subClass,
+            placeholder: "카무이의 부직업",
+            width: 'element',
+        });
+    }
+
+    $('.select_class').on('select2:select', function (e) {
+        let data = e.params.data;
+
+
+        let maleJID = data.JID;
+        let femaleJID = data.JID2;
+        if (femaleJID === undefined) {
+            femaleJID = maleJID;
+        }
+
+        skillTableData.forEach((singleUnit, index, array) => {
+            if (singleUnit.PID === "MPID_デフォルト名1" || singleUnit.PID === "MPID_カンナ1") {
+                array[index].JID_array[1] = maleJID;
+            } else if (singleUnit.PID === "MPID_デフォルト名2" || singleUnit.PID === "MPID_カンナ2") {
+                array[index].JID_array[1] = femaleJID;
+            }
+
+        });
+
+        let unitDataJobCalc = calculateSupportClass(makeSkillResultTable(skillTableData));
+
+        $("#table").bootstrapTable('load', unitDataJobCalc);
+
+
+    });
 
     function scrollTop_func() {
         $('html, body').animate({
