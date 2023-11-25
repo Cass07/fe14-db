@@ -86,6 +86,7 @@
                     <th data-field="second_class">부직업</th>
                     <th data-field="srank_array_calc_text" data-visible="false">S랭크 클래스</th>
                     <th data-field="buddy_array_calc_text" data-visible="false">버디 클래스</th>
+                    <th data-field="parent_array_calc_text" data-visible="false">물려받는 클래스</th>
                 </tr>
                 </thead>
             </table>
@@ -203,6 +204,33 @@
                     array[index].srank_array_calc_text = "없음";
                 }
             }
+
+            //부모님별 직업 받아오는거
+            if(singleUnit.first_parent !== undefined) {
+                array[index].parent_array_calc = [];
+                let parent_array_calc_name = [];
+                unitDictionary[singleUnit.first_parent].srank_array.forEach(singleOpposeParent => {
+                    let receiveJobObject = getChildJobObject(singleUnit, unitDictionary[singleUnit.first_parent], unitDictionary[singleOpposeParent], jobDictionary);
+                    if (receiveJobObject !== false) {
+                        let parentCalcObject = {};
+                        parentCalcObject.PID = singleOpposeParent;
+                        parentCalcObject.name = unitDictionary[singleOpposeParent].name;
+                        parentCalcObject.JID = receiveJobObject.JID;
+                        parentCalcObject.job_name = receiveJobObject.name;
+                        parentCalcObject.skill_array = receiveJobObject.skill_array;
+                        parentCalcObject.change_array = receiveJobObject.change_array;
+                        array[index].parent_array_calc.push(parentCalcObject);
+                        if (!parent_array_calc_name.includes(receiveJobObject.name)) {
+                            parent_array_calc_name.push(receiveJobObject.name);
+                        }
+                    }
+                })
+                array[index].parent_array_calc_text = parent_array_calc_name.join("<br>");
+                if (array[index].parent_array_calc_text === "") {
+                    array[index].parent_array_calc_text = "없음";
+                }
+            }
+
         });
 
         return unitData;
@@ -241,20 +269,98 @@
 
     }
 
-    function getChildJobObject(childUnitData, mainParentUnitData, secondParentUnitData, jobData) {
+    function getChildJobObject(childUnitData, firstParentData, secondParentData, jobData) {
         //main과 second 성별 확인해서 아빠 엄마 구분
+        //남무이, 여무이, 제로, 샤라의 경우 동성S가 존재하는데, 동성S상대는 자식의 potential 부모가 아니므로 제외해줘야 함
 
-        //애비의 주직업
-        //애비 주직업이 계승불가거나 (2) 자식의 주직업과 겹치면 애비의 부직업
-        //애비 부직업 겹치면 애비 주직업 얼터
-        //애비 주직업 대체클래스 없으면 애비 부직업 얼터
+        let firstParentObject = firstParentData;
+        let secondParentObject = firstParentData;
+        if(firstParentObject.gender == 2) {
+            //메인부모가 여자라면 first와 second를 뒤바꾼다
+            firstParentObject = secondParentData;
+        } else {
+            secondParentObject = secondParentData;
+        }
 
-        //애미의 주직업
+        //부모의 성별이 같다면 자식이 나올 수 없음
+        if(secondParentObject.gender === firstParentObject.gender) {
+            return false;
+        }
+
+        //자식의 주직업과 부직업
+        let childJID1 = childUnitData.JID_array[0];
+        let childJID2 = childUnitData.JID_array[1];
+
+        //자식의 부직업이 없다면, 클래스 선택 안한 칸나(남,여)임
+        if(childJID2 === undefined) {
+            childJID2 = "kamui_sub";
+        }
+
+        //아빠 주직업
+        let firstParentJID = firstParentObject.JID_array[0];
+
+        //아빠 주직업이 계승불가거나 (2) 자식의 주직업과 겹치면 아빠 부직업
+        if(jobData[firstParentJID].inheritable > 1 || firstParentJID === childJID1 || jobData[firstParentJID].oppose_JID === childJID1) {
+            firstParentJID =  firstParentObject.JID_array[1];
+        }
+        //아빠의 부직업이 없다면, 클래스 선택 안한 남무이임
+        if(firstParentJID === undefined) {
+            firstParentJID = "kamui_sub";
+        } else {
+            //아빠 부직업 겹치면 아빠 주직업 얼터
+            if(firstParentJID === childJID1 || jobData[firstParentJID].oppose_JID === childJID1) {
+                firstParentJID = jobData[firstParentObject.JID_array[0]].alter_JID;
+            }
+
+            //아빠 주직업 대체클래스 없으면 아빠 부직업 얼터
+            if(firstParentJID === "") {
+                firstParentJID = jobData[firstParentObject.JID_array[1]].alter_JID;
+            }
+        }
+
+        //엄마의 주직업
+        let secondParentJID = secondParentObject.JID_array[0];
+
         //엄마 주직업이 계승불가거나 (2) 자식의 주직업과 1에서 받은 직업과 겹치면 엄마 부직업
-        //엄마 부직업이 자식의 주직업과 1에서 받은 직업과 겹치면 엄마 주직업 얼터
-        //엄마 주직업 얼터가 없으면 엄마 부직업 얼터
+        if(jobData[secondParentJID].inheritable > 1 || secondParentJID === childJID1 || jobData[secondParentJID].oppose_JID === childJID1 ||
+            secondParentJID === firstParentJID || jobData[secondParentJID].oppose_JID === firstParentJID) {
+            secondParentJID =  secondParentObject.JID_array[1];
+        }
+
+        //엄마의 부직업이 없다면, 클래스 선택 안한 여무이임
+        if(secondParentJID === undefined) {
+            secondParentJID = "kamui_sub";
+        } else {
+            //엄마 부직업이 자식의 주직업과 1에서 받은 직업과 겹치면 엄마 주직업 얼터
+            if(secondParentJID === childJID1 || jobData[secondParentJID].oppose_JID === childJID1 ||
+                secondParentJID === firstParentJID || jobData[secondParentJID].oppose_JID === firstParentJID) {
+                secondParentJID = jobData[secondParentObject.JID_array[0]].alter_JID;
+            }
+
+            //엄마 주직업 얼터가 없으면 엄마 부직업 얼터
+            if(secondParentJID === "") {
+                secondParentJID = jobData[secondParentObject.JID_array[1]].alter_JID;
+            }
+        }
 
         //1과 2 중에서 자식의 정해진 부직업과 다른 직업이 계승받은 직업이 됨
+        let childInheritJID = secondParentJID;
+        if(childInheritJID === childJID2) {
+            childInheritJID = firstParentJID;
+        } else if (childJID2 !== "kamui_sub" && childInheritJID === jobData[childJID2].oppose_JID) {
+            childInheritJID = firstParentJID;
+        }
+
+        //계승받는 직업이 없다면, false를 리턴함
+        if(childInheritJID === "" || childInheritJID === unitDictionary) {
+            return false;
+        } else {
+            //자신의 성별과 맞지 않는 직업이라면, 반대 성별의 직업을 리턴
+            if (jobData[childInheritJID].gender > 0 && jobData[childInheritJID].gender !== childUnitData.gender) {
+                childInheritJID = jobData[childInheritJID].oppose_JID;
+            }
+            return jobData[childInheritJID];
+        }
 
     }
 
@@ -288,64 +394,35 @@
         })
 
         //S랭크 상대의 매리지 클래스 출력
-        if (row.srank_array_calc !== undefined && row.srank_array_calc.length > 0) {
-            let srankJobArray = [];
-            row.srank_array_calc.forEach(singleSrankUnitJob => {
-                if (srankJobArray[singleSrankUnitJob.JID] === undefined) {
-                    //상위클래스
-                    let upperClass = [];
-                    //기본클래스 데이터
-                    let jobData = jobDictionary[singleSrankUnitJob.JID];
-                    if (!finalBaseJobJIDArray.includes(singleSrankUnitJob.JID)) {
-                        upperClass.push(singleSrankUnitJob.JID);
-                    }
-                    //상위데이터 가져옴
-                    if(jobData.change_array !== undefined) {
-                        jobData.change_array.forEach(singleHighJIDObject => {
-                            //기본직으로 얻을 수 있는 상위직은 스킵함
-                            if (!finalBaseJobJIDArray.includes(singleHighJIDObject.JID)) {
-                                upperClass.push(singleHighJIDObject.JID);
-                            }
-                        })
-                    }
-                    srankJobArray[singleSrankUnitJob.JID] = {};
-                    srankJobArray[singleSrankUnitJob.JID]['main'] = `${singleSrankUnitJob.job_name} : `;
-                    srankJobArray[singleSrankUnitJob.JID]['skill'] = "";
 
-                    //추가획득 스킬 계산
-                    upperClass.forEach(singleJID => {
-                        let singleJob = jobDictionary[singleJID];
-                        srankJobArray[singleSrankUnitJob.JID]['skill'] += `${singleJob.name} : `;
-                        singleJob.skill_array.forEach(singleSkill => {
-                            srankJobArray[singleSrankUnitJob.JID]['skill'] += `${singleSkill.icon} ${singleSkill.skill_name}, `;
-                        });
-                        srankJobArray[singleSrankUnitJob.JID]['skill'] = srankJobArray[singleSrankUnitJob.JID]['skill'].slice(0, -2) + "<br>";
-                    })
-                }
-                srankJobArray[singleSrankUnitJob.JID]['main'] += `${singleSrankUnitJob.name}, `;
-            })
+        detailText += makeFormatterSkillList(row.srank_array_calc, finalBaseJobJIDArray, "매리지 프루프로 받을 수 있는 클래스");
 
-            detailText += "<br>매리지 프루프로 받을 수 있는 클래스<br>";
+        detailText += "<br>";
+        //A+랭크 상대의 버디 클래스 출력
+        detailText += makeFormatterSkillList(row.buddy_array_calc, finalBaseJobJIDArray, "버디 프루프로 받을 수 있는 클래스");
 
-            Object.keys(srankJobArray).forEach(function (key) {
-                detailText += srankJobArray[key]['main'].slice(0, -2) + "<br>";
-                detailText += srankJobArray[key]['skill'] + "<br>" ;
-            })
-
-            detailText = detailText.slice(0, -4);
+        //부모에게 받아오는 클래스 출력
+        if(row.parent_array_calc !== undefined) {
+            detailText += "<br>";
+            detailText += makeFormatterSkillList(row.parent_array_calc, finalBaseJobJIDArray, "추가로 물려받는 클래스");
         }
 
-        //A+랭크 상대의 버디 클래스 출력
-        if (row.buddy_array_calc !== undefined && row.buddy_array_calc.length > 0) {
-            let buddyJobArray = [];
-            row.buddy_array_calc.forEach(singleSrankUnitJob => {
-                if (buddyJobArray[singleSrankUnitJob.JID] === undefined) {
+        return detailText;
+    }
+
+    //클래스별 추가 습득가능 스킬 출력 포매터
+    function makeFormatterSkillList(unit_array_calc, finalBaseJobJIDArray, title) {
+        let detailText = "";
+        if (unit_array_calc !== undefined && unit_array_calc.length > 0) {
+            let rankJobArray = [];
+            unit_array_calc.forEach(singleRankUnitJob => {
+                if (rankJobArray[singleRankUnitJob.JID] === undefined) {
                     //상위클래스
                     let upperClass = [];
                     //기본클래스 데이터
-                    let jobData = jobDictionary[singleSrankUnitJob.JID];
-                    if (!finalBaseJobJIDArray.includes(singleSrankUnitJob.JID)) {
-                        upperClass.push(singleSrankUnitJob.JID);
+                    let jobData = jobDictionary[singleRankUnitJob.JID];
+                    if (!finalBaseJobJIDArray.includes(singleRankUnitJob.JID)) {
+                        upperClass.push(singleRankUnitJob.JID);
                     }
                     //상위데이터 가져옴
                     if(jobData.change_array !== undefined) {
@@ -356,28 +433,28 @@
                             }
                         })
                     }
+                    rankJobArray[singleRankUnitJob.JID] = {};
+                    rankJobArray[singleRankUnitJob.JID]['main'] = `${singleRankUnitJob.job_name} : `;
+                    rankJobArray[singleRankUnitJob.JID]['skill'] = "";
 
-                    buddyJobArray[singleSrankUnitJob.JID] = {};
-                    buddyJobArray[singleSrankUnitJob.JID]['main'] = `${singleSrankUnitJob.job_name} : `;
-                    buddyJobArray[singleSrankUnitJob.JID]['skill'] = "";
                     //추가획득 스킬 계산
                     upperClass.forEach(singleJID => {
                         let singleJob = jobDictionary[singleJID];
-                        buddyJobArray[singleSrankUnitJob.JID]['skill'] += `${singleJob.name} : `;
+                        rankJobArray[singleRankUnitJob.JID]['skill'] += `${singleJob.name} : `;
                         singleJob.skill_array.forEach(singleSkill => {
-                            buddyJobArray[singleSrankUnitJob.JID]['skill'] += `${singleSkill.icon} ${singleSkill.skill_name}, `;
+                            rankJobArray[singleRankUnitJob.JID]['skill'] += `${singleSkill.icon} ${singleSkill.skill_name}, `;
                         });
-                        buddyJobArray[singleSrankUnitJob.JID]['skill'] = buddyJobArray[singleSrankUnitJob.JID]['skill'].slice(0, -2) + "<br>";
+                        rankJobArray[singleRankUnitJob.JID]['skill'] = rankJobArray[singleRankUnitJob.JID]['skill'].slice(0, -2) + "<br>";
                     })
                 }
-                buddyJobArray[singleSrankUnitJob.JID]['main'] += `${singleSrankUnitJob.name}, `;
+                rankJobArray[singleRankUnitJob.JID]['main'] += `${singleRankUnitJob.name}, `;
             })
 
-            detailText += "<br><br>버디 프루프로 받을 수 있는 클래스<br>";
+            detailText += `<br>${title}<br>`;
 
-            Object.keys(buddyJobArray).forEach(function (key) {
-                detailText += buddyJobArray[key]['main'].slice(0, -2) + "<br>";
-                detailText += buddyJobArray[key]['skill'] + "<br>" ;
+            Object.keys(rankJobArray).forEach(function (key) {
+                detailText += rankJobArray[key]['main'].slice(0, -2) + "<br>";
+                detailText += rankJobArray[key]['skill'] + "<br>" ;
             })
 
             detailText = detailText.slice(0, -4);
