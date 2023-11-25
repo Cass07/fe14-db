@@ -48,3 +48,22 @@ td{
 .word-break-keep{
     word-break: keep-all;
 }
+
+div.route {
+    width: 23px;
+    height: 24px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+div.usable-white{
+    background: url("../../image/icon/white.png") no-repeat center;
+}
+
+div.usable-black{
+    background: url("../../image/icon/black.png") no-repeat center;
+}
+
+div.usable-valla{
+    background: url("../../image/icon/valla.png") no-repeat center;
+}

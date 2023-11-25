@@ -84,6 +84,7 @@
                     <th data-field="name" data-sortable="true">유닛명</th>
                     <th data-field="first_class">본직업</th>
                     <th data-field="second_class">부직업</th>
+                    <th data-field="usable_route_image" data-visible="false">사용 가능 루트</th>
                     <th data-field="srank_array_calc_text" data-visible="false">S랭크 클래스</th>
                     <th data-field="buddy_array_calc_text" data-visible="false">버디 클래스</th>
                     <th data-field="parent_array_calc_text" data-visible="false">물려받는 클래스</th>
@@ -148,7 +149,21 @@
             //부직업
             array[index].second_class = (singleUnit["JID_array"][1] !== undefined ? jobDictionary[singleUnit["JID_array"][1]]["name"] : "주인공의 부직업") +
                 (singleUnit["JID_array"][2] !== undefined ? "<br>" + jobDictionary[singleUnit["JID_array"][2]]["name"] : "");
-
+            //사용루트 이미지
+            array[index].usable_route_image = "";
+            array[index].usable_route_value = 0;
+            if(singleUnit.white === 1) {
+                array[index].usable_route_image += "<div class = 'route usable-white'></div>";
+                array[index].usable_route_value += 1;
+            }
+            if(singleUnit.black === 1) {
+                array[index].usable_route_image += "<div class = 'route usable-black'></div>";
+                array[index].usable_route_value += 2;
+            }
+            if(singleUnit.revelation === 1) {
+                array[index].usable_route_image += "<div class = 'route usable-valla'></div>";
+                array[index].usable_route_value += 4;
+            }
         })
         return unitData;
     }
@@ -434,8 +449,10 @@
                         })
                     }
                     rankJobArray[singleRankUnitJob.JID] = {};
-                    rankJobArray[singleRankUnitJob.JID]['main'] = `${singleRankUnitJob.job_name} : `;
+                    rankJobArray[singleRankUnitJob.JID]['main'] = singleRankUnitJob.job_name;
+                    rankJobArray[singleRankUnitJob.JID]['unit'] = "";
                     rankJobArray[singleRankUnitJob.JID]['skill'] = "";
+                    rankJobArray[singleRankUnitJob.JID]['route'] = 0;
 
                     //추가획득 스킬 계산
                     upperClass.forEach(singleJID => {
@@ -447,13 +464,16 @@
                         rankJobArray[singleRankUnitJob.JID]['skill'] = rankJobArray[singleRankUnitJob.JID]['skill'].slice(0, -2) + "<br>";
                     })
                 }
-                rankJobArray[singleRankUnitJob.JID]['main'] += `${singleRankUnitJob.name}, `;
+                rankJobArray[singleRankUnitJob.JID]['unit'] += `${singleRankUnitJob.name}${unitDictionary[singleRankUnitJob.PID].usable_route_image}, `;
+                rankJobArray[singleRankUnitJob.JID]['route'] |= unitDictionary[singleRankUnitJob.PID].usable_route_value;
             })
 
             detailText += `<br>${title}<br>`;
 
             Object.keys(rankJobArray).forEach(function (key) {
-                detailText += rankJobArray[key]['main'].slice(0, -2) + "<br>";
+                detailText += rankJobArray[key]['main'];
+                detailText += `${((rankJobArray[key]['route'] & 1) >= 1)? "<div class = 'route usable-white'/>" : ""}${((rankJobArray[key]['route'] & 2) >= 1)? "<div class = 'route usable-black'/>" : ""}${((rankJobArray[key]['route'] & 4) >= 1)? "<div class = 'route usable-valla'/>" : ""}`;
+                detailText += " : " + rankJobArray[key]['unit'].slice(0, -2) + "<br>";
                 detailText += rankJobArray[key]['skill'] + "<br>" ;
             })
 
