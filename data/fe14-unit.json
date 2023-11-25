@@ -355,7 +355,7 @@
     "JID2": "MJID_侍",
     "JID3": "",
     "white": 1,
-    "black": 0,
+    "black": 1,
     "revelation": 1,
     "gender": 1,
     "JID_array": [
