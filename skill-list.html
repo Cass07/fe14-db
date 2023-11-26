@@ -65,8 +65,29 @@
 </a>
 <div class="container">
     <br>
+    <div class = "row">
+        <div class = "col">
+            <p>스킬 습득법</p>
+            <label for="obtain_class">클래스</label>
+            <input type = "checkbox" class = "filter_checkbox" id = "obtain_class" checked>
+            <label for="obtain_item">아이템</label>
+            <input type = "checkbox" class = "filter_checkbox" id = "obtain_item" checked>
+            <label for="obtain_personal">개인 스킬</label>
+            <input type = "checkbox" class = "filter_checkbox" id = "obtain_personal" checked>
+            <label for="obtain_not">적 전용</label>
+            <input type = "checkbox" class = "filter_checkbox" id = "obtain_not" checked>
+        </div>
+    </div>
+    <br>
+    <div class = "row">
+        <div class = "col">
+            <label for="skill_kind">스킬 종류</label>
+            <select class="select_class" id="skill_kind" style="width : 100%;"></select>
+        </div>
+    </div>
     <div class="row">
         <div class="col">
+
             <table id="table"
                    data-show-fullscreen="true"
                    data-detail-view="true"
@@ -96,6 +117,7 @@
 <script>
 
     let skillTableData;
+    let skillKindDataSelect;
 
     $(document).ready(function () {
         let prefix = "";
@@ -104,11 +126,15 @@
         } else {
             prefix = "http://localhost:63343/fe14-db/"
         }
+        skillKindDataSelect = [];
 
         let tableData = [];
         let skillKindData = [];
         let skillItemData = [];
         let unitData = [];
+
+        skillKindDataSelect.push({id : 0, text : "없음"});
+
         $.getJSON("data/fe14-skill.json", jsonDataTable => {
             jsonDataTable.forEach(item => {
                 tableData[item.ID - 1] = item;
@@ -116,6 +142,7 @@
         }).then($.getJSON("data/skill_kind.json", jsonDataTable => {
             jsonDataTable.forEach(item => {
                 skillKindData[item.id] = item;
+                skillKindDataSelect.push({id : item.id, text : item.kind_name});
             })
         })).then($.getJSON("data/skill_item.json", jsonDataTable => {
             jsonDataTable.forEach(item => {
@@ -126,6 +153,11 @@
                 unitData.push(item);
             })
         })).then(function () {
+            $('#skill_kind').select2({
+                data: skillKindDataSelect,
+                placeholder: "스킬 종류",
+                width: 'element',
+            });
             skillTableData = makeSkillResultTable(tableData, skillKindData, skillItemData);
             $("#table").bootstrapTable({data: skillTableData});
         });
@@ -262,6 +294,59 @@
         }
 
         return detailText;
+    }
+
+    $('#skill_kind').on('select2:select', function (e) {
+        updateDatabaseTable();
+    });
+    $('.filter_checkbox').on('click', function (e) {
+        updateDatabaseTable();
+    });
+
+    function updateDatabaseTable() {
+        let skillKindId = $('#skill_kind').select2().val();
+        let isClass = $("#obtain_class").is(':checked') ? 1 : 0;
+        let isItem = $("#obtain_item").is(':checked') ? 1 : 0;
+        let isUnavail = $("#obtain_not").is(':checked') ? 1 : 0;
+        let isPersonal = $("#obtain_personal").is(':checked') ? 1 : 0;
+
+        let newSkillTableData = [];
+
+        if(skillKindId === undefined) {
+            skillKindId = "0";
+        }
+
+        if(skillKindId !== "0") {
+            newSkillTableData = skillTableData.filter((singleSkill) => (String)(singleSkill.kind) === skillKindId);
+        } else {
+            newSkillTableData = skillTableData.slice();
+            //$("#table").bootstrapTable('load', skillTableData);
+        }
+
+        if((isClass & isItem & isUnavail & isPersonal) !== 1) {
+            newSkillTableData = newSkillTableData.filter((singleSkill) => {
+                let isPrint = true;
+                if(isClass === 0 && singleSkill.skillObtainClassArray !== undefined) {
+                    isPrint = false;
+                }
+                if(isItem === 0 && singleSkill.skillObtainItemText !== undefined) {
+                    isPrint = false;
+                }
+                if(isUnavail === 0) {
+                    if(singleSkill.skillObtainItemText === undefined && singleSkill.skillObtainClassArray === undefined &&
+                        singleSkill.skillPersonalUnitArray === undefined) {
+                        isPrint = false;
+                    }
+                }
+                if(isPersonal === 0 && singleSkill.skillPersonalUnitArray !== undefined) {
+                    isPrint = false;
+                }
+
+                return isPrint;
+            });
+        }
+
+        $("#table").bootstrapTable('load', newSkillTableData);
     }
 
     function scrollTop_func() {
