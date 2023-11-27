@@ -12,6 +12,7 @@
     "oppose_JID": "",
     "class_rank": 2,
     "inheritable": 1,
+    "job_route" : 2,
     "alter_JID": "",
     "skill_array": [
       {
@@ -53,6 +54,7 @@
     "oppose_JID": "MJID_ダークプリンセス",
     "class_rank": 1,
     "inheritable": 1,
+    "job_route" : 0,
     "alter_JID": "",
     "skill_array": [
       {
@@ -104,6 +106,7 @@
     "oppose_JID": "MJID_ダークプリンス",
     "class_rank": 1,
     "inheritable": 1,
+    "job_route" : 0,
     "alter_JID": "",
     "skill_array": [
       {
@@ -155,6 +158,7 @@
     "oppose_JID": "",
     "class_rank": 2,
     "inheritable": 1,
+    "job_route" : 1,
     "alter_JID": "",
     "skill_array": [
       {
@@ -196,6 +200,7 @@
     "oppose_JID": "",
     "class_rank": 2,
     "inheritable": 0,
+    "job_route" : 2,
     "alter_JID": "",
     "skill_array": [
       {
@@ -233,6 +238,7 @@
     "oppose_JID": "",
     "class_rank": 1,
     "inheritable": 0,
+    "job_route" : 2,
     "alter_JID": "MJID_忍",
     "skill_array": [
       {
@@ -314,6 +320,7 @@
     "oppose_JID": "",
     "class_rank": 2,
     "inheritable": 0,
+    "job_route" : 2,
     "alter_JID": "",
     "skill_array": [
       {
@@ -355,6 +362,7 @@
     "oppose_JID": "",
     "class_rank": 1,
     "inheritable": 0,
+    "job_route" : 2,
     "alter_JID": "MJID_槍術士",
     "skill_array": [
       {
@@ -410,6 +418,7 @@
     "oppose_JID": "",
     "class_rank": 2,
     "inheritable": 0,
+    "job_route" : 2,
     "alter_JID": "",
     "skill_array": [
       {
@@ -447,6 +456,7 @@
     "oppose_JID": "",
     "class_rank": 2,
     "inheritable": 0,
+    "job_route" : 2,
     "alter_JID": "",
     "skill_array": [
       {
@@ -484,6 +494,7 @@
     "oppose_JID": "",
     "class_rank": 1,
     "inheritable": 0,
+    "job_route" : 2,
     "alter_JID": "MJID_鬼人",
     "skill_array": [
       {
@@ -567,6 +578,7 @@
     "oppose_JID": "",
     "class_rank": 2,
     "inheritable": 0,
+    "job_route" : 2,
     "alter_JID": "",
     "skill_array": [
       {
@@ -608,6 +620,7 @@
     "oppose_JID": "",
     "class_rank": 1,
     "inheritable": 0,
+    "job_route" : 2,
     "alter_JID": "MJID_侍",
     "skill_array": [
       {
@@ -687,6 +700,7 @@
     "oppose_JID": "",
     "class_rank": 2,
     "inheritable": 0,
+    "job_route" : 2,
     "alter_JID": "",
     "skill_array": [
       {
@@ -728,6 +742,7 @@
     "oppose_JID": "",
     "class_rank": 1,
     "inheritable": 0,
+    "job_route" : 2,
     "alter_JID": "MJID_弓使い",
     "skill_array": [
       {
@@ -797,6 +812,7 @@
     "oppose_JID": "",
     "class_rank": 2,
     "inheritable": 0,
+    "job_route" : 2,
     "alter_JID": "",
     "skill_array": [
       {
@@ -834,6 +850,7 @@
     "oppose_JID": "",
     "class_rank": 2,
     "inheritable": 0,
+    "job_route" : 1,
     "alter_JID": "",
     "skill_array": [
       {
@@ -871,6 +888,7 @@
     "oppose_JID": "",
     "class_rank": 1,
     "inheritable": 0,
+    "job_route" : 1,
     "alter_JID": "MJID_マーシナリー",
     "skill_array": [
       {
@@ -976,6 +994,7 @@
     "oppose_JID": "",
     "class_rank": 2,
     "inheritable": 0,
+    "job_route" : 1,
     "alter_JID": "",
     "skill_array": [
       {
@@ -1017,6 +1036,7 @@
     "oppose_JID": "",
     "class_rank": 2,
     "inheritable": 0,
+    "job_route" : 1,
     "alter_JID": "",
     "skill_array": [
       {
@@ -1054,6 +1074,7 @@
     "oppose_JID": "",
     "class_rank": 1,
     "inheritable": 0,
+    "job_route" : 1,
     "alter_JID": "MJID_アクスファイター",
     "skill_array": [
       {
@@ -1123,6 +1144,7 @@
     "oppose_JID": "",
     "class_rank": 2,
     "inheritable": 0,
+    "job_route" : 1,
     "alter_JID": "",
     "skill_array": [
       {
@@ -1160,6 +1182,7 @@
     "oppose_JID": "",
     "class_rank": 2,
     "inheritable": 0,
+    "job_route" : 1,
     "alter_JID": "",
     "skill_array": [
       {
@@ -1197,6 +1220,7 @@
     "oppose_JID": "",
     "class_rank": 1,
     "inheritable": 0,
+    "job_route" : 1,
     "alter_JID": "MJID_アーマーナイト",
     "skill_array": [
       {
@@ -1262,6 +1286,7 @@
     "oppose_JID": "",
     "class_rank": 2,
     "inheritable": 0,
+    "job_route" : 1,
     "alter_JID": "",
     "skill_array": [
       {
@@ -1303,6 +1328,7 @@
     "oppose_JID": "",
     "class_rank": 1,
     "inheritable": 0,
+    "job_route" : 1,
     "alter_JID": "MJID_ダークマージ",
     "skill_array": [
       {
@@ -1376,6 +1402,7 @@
     "oppose_JID": "",
     "class_rank": 2,
     "inheritable": 0,
+    "job_route" : 1,
     "alter_JID": "",
     "skill_array": [
       {
@@ -1421,6 +1448,7 @@
     "oppose_JID": "MJID_巫女",
     "class_rank": 1,
     "inheritable": 0,
+    "job_route" : 1,
     "alter_JID": "",
     "skill_array": [
       {
@@ -1482,6 +1510,7 @@
     "oppose_JID": "MJID_修験者",
     "class_rank": 1,
     "inheritable": 0,
+    "job_route" : 1,
     "alter_JID": "",
     "skill_array": [
       {
@@ -1539,6 +1568,7 @@
     "oppose_JID": "MJID_戦巫女",
     "class_rank": 2,
     "inheritable": 0,
+    "job_route" : 1,
     "alter_JID": "",
     "skill_array": [
       {
@@ -1576,6 +1606,7 @@
     "oppose_JID": "MJID_山伏",
     "class_rank": 2,
     "inheritable": 0,
+    "job_route" : 1,
     "alter_JID": "",
     "skill_array": [
       {
@@ -1613,6 +1644,7 @@
     "oppose_JID": "",
     "class_rank": 2,
     "inheritable": 0,
+    "job_route" : 1,
     "alter_JID": "",
     "skill_array": [
       {
@@ -1650,6 +1682,7 @@
     "oppose_JID": "",
     "class_rank": 1,
     "inheritable": 0,
+    "job_route" : 1,
     "alter_JID": "MJID_ドラゴンナイト",
     "skill_array": [
       {
@@ -1731,6 +1764,7 @@
     "oppose_JID": "",
     "class_rank": 2,
     "inheritable": 0,
+    "job_route" : 1,
     "alter_JID": "",
     "skill_array": [
       {
@@ -1772,6 +1806,7 @@
     "oppose_JID": "",
     "class_rank": 1,
     "inheritable": 0,
+    "job_route" : 1,
     "alter_JID": "MJID_シーフ",
     "skill_array": [
       {
@@ -1833,6 +1868,7 @@
     "oppose_JID": "",
     "class_rank": 2,
     "inheritable": 0,
+    "job_route" : 1,
     "alter_JID": "",
     "skill_array": [
       {
@@ -1870,6 +1906,7 @@
     "oppose_JID": "",
     "class_rank": 2,
     "inheritable": 0,
+    "job_route" : 2,
     "alter_JID": "",
     "skill_array": [
       {
@@ -1907,6 +1944,7 @@
     "oppose_JID": "",
     "class_rank": 1,
     "inheritable": 0,
+    "job_route" : 2,
     "alter_JID": "MJID_天馬武者",
     "skill_array": [
       {
@@ -1986,6 +2024,7 @@
     "oppose_JID": "",
     "class_rank": 2,
     "inheritable": 0,
+    "job_route" : 2,
     "alter_JID": "",
     "skill_array": [
       {
@@ -2023,6 +2062,7 @@
     "oppose_JID": "",
     "class_rank": 2,
     "inheritable": 0,
+    "job_route" : 1,
     "alter_JID": "",
     "skill_array": [
       {
@@ -2060,6 +2100,7 @@
     "oppose_JID": "",
     "class_rank": 1,
     "inheritable": 0,
+    "job_route" : 1,
     "alter_JID": "MJID_ソシアルナイト",
     "skill_array": [
       {
@@ -2155,6 +2196,7 @@
     "oppose_JID": "",
     "class_rank": 2,
     "inheritable": 0,
+    "job_route" : 1,
     "alter_JID": "",
     "skill_array": [
       {
@@ -2196,6 +2238,7 @@
     "oppose_JID": "",
     "class_rank": 1,
     "inheritable": 0,
+    "job_route" : 1,
     "alter_JID": "",
     "skill_array": [
       {
@@ -2275,6 +2318,7 @@
     "oppose_JID": "",
     "class_rank": 2,
     "inheritable": 0,
+    "job_route" : 1,
     "alter_JID": "",
     "skill_array": [
       {
@@ -2316,6 +2360,7 @@
     "oppose_JID": "",
     "class_rank": 2,
     "inheritable": 0,
+    "job_route" : 2,
     "alter_JID": "",
     "skill_array": [
       {
@@ -2353,6 +2398,7 @@
     "oppose_JID": "",
     "class_rank": 1,
     "inheritable": 0,
+    "job_route" : 2,
     "alter_JID": "MJID_呪い師",
     "skill_array": [
       {
@@ -2438,6 +2484,7 @@
     "oppose_JID": "",
     "class_rank": 2,
     "inheritable": 0,
+    "job_route" : 2,
     "alter_JID": "",
     "skill_array": [
       {
@@ -2475,6 +2522,7 @@
     "oppose_JID": "",
     "class_rank": 2,
     "inheritable": 0,
+    "job_route" : 2,
     "alter_JID": "",
     "skill_array": [
       {
@@ -2516,6 +2564,7 @@
     "oppose_JID": "MJID_ロッドナイト2",
     "class_rank": 1,
     "inheritable": 0,
+    "job_route" : 2,
     "alter_JID": "",
     "skill_array": [
       {
@@ -2542,6 +2591,30 @@
         "JID": "MJID_バトラー",
         "condition": 0
       }
+    ],
+    "firstjob_array": [
+      {
+        "PID": "MPID_ジョーカー",
+        "name": "제이콥"
+      },
+      {
+        "PID": "MPID_ディーア",
+        "name": "드와이어"
+      },
+      {
+        "PID": "MPID_フォレオ",
+        "name": "포레스트"
+      }
+    ],
+    "secondjob_array": [
+      {
+        "PID": "MPID_レオン",
+        "name": "리오"
+      },
+      {
+        "PID": "MPID_シグレ",
+        "name": "시구레"
+      }
     ]
   },
   {
@@ -2557,6 +2630,7 @@
     "oppose_JID": "MJID_ロッドナイト1",
     "class_rank": 1,
     "inheritable": 0,
+    "job_route" : 2,
     "alter_JID": "",
     "skill_array": [
       {
@@ -2583,6 +2657,34 @@
         "JID": "MJID_メイド",
         "condition": 0
       }
+    ],
+    "firstjob_array": [
+      {
+        "PID": "MPID_フェリシア",
+        "name": "펠리시아"
+      },
+      {
+        "PID": "MPID_エリーゼ",
+        "name": "엘리스"
+      },
+      {
+        "PID": "MPID_フローラ",
+        "name": "플로라"
+      }
+    ],
+    "secondjob_array": [
+      {
+        "PID": "MPID_エルフィ",
+        "name": "엘피"
+      },
+      {
+        "PID": "MPID_シャーロッテ",
+        "name": "샤를로트"
+      },
+      {
+        "PID": "MPID_アンナ",
+        "name": "안나"
+      }
     ]
   },
   {
@@ -2598,6 +2700,7 @@
     "oppose_JID": "MJID_メイド",
     "class_rank": 2,
     "inheritable": 0,
+    "job_route" : 2,
     "alter_JID": "",
     "skill_array": [
       {
@@ -2635,6 +2738,7 @@
     "oppose_JID": "MJID_バトラー",
     "class_rank": 2,
     "inheritable": 0,
+    "job_route" : 2,
     "alter_JID": "",
     "skill_array": [
       {
@@ -2672,6 +2776,7 @@
     "oppose_JID": "",
     "class_rank": 1,
     "inheritable": 1,
+    "job_route" : 2,
     "alter_JID": "MJID_シーフ",
     "skill_array": [
       {
@@ -2719,6 +2824,7 @@
     "oppose_JID": "",
     "class_rank": 2,
     "inheritable": 1,
+    "job_route" : 2,
     "alter_JID": "",
     "skill_array": [
       {
@@ -2756,6 +2862,7 @@
     "oppose_JID": "",
     "class_rank": 1,
     "inheritable": 1,
+    "job_route" : 1,
     "alter_JID": "MJID_薬商人",
     "skill_array": [
       {
@@ -2803,6 +2910,7 @@
     "oppose_JID": "",
     "class_rank": 2,
     "inheritable": 1,
+    "job_route" : 1,
     "alter_JID": "",
     "skill_array": [
       {
@@ -2840,6 +2948,7 @@
     "oppose_JID": "",
     "class_rank": 0,
     "inheritable": 2,
+    "job_route" : 0,
     "alter_JID": "MJID_ロッドナイト2",
     "skill_array": [
       {
@@ -2891,6 +3000,7 @@
     "oppose_JID": "",
     "class_rank": 1,
     "inheritable": 1,
+    "job_route" : 1,
     "alter_JID": "MJID_薬商人",
     "skill_array": [
       {
@@ -2938,6 +3048,7 @@
     "oppose_JID": "",
     "class_rank": 0,
     "inheritable": 2,
+    "job_route" : 3,
     "alter_JID": "",
     "skill_array": [
       {
@@ -2983,6 +3094,7 @@
     "oppose_JID": "",
     "class_rank": 0,
     "inheritable": 2,
+    "job_route" : 3,
     "alter_JID": "",
     "skill_array": [
       {
@@ -3028,6 +3140,7 @@
     "oppose_JID": "",
     "class_rank": 0,
     "inheritable": 2,
+    "job_route" : 3,
     "alter_JID": "",
     "skill_array": [
       {
@@ -3073,6 +3186,7 @@
     "oppose_JID": "",
     "class_rank": 0,
     "inheritable": 2,
+    "job_route" : 3,
     "alter_JID": "",
     "skill_array": [
       {
@@ -3118,6 +3232,7 @@
     "oppose_JID": "",
     "class_rank": 0,
     "inheritable": 2,
+    "job_route" : 3,
     "alter_JID": "",
     "skill_array": [
       {
@@ -3163,6 +3278,7 @@
     "oppose_JID": "",
     "class_rank": 0,
     "inheritable": 2,
+    "job_route" : 3,
     "alter_JID": "",
     "skill_array": [
       {
@@ -3208,6 +3324,7 @@
     "oppose_JID": "",
     "class_rank": 0,
     "inheritable": 2,
+    "job_route" : 3,
     "alter_JID": "",
     "skill_array": [
       {
@@ -3253,6 +3370,7 @@
     "oppose_JID": "",
     "class_rank": 0,
     "inheritable": 2,
+    "job_route" : 3,
     "alter_JID": "",
     "skill_array": [
       {

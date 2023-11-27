@@ -65,6 +65,27 @@
 </a>
 <div class="container">
     <br>
+    <div class = "row">
+        <div class = "col">
+            <label for="classtype_low">하위직</label>
+            <input type = "checkbox" class = "filter_checkbox" id = "classtype_low" checked>
+            <label for="classtype_high">상위직</label>
+            <input type = "checkbox" class = "filter_checkbox" id = "classtype_high" checked>
+            <label for="classtype_special">특수직(만렙 40)</label>
+            <input type = "checkbox" class = "filter_checkbox" id = "classtype_special" checked>
+        </div>
+    </div>
+    <div class = "row">
+        <div class = "col">
+            <label for="classtype_personal">전용 클래스</label>
+            <input type = "checkbox" class = "filter_checkbox" id = "classtype_personal" checked>
+            <label for="classtype_all">공용 클래스</label>
+            <input type = "checkbox" class = "filter_checkbox" id = "classtype_all" checked>
+            <label for="classtype_dlc">DLC 클래스</label>
+            <input type = "checkbox" class = "filter_checkbox" id = "classtype_dlc" checked>
+        </div>
+    </div>
+    <br>
     <div class="row">
         <div class="col">
             <table id="table"
@@ -285,6 +306,11 @@
         }else if (row.class_rank === 0) {
             detailText += "<br>특수직 (최대 레벨 40)";
         }
+        if(row.job_route === 1) {
+            detailText += " (백야 클래스)";
+        } else if(row.job_route === 2) {
+            detailText += " (암야 클래스)";
+        }
 
         if(row.class_rank === 2 || row.class_rank === 1) {
             //가능한 하위/상위직 추가
@@ -365,6 +391,53 @@
 
         return detailText;
     }
+
+    $('.filter_checkbox').on('click', function (e) {
+        updateDatabaseTable();
+    });
+
+    function updateDatabaseTable() {
+        let isLow = $("#classtype_low").is(':checked') ? 1 : 0;
+        let isHigh = $("#classtype_high").is(':checked') ? 1 : 0;
+        let isSpecial = $("#classtype_special").is(':checked') ? 1 : 0;
+        let isPersonal = $("#classtype_personal").is(':checked') ? 1 : 0;
+        let isAll = $("#classtype_all").is(':checked') ? 1 : 0;
+        let isDlc = $("#classtype_dlc").is(':checked') ? 1 : 0;
+
+        let newJobData = [];
+
+
+        if((isLow & isHigh & isSpecial & isPersonal & isAll & isDlc) !== 1) {
+            newJobData = skillTableData.slice();
+            newJobData = newJobData.filter((singleJob) => {
+                let isPrint = true;
+                if(isLow === 0 && singleJob.class_rank === 1) {
+                    isPrint = false;
+                }
+                if(isHigh === 0 && singleJob.class_rank === 2) {
+                    isPrint = false;
+                }
+                if(isSpecial === 0 && singleJob.class_rank === 0) {
+                    isPrint = false;
+                }
+                if(isPersonal === 0 && singleJob.inheritable >= 1 && singleJob.job_route !== 3) {
+                    isPrint = false;
+                }
+                if(isAll === 0 && singleJob.inheritable === 0) {
+                    isPrint = false;
+                }
+                if(isDlc === 0 && singleJob.job_route === 3) {
+                    isPrint = false;
+                }
+                return isPrint;
+            });
+        } else {
+            newJobData = skillTableData;
+        }
+
+        $("#table").bootstrapTable('load', newJobData);
+    }
+
 
     //받침이 없거나 ㄹ(8)이라면 로, 아니라면 으로
     function isBatchim(word) {

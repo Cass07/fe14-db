@@ -133,7 +133,7 @@
         let skillItemData = [];
         let unitData = [];
 
-        skillKindDataSelect.push({id : 0, text : "없음"});
+        skillKindDataSelect.push({id : 0, text : "전체"});
 
         $.getJSON("data/fe14-skill.json", jsonDataTable => {
             jsonDataTable.forEach(item => {
