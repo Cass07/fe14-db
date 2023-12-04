@@ -66,6 +66,13 @@
     <br>
     <div class="row">
         <div class="col">
+            <label for = "usable_route">루트</label>
+            <select class="select_class" id="usable_route" style="width : 100%;">
+                <option value = "0">전체</option>
+                <option value = "1">백야</option>
+                <option value = "2">암야</option>
+                <option value = "3">투마</option>
+            </select>
             <label for = "kamui_second_class">카무이의 부직업</label>
             <select class="select_class" id="kamui_second_class" style="width : 100%;">
             </select>
@@ -80,6 +87,7 @@
                 <thead>
                 <tr>
                     <th data-field="name" data-sortable="true">유닛명</th>
+                    <th data-field="name_jpen" data-visible="false">유닛명 (일/영)</th>
                     <th data-field="first_class">본직업</th>
                     <th data-field="second_class">부직업</th>
                     <th data-field="usable_route_image" data-visible="false">사용 가능 루트</th>
@@ -100,6 +108,9 @@
 
     let skillTableData;
     let unitDictionary;
+    let unitDictionaryWhite;
+    let unitDictionaryBlack;
+    let unitDictionaryValla;
     let jobDictionary;
 
     $(document).ready(function () {
@@ -110,11 +121,17 @@
             prefix = "http://localhost:63343/fe14-db/"
         }
 
+        $('#usable_route').select2({
+            width: 'element',
+        });
         initKamuiJobSelect2();
 
         let jobData = [];
         let skillData = [];
         unitDictionary = [];
+        unitDictionaryWhite = [];
+        unitDictionaryBlack = [];
+        unitDictionaryValla = [];
         let unitData = [];
         $.getJSON("data/fe14-job.json", jsonDataTable => {
             jsonDataTable.forEach(item => {
@@ -128,12 +145,21 @@
             jsonDataTable.forEach(item => {
                 unitData.push(item);
                 unitDictionary[item.PID] = item;
+                if(item.white === 1) {
+                    unitDictionaryWhite[item.PID] = item;
+                }
+                if (item.black === 1) {
+                    unitDictionaryBlack[item.PID] = item;
+                }
+                if (item.revelation === 1) {
+                    unitDictionaryValla[item.PID] = item;
+                }
             })
         })).then(function () {
             jobDictionary = jobData;
             skillTableData = makeSkillResultTable(unitData, jobData);
 
-            let unitDataJobCalc = calculateSupportClass(skillTableData);
+            let unitDataJobCalc = calculateSupportClass(skillTableData, unitDictionary);
             $("#table").bootstrapTable({data: unitDataJobCalc});
         });
 
@@ -147,6 +173,9 @@
             //부직업
             array[index].second_class = (singleUnit["JID_array"][1] !== undefined ? jobDictionary[singleUnit["JID_array"][1]]["name"] : "주인공의 부직업") +
                 (singleUnit["JID_array"][2] !== undefined ? "<br>" + jobDictionary[singleUnit["JID_array"][2]]["name"] : "");
+            //일영이름
+            array[index].name_jpen = `${singleUnit.name_j} (${singleUnit.name_jk}), ${singleUnit.name_e} (${singleUnit.name_ek})`;
+
             //사용루트 이미지
             array[index].usable_route_image = "";
             array[index].usable_route_value = 0;
@@ -166,7 +195,7 @@
         return unitData;
     }
 
-    function calculateSupportClass(unitData) {
+    function calculateSupportClass(unitData, unitDictionary) {
         unitData.forEach((singleUnit, index, array) => {
             //버디 상대별 직업 받아오는거
             if (singleUnit.buddy_array.length > 0) {
@@ -219,7 +248,7 @@
             }
 
             //부모님별 직업 받아오는거
-            if(singleUnit.first_parent !== undefined) {
+            if(singleUnit.first_parent !== undefined && unitDictionary[singleUnit.first_parent] !== undefined) {
                 array[index].parent_array_calc = [];
                 let parent_array_calc_name = [];
                 unitDictionary[singleUnit.first_parent].srank_array.forEach(singleOpposeParent => {
@@ -250,6 +279,11 @@
     }
 
     function getMarrageJobObject(mainUnitData, marrageUnitData, jobData) {
+        //결혼 상태가 사용불가라 없으면 false
+        if(marrageUnitData === undefined || marrageUnitData === null) {
+            return false;
+        }
+
 
         let marrageJobJID = marrageUnitData.JID_array[0];
         let mainUnitJobJID = mainUnitData.JID_array[0];
@@ -285,6 +319,11 @@
     function getChildJobObject(childUnitData, firstParentData, secondParentData, jobData) {
         //main과 second 성별 확인해서 아빠 엄마 구분
         //남무이, 여무이, 제로, 샤라의 경우 동성S가 존재하는데, 동성S상대는 자식의 potential 부모가 아니므로 제외해줘야 함
+
+        //부모 데이터가 액세스 불가면 false 리턴
+        if(secondParentData === undefined || secondParentData === null) {
+            return false;
+        }
 
         let firstParentObject = firstParentData;
         let secondParentObject = firstParentData;
@@ -584,7 +623,7 @@
             }
         ];
 
-        $('.select_class').select2({
+        $('#kamui_second_class').select2({
             data: subClass,
             placeholder: "카무이의 부직업",
             width: 'element',
@@ -592,13 +631,17 @@
     }
 
     $('.select_class').on('select2:select', function (e) {
-        let data = e.params.data;
+        let kamuiSub = $('#kamui_second_class').select2('data')[0];
+        let routeData = $('#usable_route').select2().val();
 
-
-        let maleJID = data.JID;
-        let femaleJID = data.JID2;
+        let maleJID = kamuiSub.JID;
+        let femaleJID = kamuiSub.JID2;
         if (femaleJID === undefined) {
             femaleJID = maleJID;
+        }
+        if(maleJID === "") {
+            maleJID = undefined;
+            femaleJID = undefined;
         }
 
         skillTableData.forEach((singleUnit, index, array) => {
@@ -610,11 +653,26 @@
 
         });
 
-        let unitDataJobCalc = calculateSupportClass(makeSkillResultTable(skillTableData));
+        let unitDictionaryFilter = unitDictionary;
+        let skillTableDataFilter = skillTableData.slice();
+
+        if(routeData === "1") {
+            //백야
+            unitDictionaryFilter = unitDictionaryWhite;
+            skillTableDataFilter = skillTableDataFilter.filter((singleUnit) => singleUnit.white === 1);
+        } else if (routeData === "2") {
+            //암야
+            unitDictionaryFilter = unitDictionaryBlack;
+            skillTableDataFilter = skillTableDataFilter.filter((singleUnit) => singleUnit.black === 1);
+        } else if (routeData === "3") {
+            //투마
+            unitDictionaryFilter = unitDictionaryValla;
+            skillTableDataFilter = skillTableDataFilter.filter((singleUnit) => singleUnit.revelation === 1);
+        }
+
+        let unitDataJobCalc = calculateSupportClass(makeSkillResultTable(skillTableDataFilter), unitDictionaryFilter);
 
         $("#table").bootstrapTable('load', unitDataJobCalc);
-
-
     });
 
     function scrollTop_func() {
