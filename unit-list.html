@@ -133,6 +133,8 @@
         unitDictionaryBlack = [];
         unitDictionaryValla = [];
         let unitData = [];
+        $.ajaxSetup({ async: false });
+
         $.getJSON("data/fe14-job.json", jsonDataTable => {
             jsonDataTable.forEach(item => {
                 jobData[item.JID] = item;

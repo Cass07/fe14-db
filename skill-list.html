@@ -135,6 +135,7 @@
 
         skillKindDataSelect.push({id : 0, text : "전체"});
 
+        $.ajaxSetup({ async: false });
         $.getJSON("data/fe14-skill.json", jsonDataTable => {
             jsonDataTable.forEach(item => {
                 tableData[item.ID - 1] = item;

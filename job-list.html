@@ -134,6 +134,7 @@
         let skillData = [];
         let jobChangeData = [];
         let unitData = [];
+        $.ajaxSetup({ async: false });
         $.getJSON("data/fe14-job.json", jsonDataTable => {
             jsonDataTable.forEach(item => {
                 jobData.push(item);
